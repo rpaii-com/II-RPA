@@ -1,0 +1,129 @@
+<div class="main-con-item">
+
+    <div class="input-box">
+        <p>
+            <b>选择数据库类型</b>
+            <b>：</b>
+        </p>
+        <p class="radio-item">
+            <label>
+                <input type="radio" name="db_type" value="mysql" checked>mysql
+            </label>
+            <label>
+                <input type="radio" name="db_type" value="mssql">sql_server
+            </label>
+            <span>
+            <input type="radio" name="db_type" value="oracle" id="oracle">oracle
+            </span>
+        </p>
+    </div>
+    <div class="input-box">
+        <p>
+            <b>Hostname（主机ip）</b>
+            <b>：</b>
+        </p>
+        <input type="text" name="hostname">
+    </div>
+    <div class="input-box">
+        <p>
+            <b>Port（默认端口:mysql：3306；mssql：1433，oracle：1521）</b>
+            <b>：</b>
+        </p>
+        <input type="text" name="port">
+    </div>
+    <div class="input-box">
+        <p>
+            <b>用户名</b>
+            <b>：</b>
+        </p>
+        <input type="text" name="username">
+    </div>
+    <div class="input-box">
+        <p>
+            <b>密码</b>
+            <b>：</b>
+        </p>
+        <input type="text" name="password">
+    </div>
+    <div class="input-box">
+        <p>
+            <b>默认数据库名称/oracle服务名</b>
+            <b>：</b>
+        </p>
+        <input type="text" name="schema">
+    </div>
+    <div class="input-group">
+        <span>
+            <input type="button" name="test_db_config" value="测试连接" id="test_button">
+        </span>
+    </div>
+    <div class="input-box">
+        <p>
+            <b>为数据库配置命名：</b>
+        </p>
+        <input type="text" name="rename">
+    </div>
+    <input type="hidden" class="item-type" name="dbConfig">
+</div>
+
+<div class="liucheng-item-tips">
+    <p class="dom-active-dec" title="">
+        <i></i>
+        <em>：</em>数据库配置
+    </p>
+    <p class="in-parameter" title="">
+        <i class="icon-tips-out"></i>
+        <em>：</em>"
+        <b class="font-out-paramter"></b>","
+        <b class="font-out-paramter-type">Array[Array]</b>"</p>
+</div>
+
+<script>
+    /*测试数据库连接*/
+    $(function () {
+        $("#test_button").click(function (e) {
+            var db_type = $("input[name='db_type']:checked").val();
+
+            var hostname = $("input[name='hostname']").val();
+            var port = $("input[name='port']").val();
+            var username = $("input[name='username']").val();
+            var password = $("input[name='password']").val();
+            var schema = $("input[name='schema']").val();
+            /*判断数据库类型，进行相关配置*/
+            switch (db_type) {
+                case "mysql":
+                    var db_config = {
+                        host: hostname,
+                        port: port,
+                        user: username,
+                        password: password,
+                        database: schema
+                    };
+                    test_mysql_connect(db_config);
+                    break;
+                case "mssql":
+                    var db_config = {
+                        server: hostname,
+                        port: port,
+                        user: username,
+                        password: password,
+                        database: schema
+                    };
+                    test_mssql_connect(db_config);
+                    break;
+                case "oracle":
+                    var connectString = hostname + ":" + port + "/" + schema;
+                    var db_config = {
+                        connectString: connectString,
+                        user: username,
+                        password: password
+                    };
+                    test_oracle_connect(db_config);
+                    break;
+                default:
+                    console.log("类型出错");
+            }
+        })
+    })
+
+</script>

@@ -1,0 +1,10 @@
+*/node_modules/
+OutApp
+node_modules/
+
+cs_robot/.vs/**/
+cs_robot/robot/obj/**/
+cs_robot/robot/bin/**/
+
+
+/cs_robot/robot/Lib

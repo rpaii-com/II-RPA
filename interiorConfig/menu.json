@@ -1,0 +1,993 @@
+[
+    {
+        "name": "预处理",
+        "className": "prev menu-icon-3 menu-icon",
+        "isPrev": true,
+        "children": [
+            {
+                "name": "判断窗口是否正确（根据选择的标志性元素）",
+                "url": "pretreatment/fuzhuzhixingqichuangkou.html",
+                "className": "diy-icon-menu1-1",
+                "nodeType": "ActuatorForVerify"
+            },
+            {
+                "name": "读取文本文件",
+                "url": "pretreatment/duquwenbenwenjian.html",
+                "className": "diy-icon-menu2-1",
+                "nodeType": "importTextFile"
+            },
+            {
+                "name": "读取数据表格",
+                "url": "pretreatment/duqushujubiaoge.html",
+                "className": "diy-icon-menu2-1",
+                "nodeType": "importFile"
+            },
+            {
+                "name": "设置全局变量",
+                "url": "pretreatment/shezhixincanshu.html",
+                "className": "diy-icon-menu3-1",
+                "nodeType": "saveNewParam"
+            },
+            {
+                "name": "设置全局剪切板等待时间",
+                "url": "pretreatment/jianqiebangdengdaishijian.html",
+                "className": "diy-icon-menu1-2",
+                "nodeType": "clipboardWaitTime"
+            },
+            {
+                "name": "全局等待时间",
+                "url": "pretreatment/dengdaishijian.html",
+                "className": "diy-icon-menu1-2",
+                "nodeType": "globalWaitTime"
+            }
+        ]
+    },
+    {
+        "name": "浏览器(Chrome)",
+        "className": "icon menu-icon-1",
+        "children": [
+            {
+                "name": "判断元素是否存在",
+                "url": "liulanqi/panduanyuansushifoucunzai.html",
+                "className": "diy-icon-menu1-13",
+                "nodeType": "canGetEle"
+            },
+            {
+                "name": "打开框架",
+                "url": "liulanqi/huoqukuangjiasrc.html",
+                "className": "diy-icon-menu1-13",
+                "nodeType": "openIframe"
+            },
+            {
+                "name": "获得元素运行中的屏幕位置",
+                "url": "liulanqi/huodeyuansupingmuweizhi.html",
+                "className": "diy-icon-menu1-13",
+                "nodeType": "getElePosition"
+            },
+            {
+                "name": "打开网页",
+                "url": "liulanqi/dakaiwangye.html",
+                "className": "diy-icon-menu1-1",
+                "nodeType": "open"
+            },
+            {
+                "name": "等待至目标元素出现继续",
+                "url": "liulanqi/dengdaizhiyemianyuansuchuxian.html",
+                "className": "diy-icon-menu1-1",
+                "nodeType": "waitFindELe"
+            },
+            {
+                "name": "页面后退",
+                "url": "liulanqi/wangyehoutui.html",
+                "className": "diy-icon-menu1-2",
+                "nodeType": "historyBack"
+            },
+            {
+                "name": "页面刷新",
+                "url": "liulanqi/wangyeshuaxin.html",
+                "className": "diy-icon-menu1-2",
+                "nodeType": "pageFresh"
+            },
+            {
+                "name": "关闭当前页面（选项卡）",
+                "url": "liulanqi/guanbixuanxiangka.html",
+                "className": "diy-icon-menu1-14",
+                "nodeType": "closePage"
+            },
+            {
+                "name": "获取当前页面的URL URI",
+                "url": "liulanqi/huoqudangqianyemiandeurluri.html",
+                "className": "diy-icon-menu1-3",
+                "nodeType": "getPageURL"
+            },
+            {
+                "name": "保存验证码图片",
+                "url": "liulanqi/baochunyanzhengmatupian.html",
+                "className": "diy-icon-menu1-4",
+                "nodeType": "saveVCode"
+            },
+            {
+                "name": "点击网页元素",
+                "url": "liulanqi/dianjiwangyeyuansu.html",
+                "className": "diy-icon-menu1-6",
+                "nodeType": "click"
+            },
+            {
+                "name": "点击网页元素(mouseDown/mouseUp)",
+                "url": "liulanqi/dianjiwangyeyuansu(mouseDown).html",
+                "className": "diy-icon-menu1-15",
+                "nodeType": "mouseDownOrUp"
+            },
+            {
+                "name": "填写输入框内容",
+                "url": "liulanqi/tianxieyukuangneirong.html",
+                "className": "diy-icon-menu1-7",
+                "nodeType": "inputInfo"
+            },
+            {
+                "name": "获取页面元素内容",
+                "url": "liulanqi/huoquyemianyuansuneirong.html",
+                "className": "diy-icon-menu1-8",
+                "nodeType": "InnerHTML"
+            },
+            {
+                "name": "鼠标移动到元素",
+                "url": "liulanqi/shubiaoyidongdaoyuansu.html",
+                "className": "diy-icon-menu1-9",
+                "nodeType": "mouseover"
+            },
+            {
+                "name": "选择下拉框内容",
+                "url": "liulanqi/xuanzexialakuangneirong.html",
+                "className": "diy-icon-menu1-10",
+                "nodeType": "selectOption"
+            },
+            {
+                "name": "选取列表内容",
+                "url": "liulanqi/xuanzeliebiaoneirong.html",
+                "className": "diy-icon-menu1-11",
+                "nodeType": "getList"
+            },
+            {
+                "name": "选取表格内容",
+                "url": "liulanqi/xuanzebiaogeneirong.html",
+                "className": "diy-icon-menu1-12",
+                "nodeType": "getTable"
+            },
+            {
+                "name": "获取相似元素内容",
+                "url": "liulanqi/xuanzexiangsiyuansuneirong.html",
+                "className": "diy-icon-menu1-13",
+                "nodeType": "resemblance"
+            },
+            {
+                "name": "获取网页元素属性",
+                "url": "liulanqi/quyuansushuxing.html",
+                "className": "diy-icon-menu1-13",
+                "nodeType": "getAttributeName"
+            },
+            {
+                "name": "更改网页元素属性",
+                "url": "liulanqi/genggaiwangyeyuansushuxing.html",
+                "className": "diy-icon-menu1-13",
+                "nodeType": "changeAttributeName"
+            },
+            {
+                "name": "根据class名点击特定元素",
+                "url": "liulanqi/genjuclassmingdianjitedingyuansu.html",
+                "className": "diy-icon-menu1-13",
+                "nodeType": "classClickString"
+            }
+        ]
+    },
+    {
+        "name": "应用功能",
+        "className": "main-menu-icon menu-icon-3 menu-icon",
+        "children": [
+            {
+                "name": "元素定位",
+                "url": "yingyonggongneng/yuansudingwei.html",
+                "className": "diy-icon-menu6-1",
+                "nodeType": "CSMove_element"
+            },
+            {
+                "name": "坐标定位",
+                "url": "yingyonggongneng/zuobiaodingwei.html",
+                "className": "diy-icon-menu6-1",
+                "nodeType": "CSmove_position"
+            },
+            {
+                "name": "定位像素坐标",
+                "url": "yingyonggongneng/fanhuifuheyuqidexiangsuzuobiao.html",
+                "className": "diy-icon-menu6-1",
+                "nodeType": "callback_pixel_position"
+            },
+            {
+                "name": "元素验证定位",
+                "url": "yingyonggongneng/yuansuyanzhengdingwei.html",
+                "className": "diy-icon-menu6-1",
+                "nodeType": "CSMoveForVerify"
+            },
+            {
+                "name": "元素相对定位",
+                "url": "yingyonggongneng/yuansuxiangduidingwei.html",
+                "className": "diy-icon-menu6-1",
+                "nodeType": "CSMoveForRelative"
+            },
+            {
+                "name": "元素同级寻名定位",
+                "url": "yingyonggongneng/yuansutongjixunmingdingwei.html",
+                "className": "diy-icon-menu6-1",
+                "nodeType": "CSMoveForName"
+            },
+            {
+                "name": "元素子级寻名定位",
+                "url": "yingyonggongneng/yuansuzijixunmingdingwei.html",
+                "className": "diy-icon-menu6-1",
+                "nodeType": "CSMoveForChildName"
+            }
+        ]
+    },
+    {
+        "name": "微软应用",
+        "className": "main-menu-icon menu-icon-3 menu-icon",
+        "children": [
+            {
+                "name": "捕获桌面元素",
+                "url": "weiruanyingyong/buhuozhuomianyuansu.html",
+                "className": "diy-icon-menu6-1",
+                "nodeType": "getCSElement"
+            },
+            {
+                "name": "获取同级元素",
+                "url": "weiruanyingyong/huoqutongjiyuansu.html",
+                "className": "diy-icon-menu6-1",
+                "nodeType": "getCSBrotherElement"
+            },
+            {
+                "name": "根据元素名获取同级元素",
+                "url": "weiruanyingyong/genjuyuansuminghuoqutongjiyuansu.html",
+                "className": "diy-icon-menu6-1",
+                "nodeType": "getCSBrotherElementByName"
+            },
+            {
+                "name": "获取子级元素",
+                "url": "weiruanyingyong/huoquzijiyuansu.html",
+                "className": "diy-icon-menu6-1",
+                "nodeType": "getCSChildrenElement"
+            },
+            {
+                "name": "根据元素名获取子级元素",
+                "url": "weiruanyingyong/genjuyuansuminghuoquzijiyuansu.html",
+                "className": "diy-icon-menu6-1",
+                "nodeType": "getCSChildrenElementByName"
+            },
+            {
+                "name": "获取父级元素",
+                "url": "weiruanyingyong/huoqufujiyuansu.html",
+                "className": "diy-icon-menu6-1",
+                "nodeType": "getCSParentElement"
+            },
+            {
+                "name": "根据元素名获取父级元素",
+                "url": "weiruanyingyong/genjuyuansuminghuoqufujiyuansu.html",
+                "className": "diy-icon-menu6-1",
+                "nodeType": "getCSParentElementByName"
+            },
+            {
+                "name": "获取下拉列表数据",
+                "url": "weiruanyingyong/huoquxialaliebiaoshuju.html",
+                "className": "diy-icon-menu6-1",
+                "nodeType": "getElementItems"
+            },
+            {
+                "name": "返回最相似的下拉项",
+                "url": "weiruanyingyong/fanhuizuixiangsidexialaxiang.html",
+                "className": "diy-icon-menu6-1",
+                "nodeType": "similarSelector"
+            },
+            {
+                "name": "桌面元素点击",
+                "url": "weiruanyingyong/zhuomianyuansudianji.html",
+                "className": "diy-icon-menu6-1",
+                "nodeType": "CSElemetClick"
+            },
+            {
+                "name": "桌面元素输入",
+                "url": "weiruanyingyong/zhuomianyuansushuru.html",
+                "className": "diy-icon-menu6-1",
+                "nodeType": "CSElemetInput"
+            }
+        ]
+    },
+    {
+        "name": "变量处理",
+        "className": "main-menu-icon menu-icon-3 menu-icon",
+        "children": [
+            {
+                "name": "设置新变量",
+                "url": "canshuchuli/shezhixincanshu.html",
+                "className": "diy-icon-menu3-1",
+                "nodeType": "saveNewParam"
+            },
+            {
+                "name": "返回全局变量",
+                "url": "canshuchuli/fanhuiquanjucanshu.html",
+                "className": "diy-icon-menu3-1",
+                "nodeType": "backGlobalParam"
+            },
+            {
+                "name": "字符串分割",
+                "url": "canshuchuli/zifuchuanfenge.html",
+                "className": "diy-icon-menu3-1",
+                "nodeType": "strSplit"
+            },
+            {
+                "name": "二维数组行列互换",
+                "url": "canshuchuli/erweishuzuhangliehuhuan.html",
+                "className": "diy-icon-menu3-1",
+                "nodeType": "conArrayRowCol"
+            },
+            {
+                "name": "数组拼接",
+                "url": "canshuchuli/shuzupinjie.html",
+                "className": "diy-icon-menu3-1",
+                "nodeType": "arrayConcat"
+            },
+            {
+                "name": "口令选择",
+                "url": "canshuchuli/koulingxuanze.html",
+                "className": "diy-icon-menu3-3",
+                "nodeType": "koulingxuanze"
+            },
+            {
+                "name": "字符串拼接",
+                "url": "canshuchuli/zifuchuanpinjie.html",
+                "className": "diy-icon-menu3-3",
+                "nodeType": "string_generacte"
+            },
+            {
+                "name": "数学运算",
+                "url": "canshuchuli/shuxueyunsuan.html",
+                "className": "diy-icon-menu3-2",
+                "nodeType": "calculateParam"
+            },
+            {
+                "name": "简单公式运算",
+                "url": "canshuchuli/jiandangongshiyunsuan.html",
+                "className": "diy-icon-menu3-2",
+                "nodeType": "simpleFormula"
+            },
+            {
+                "name": "语法转化",
+                "url": "canshuchuli/yufazhuanhuan.html",
+                "className": "diy-icon-menu3-3",
+                "nodeType": "convertParam"
+            },
+            {
+                "name": "提取变量",
+                "url": "canshuchuli/tiqucanshu.html",
+                "className": "diy-icon-menu3-4",
+                "nodeType": "extractParam"
+            },
+            {
+                "name": "变量转换",
+                "url": "canshuchuli/canshuzhuanhuan.html",
+                "className": "diy-icon-menu3-5",
+                "nodeType": "callFunction"
+            },
+            {
+                "name": "变量导入剪切板",
+                "url": "canshuchuli/fuzhicanshu.html",
+                "className": "diy-icon-menu3-8",
+                "nodeType": "paramsCopy"
+            },
+            {
+                "name": "剪切板导入变量",
+                "url": "canshuchuli/canshuniantie.html",
+                "className": "diy-icon-menu3-8",
+                "nodeType": "paramsPaste"
+            },
+            {
+                "name": "Word文档内容导入剪切板",
+                "url": "canshuchuli/wordCopyInClip.html",
+                "className": "diy-icon-menu3-8",
+                "nodeType": "wordCopyInClip"
+            },
+            {
+                "name": "设置集合变量",
+                "url": "canshuchuli/shezhijihecanshu.html",
+                "className": "diy-icon-menu3-9",
+                "nodeType": "setColParam"
+            },
+            {
+                "name": "中文数字阿拉伯数字互转",
+                "url": "canshuchuli/shuzihuzhuan.html",
+                "className": "diy-icon-menu3-9",
+                "nodeType": "numTrans"
+            }
+        ]
+    },
+    {
+        "name": "逻辑流程",
+        "className": "main-menu-icon menu-icon-5 menu-icon",
+        "children": [
+            {
+                "name": "条件判断",
+                "url": "luojiliucheng/tiaojianpanduan.html",
+                "className": "diy-icon-menu5-3",
+                "nodeType": "if"
+            },
+            {
+                "name": "列表遍历",
+                "url": "luojiliucheng/liebiaobianli.html",
+                "className": "diy-icon-menu5-1",
+                "nodeType": "hashfor"
+            },
+            {
+                "name": "迭代循环",
+                "url": "luojiliucheng/diedaixunhuan.html",
+                "className": "diy-icon-menu5-2",
+                "nodeType": "for"
+            },
+            {
+                "name": "跳出循环",
+                "url": "luojiliucheng/tiaochuxunhuan.html",
+                "className": "diy-icon-menu5-4",
+                "nodeType": "break"
+            },
+            {
+                "name": "继续循环",
+                "url": "luojiliucheng/continue.html",
+                "className": "diy-icon-menu5-4",
+                "nodeType": "continue"
+            }
+        ]
+    },
+    {
+        "name": "数据表格",
+        "className": "main-menu-icon menu-icon-2 menu-icon",
+        "children": [
+            {
+                "name": "读取数据表格",
+                "url": "shujubiaoge/duqushujubiaoge.html",
+                "className": "diy-icon-menu2-1",
+                "nodeType": "importFile_normal"
+            },
+            {
+                "name": "写入数据表格",
+                "url": "shujubiaoge/xierushujubiaoge.html",
+                "className": "diy-icon-menu2-2",
+                "nodeType": "exportFile"
+            },
+            {
+                "name": "读取文档",
+                "url": "shujubiaoge/duquwendang.html",
+                "className": "diy-icon-menu2-1",
+                "nodeType": "importTextFile_normal"
+            },
+            {
+                "name": "写入文档",
+                "url": "shujubiaoge/xieruwendang.html",
+                "className": "diy-icon-menu2-1",
+                "nodeType": "exportTextFile"
+            },
+            {
+                "name": "读取数据表单元格",
+                "url": "shujubiaoge/jingqueduqushujubiaoge.html",
+                "className": "diy-icon-menu2-2",
+                "nodeType": "PreciseReadFile"
+            },
+            {
+                "name": "写入数据表单元格",
+                "url": "shujubiaoge/jingquexierushujubiaoge.html",
+                "className": "diy-icon-menu2-2",
+                "nodeType": "PreciseWriteFile"
+            },
+            {
+                "name": "复制Excel表格局部",
+                "url": "shujubiaoge/fuzhiexclebiaogejubu.html",
+                "className": "diy-icon-menu2-2",
+                "nodeType": "copyExclePart"
+            },
+            {
+                "name": "更改Excel表单元格样式",
+                "url": "shujubiaoge/genggaiexclebiaodanyuangeyangshi.html",
+                "className": "diy-icon-menu2-2",
+                "nodeType": "changeStyleExcle"
+            }
+        ]
+    },
+    {
+        "name": "文件操作",
+        "className": "main-menu-icon menu-icon-4 menu-icon",
+        "children": [
+            {
+                "name": "创建目录",
+                "url": "wenjiancaozuo/chuangjianmulu.html",
+                "className": "diy-icon-menu4-1",
+                "nodeType": "fs_cre_directory"
+            },
+            {
+                "name": "创建文件",
+                "url": "wenjiancaozuo/chuangjianwenjian.html",
+                "className": "diy-icon-menu4-1",
+                "nodeType": "fs_cre_file"
+            },
+            {
+                "name": "重命名文件",
+                "url": "wenjiancaozuo/chongminglingwenjian.html",
+                "className": "diy-icon-menu4-1",
+                "nodeType": "fs_rename"
+            },
+            {
+                "name": "移动文件",
+                "url": "wenjiancaozuo/yidongwenjian.html",
+                "className": "diy-icon-menu4-1",
+                "nodeType": "fs_move"
+            },
+            {
+                "name": "删除文件",
+                "url": "wenjiancaozuo/shanchuwenjian.html",
+                "className": "diy-icon-menu4-1",
+                "nodeType": "fs_delete"
+            },
+            {
+                "name": "删除文件夹",
+                "url": "wenjiancaozuo/shanchuwenjianjia.html",
+                "className": "diy-icon-menu4-1",
+                "nodeType": "fs_delete_dir"
+            },
+            {
+                "name": "判断路径存在",
+                "url": "wenjiancaozuo/panduanshifoucunzai.html",
+                "className": "diy-icon-menu4-1",
+                "nodeType": "fs_exists"
+            },
+            {
+                "name": "复制文件",
+                "url": "wenjiancaozuo/fuzhiwenjian.html",
+                "className": "diy-icon-menu4-1",
+                "nodeType": "fs_copy"
+            },
+            {
+                "name": "获取目录下所有文件名",
+                "url": "wenjiancaozuo/huoqumuluxiasuoyouwenjian.html",
+                "className": "diy-icon-menu4-1",
+                "nodeType": "fs_get_all_file"
+            },
+            {
+                "name": "压缩文件",
+                "url": "wenjiancaozuo/yasuowenjian.html",
+                "className": "diy-icon-menu4-1",
+                "nodeType": "archiverFile"
+            },
+            {
+                "name": "解压缩文件",
+                "url": "wenjiancaozuo/jieyasuowenjian.html",
+                "className": "diy-icon-menu4-1",
+                "nodeType": "unarchiverFile"
+            }
+        ]
+    },
+    {
+        "name": "键盘鼠标",
+        "className": "main-menu-icon menu-icon-7 menu-icon",
+        "children": [
+            {
+                "name": "鼠标点击",
+                "url": "jianpanshubiao/shubiaodianji.html",
+                "className": "diy-icon-menu7-1",
+                "nodeType": "mouseClick"
+            },
+            {
+                "name": "鼠标滚动",
+                "url": "jianpanshubiao/shubiaogundong.html",
+                "className": "diy-icon-menu6-2",
+                "nodeType": "mouseRoll"
+            },
+            {
+              "name": "坐标定位",
+              "url": "jianpanshubiao/zuobiaodingwei.html",
+              "className": "diy-icon-menu6-1",
+              "nodeType": "CSmove_position"
+            },
+            {
+                "name": "鼠标拖拽",
+                "url": "jianpanshubiao/shubiaotuozhuai.html",
+                "className": "diy-icon-menu1-13",
+                "nodeType": "draftingMouse"
+            },
+            {
+                "name": "键盘操作",
+                "url": "jianpanshubiao/jianpancaozuo.html",
+                "className": "diy-icon-menu7-2",
+                "nodeType": "shortCut"
+            },
+            {
+                "name": "复制粘贴",
+                "url": "jianpanshubiao/fuzhizhantie.html",
+                "className": "diy-icon-menu7-3",
+                "nodeType": "copyOrpasteDo"
+            }
+        ]
+    },
+    {
+        "name": "外部接口",
+        "className": "main-menu-icon menu-icon-8 menu-icon",
+        "children": [
+            {
+                "name": "http接口",
+                "url": "waibujiekou/httpjiekou.html",
+                "className": "diy-icon-menu8-1",
+                "nodeType": "httpApi"
+            },
+            {
+                "name": "http上传文件接口",
+                "url": "waibujiekou/httpjiekou_uploadfile.html",
+                "className": "diy-icon-menu8-1",
+                "nodeType": "http_uploadfile"
+            },
+            {
+                "name": "http下载文件接口",
+                "url": "waibujiekou/httpjiekou_downloadfile.html",
+                "className": "diy-icon-menu8-1",
+                "nodeType": "http_downloadfile"
+            },
+            {
+                "name": "socket接口",
+                "url": "waibujiekou/socketjiekou.html",
+                "className": "diy-icon-menu8-1",
+                "nodeType": "socketApi"
+            },
+            {
+                "name": "websocket接口",
+                "url": "waibujiekou/websocketjiekou.html",
+                "className": "diy-icon-menu8-1",
+                "nodeType": "websocketApi"
+            },
+            {
+                "name": "ftp上传",
+                "url": "waibujiekou/ftpshangchuan.html",
+                "className": "diy-icon-menu8-1",
+                "nodeType": "ftpUpload"
+            },
+            {
+                "name": "ftp下载",
+                "url": "waibujiekou/ftpxiazai.html",
+                "className": "diy-icon-menu8-1",
+                "nodeType": "ftpDownLoad"
+            },
+            {
+                "name": "telnet连接",
+                "url": "waibujiekou/telnetConnect.html",
+                "className": "diy-icon-menu8-1",
+                "nodeType": "telnetConnect"
+            },
+            {
+                "name": "telnet命令",
+                "url": "waibujiekou/telnetWrite.html",
+                "className": "diy-icon-menu8-1",
+                "nodeType": "telnetWrite"
+            },
+            {
+                "name": "telnet关闭",
+                "url": "waibujiekou/telnetClose.html",
+                "className": "diy-icon-menu8-1",
+                "nodeType": "telnetClose"
+            }
+        ]
+    },
+    {
+        "name": "异常捕获",
+        "className": "main-menu-icon menu-icon-3 menu-icon",
+        "children": [
+            {
+                "name": "屏幕像素点识别",
+                "url": "exceptions/pingmuxiangsudianshibie.html",
+                "className": "diy-icon-menu1-1",
+                "nodeType": "getPixelColor"
+            },
+            {
+                "name": "异常捕获",
+                "url": "exceptions/try_catch.html",
+                "className": "diy-icon-menu1-1",
+                "nodeType": "try_catch"
+            },
+            {
+                "name": "异常抛出",
+                "url": "exceptions/throwError.html",
+                "className": "diy-icon-menu1-2",
+                "nodeType": "throwError"
+            },
+            {
+                "name": "异常处理",
+                "url": "exceptions/errorHandler.html",
+                "className": "diy-icon-menu1-2",
+                "nodeType": "catch_result"
+            }
+        ]
+    },
+    {
+        "name": "数据库",
+        "className": "main-menu-icon menu-icon-2 menu-icon",
+        "children": [
+            {
+                "name": "配置数据库",
+                "url": "shujuku/peizhishujuku.html",
+                "className": "diy-icon-menu2-1",
+                "nodeType": "dbConfig"
+            },
+            {
+                "name": "查询数据库",
+                "url": "shujuku/chaxunshujuku.html",
+                "className": "diy-icon-menu2-1",
+                "nodeType": "dbSelect"
+            },
+            {
+                "name": "增、删、改数据库",
+                "url": "shujuku/zengshangaishujuku.html",
+                "className": "diy-icon-menu2-1",
+                "nodeType": "dbOthers"
+            },
+            {
+                "name": "批量插入数据库",
+                "url": "shujuku/piliangcharushujuku.html",
+                "className": "diy-icon-menu2-1",
+                "nodeType": "dbInsert"
+            }
+        ]
+    },
+    {
+        "name": "系统功能",
+        "className": "main-menu-icon menu-icon-4 menu-icon",
+        "children": [
+            {
+                "name": "发送邮件",
+                "url": "xitonggongneng/fasongyoujian.html",
+                "className": "diy-icon-menu4-1",
+                "nodeType": "confirmSend"
+            },
+            {
+                "name": "接收新邮件",
+                "url": "xitonggongneng/jieshouxinyoujian.html",
+                "className": "diy-icon-menu4-1",
+                "nodeType": "confirmReceive"
+            },
+            {
+                "name": "获取系统变量",
+                "url": "xitonggongneng/huoquxitongcanshu.html",
+                "className": "diy-icon-menu4-3",
+                "nodeType": "getSystemParameter"
+            },
+            {
+                "name": "获取脚本信息",
+                "url": "xitonggongneng/huoqujiaobenxinxi.html",
+                "className": "diy-icon-menu4-3",
+                "nodeType": "getScriptInfo"
+            },
+            {
+                "name": "隐藏执行界面",
+                "url": "xitonggongneng/closeExecuteWindow.html",
+                "className": "diy-icon-menu4-3",
+                "nodeType": "closeExecuteWindow"
+            },
+            {
+                "name": "显示执行界面",
+                "url": "xitonggongneng/openExecuteWindow.html",
+                "className": "diy-icon-menu4-3",
+                "nodeType": "openExecuteWindow"
+            },
+            {
+                "name": "打开应用",
+                "url": "xitonggongneng/dakaiyinyong.html",
+                "className": "diy-icon-menu6-3",
+                "nodeType": "openApplication"
+            },
+            {
+                "name": "关闭应用",
+                "url": "xitonggongneng/guanbiyinyong.html",
+                "className": "diy-icon-menu6-4",
+                "nodeType": "closeApplication"
+            },
+            {
+                "name": "CMD命令行",
+                "url": "xitonggongneng/cmdminglinghang.html",
+                "className": "diy-icon-menu6-4",
+                "nodeType": "CMDcommand"
+            },
+            {
+                "name": "执行java",
+                "url": "xitonggongneng/zhixingjava.html",
+                "className": "diy-icon-menu6-4",
+                "nodeType": "triggerJava"
+            },
+            {
+                "name": "执行bat/vbs",
+                "url": "xitonggongneng/zhixingbatvbs.html",
+                "className": "diy-icon-menu6-4",
+                "nodeType": "triggerBatVbs"
+            },
+            {
+                "name": "等待时间",
+                "url": "xitonggongneng/dengdaishijian.html",
+                "className": "diy-icon-menu6-5",
+                "nodeType": "waitTime"
+            },
+            {
+                "name": "指定范围截屏",
+                "url": "xitonggongneng/zhidingfanweijieping.html",
+                "className": "diy-icon-menu1-13",
+                "nodeType": "capScreenPart"
+            },
+            {
+                "name": "获取本机IP",
+                "url": "xitonggongneng/huoqubenjiip.html",
+                "className": "diy-icon-menu1-13",
+                "nodeType": "getIp"
+            }
+        ]
+    },
+    {
+        "name": "Excel功能",
+        "className": "main-menu-icon menu-icon-15 menu-icon",
+        "children": [
+            {
+                "name": "读取csv文件",
+                "url": "excelwenjian/duqucsvwenjian.html",
+                "className": "diy-icon-menu1-13",
+                "nodeType": "readCsvFile"
+            },
+            {
+                "name": "写入csv文件",
+                "url": "excelwenjian/xierucsvwenjian.html",
+                "className": "diy-icon-menu1-13",
+                "nodeType": "writeCsvFile"
+            },
+            {
+                "name": "操作Excel文件",
+                "url": "excelwenjian/caozuoexcelwenjian.html",
+                "className": "diy-icon-menu1-13",
+                "nodeType": "excelToObject"
+            },
+            {
+                "name": "读取工作表内容",
+                "url": "excelwenjian/duqugongzuobiaoneirong.html",
+                "className": "diy-icon-menu1-13",
+                "nodeType": "excelReadSheet"
+            },
+            {
+                "name": "写入工作表",
+                "url": "excelwenjian/xierugongzuobiao.html",
+                "className": "diy-icon-menu1-13",
+                "nodeType": "excelWriteSheet"
+            },
+            {
+                "name": "更改工作表名称",
+                "url": "excelwenjian/genggaigongzuobiaomingcheng.html",
+                "className": "diy-icon-menu1-13",
+                "nodeType": "excelChangeSheet"
+            },
+            {
+                "name": "新建工作表",
+                "url": "excelwenjian/xinjiangongzuobiao.html",
+                "className": "diy-icon-menu1-13",
+                "nodeType": "excelCreateSheet"
+            },
+            {
+                "name": "写入单元格",
+                "url": "excelwenjian/xierudanyuange.html",
+                "className": "diy-icon-menu1-13",
+                "nodeType": "excelWriteCell"
+            },
+            {
+                "name": "读取单元格",
+                "url": "excelwenjian/duqudanyuange.html",
+                "className": "diy-icon-menu1-13",
+                "nodeType": "excelReadCell"
+            },
+            {
+                "name": "写入行列数据",
+                "url": "excelwenjian/xieruhanglieshuju.html",
+                "className": "diy-icon-menu1-13",
+                "nodeType": "excelWriteRowCol"
+            },
+            {
+                "name": "清空行列数据",
+                "url": "excelwenjian/shanchuqingkonghanglie.html",
+                "className": "diy-icon-menu1-13",
+                "nodeType": "excelDeleRowCol"
+            },
+            {
+                "name": "读取指定范围",
+                "url": "excelwenjian/duquzhidingfanwei.html",
+                "className": "diy-icon-menu1-13",
+                "nodeType": "excelReadRange"
+            },
+            {
+                "name": "写入指定范围",
+                "url": "excelwenjian/xieruzhidingfanwei.html",
+                "className": "diy-icon-menu1-13",
+                "nodeType": "excelwriteRange"
+            },
+            {
+                "name": "复制局部至另一文件",
+                "url": "excelwenjian/fuzhijubuzhiwenjian.html",
+                "className": "diy-icon-menu1-13",
+                "nodeType": "excelCopyPart"
+            }
+        ]
+    },
+    {
+        "name": "文档功能",
+        "className": "main-menu-icon menu-icon-15 menu-icon",
+        "children": [
+            {
+                "name": "读取txt文件",
+                "url": "wendanggongneng/duqutxtwenjian.html",
+                "className": "diy-icon-menu1-13",
+                "nodeType": "docReadTxt"
+            },
+            {
+                "name": "写入txt文件",
+                "url": "wendanggongneng/xierutxtwenjian.html",
+                "className": "diy-icon-menu1-13",
+                "nodeType": "docWriteTxt"
+            },
+            {
+                "name": "读取Word文件",
+                "url": "wendanggongneng/duquwordwenjian.html",
+                "className": "diy-icon-menu1-13",
+                "nodeType": "docReadWord"
+            },
+            {
+                "name": "写入Word文件",
+                "url": "wendanggongneng/xieruwordwenjian.html",
+                "className": "diy-icon-menu1-13",
+                "nodeType": "docWriteWord"
+            }
+        ]
+    },
+    {
+        "name": "定制化功能",
+        "className": "main-menu-icon menu-icon-3 menu-icon",
+        "children": [
+            {
+                "name": "返回滑动验证码图片缺口中心点",
+                "url": "dingzhihuagongneng/huadongyanzhengma.html",
+                "className": "diy-icon-menu1-13",
+                "nodeType": "slidingVerificationCode"
+            },
+            {
+                "name": "获取验证码",
+                "url": "dingzhihuagongneng/huoquyanzhengma.html",
+                "className": "diy-icon-menu1-5",
+                "nodeType": "getVCode"
+            },
+            {
+                "name": "获取验证码(IE)",
+                "url": "dingzhihuagongneng/huoquyanzhengmaie8.html",
+                "className": "diy-icon-menu1-5",
+                "nodeType": "ie8_getVCode"
+            },
+            {
+                "name": "日期数据格式化",
+                "url": "dingzhihuagongneng/riqishujugeshihua.html",
+                "className": "diy-icon-menu1-5",
+                "nodeType": "dateFormatSpe"
+            },
+            {
+                "name": "菜单树查找（微软功能-统一业务系统）",
+                "url": "dingzhihuagongneng/caidanshuchazhao.html",
+                "className": "diy-icon-menu1-5",
+                "nodeType": "dateFormatSpe"
+            }
+        ]
+    },
+    {
+        "name": "结束处理",
+        "className": "main-menu-icon menu-icon-3 menu-icon",
+        "children": [
+        ]
+    }
+]

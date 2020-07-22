@@ -1,0 +1,372 @@
+<style>
+    .liadd {
+        margin-top: 10px;
+        font-size: 0;
+    }
+
+    .liadd input {
+        display: inline-block !important;
+        width: 520px !important;
+        margin: 0px !important;
+    }
+
+    .liadd>div {
+        position: relative;
+        display: inline-block !important;
+        width: 520px !important;
+        margin: 0px !important;
+    }
+
+    .liadd>button {
+        /* background: transparent!important; */
+        /* line-height: 16px!important;
+        font-size: 27px!important; */
+        vertical-align: -11px;
+        width: 24px;
+    }
+
+    .add {
+        /* color: chartreuse!important; */
+        background: url("../img/icon-button-add.png")no-repeat center !important;
+    }
+
+    .add:active {
+        background: url("../img/icon-button-add-click.png")no-repeat center !important;
+    }
+
+    .sub {
+        background: url("../img/icon-button-remove.png")no-repeat center !important;
+    }
+
+    .sub:active {
+        background: url("../img/icon-button-remove-click.png")no-repeat center !important
+    }
+
+    /* .xiala-icon {
+        top: 0px!important;
+    } */
+
+    .cover-box .toggleType {
+        top: 0px !important;
+    }
+
+    .dispose {
+        position: relative;
+    }
+
+    .dispose ul {
+        position: fixed;
+        top: 70px;
+        left: 1px;
+        z-index: 99;
+        display: none;
+        /* margin-left: 15px; */
+        width: 568px;
+        /* height: 34px; */
+        box-sizing: border-box;
+        outline: none;
+        background: #fff;
+        border: none;
+    }
+
+    .dispose ul li {
+        padding: 0 20px;
+        line-height: 30px;
+        font-size: 13px;
+        color: #666;
+        box-sizing: border-box;
+    }
+
+    .dispose ul li:hover {
+        color: #fff;
+        background: #6e9ece;
+    }
+
+    .dispose label {
+        display: block;
+        margin: 16px;
+        font-size: 14px;
+        color: #4e6c8e;
+        font-weight: bold;
+    }
+
+    .dispose p {
+        font-weight: bold;
+    }
+
+    .dispose input {
+        display: block;
+        /* margin-left: 15px; */
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 570px;
+        height: 34px;
+        box-sizing: border-box;
+        outline: none;
+        background: #fff;
+        border: none;
+        box-shadow: 0px 1px 2px 0px rgba(58, 62, 68, 0.3) inset;
+    }
+
+    .change_html {
+        display: none;
+    }
+
+    .active_html {
+        display: none;
+    }
+
+    .from_to_html {
+        display: none;
+    }
+
+    .catch-type-list {
+        overflow-y: auto;
+        max-height: 250px;
+        box-sizing: border-box;
+        /* padding-left: 20px; */
+        /* text-indent: 2em; */
+    }
+
+    .catch-type-list li {
+        text-indent: 2em;
+    }
+</style>
+<div class="main-con-item">
+    <div class="input-box dispose">
+        <p>解决方式 ：</p>
+        <input type="text" name="handle_type" />
+        <i class="toggleType"></i>
+        <i class="xiala-icon parameters"></i>
+        <ul class="common-list">
+            <li>当前元流程节点重新执行</li>
+            <li>当前元流程节点的下一个节点执行</li>
+            <li special="pointToCirculation">跳出指定循环</li>
+            <li>流程终止</li>
+            <li special="pointToMateCirculation">指向元流程第一个节点开始</li>
+            <li special="pointToMainCirculation">回到指定主流程节点</li>
+        </ul>
+    </div>
+    <div class="input-box dispose change_html" style="display: none">
+        <p>选择节点 ：</p>
+        <input type="text" name="point_to" />
+        <i class="toggleType"></i>
+        <i class="xiala-icon parameters"></i>
+        <ul class="common-list">
+        </ul>
+    </div>
+    <div class="input-box dispose active_html" style="display: none">
+        <p>执行命令 ：</p>
+        <input type="text" name="forActive" />
+        <i class="toggleType"></i>
+        <i class="xiala-icon parameters"></i>
+        <ul class="common-list">
+            <li>break</li>
+            <li>continue</li>
+            <li>again</li>
+        </ul>
+    </div>
+    <div class="input-box dispose from_to_html" style="display: none">
+        <p>指定元流程 ：</p>
+        <input type="text" name="from_to" />
+        <i class="toggleType"></i>
+        <i class="xiala-icon parameters"></i>
+        <ul class="common-list">
+        </ul>
+    </div>
+    <input type="hidden" class="item-type" name="catch_result">
+</div>
+<div class="liucheng-item-tips">
+    <p class="dom-active-dec" title="">
+        <i></i>
+        <em>：</em>捕获类型
+    </p>
+</div>
+<script>
+    $(function () {
+        // let tHtml = "";
+        if (singleTryFlag) {
+            $(".single-try").show();
+        } else {
+            $(".single-try").hide();
+        }
+
+        // 异常捕获  解决方式 联动
+        $('.dispose').on('click', 'ul li', function () {
+            var text = $(this).text();
+            $(this).parents('.dispose').eq(0).find('input').val(text);
+            var special = $(this).attr('special');
+            var disClass = $(this).parents('.dispose').eq(0).attr('class').split(" ");
+            var isDis = disClass.indexOf('change_html') == -1;
+            let isOnlyDis = (isDis && disClass.length == 2) ? true : false;
+            let isActive = $(this).parents('.dispose').hasClass("active_html");
+            console.log(isDis);
+            if (isActive) {
+                $('.dispose').find('ul').hide();
+                return;
+            };
+            if (isDis) {
+                switch (special) {
+                    // case "special"://指向到当前元流程内某个节点开始
+                    //     $('.change_html').show();
+                    //     $('.active_html').show();
+                    //     $('.change_html').find(">ul").empty();
+                    //     $(".change_html").find(">input").val("");
+                    //     $('.change_html').find(">ul").append(getSpecialList(special));
+                    //     break;
+                    case "pointToCirculation"://跳出制定循环
+                        $('.change_html').show();
+                        $('.active_html').show();
+                        $('.change_html').find(">ul").empty();
+                        $(".active_html").find(">input").val("");
+                        $(".change_html").find(">input").val("");
+                        $('.change_html').find(">ul").append(getSpecialList(special));
+                        break;
+                    case "pointToMateCirculation"://指定元流程第一个节点
+                        $('.change_html').show();
+                        $('.active_html').show();
+                        $('.change_html').find(">ul").empty();
+                        $(".active_html").find(">input").val("");
+                        $(".change_html").find(">input").val("");
+                        $('.change_html').find(">ul").append(getSpecialList(special));
+                        break;
+                    case "pointToMainCirculation"://指定元流程
+                        $('.change_html').hide();
+                        let t = parameterUtils.getTargetNeedMainId();
+                        $('.active_html').show();
+                        $('.from_to_html').show();
+                        $('.from_to_html').find(">ul").empty();
+                        $(".from_to_html").find(">input").val("");
+                        $(".active_html").find(">input").val("");
+                        // $(".change_html").find(">input").val("");
+                        $('.from_to_html').find(">ul").append(getSpecialList(special));
+                        // $('.change_html').find(">ul").append(getSpecialList("pointToMainSelfOrParentForItem"));
+                        $(".change_html").find(">input").val(t.name + "--" + t.id);
+                        break;
+                    default:
+                        if (isOnlyDis) {
+                            $('.change_html').hide();
+                            $('.active_html').hide();
+                            $('.from_to_html').hide();
+                            $(".change_html").find(">input").val("");
+                            $(".active_html").find(">input").val("");
+                            $(".from_to_html").find(">input").val("");
+                        }
+                        break;
+                };
+            } else {
+                $('.change_html').show();
+            }
+            modal.refreshModal();
+            $('.dispose').find('ul').hide();
+        });
+        function getSpecialList(type) {
+            let html = "";
+            let tempArray = [];
+            let tempObj = {};
+            switch (type) {
+                case "special":
+                    $(".liucheng-list.current-show-list").find(".separate-icon").each((index, item) => {
+                        let id = $(item).attr("id");
+                        let title = ctx.get(id).name;
+                        html += '<li pointto=' + id + '>' + title + '--' + id + '</li>'
+                    });
+                    break;
+                case "pointToCirculation"://getForNodeInfoArray
+                    tempArray = parameterUtils.getForNodeInfoArray();
+                    tempArray.forEach((item, index) => {
+                        let name = typeof item.name == "undefined" ? "列表循环" : item.name;
+                        html += '<li pointto=' + item.id + '>' + name + '--' + item.id + '</li>';
+                    });
+                    break;
+                case "pointToMateCirculation":
+                    // $(".liucheng-list.current-show-list").find(">li.menu-item-5").each((index, item) => {
+                    //     if ($(item).find(">.node-main-box").find(">.for-menu-box").length == 0) {
+                    //         return;
+                    //     }
+                    //     let id = $(item).attr("id");
+                    //     let title = ctx.get(id).name;
+                    //     html += '<li pointto=' + id + '>' + title + '--' + id + '</li>'
+                    // });
+                    $(".liucheng-list.current-show-list").find(">li.separate-icon").each((index, item) => {
+                        // if ($(item).find(">.node-main-box").find(">.for-menu-box").length == 0) {
+                        //     return;
+                        // }
+                        let id = $(item).attr("id");
+                        let title = ctx.get(id).name;
+                        html += '<li pointto=' + id + '>' + title + '--' + id + '</li>'
+                    });
+                    break;
+                case "pointToMainCirculation":
+                    tempArray = parameterUtils.getPrevMainList();
+                    tempArray.forEach((item, index) => {
+                        let name;
+                        switch (item.type) {
+                            case "MetaWorkflow":
+                                item.parameters.forEach((ele, i) => {
+                                    if (ele.name == "professional_dec") {
+                                        name = ele.value;
+                                    }
+                                });
+                                break;
+                            case "this_for":
+                                item.parameters.forEach((ele, i) => {
+                                    if (ele.name == "for_professional_dec") {
+                                        name = ele.value;
+                                    }
+                                });
+                                break;
+                            case "pretreatment":
+                                name = "预处理";
+                                break;
+                            case "li-branch-if":
+                                item.parameters.forEach((ele, i) => {
+                                    if (ele.name == "if_professional_dec") {
+                                        name = ele.value;
+                                    }
+                                });
+                                break;
+                            case "concurrence":
+                                item.parameters.forEach((ele, i) => {
+                                    if (ele.name == "professional_dec") {
+                                        name = ele.value;
+                                    }
+                                });
+                                break;
+                            default:
+                                try {
+                                    throw "未定义主流程类型";
+                                } catch (error) {
+                                    console.error(error);
+                                }
+                                break;
+                        };
+                        html += '<li pointto=' + item.id + '>' + name + '--' + item.id + '</li>';
+                    });
+                    // html += '<li pointto=' + tempObj.id + '>' + tempObj.name + '--' + tempObj.id + '</li>'
+                    break;
+                case "pointToMainForNodeInfoArray":
+                    tempArray = parameterUtils.getFirstForNodeInfoArray();
+                    tempArray.forEach((item, index) => {
+                        let name = typeof item.name == "undefined" ? "列表循环" : item.name;
+                        html += '<li pointto=' + item.id + '>' + name + '--' + item.id + '</li>';
+                    });
+                    break;
+                case "pointToMainSelfOrParentForItem":
+                    tempObj = parameterUtils.getTargetNeedMainId();
+                    html += '<li pointto=' + tempObj.id + '>' + tempObj.name + '--' + tempObj.id + '</li>';
+                    break;
+                default:
+                    break;
+            };
+            return html;
+        }
+    });
+    function addNewLI() {
+        if (modal.$data.editLiuchengItem.isEditExistedItem) {
+            newLI($('#' + modal.$data.editLiuchengItem.editItemId))
+        } else {
+            newLI()
+        }
+    }
+</script>

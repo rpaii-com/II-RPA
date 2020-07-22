@@ -1,0 +1,36 @@
+<div class="main-con-item" style="overflow: hidden;">
+    <p>
+        <b>选择要解压的文件：</b>
+    </p>
+    <div class="input-box">
+        <button type="button" onclick="saveOriginPath.click();">点击选择目录</button>
+        <input type="text" class="form-control" id="originPath" name="directory" />
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="xiala-icon parameters"></i>
+        <i class="toggleType"></i>
+        <input type="file" id="saveOriginPath" class="hideFile" onchange="this.value==''?originPath.value=originPath.value:originPath.value=gePathVal(this,true)"
+               />
+    </div>
+    <p>
+        <b>选择要保存的文件夹：</b>
+    </p>
+    <div class="input-box">
+        <button type="button" onclick="saveOriginPath2.click();">点击选择目录</button>
+        <input type="text" class="form-control" id="originPath2" name="directory_res" />
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="xiala-icon parameters"></i>
+        <i class="toggleType"></i>
+        <input type="file" id="saveOriginPath2" class="hideFile" onchange="this.value==''?originPath2.value=originPath2.value:originPath2.value=gePathVal(this,true)"
+               webkitdirectory/>
+    </div>
+    <input type="hidden" class="item-type" name="unarchiverFile">
+
+</div>
+
+<div class="liucheng-item-tips">
+
+    <p class="dom-active-dec" title="">
+        <i></i>
+        <em>：</em>创建文件：</p>
+
+</div>

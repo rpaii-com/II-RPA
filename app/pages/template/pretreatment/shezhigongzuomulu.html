@@ -1,0 +1,24 @@
+<div class="main-con-item">
+    <p>
+        <b>选择工作目录：</b>
+    </p>
+    <div class="input-box">
+        <button type="button" onclick="saveOriginPath.click();">点击选择目录</button>
+        <input type="text" class="form-control" id="originPath" name="directory" />
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="xiala-icon parameters"></i>
+        <i class="toggleType"></i>
+        <input type="file" id="saveOriginPath" class="hideFile" onchange="this.value==''?originPath.value=originPath.value:originPath.value=gePathVal(this,true)"
+               webkitdirectory/>
+    </div>
+    <input type="hidden" class="item-type" name="setDirectory">
+    <!-- <i class="toggleType"></i> -->
+</div>
+
+<div class="liucheng-item-tips">
+
+    <p class="dom-active-dec" title="">
+        <i></i>
+        <em>：</em>设置工作目录：</p>
+
+</div>

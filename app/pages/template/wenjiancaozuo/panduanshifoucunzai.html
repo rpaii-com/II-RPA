@@ -1,0 +1,32 @@
+<div class="main-con-item">
+    <p>
+        <b>选择要判断的路径：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="path" placeholder="请输入要判断的路径">
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="xiala-icon parameters"></i>
+        <i class="toggleType"></i>
+    </div>
+    <p>
+        <b>为结果变量命名：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="rename">
+    </div>
+    <input type="hidden" class="item-type" name="fs_exists">
+    <!-- <i class="toggleType"></i> -->
+</div>
+
+<div class="liucheng-item-tips">
+
+    <p class="dom-active-dec" title="">
+        <i></i>
+        <em>：</em>判断路径存在（目录/文件）：</p>
+
+</div>
+<script>
+    $(function () {
+        $(":radio").toggle();
+    })
+</script>

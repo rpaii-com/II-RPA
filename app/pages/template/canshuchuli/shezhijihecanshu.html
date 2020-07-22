@@ -1,0 +1,157 @@
+<style>
+    .httpparameters {
+        position: relative;
+        max-height: 250px;
+        /* overflow-y: auto; */
+    }
+
+    .liadd {
+        /* padding-left: 15px; */
+        width: calc(100% - 50px);
+    }
+
+    .liadd input {
+        position: absolute;
+        right: 0;
+        display: inline-block!important;
+        width: 200px!important;
+        margin: 0px!important;
+        line-height: 34px;
+    }
+
+    .liadd>div {
+        position: relative;
+        display: inline-block!important;
+        /* width: 200px!important; */
+        height: 34px;
+        line-height: 34px;
+        margin: 0px!important;
+    }
+
+    .liadd>button {
+        /* background: transparent!important; */
+        line-height: 16px!important;
+        font-size: 27px!important;
+        vertical-align: middle;
+        position: absolute;
+        width: 20px;
+    }
+
+    .liadd .input-box>ul {
+        width: 200px;
+        right: 0;
+    }
+
+    .add {
+        /* color: chartreuse!important; */
+        right: 25px;
+        background: url("../img/icon-button-add.png")no-repeat center !important;
+    }
+
+    .add:active {
+        background: url("../img/icon-button-add-click.png")no-repeat center !important;
+    }
+
+    .sub {
+        right: 0;
+        background: url("../img/icon-button-remove.png")no-repeat center !important;
+    }
+
+    .sub:active {
+        background: url("../img/icon-button-remove-click.png")no-repeat center !important
+    }
+</style>
+<div class="main-con-item">
+
+    <p>
+        <b>变量名：</b>
+    </p>
+    <div class="func-params">
+        <div class="input-box">
+            <input type="text" name="paramName" readonly>
+            <ul class="common-list parameters-can-select"></ul>
+            <i class="xiala-icon parameters"></i>
+            <i class="toggleType"></i>
+        </div>
+    </div>
+    <p>
+        <b>变量：</b>
+    </p>
+    <div class="httpparameters stipulation">
+        <div class="input-boxs half-box liadd">
+            <div class="input-box">
+                <lable>key:</lable>
+                <input type="text" name="key1">
+            </div>
+            <div class="input-box">
+                <lable>value:</lable>
+                <input type="text" name="value1"/>
+                <ul class="common-list parameters-can-select"></ul>
+                <i class="toggleType"></i>
+                <i class="xiala-icon parameters"></i>
+            </div>
+            <button type="button" class="add"></button>
+            <button type="button" class="sub"></button>
+        </div>
+    </div>
+    <p style="display: block;margin-bottom: 30px;"></p>
+    <div class="input-box" style="width:0;height:0;font-size:0;overflow:hidden">
+        <p>
+            <b>输出变量命名：</b>
+        </p>
+        <input type="text" name="rename" readonly>
+    </div>
+    <input type="hidden" class="item-type" name="setColParam" value="1">
+</div>
+<div class="liucheng-item-tips">
+    <p class="dom-active-dec" title="">
+        <i class=""></i>
+        <em class="">：</em>为array、map类型变量添加元素 </p>
+</div>
+
+<script>
+    $(function () {
+        var httptemp = $(".liadd").eq(0).clone(true);
+        $(".httpparameters").on("click", ".add", function () {
+            let id = parseInt($('[name="setColParam"]').val()) + 1;
+            httptemp.clone(true).find("[name='key1']").attr("name", "key" + id).parents(".liadd").eq(0).find("[name='value1']").attr("name", "value" + id).parents(".liadd").eq(0).appendTo(".httpparameters")
+            modal.refreshModal()
+            $(".liadd").eq(0).find(".sub").hide();
+            // $(".httpparameters input[name='value" + id + "']").after("<ul class='parameters-can-select'></ul>")
+            // console.log(newLI);
+            addNewLI();
+            $('[name="setColParam"]').val(id)
+        })
+        $(".httpparameters").on("click", ".sub", function () {
+            $(this).parent().remove();
+            $(".liadd").eq(0).find(".sub").hide();
+            modal.refreshModal();
+            addNewLI()
+        })
+        $(".httpparameters .liadd").eq(0).find(".sub").hide();
+    });
+    $("[name='paramName']").on("input", function () {
+        // alert(1)
+        $("[name='rename']").val($(this).val().substring(1, $(this).val().length))
+    })
+
+    $("[name='paramName']").on("change", function () {
+        // alert(2)
+        $("[name='rename']").val($(this).val().substring(1, $(this).val().length))
+    })
+
+    function addNewLI() {
+        newLI()
+    }
+    Object.defineProperty($("[name='paramName']")[0], '_value', {
+        configurable: true,
+        set: function (value) {
+            $("[name='rename']").val(value.substring(1, value.length))
+            this.value = value;
+        },
+        get: function () {
+
+            return this.value;
+        }
+    });
+</script>

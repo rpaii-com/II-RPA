@@ -1,0 +1,33 @@
+<div class="main-con-item">
+    <div class="input-box">
+
+        <div class="input-box">
+            <p>
+                <b>异常类型：</b>
+            </p>
+            <input type="text" name="errType">
+            <i class="xiala-icon parameters"></i>
+            <i class="toggleType"></i>
+            <ul class="common-list catch-type-list">
+                <li catchtype='ElementNotFoundException'>ElementNotFoundException-元素未找到异常</li>
+                <li catchtype='SystemException'>SystemException-系统异常</li>
+                <li catchtype='FileNotFoundException'>FileNotFoundException-文件未找到异常</li>
+                <li catchtype='FileTypeException'>FileTypeException-文件类型异常</li>
+                <li catchtype='FileNotCreateException'>FileNotCreateException-创建文件异常</li>
+                <li catchtype='ClassCastException'>ClassCastException-类型强制转换异常</li>
+                <li catchtype='ArrayIndexOutOfBoundsException'>ArrayIndexOutOfBoundsException-数组下标越界异常</li>
+                <li catchtype='NoSuchFieldException'>NoSuchFieldException-属性不存在异常</li>
+                <li catchtype='IllegalAccessException'>IllegalAccessException-权限不足异常</li>
+                <li catchtype='SQLException'>SQLException-操作数据库异常</li>
+                <li catchtype='WEBException'>WEBException-网络访问异常</li>
+                <li catchtype='UndefinedException'>UndefinedException-未定义异常</li>
+            </ul>
+        </div>
+
+        <p>
+            <b>异常描述：</b>
+        </p>
+        <textarea type="text" class="form-control" name="errDesc" placeholder="请输入异常描述" />
+    </div>
+    <input type="hidden" class="item-type" name="throwError" />
+</div>

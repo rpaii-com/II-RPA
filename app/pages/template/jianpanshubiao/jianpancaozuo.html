@@ -1,0 +1,286 @@
+<div class="main-con-item">
+    <div class="input-box">
+        <p>
+            <b>键盘热键</b>
+            <b>：</b>
+        </p>
+        <input type="text" name="hotKey" />
+        <!-- <input type="hidden" class="item-type" name="shortCut"> -->
+    </div>
+    <div class="input-box">
+        <p>
+            <b>执行次数</b>
+            <b>：</b>
+        </p>
+        <input type="number" name="count" value="1" min="1" />
+    </div>
+    <input type="hidden" class="item-type" name="shortCut">
+
+</div>
+<div class="liucheng-item-tips">
+    <p class="dom-active-dec" title="">
+        <i></i>
+        <em>：</em>将进行快捷键操作
+    </p>
+</div>
+<script>
+    //键盘热键
+    $(".cover-box").on("keydown", "input[name='hotKey']", function (event) {
+        // event
+        event.stopPropagation();
+        let val = '';
+        let keyCodes = [];
+        let keyCodesText = '';
+        console.log(event.keyCode);
+        console.log(String.fromCharCode(event.keyCode));
+        if (event.ctrlKey) {
+            val = "control" + " + ";
+            keyCodes.push(17);
+            keyCodesText += 17 + ' + ';
+        }
+        if (event.shiftKey) {
+            val += "shift" + " + ";
+            keyCodes.push(16);
+            keyCodesText += 16 + ' + ';
+        }
+        if (event.altKey) {
+            val += "alt" + " + ";
+            keyCodes.push(18);
+            keyCodesText += 18 + ' + ';
+        }
+        switch (event.keyCode) {
+            case 112:
+                val += "f1";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 113:
+                val += "f2";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 114:
+                val += "f3";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 115:
+                val += "f4";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 116:
+                val += "f5";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 117:
+                val += "f6";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 118:
+                val += "f7";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 119:
+                val += "f8";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 120:
+                val += "f9";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 121:
+                val += "f10";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 122:
+                val += "f11";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 123:
+                val += "f12";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 13:
+                val += "enter";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 8:
+                val += "backspace";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 9:
+                val += "tab";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 32:
+                val += "space";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 36:
+                val += "home";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 35:
+                val += "end";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 27:
+                val += "escape";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 37:
+                val += "left";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 38:
+                val += "up";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 39:
+                val += "right";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 40:
+                val += "down";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 45:
+                val += "insert";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 46:
+                val += "delete";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 33:
+                val += "pageup";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 34:
+                val += "pagedown";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 106:
+                val += "*";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 107:
+                val += "+";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 109:
+                val += "-";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 110:
+                val += ".";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 111:
+                val += "/";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 186:
+                val += ";";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 187:
+                val += "=";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 188:
+                val += ",";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 189:
+                val += "-";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 190:
+                val += ".";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 191:
+                val += "/";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 192:
+                val += "`";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 219:
+                val += "[";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 220:
+                val += "|";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 221:
+                val += "]";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 222:
+                val += "'";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            case 20:
+                val += "capslock";
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+            default:
+                val += String.fromCharCode(event.keyCode);
+                keyCodes.push(event.keyCode);
+                keyCodesText += event.keyCode;
+                break;
+        }
+        // console.log(keyCodes);
+        // console.log(keyCodesText);
+        // val += String.fromCharCode(event.keyCode);
+        $(this).attr("keyCodes", keyCodesText);
+        $(this).val(val);
+        return false;
+    })
+
+</script>

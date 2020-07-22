@@ -1,0 +1,841 @@
+body .layui-layer .layui-layer-content .update-explain-title {
+  padding-left: 40px;
+}
+body .layui-layer .layui-layer-content .update-explain-list {
+  padding: 3px 90px;
+}
+body .layui-layer .layui-layer-content .update-explain-list > li {
+  list-style: initial;
+}
+body .layer-ext-dotips,
+body .layer-ext-saveData,
+body .layer-ext-clearData,
+body .layer-ext-importData,
+body .layer-ext-dataDel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 254px;
+  height: 132px;
+  min-width: 0px;
+  background: url(../img/bg-tips-box-big-no-shadow.png) no-repeat center;
+}
+body .layer-ext-dotips .layui-layer-title,
+body .layer-ext-saveData .layui-layer-title,
+body .layer-ext-clearData .layui-layer-title,
+body .layer-ext-importData .layui-layer-title,
+body .layer-ext-dataDel .layui-layer-title {
+  display: block;
+  position: absolute;
+  top: -26px;
+  left: 50%;
+  padding: 0;
+  margin-left: -26px;
+  width: 52px;
+  height: 52px;
+  background: url(../img/icon-tips-warning.png) no-repeat center;
+  cursor: pointer;
+}
+body .layer-ext-dotips .layui-layer-content,
+body .layer-ext-saveData .layui-layer-content,
+body .layer-ext-clearData .layui-layer-content,
+body .layer-ext-importData .layui-layer-content,
+body .layer-ext-dataDel .layui-layer-content {
+  padding: 0 !important;
+  text-align: center !important;
+  margin-top: 35px !important;
+  color: #FA9E55;
+  letter-spacing: 3px;
+}
+body .layer-ext-dotips .layui-layer-content i,
+body .layer-ext-saveData .layui-layer-content i,
+body .layer-ext-clearData .layui-layer-content i,
+body .layer-ext-importData .layui-layer-content i,
+body .layer-ext-dataDel .layui-layer-content i {
+  display: none;
+}
+body .layer-ext-dotips .layui-layer-setwin,
+body .layer-ext-saveData .layui-layer-setwin,
+body .layer-ext-clearData .layui-layer-setwin,
+body .layer-ext-importData .layui-layer-setwin,
+body .layer-ext-dataDel .layui-layer-setwin {
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+body .layer-ext-dotips .layui-layer-resize,
+body .layer-ext-saveData .layui-layer-resize,
+body .layer-ext-clearData .layui-layer-resize,
+body .layer-ext-importData .layui-layer-resize,
+body .layer-ext-dataDel .layui-layer-resize {
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+body .layer-ext-dotips .layui-layer-btn,
+body .layer-ext-saveData .layui-layer-btn,
+body .layer-ext-clearData .layui-layer-btn,
+body .layer-ext-importData .layui-layer-btn,
+body .layer-ext-dataDel .layui-layer-btn {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  margin: 0 auto;
+  margin-left: -80px;
+  width: 160px;
+  text-align: center;
+  padding: 0;
+}
+body .layer-ext-dotips .layui-layer-btn a,
+body .layer-ext-saveData .layui-layer-btn a,
+body .layer-ext-clearData .layui-layer-btn a,
+body .layer-ext-importData .layui-layer-btn a,
+body .layer-ext-dataDel .layui-layer-btn a {
+  text-decoration: none;
+  display: inline-block;
+  width: 70px;
+  height: 42px;
+  line-height: 40px;
+  box-sizing: border-box;
+  color: #87705e;
+  font-size: 14px;
+  transition: all .2s;
+  border: 0;
+}
+body .layer-ext-dotips .layui-layer-btn .layui-layer-btn0,
+body .layer-ext-saveData .layui-layer-btn .layui-layer-btn0,
+body .layer-ext-clearData .layui-layer-btn .layui-layer-btn0,
+body .layer-ext-importData .layui-layer-btn .layui-layer-btn0,
+body .layer-ext-dataDel .layui-layer-btn .layui-layer-btn0 {
+  background: url(../img/bg-btn-left-orange.png) no-repeat center;
+}
+body .layer-ext-dotips .layui-layer-btn .layui-layer-btn0:hover,
+body .layer-ext-saveData .layui-layer-btn .layui-layer-btn0:hover,
+body .layer-ext-clearData .layui-layer-btn .layui-layer-btn0:hover,
+body .layer-ext-importData .layui-layer-btn .layui-layer-btn0:hover,
+body .layer-ext-dataDel .layui-layer-btn .layui-layer-btn0:hover {
+  background: url("../img/bg-btn-left-orange-hover.png") no-repeat center;
+}
+body .layer-ext-dotips .layui-layer-btn .layui-layer-btn0:active,
+body .layer-ext-saveData .layui-layer-btn .layui-layer-btn0:active,
+body .layer-ext-clearData .layui-layer-btn .layui-layer-btn0:active,
+body .layer-ext-importData .layui-layer-btn .layui-layer-btn0:active,
+body .layer-ext-dataDel .layui-layer-btn .layui-layer-btn0:active {
+  background: url("../img/bg-btn-left-orange-active.png") no-repeat center;
+  color: #fff;
+}
+body .layer-ext-dotips .layui-layer-btn .layui-layer-btn1,
+body .layer-ext-saveData .layui-layer-btn .layui-layer-btn1,
+body .layer-ext-clearData .layui-layer-btn .layui-layer-btn1,
+body .layer-ext-importData .layui-layer-btn .layui-layer-btn1,
+body .layer-ext-dataDel .layui-layer-btn .layui-layer-btn1 {
+  background: url(../img/bg-btn-right-orange.png) no-repeat center;
+}
+body .layer-ext-dotips .layui-layer-btn .layui-layer-btn1:hover,
+body .layer-ext-saveData .layui-layer-btn .layui-layer-btn1:hover,
+body .layer-ext-clearData .layui-layer-btn .layui-layer-btn1:hover,
+body .layer-ext-importData .layui-layer-btn .layui-layer-btn1:hover,
+body .layer-ext-dataDel .layui-layer-btn .layui-layer-btn1:hover {
+  background: url("../img/bg-btn-right-orange-hover.png") no-repeat center;
+}
+body .layer-ext-dotips .layui-layer-btn .layui-layer-btn1:active,
+body .layer-ext-saveData .layui-layer-btn .layui-layer-btn1:active,
+body .layer-ext-clearData .layui-layer-btn .layui-layer-btn1:active,
+body .layer-ext-importData .layui-layer-btn .layui-layer-btn1:active,
+body .layer-ext-dataDel .layui-layer-btn .layui-layer-btn1:active {
+  background: url("../img/bg-btn-right-orange-active.png") no-repeat center;
+  color: #fff;
+}
+body .layer-ext-dotips {
+  margin-top: -57px;
+  width: 254px;
+  height: 115px;
+  background: url(../img/bg-tips-box-small-no-shadow.png) no-repeat center;
+}
+body .layer-ext-dotips .layui-layer-btn {
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+body .layer-ext-dotips .layui-layer-content {
+  padding: 0 !important;
+  text-align: center !important;
+  margin-top: 45px !important;
+}
+body .layer-ext-dotips .layui-layer-content i {
+  display: none;
+}
+body .layer-ext-professional-modal,
+body .layer-ext-mate-modal,
+body .layer-ext-setter-main-box,
+body .layer-ext-setter-main-box-new {
+  border: 2px solid #fff;
+  background: #e3edf3;
+  box-sizing: border-box;
+}
+body .layer-ext-professional-modal .layui-layer-content,
+body .layer-ext-mate-modal .layui-layer-content,
+body .layer-ext-setter-main-box .layui-layer-content,
+body .layer-ext-setter-main-box-new .layui-layer-content {
+  padding: .1px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: visible;
+  background: #e3edf3;
+}
+body .layer-ext-professional-modal .layui-layer-content h4,
+body .layer-ext-mate-modal .layui-layer-content h4,
+body .layer-ext-setter-main-box .layui-layer-content h4,
+body .layer-ext-setter-main-box-new .layui-layer-content h4 {
+  display: block;
+  position: relative;
+  left: -2px;
+  padding-left: 20px;
+  height: 29px;
+  line-height: 29px;
+  font-size: 15px;
+  color: #4e6c8e;
+  box-sizing: border-box;
+  background: url("../img/theme/icon-title-left-prefix.png") no-repeat left;
+}
+body .layer-ext-professional-modal .layui-layer-content .cover-box-main,
+body .layer-ext-mate-modal .layui-layer-content .cover-box-main,
+body .layer-ext-setter-main-box .layui-layer-content .cover-box-main,
+body .layer-ext-setter-main-box-new .layui-layer-content .cover-box-main {
+  width: 100%;
+}
+body .layer-ext-professional-modal .layui-layer-content .cover-box-main .main-con-item,
+body .layer-ext-mate-modal .layui-layer-content .cover-box-main .main-con-item,
+body .layer-ext-setter-main-box .layui-layer-content .cover-box-main .main-con-item,
+body .layer-ext-setter-main-box-new .layui-layer-content .cover-box-main .main-con-item {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  border-top: none;
+}
+body .layer-ext-professional-modal .layui-layer-content .cover-box-main .main-con-item *,
+body .layer-ext-mate-modal .layui-layer-content .cover-box-main .main-con-item *,
+body .layer-ext-setter-main-box .layui-layer-content .cover-box-main .main-con-item *,
+body .layer-ext-setter-main-box-new .layui-layer-content .cover-box-main .main-con-item * {
+  text-align: left;
+}
+body .layer-ext-professional-modal .layui-layer-content .cover-box-main .main-con-item p,
+body .layer-ext-mate-modal .layui-layer-content .cover-box-main .main-con-item p,
+body .layer-ext-setter-main-box .layui-layer-content .cover-box-main .main-con-item p,
+body .layer-ext-setter-main-box-new .layui-layer-content .cover-box-main .main-con-item p {
+  padding: 0 30px;
+  font-size: 14px;
+  color: #748099;
+  box-sizing: border-box;
+}
+body .layer-ext-professional-modal .layui-layer-content .cover-box-main .main-con-item .radio-box-top,
+body .layer-ext-mate-modal .layui-layer-content .cover-box-main .main-con-item .radio-box-top,
+body .layer-ext-setter-main-box .layui-layer-content .cover-box-main .main-con-item .radio-box-top,
+body .layer-ext-setter-main-box-new .layui-layer-content .cover-box-main .main-con-item .radio-box-top {
+  position: absolute;
+  top: -12px;
+  left: 50px;
+}
+body .layer-ext-professional-modal .layui-layer-content .cover-box-main .main-con-item .input-box,
+body .layer-ext-mate-modal .layui-layer-content .cover-box-main .main-con-item .input-box,
+body .layer-ext-setter-main-box .layui-layer-content .cover-box-main .main-con-item .input-box,
+body .layer-ext-setter-main-box-new .layui-layer-content .cover-box-main .main-con-item .input-box {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  border-top: none;
+  /*---鼠标点击滚动条显示样式--*/
+  /*---滚动条大小--*/
+  /*---滚动框背景样式--*/
+}
+body .layer-ext-professional-modal .layui-layer-content .cover-box-main .main-con-item .input-box .common-list,
+body .layer-ext-mate-modal .layui-layer-content .cover-box-main .main-con-item .input-box .common-list,
+body .layer-ext-setter-main-box .layui-layer-content .cover-box-main .main-con-item .input-box .common-list,
+body .layer-ext-setter-main-box-new .layui-layer-content .cover-box-main .main-con-item .input-box .common-list {
+  position: absolute;
+}
+body .layer-ext-professional-modal .layui-layer-content .cover-box-main .main-con-item .input-box .common-list li,
+body .layer-ext-mate-modal .layui-layer-content .cover-box-main .main-con-item .input-box .common-list li,
+body .layer-ext-setter-main-box .layui-layer-content .cover-box-main .main-con-item .input-box .common-list li,
+body .layer-ext-setter-main-box-new .layui-layer-content .cover-box-main .main-con-item .input-box .common-list li {
+  text-align: center;
+}
+body .layer-ext-professional-modal .layui-layer-content .cover-box-main .main-con-item .input-box .parameters-can-select,
+body .layer-ext-mate-modal .layui-layer-content .cover-box-main .main-con-item .input-box .parameters-can-select,
+body .layer-ext-setter-main-box .layui-layer-content .cover-box-main .main-con-item .input-box .parameters-can-select,
+body .layer-ext-setter-main-box-new .layui-layer-content .cover-box-main .main-con-item .input-box .parameters-can-select {
+  max-height: 180px;
+  overflow-y: auto;
+  background: #fff;
+  top: 34px;
+  text-align: center;
+}
+body .layer-ext-professional-modal .layui-layer-content .cover-box-main .main-con-item .input-box .parameters-can-select li,
+body .layer-ext-mate-modal .layui-layer-content .cover-box-main .main-con-item .input-box .parameters-can-select li,
+body .layer-ext-setter-main-box .layui-layer-content .cover-box-main .main-con-item .input-box .parameters-can-select li,
+body .layer-ext-setter-main-box-new .layui-layer-content .cover-box-main .main-con-item .input-box .parameters-can-select li {
+  text-align: center;
+}
+body .layer-ext-professional-modal .layui-layer-content .cover-box-main .main-con-item .input-box ::-webkit-scrollbar-thumb,
+body .layer-ext-mate-modal .layui-layer-content .cover-box-main .main-con-item .input-box ::-webkit-scrollbar-thumb,
+body .layer-ext-setter-main-box .layui-layer-content .cover-box-main .main-con-item .input-box ::-webkit-scrollbar-thumb,
+body .layer-ext-setter-main-box-new .layui-layer-content .cover-box-main .main-con-item .input-box ::-webkit-scrollbar-thumb {
+  background-color: #97cd94;
+  height: 50px;
+  outline-offset: -2px;
+  outline: 1px solid rgba(173, 182, 195, 0.5);
+  border: 1px solid #97cd94;
+}
+body .layer-ext-professional-modal .layui-layer-content .cover-box-main .main-con-item .input-box ::-webkit-scrollbar-thumb:hover,
+body .layer-ext-mate-modal .layui-layer-content .cover-box-main .main-con-item .input-box ::-webkit-scrollbar-thumb:hover,
+body .layer-ext-setter-main-box .layui-layer-content .cover-box-main .main-con-item .input-box ::-webkit-scrollbar-thumb:hover,
+body .layer-ext-setter-main-box-new .layui-layer-content .cover-box-main .main-con-item .input-box ::-webkit-scrollbar-thumb:hover {
+  background-color: #97cd94;
+  height: 50px;
+}
+body .layer-ext-professional-modal .layui-layer-content .cover-box-main .main-con-item .input-box ::-webkit-scrollbar,
+body .layer-ext-mate-modal .layui-layer-content .cover-box-main .main-con-item .input-box ::-webkit-scrollbar,
+body .layer-ext-setter-main-box .layui-layer-content .cover-box-main .main-con-item .input-box ::-webkit-scrollbar,
+body .layer-ext-setter-main-box-new .layui-layer-content .cover-box-main .main-con-item .input-box ::-webkit-scrollbar {
+  width: 0;
+  height: 8px;
+}
+body .layer-ext-professional-modal .layui-layer-content .cover-box-main .main-con-item .input-box ::-webkit-scrollbar-track-piece,
+body .layer-ext-mate-modal .layui-layer-content .cover-box-main .main-con-item .input-box ::-webkit-scrollbar-track-piece,
+body .layer-ext-setter-main-box .layui-layer-content .cover-box-main .main-con-item .input-box ::-webkit-scrollbar-track-piece,
+body .layer-ext-setter-main-box-new .layui-layer-content .cover-box-main .main-con-item .input-box ::-webkit-scrollbar-track-piece {
+  -webkit-border-radius: 4px;
+}
+body .layer-ext-professional-modal .layui-layer-content .cover-box-main .main-con-item .input-box .radio-item-4 > span,
+body .layer-ext-mate-modal .layui-layer-content .cover-box-main .main-con-item .input-box .radio-item-4 > span,
+body .layer-ext-setter-main-box .layui-layer-content .cover-box-main .main-con-item .input-box .radio-item-4 > span,
+body .layer-ext-setter-main-box-new .layui-layer-content .cover-box-main .main-con-item .input-box .radio-item-4 > span {
+  margin-left: 40px !important;
+}
+body .layer-ext-professional-modal .layui-layer-content .cover-box-main .main-con-item .input-box .radio-item-2,
+body .layer-ext-mate-modal .layui-layer-content .cover-box-main .main-con-item .input-box .radio-item-2,
+body .layer-ext-setter-main-box .layui-layer-content .cover-box-main .main-con-item .input-box .radio-item-2,
+body .layer-ext-setter-main-box-new .layui-layer-content .cover-box-main .main-con-item .input-box .radio-item-2 {
+  text-align: center;
+}
+body .layer-ext-professional-modal .layui-layer-content .cover-box-main .main-con-item .input-box .radio-item-2 label,
+body .layer-ext-mate-modal .layui-layer-content .cover-box-main .main-con-item .input-box .radio-item-2 label,
+body .layer-ext-setter-main-box .layui-layer-content .cover-box-main .main-con-item .input-box .radio-item-2 label,
+body .layer-ext-setter-main-box-new .layui-layer-content .cover-box-main .main-con-item .input-box .radio-item-2 label {
+  width: 40%;
+  display: inline-block;
+}
+body .layer-ext-professional-modal .layui-layer-content .cover-box-main .main-con-item .input-box input,
+body .layer-ext-mate-modal .layui-layer-content .cover-box-main .main-con-item .input-box input,
+body .layer-ext-setter-main-box .layui-layer-content .cover-box-main .main-con-item .input-box input,
+body .layer-ext-setter-main-box-new .layui-layer-content .cover-box-main .main-con-item .input-box input {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 34px;
+  background: #fff;
+  border: none;
+  box-sizing: border-box;
+  outline: none;
+}
+body .layer-ext-professional-modal .layui-layer-content .cover-box-main .main-con-item .input-box input[type=text],
+body .layer-ext-mate-modal .layui-layer-content .cover-box-main .main-con-item .input-box input[type=text],
+body .layer-ext-setter-main-box .layui-layer-content .cover-box-main .main-con-item .input-box input[type=text],
+body .layer-ext-setter-main-box-new .layui-layer-content .cover-box-main .main-con-item .input-box input[type=text] {
+  box-shadow: 0px 1px 2px 0px rgba(58, 62, 68, 0.3) inset;
+}
+body .layer-ext-professional-modal .layui-layer-content .cover-box-main .main-con-item .input-box .xiala-icon,
+body .layer-ext-mate-modal .layui-layer-content .cover-box-main .main-con-item .input-box .xiala-icon,
+body .layer-ext-setter-main-box .layui-layer-content .cover-box-main .main-con-item .input-box .xiala-icon,
+body .layer-ext-setter-main-box-new .layui-layer-content .cover-box-main .main-con-item .input-box .xiala-icon {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  display: block;
+  width: 15px;
+  height: 34px;
+  background: url("../img/icon-xiala-xia.png") no-repeat center;
+}
+body .layer-ext-professional-modal .layui-layer-content .cover-box-main .main-con-item .input-box textarea,
+body .layer-ext-mate-modal .layui-layer-content .cover-box-main .main-con-item .input-box textarea,
+body .layer-ext-setter-main-box .layui-layer-content .cover-box-main .main-con-item .input-box textarea,
+body .layer-ext-setter-main-box-new .layui-layer-content .cover-box-main .main-con-item .input-box textarea {
+  display: block;
+  margin: 0 auto;
+  padding: 11px 13px;
+  resize: none;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 2px 0px rgba(58, 62, 68, 0.3) inset;
+}
+body .layer-ext-professional-modal .layui-layer-content .cover-box-main .main-con-item .input-box textarea:active,
+body .layer-ext-mate-modal .layui-layer-content .cover-box-main .main-con-item .input-box textarea:active,
+body .layer-ext-setter-main-box .layui-layer-content .cover-box-main .main-con-item .input-box textarea:active,
+body .layer-ext-setter-main-box-new .layui-layer-content .cover-box-main .main-con-item .input-box textarea:active {
+  border: none;
+}
+body .layer-ext-professional-modal .layui-layer-content .cover-box-main .main-con-item .input-box textarea:focus,
+body .layer-ext-mate-modal .layui-layer-content .cover-box-main .main-con-item .input-box textarea:focus,
+body .layer-ext-setter-main-box .layui-layer-content .cover-box-main .main-con-item .input-box textarea:focus,
+body .layer-ext-setter-main-box-new .layui-layer-content .cover-box-main .main-con-item .input-box textarea:focus {
+  border: none;
+}
+body .layer-ext-professional-modal .layui-layer-content .cover-box-main .main-con-item > .input-box,
+body .layer-ext-mate-modal .layui-layer-content .cover-box-main .main-con-item > .input-box,
+body .layer-ext-setter-main-box .layui-layer-content .cover-box-main .main-con-item > .input-box,
+body .layer-ext-setter-main-box-new .layui-layer-content .cover-box-main .main-con-item > .input-box {
+  display: inline-flex;
+  margin: 0 auto;
+  width: calc(100% - 60px);
+}
+body .layer-ext-professional-modal .layui-layer-content .cover-box-main .main-con-item .radio-box,
+body .layer-ext-mate-modal .layui-layer-content .cover-box-main .main-con-item .radio-box,
+body .layer-ext-setter-main-box .layui-layer-content .cover-box-main .main-con-item .radio-box,
+body .layer-ext-setter-main-box-new .layui-layer-content .cover-box-main .main-con-item .radio-box {
+  display: inline-block;
+  width: 90%;
+  color: #4c6649;
+  font-size: 15px;
+}
+body .layer-ext-professional-modal .layui-layer-content .cover-box-main .main-con-item .radio-box input,
+body .layer-ext-mate-modal .layui-layer-content .cover-box-main .main-con-item .radio-box input,
+body .layer-ext-setter-main-box .layui-layer-content .cover-box-main .main-con-item .radio-box input,
+body .layer-ext-setter-main-box-new .layui-layer-content .cover-box-main .main-con-item .radio-box input {
+  color: #4c6649;
+  font-size: 15px;
+}
+body .layer-ext-professional-modal .layui-layer-content .btns-box,
+body .layer-ext-mate-modal .layui-layer-content .btns-box,
+body .layer-ext-setter-main-box .layui-layer-content .btns-box,
+body .layer-ext-setter-main-box-new .layui-layer-content .btns-box {
+  display: none;
+  margin-top: 15px;
+  text-align: center;
+}
+body .layer-ext-professional-modal .layui-layer-content .btns-box a,
+body .layer-ext-mate-modal .layui-layer-content .btns-box a,
+body .layer-ext-setter-main-box .layui-layer-content .btns-box a,
+body .layer-ext-setter-main-box-new .layui-layer-content .btns-box a {
+  display: inline-block;
+  width: 80px;
+  height: 32px;
+  line-height: 28px;
+  text-align: center;
+  font-size: 15px;
+  color: #616b80;
+  border: 2px solid transparent;
+  background: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  box-sizing: border-box;
+  box-shadow: 0 1px 6px 2px rgba(91, 125, 162, 0.5);
+}
+body .layer-ext-professional-modal .layui-layer-content .btns-box .btn-left,
+body .layer-ext-mate-modal .layui-layer-content .btns-box .btn-left,
+body .layer-ext-setter-main-box .layui-layer-content .btns-box .btn-left,
+body .layer-ext-setter-main-box-new .layui-layer-content .btns-box .btn-left {
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+body .layer-ext-professional-modal .layui-layer-content .btns-box .btn-mid,
+body .layer-ext-mate-modal .layui-layer-content .btns-box .btn-mid,
+body .layer-ext-setter-main-box .layui-layer-content .btns-box .btn-mid,
+body .layer-ext-setter-main-box-new .layui-layer-content .btns-box .btn-mid {
+  border-radius: none;
+}
+body .layer-ext-professional-modal .layui-layer-content .btns-box .btn-right,
+body .layer-ext-mate-modal .layui-layer-content .btns-box .btn-right,
+body .layer-ext-setter-main-box .layui-layer-content .btns-box .btn-right,
+body .layer-ext-setter-main-box-new .layui-layer-content .btns-box .btn-right {
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+body .layer-ext-professional-modal .layui-layer-content .btns-box .btn-start:hover,
+body .layer-ext-mate-modal .layui-layer-content .btns-box .btn-start:hover,
+body .layer-ext-setter-main-box .layui-layer-content .btns-box .btn-start:hover,
+body .layer-ext-setter-main-box-new .layui-layer-content .btns-box .btn-start:hover {
+  border-color: #719dce;
+}
+body .layer-ext-professional-modal .layui-layer-content .btns-box .btn-start:active,
+body .layer-ext-mate-modal .layui-layer-content .btns-box .btn-start:active,
+body .layer-ext-setter-main-box .layui-layer-content .btns-box .btn-start:active,
+body .layer-ext-setter-main-box-new .layui-layer-content .btns-box .btn-start:active {
+  background: #719dce;
+  color: #fff;
+}
+body .layer-ext-professional-modal .layui-layer-content .btns-box .btn-cancel:hover,
+body .layer-ext-mate-modal .layui-layer-content .btns-box .btn-cancel:hover,
+body .layer-ext-setter-main-box .layui-layer-content .btns-box .btn-cancel:hover,
+body .layer-ext-setter-main-box-new .layui-layer-content .btns-box .btn-cancel:hover {
+  border-color: #719dce;
+}
+body .layer-ext-professional-modal .layui-layer-content .btns-box .btn-cancel:active,
+body .layer-ext-mate-modal .layui-layer-content .btns-box .btn-cancel:active,
+body .layer-ext-setter-main-box .layui-layer-content .btns-box .btn-cancel:active,
+body .layer-ext-setter-main-box-new .layui-layer-content .btns-box .btn-cancel:active {
+  background: #719dce;
+  color: #fff;
+}
+body .layer-ext-professional-modal .layui-layer-btn > a,
+body .layer-ext-mate-modal .layui-layer-btn > a,
+body .layer-ext-setter-main-box .layui-layer-btn > a,
+body .layer-ext-setter-main-box-new .layui-layer-btn > a {
+  display: inline-block;
+  width: 80px;
+  height: 32px;
+  line-height: 28px;
+  text-align: center;
+  font-size: 15px;
+  color: #616b80;
+  border: 2px solid transparent;
+  background: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  box-sizing: border-box;
+  box-shadow: 0 1px 6px 2px rgba(91, 125, 162, 0.5);
+}
+body .layer-ext-professional-modal .layui-layer-btn .layui-layer-btn0,
+body .layer-ext-mate-modal .layui-layer-btn .layui-layer-btn0,
+body .layer-ext-setter-main-box .layui-layer-btn .layui-layer-btn0,
+body .layer-ext-setter-main-box-new .layui-layer-btn .layui-layer-btn0 {
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+body .layer-ext-professional-modal .layui-layer-btn .layui-layer-btn1,
+body .layer-ext-mate-modal .layui-layer-btn .layui-layer-btn1,
+body .layer-ext-setter-main-box .layui-layer-btn .layui-layer-btn1,
+body .layer-ext-setter-main-box-new .layui-layer-btn .layui-layer-btn1 {
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+body .layer-ext-professional-modal .layui-layer-btn .layui-layer-btn0:hover,
+body .layer-ext-mate-modal .layui-layer-btn .layui-layer-btn0:hover,
+body .layer-ext-setter-main-box .layui-layer-btn .layui-layer-btn0:hover,
+body .layer-ext-setter-main-box-new .layui-layer-btn .layui-layer-btn0:hover {
+  border-color: #719dce;
+}
+body .layer-ext-professional-modal .layui-layer-btn .layui-layer-btn0:active,
+body .layer-ext-mate-modal .layui-layer-btn .layui-layer-btn0:active,
+body .layer-ext-setter-main-box .layui-layer-btn .layui-layer-btn0:active,
+body .layer-ext-setter-main-box-new .layui-layer-btn .layui-layer-btn0:active {
+  background: #719dce;
+  color: #fff;
+}
+body .layer-ext-professional-modal .layui-layer-btn .layui-layer-btn1:hover,
+body .layer-ext-mate-modal .layui-layer-btn .layui-layer-btn1:hover,
+body .layer-ext-setter-main-box .layui-layer-btn .layui-layer-btn1:hover,
+body .layer-ext-setter-main-box-new .layui-layer-btn .layui-layer-btn1:hover {
+  border-color: #719dce;
+}
+body .layer-ext-professional-modal .layui-layer-btn .layui-layer-btn1:active,
+body .layer-ext-mate-modal .layui-layer-btn .layui-layer-btn1:active,
+body .layer-ext-setter-main-box .layui-layer-btn .layui-layer-btn1:active,
+body .layer-ext-setter-main-box-new .layui-layer-btn .layui-layer-btn1:active {
+  background: #719dce;
+  color: #fff;
+}
+body .layer-ext-mate-modal .layui-layer-content .cover-box-main .main-con-item .stipulation-list {
+  max-height: 500px;
+  overflow-y: auto;
+}
+body .layer-ext-mate-modal .layui-layer-content .cover-box-main .main-con-item .stipulation-list .input-box input {
+  display: inline-block;
+  width: calc(100% - 80px);
+  box-sizing: border-box;
+}
+body .layer-ext-mate-modal .layui-layer-content .cover-box-main .main-con-item .stipulation-list .input-box label {
+  display: inline-block;
+  width: 60px;
+  box-sizing: border-box;
+  text-align: center;
+}
+body .layer-ext-setter-main-box .layui-layer-content .cover-box-main .main-con-item > ul li .setter-title {
+  display: inline-block;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  width: 150px;
+  box-sizing: border-box;
+  font-size: 13px;
+  text-align: right;
+}
+body .layer-ext-setter-main-box .layui-layer-content .cover-box-main .main-con-item > ul li .input-box {
+  width: calc(100% - 220px);
+  box-sizing: border-box;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content {
+  width: 700px;
+  min-height: 400px;
+  background: #fff;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .setter-header {
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+  font-size: 13px;
+  background: #F0F1F5;
+  color: #7F7F7F;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .setter-header i {
+  display: inline-block;
+  margin-left: 20px;
+  width: 16px;
+  height: 16px;
+  background: url(../img/icon-menu/icon-setter-header.png) no-repeat center;
+  vertical-align: sub;
+  line-height: 30px;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .tab-header {
+  display: inline-block;
+  padding-right: 100px;
+  padding-left: 15px;
+  width: 100%;
+  height: 45px;
+  box-sizing: border-box;
+  background: #EDEEEE;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .tab-header li {
+  display: inline-block;
+  height: 29px;
+  line-height: 27px;
+  box-sizing: border-box;
+  padding: 0 8px;
+  margin-top: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .tab-header li:hover {
+  border-color: #a09b9b;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .tab-header li:hover .base-setter {
+  background: url(../img/icon-menu/icon-setter-base-blue.png) no-repeat center;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .tab-header li:hover .system-setter {
+  background: url(../img/icon-menu/icon-setter-system-blue.png) no-repeat center;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .tab-header li i {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+  background: url(../img/icon-menu/icon-setter-base-black.png) no-repeat center;
+  vertical-align: sub;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .tab-header li .base-setter {
+  background: url(../img/icon-menu/icon-setter-base-black.png) no-repeat center;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .tab-header li .system-setter {
+  background: url(../img/icon-menu/icon-setter-system-black.png) no-repeat center;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .tab-header li.active {
+  color: #4e6c8e;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .tab-header li.active .base-setter {
+  background: url(../img/icon-menu/icon-setter-base-blue.png) no-repeat center;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .tab-header li.active .system-setter {
+  background: url(../img/icon-menu/icon-setter-system-blue.png) no-repeat center;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .tab-header .setter-tip {
+  float: right;
+  margin-right: -50px;
+  font-size: 13px;
+  height: 100%;
+  line-height: 45px;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .tab-header .setter-tip b {
+  color: red;
+  vertical-align: sub;
+  margin-right: 5px;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .setter-main-box {
+  display: block;
+  height: 400px;
+  box-sizing: border-box;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .setter-main-box > ul {
+  display: inline-block;
+  width: 130px;
+  height: 100%;
+  background: #EDEEEE;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .setter-main-box > ul li {
+  box-sizing: border-box;
+  padding-left: 20px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 13px;
+  cursor: pointer;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .setter-main-box > ul li:hover {
+  background: rgba(127, 206, 214, 0.1);
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .setter-main-box > ul li.active {
+  background: #fff;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .setter-main-box .setter-box {
+  display: inline-block;
+  padding: 10px 0;
+  width: calc(100% - 135px);
+  box-sizing: border-box;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .setter-main-box .setter-box > ul > li {
+  margin-bottom: 5px;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .setter-main-box .setter-box > ul > li .setter-title {
+  display: inline-block;
+  margin-left: 20px;
+  width: 150px;
+  box-sizing: border-box;
+  font-size: 13px;
+  text-align: right;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .setter-main-box .setter-box > ul > li .setter-title b {
+  color: red;
+  vertical-align: sub;
+  margin-right: 5px;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .setter-main-box .setter-box > ul > li .input-box {
+  width: calc(100% - 220px);
+  box-sizing: border-box;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .setter-main-box .setter-box > ul .input-box {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  border-top: none;
+  /*---鼠标点击滚动条显示样式--*/
+  /*---滚动条大小--*/
+  /*---滚动框背景样式--*/
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .setter-main-box .setter-box > ul .input-box .common-list {
+  position: absolute;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .setter-main-box .setter-box > ul .input-box .common-list li {
+  text-align: center;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .setter-main-box .setter-box > ul .input-box .parameters-can-select {
+  max-height: 180px;
+  overflow-y: auto;
+  background: #fff;
+  top: 34px;
+  text-align: center;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .setter-main-box .setter-box > ul .input-box .parameters-can-select li {
+  text-align: center;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .setter-main-box .setter-box > ul .input-box ::-webkit-scrollbar-thumb {
+  background-color: #97cd94;
+  height: 50px;
+  outline-offset: -2px;
+  outline: 1px solid rgba(173, 182, 195, 0.5);
+  border: 1px solid #97cd94;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .setter-main-box .setter-box > ul .input-box ::-webkit-scrollbar-thumb:hover {
+  background-color: #97cd94;
+  height: 50px;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .setter-main-box .setter-box > ul .input-box ::-webkit-scrollbar {
+  width: 0;
+  height: 8px;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .setter-main-box .setter-box > ul .input-box ::-webkit-scrollbar-track-piece {
+  -webkit-border-radius: 4px;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .setter-main-box .setter-box > ul .input-box .radio-item-4 > span {
+  margin-left: 40px !important;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .setter-main-box .setter-box > ul .input-box .radio-item-2 {
+  text-align: center;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .setter-main-box .setter-box > ul .input-box .radio-item-2 label {
+  width: 40%;
+  display: inline-block;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .setter-main-box .setter-box > ul .input-box input {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 34px;
+  background: #fff;
+  border: none;
+  box-sizing: border-box;
+  outline: none;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .setter-main-box .setter-box > ul .input-box input[type=text] {
+  box-shadow: 0px 1px 2px 0px rgba(58, 62, 68, 0.3) inset;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .setter-main-box .setter-box > ul .input-box .xiala-icon {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  display: block;
+  width: 15px;
+  height: 34px;
+  background: url("../img/icon-xiala-xia.png") no-repeat center;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .setter-main-box .setter-box > ul .input-box textarea {
+  display: block;
+  margin: 0 auto;
+  padding: 11px 13px;
+  resize: none;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 2px 0px rgba(58, 62, 68, 0.3) inset;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .setter-main-box .setter-box > ul .input-box textarea:active {
+  border: none;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .setter-main-box .setter-box > ul .input-box textarea:focus {
+  border: none;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .setter-main-box .setter-box > ul .checkbox-box label {
+  margin-right: 20px;
+  font-size: 13px;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .setter-main-box .setter-box > ul .checkbox-box input {
+  display: inline-block;
+  width: auto;
+  height: auto;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .setter-main-box .setter-btns {
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  padding-right: 10px;
+  width: calc(100% - 135px);
+  background: #fff;
+  text-align: right;
+  box-sizing: border-box;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .setter-main-box .setter-btns a {
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+  line-height: 20px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1px 6px 2px rgba(91, 125, 162, 0.5);
+  color: #000;
+  font-size: 13px;
+  margin-left: 5px;
+}
+body .layer-ext-setter-main-box-new .layui-layer-content .setter-main-box .setter-btns a:hover,
+body .layer-ext-setter-main-box-new .layui-layer-content .setter-main-box .setter-btns a:active {
+  background: #719dce;
+  color: #fff;
+}

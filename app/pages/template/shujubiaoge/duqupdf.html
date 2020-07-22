@@ -1,0 +1,31 @@
+<div class="main-con-item">
+    <div >
+        <p>
+            <b>选择PDF文件：</b>
+        </p>
+    </div>
+    <div class="input-box">
+        <button type="button" onclick="openfilePath.click();">点击选择文件</button>
+        <input type="text" class="form-control" id="openPath" name="openPath" />
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="xiala-icon parameters"></i>
+        <i class="toggleType"></i>
+        <input type="file" id="openfilePath" class="hideFile" onchange="this.value==''?openPath.value=openPath.value:openPath.value=gePathVal(this,true)"
+        />
+        <input type="hidden" class="item-type" name="readPDF">
+    </div>
+
+    <p>
+        <b>输出变量命名：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="rename">
+    </div>
+</div>
+
+<div class="liucheng-item-tips">
+    <p class="dom-active-dec" title="">
+        <i></i>
+        <em>：</em>读取PDf文件
+    </p>
+</div>

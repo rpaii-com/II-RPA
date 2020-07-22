@@ -1,0 +1,58 @@
+<div class="main-con-item">
+    <div class="input-box">
+
+        <p>
+            <b>变量名：</b>
+        </p>
+        <div class="input-box">
+            <input type="text" name="paramName">
+            <ul class="common-list parameters-can-select"></ul>
+            <i class="xiala-icon parameters"></i>
+            <i class="toggleType"></i>
+        </div>
+        <div class="input-box">
+            <p>
+                <b>下标值/键名：</b>
+            </p>
+            <p class="radio-item radio-box-top">
+                <label>
+                    <input type="radio" name="extractType" value="1" checked>下标值</label>
+                <label>
+                    <input type="radio" name="extractType" value="2">键名</label>
+            </p>
+            <div class="input-box">
+                <input type="text" name="regexValue">
+                <ul class="common-list parameters-can-select"></ul>
+                <i class="xiala-icon parameters"></i>
+                <i class="toggleType"></i>
+
+            </div>
+            <p>
+                <b>输出变量命名：</b>
+            </p>
+            <div class="input-box">
+                <input type="text" name="rename">
+            </div>
+
+            <input type="hidden" class="item-type" name="extractParam">
+            <!-- <i class="toggleType"></i> -->
+        </div>
+    </div>
+    <div class="liucheng-item-tips">
+        <p class="in-parameter" title="">
+            <i class="icon-tips-in"></i>
+            <em>：</em>"
+            <b class="font-in-paramter in-paramter-paramName"></b>
+            <b class="user-input-text tips-paramName"></b>","
+            <b class="font-in-paramter-type">String</b>"</p>
+        <p class="dom-active-dec" title="">
+            <i class=""></i>
+            <em class="">：</em>按
+            <b class="user-input-text tips-radio">下标值</b>取为
+            <b class="user-input-text tips-regexValue"></b>的变量</p>
+        <p class="in-parameter" title="">
+            <i class="icon-tips-out"></i>
+            <em>：</em>"
+            <b class="font-out-paramter"></b>","
+            <b class="font-out-paramter-type">Array</b>"</p>
+    </div>

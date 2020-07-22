@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/jquery.dad.css">
+    <link rel="stylesheet" href="../css/jquery.atwho.min.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/nodeUI.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/model.css">
+    <link rel="stylesheet" href="../css/nodeIcon.css">
+    <link rel="stylesheet" href="../css/modalBox.css">
+    <link rel="stylesheet" href="../css/layui-ext.css">
+    <link rel="stylesheet" href="../css/commonUse.css">
+    <link rel="stylesheet" href="../css/rightClickMenu.css">
+    <!--文档操作 css -->
+    <link rel="stylesheet" href="../css/file-opr.css">
+    <script src="../renderer/plugins/jquery/jquery.min.js"></script>
+
+    <script>
+        if (typeof module === 'object') {
+            window.jQuery = window.$ = module.exports;
+        }
+        let alert = window.alert;
+        window.alert = function (data) {
+            console.log(data)
+            alert(data);
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="icon-prompt"></div>
+    <div class="main-header">
+        <div class="can-drog-area" style="width:85%;height:100%;position:absolute;z-index:-1;background:transparent;-webkit-app-region: drag;"></div>
+        <div class="header-box">
+            <div class="header-do">
+                <button class="header-set"></button>
+                <button class="header-min"></button>
+                <button class="header-max"></button>
+                <button class="header-close"></button>
+            </div>
+            <div class="logo-box">
+                <i class="img-logo"></i>
+                <div class="logo-tit-box">
+                    <span class="logo-main-tit"></span>
+                    <div class="status-an">
+                        <span class="logo-little-tit animation-status">-工作中
+                            <i>.</i>
+                            <i>.</i>
+                            <i>.</i>
+                        </span>
+                    </div>
+                    <!-- < developers/> </span> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-box">
+        <!-- <div class="main-left toggle-height" id="leftMenu">
+            <div class="search-menu-box">
+                <input type="text" id="searchMenu" />
+                <a href="javascript:;" id="searchMenuBtn"></a>
+            </div>
+            <div class="no_shake">
+                <ul class="left-menu">
+                    <tree-item v-for="tree in menu" :tree="tree"></tree-item>
+                </ul>
+            </div>
+        </div> -->
+        <div class="main-right toggle-height">
+            <div class="liucheng-box">
+                <div class="left-btns-box">
+                    <ul>
+                        <li id="left_btn_ywk">
+                            <a href="javascript:;" class="left-btn" data-i18n="myKey">
+                                <i class="bg-left-item">
+                                    <i class="icon-left-main-ywk"></i>
+                                </i>元流程</a>
+                        </li>
+                        <li id="left_btn_lbxh">
+                            <a href="javascript:;" class="left-btn">
+                                <i class="bg-left-item">
+                                    <i class="icon-left-main-lbxh"></i>
+                                </i>列表循环</a>
+                        </li>
+                        <!-- <li id="left_btn_ddxh">
+                            <a href="javascript:;" class="left-btn">
+                                <i class="bg-left-item">
+                                    <i class="icon-left-main-ddxh"></i>
+                                </i>迭代循环</a>
+                        </li> -->
+                        <li id="left_btn_tjpd">
+                            <a href="javascript:;" class="left-btn">
+                                <i class="bg-left-item">
+                                    <i class="icon-left-main-tjpd"></i>
+                                </i>条件判断</a>
+                        </li>
+                        <!-- <li id="left_btn_ycbh">
+                            <a href="javascript:;" class="left-btn">
+                                <i class="bg-left-item">
+                                    <i class="icon-left-main-ycbh"></i>
+                                </i>异常捕获</a>
+                        </li> -->
+                        <li id="left_btn_bfcl">
+                            <a href="javascript:;" class="left-btn">
+                                <i class="bg-left-item">
+                                    <i class="icon-left-main-bfcl"></i>
+                                </i>并发处理</a>
+                        </li>
+                    </ul>
+                    <!-- <a id="left_btn_ywk" href="javascript:;" class="left-btn">业务块</a>
+                    <a id="left_btn_lbxh" href="javascript:;" class="left-btn">列表循环</a>
+                    <a id="left_btn_ddxh" href="javascript:;" class="left-btn">迭代循环</a>
+                    <a id="left_btn_tjpd" href="javascript:;" class="left-btn">条件判断</a>
+                    <a id="left_btn_ycbh" href="javascript:;" class="left-btn">异常捕获</a>
+                    <a id="left_btn_bfcl" href="javascript:;" class="left-btn">并发处理</a> -->
+                </div>
+                <div class="box-drag">
+                    <div class="main-liucheng-box">
+                        <div class="description-main">
+                            <!-- 变量描述 -->
+                            <div class="description-btn"></div>
+                            <!-- <div class="description-left description-action"> -->
+                            <div class="description-box description-action">
+                                <div class="description-left">
+                                    <div class="arguments-top">
+                                        <h3>全局变量</h3>
+                                    </div>
+                                    <div class="this_tree">
+                                        <ul>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="description-right">
+                                    <div class="arguments-top">
+                                        <h3>局部变量</h3>
+                                    </div>
+                                    <div class="this_tree">
+                                        <ul>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main-liucheng-utils-box">
+                            <ul>
+                                <li title="调试">
+                                    <a href="javascript:;" class="main-liucheng-util-debugger">
+                                        <i class="icon-main-liucheng-util-debugger"></i>
+                                    </a>
+                                </li>
+                                <li title="清空">
+                                    <a href="javascript:;" class="main-liucheng-util-clean">
+                                        <i class="icon-main-liucheng-util-clean"></i>
+                                    </a>
+                                </li>
+                                <li title="下一步" class="debugger-show">
+                                    <a href="javascript:;" class="main-liucheng-util-next">
+                                        <i class="icon-main-liucheng-util-next"></i>
+                                    </a>
+                                </li>
+                                <li title="继续" class="debugger-show">
+                                    <a href="javascript:;" class="main-liucheng-util-continue">
+                                        <i class="icon-main-liucheng-util-continue"></i>
+                                    </a>
+                                </li>
+                                <li title="附件读取" class="info-import" onclick="info_import.click()">
+                                    <a href="javascript:;" class="">
+                                        <i class="icon-main-liucheng-util-info-import"></i>
+                                    </a>
+                                    <div class="hide-everything">
+                                        <input type="file" id="info_import" onchange="this.value!=''?theAttachmentImport(gePathVal(this,true)):''">
+                                    </div>
+                                </li>
+                                <li title="附件导出" class="info-export">
+                                    <a href="javascript:;" class="">
+                                        <i class="icon-main-liucheng-util-info-export"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="main-liucheng-list">
+                            <li class="main-liucheng-item main-liucheng-pretreatment" itemType="pretreatment">
+                                <i class="icon-main-liucheng-item icon-main-item-ywk"></i>
+                                <span class="title">预处理</span>
+                                <div class="parameter-botton">
+                                    <label>出参：</label>
+                                </div>
+                            </li>
+                            <li class="main-liucheng-item main-liucheng-finally" itemType="finally">
+                                <i class="icon-main-liucheng-item icon-main-item-ywk"></i>
+                                <span class="title">结束节点</span>
+                                <div class="parameter-botton">
+                                    <label>出参：</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="resizor-box" title="拖动我"></div>
+                    <div class="detail-liucheng-box">
+                        <div class="detail-liucheng-scroll" id="detail-liucheng-scroll"></div>
+                        <div class="detail-liucheng-utils-box">
+                            <ul>
+                                <li title="单元测试">
+                                    <a href="javascript:;" class="detail-liucheng-util-matetest">
+                                        <i class="icon-detail-liucheng-util-matetest"></i>
+                                    </a>
+                                </li>
+                                <li title="清空">
+                                    <a href="javascript:;" class="detail-liucheng-util-clean">
+                                        <i class="icon-detail-liucheng-util-clean"></i>
+                                    </a>
+                                </li>
+                                <li title="添加备注">
+                                    <a href="javascript:;" class="detail-liucheng-util-annotation">
+                                        <i class="icon-detail-liucheng-util-annotation"></i>
+                                    </a>
+                                </li>
+                                <li title="缩略">
+                                    <a href="javascript:;" class="detail-liucheng-util-breviary">
+                                        <i class="icon-detail-liucheng-util-breviary"></i>
+                                    </a>
+                                </li>
+                                <li title="显示注释">
+                                    <a href="javascript:;" class="detail-liucheng-util-scroll-annotation">
+                                        <i class="icon-detail-liucheng-util-scroll-annotation"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="detail-liucheng-lists-box">
+                            <ul class="liucheng-list current-show-list detail-liucheng-pretreatment">
+
+                            </ul>
+                            <ul class="liucheng-list detail-liucheng-finally">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-left" id="leftMenu">
+                    <div class="search-menu-box">
+                        <input type="text" id="searchMenu" />
+                        <a href="javascript:;" id="searchMenuBtn"></a>
+                    </div>
+                    <div class="no_shake">
+                        <ul class="left-menu" style="overflow-x:hidden">
+                            <tree-item v-for="tree in menu" :tree="tree"></tree-item>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-jump">
+            <ul class="webview-pages">
+                <li class="page-selected">
+                    <div class="icon-newlabel"></div>
+                    <span class="page-title">Document</span>
+                    <span class="webview-page-tools">
+                        <i></i>
+                    </span>
+                </li>
+
+            </ul>
+            <span class="toggle-webview-box toggle-webview-selected">
+                <i class="icon-toggle-webview"></i>
+                <i class="icon-toggle-text">展开</i>
+            </span>
+            <div class="page-jump-middle">
+                <ul>
+                    <li class="li-up"></li>
+                    <li class="li-down"></li>
+                    <li class="li-refresh"></li>
+                </ul>
+                <div class="page-jump-http">
+                    <input type="text">
+                </div>
+                <!-- <span class="toggle-webview-box toggle-webview-selected">
+                    <i class="icon-toggle-webview"></i>
+                    展开
+                </span> -->
+
+            </div>
+        </div>
+        <div class="main-botttpm webview-height-0">
+            <webview id="foo" src="about:blank" style="display: inline-flex;height:100%;" preload="../renderer/base/webview/listen.js"
+                partition="main"></webview>
+        </div>
+        <div class="debugger-parameters">
+            <div class="debugger-current-node">
+                <p>当前节点信息</p>
+                <ul>
+                    <li>
+                        <span class="node-info-name node-info-title">节点标题：</span>
+                        <span class="node-info-value"></span>
+                    </li>
+                    <li>
+                        <span class="node-info-name node-info-type">节点类型：</span>
+                        <span class="node-info-value"></span>
+                    </li>
+                    <li>
+                        <span class="node-info-name node-info-id">节点ID：</span>
+                        <span class="node-info-value"></span>
+                    </li>
+                    <li>
+                        <span class="node-info-name node-info-info">节点信息：</span>
+                        <ul style="display:inline-block;vertical-align:top;"></ul>
+                    </li>
+                    <!-- <li><span class="node-info-name"></span><span class="node-info-value"></span></li>
+                    <li><span class="node-info-name"></span><span class="node-info-value"></span></li> -->
+                </ul>
+            </div>
+            <div class="parameters-infobox">
+                <p>debug信息</p>
+                <ul class="parameters-info-list"></ul>
+            </div>
+        </div>
+    </div>
+    <!--工具栏-->
+    <div class="tool">
+        <!-- <div class="title">titleddddddd</div> -->
+        <!-- <button class="tomax"></button> -->
+        <!-- <button class="close"></button> -->
+        <i class=""></i>
+    </div>
+    <!--end-->
+    <div class="cover-box" id="coverModal">
+        <div class="shadow"></div>
+        <div class="cover-alert">
+            <h4 class="alert-tit">
+                <i></i>
+            </h4>
+            <i class="cover-close-icon" @click="cleanModal"></i>
+            <form>
+                <div class="cover-box-main">
+
+                </div>
+                <div class="cover-box-foot">
+                    <div class="btns-box">
+                        <a href="javascript:void(0)" ondragstart="return false" class="btn-start" @click="createNode($event,this)">确定</a>
+                        <a href="javascript:void(0)" ondragstart="return false" class="btn-cancel" @click="cleanModal">取消</a>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="empty_all">
+        <div class="tips-box-modal">
+            <div class="tips-box tips-box-big tips-del-box">
+                <i class="tips-box-top-warnning"></i>
+                <div class="tips-box-content">
+                    <p>是否清空？</p>
+                </div>
+                <div class="tips-box-footer">
+                    <div class="btns-box">
+                        <a class="btn-left" href="javascript:void(0)">确定</a>
+                        <a class="btn-right" href="javascript:void(0)">取消</a>
+                    </div>
+                </div>
+            </div>
+            <div class="tips-box-small">
+                <i class="tips-box-top-warnning"></i>
+                <div class="tips-box-content">
+                    <p>保存成功</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mate_test_in" class="mate-test-in">
+        <div class="cover-alert">
+            <h4 class="alert-tit">单元测试变量定义</h4>
+            <i class="cover-close-icon"></i>
+            <form>
+                <div class="cover-box-main">
+                    <div class="main-con-item">
+                        <div class="stipulation-list">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="cover-box-foot">
+                    <div class="btns-box">
+                        <a class="btn-left" href="javascript:void(0)">确定</a>
+                        <a class="btn-right" href="javascript:void(0)">关闭</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="export-info">
+        <div class="cover-alert">
+            <h4 class="alert-tit">导出附件模块</h4>
+            <i class="cover-close-icon"></i>
+            <form>
+                <div class="cover-box-main">
+                    <div class="main-con-item">
+                        <div class="input-box">
+                            <ul class="data_io-ul">
+                                <li>
+                                    <span>位置：</span>
+                                    <div class="input-box">
+                                        <input type="text" id="export_info_dir_show" onclick="export_info_dir.click()" readonly/>
+                                        <input type="file" id="export_info_dir" class="hide-everything" name="saveAsPath" webkitdirectory onchange="this.value!=''?export_info_dir_show.value=gePathVal(this,true):export_info_dir_show.value=export_info_dir_show.value">
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <span>标题：</span>
+                                    <div class="input-box">
+                                        <input type="text" name="title" />
+                                    </div>
+                                    <input type="hidden" name="desc" value="" />
+                                </li>
+
+                                <li>
+                                    <span>类型：</span>
+                                    <div class="input-box">
+                                        <input type="text" name="type" value="" />
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="cover-box-foot">
+                    <div class="btns-box">
+                        <a class="btn-left" href="javascript:void(0)">保存</a>
+                        <a class="btn-right" href="javascript:void(0)">关闭</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="parameter-state">
+        <ul>
+            <li>本次步骤生成变量：
+                <i>变量变量1</i>
+            </li>
+            <li>预计生成变量类型为：
+                <i>变量变量2</i>
+            </li>
+        </ul>
+        <span class="on-parameter">确&ensp;定</span>
+    </div>
+    <div class="annotation-box">
+        <div class="cover-alert">
+            <h4 class="alert-tit">添加注释</h4>
+            <i class="cover-close-icon"></i>
+            <div class="has-no-current-item" style="text-align:center">
+                请选择一个节点添加注释
+            </div>
+            <form>
+                <div class="cover-box-main">
+                    <div class="main-con-item">
+                        <div class="input-box">
+                            <input type="text" class="annotation-input">
+                        </div>
+                    </div>
+                </div>
+                <div class="cover-box-foot">
+                    <div class="btns-box">
+                        <a class="btn-start" href="javascript:void(0)">确定</a>
+                        <a class="btn-cancel" href="javascript:void(0)">关闭</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- modal  -->
+    <!-- 关闭窗口触发判断 -->
+    <div id="main-header-close" style="display:none">
+        <div class="cover-alert">
+            <h4 class="alert-tit">是否确认关闭窗口！</h4>
+            <form>
+                <div class="cover-box-foot">
+                    <div class="btns-box">
+                        <a class="btn-left btn-cancel layui-layer-btn3" href="javascript:void(0)">取消</a>
+                        <!-- <a class="btn-mid btn-cancel layui-layer-btn2" href="javascript:void(0)">更新</a> -->
+                        <a class="btn-right btn-start layui-layer-btn1" href="javascript:void(0)">确定</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- 普通主节点 -->
+    <div id="main-tips-cover-box" style="display:none">
+        <div class="cover-alert">
+            <h4 class="alert-tit">添加备注</h4>
+            <form>
+                <div class="cover-box-main">
+                    <div class="main-con-item">
+                        <div class="input-box">
+                            <textarea name="professional_dec" id="professional_dec" style="width:340px;height:120px;"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="cover-box-foot">
+                    <div class="btns-box">
+                        <a class="btn-left btn-cancel layui-layer-btn3" href="javascript:void(0)">关闭</a>
+                        <a class="btn-right btn-start layui-layer-btn1" href="javascript:void(0)">确定</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--for 提醒不是目标界面，是否继续-->
+    <div id="main-tips-actuator-box" style="display:none">
+        <div class="cover-alert">
+            <h4 class="alert-tit">未发现正确的起始运行窗口！</h4>
+
+            <div class="cover-box-foot">
+                <div class="btns-box">
+                    <a class="btn-left btn-cancel layui-layer-btn3" href="javascript:void(0)">继续执行</a>
+                    <a class="btn-right btn-start layui-layer-btn1" href="javascript:void(0)">结束流程</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- for主流程节点 -->
+    <div id="main-for-tips-cover-box" style="display:none">
+        <div class="cover-alert">
+            <h4 class="alert-tit">添加备注</h4>
+            <form>
+                <div class="cover-box-main">
+                    <div class="main-con-item">
+                        <p>请选择迭代元素</p>
+                        <div class="input-box">
+                            <input type="text" name="objectList">
+                            <ul class="common-list parameters-can-select"></ul>
+                            <i class="toggleType"></i>
+                            <i class="xiala-icon parameters"></i>
+                        </div>
+                        <p> 单元元素的命名：</p>
+                        <div class="input-box">
+                            <input type="text" name="rename">
+                        </div>
+                        <p> 循环块名：</p>
+                        <div class="input-box">
+                            <textarea name="for_professional_dec" id="for_professional_dec" style="width:340px;height:120px;"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="cover-box-foot">
+                    <div class="btns-box">
+                        <a class="btn-left btn-cancel layui-layer-btn3" href="javascript:void(0)">关闭</a>
+                        <a class="btn-right btn-start layui-layer-btn1" href="javascript:void(0)">确定</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- if主流程节点 -->
+    <div id="main-if-tips-cover-box" style="display:none">
+        <div class="cover-alert">
+            <h4 class="alert-tit">添加备注</h4>
+            <form>
+                <div class="cover-box-main">
+                    <div class="main-con-item">
+                        <p>满足条件：</p>
+                        <div class="input-box">
+                            <div class="input-box if-else-item-left">
+                                <input type="text" name="lid">
+                                <ul class="common-list parameters-can-select"></ul>
+                                <i class="toggleType"></i>
+                                <i class="xiala-icon parameters"></i>
+                            </div>
+                            <div class="input-box if-else-item-mid">
+                                <input type="text" name="op">
+                                <i class="xiala-icon if-else-item-xia xia-op"></i>
+                                <ul class="common-list">
+                                    <li class="if-else-selection">大于</li>
+                                    <li class="if-else-selection">大于等于</li>
+                                    <li class="if-else-selection">等于</li>
+                                    <li class="if-else-selection">不等于</li>
+                                    <li class="if-else-selection">小于</li>
+                                    <li class="if-else-selection">小于等于</li>
+                                </ul>
+                            </div>
+                            <div class="input-box if-else-item-right">
+                                <input type="text" name="rid">
+                                <ul class="common-list parameters-can-select"></ul>
+                                <i class="toggleType"></i>
+                                <i class="xiala-icon parameters"></i>
+                            </div>
+                        </div>
+                        <p>条件判断块名：</p>
+                        <div class="input-box">
+                            <textarea name="if_professional_dec" id="if_professional_dec" style="width:340px;height:120px;"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="cover-box-foot">
+                    <div class="btns-box">
+                        <a class="btn-left btn-cancel layui-layer-btn3" href="javascript:void(0)">关闭</a>
+                        <a class="btn-right btn-start layui-layer-btn1" href="javascript:void(0)">确定</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- <div id="usetogetparameters" style="width:0;height:0;font-size:0;">
+            <ul></ul>
+        </div> -->
+    <div class="app-setter-box" id="appSetter">
+        <ul>
+            <li>帮助
+                <i class="left-list"></i>
+                <div class="children-menu">
+                    <ul>
+                        <li id="set_child_toggledevtool">切换开发者工具</li>
+                        <li id="set_child_version_detail">查看版本说明</li>
+                    </ul>
+                </div>
+            </li>
+            <span id="set_main_setter" >设置</span>
+        </ul>
+    </div>
+    <div id="right_click_main_flow">
+        <ul>
+            <li class="right-click-copy">复制</li>
+            <li class="right-click-paste">黏贴</li>
+        </ul>
+    </div>
+    <div id="sameName_tips">
+        <i></i>
+        <span>检测到重名变量，建议修改当前变量名，否则会覆盖之前的重名变量</span>
+    </div>
+</body>
+<!-- 配置项 -->
+<script src="../renderer/util/config.js"></script>
+
+<script src="../renderer/plugins/layer/layer.js"></script>
+<script src="../renderer/plugins/jquery/jquery.dad.min.js"></script>
+<script src="../renderer/plugins/jquery/jquery.mousewheel.js"></script>
+<script src="../renderer/plugins/jquery/jquery.caret.min.js"></script> 
+<script src="../renderer/plugins/jquery/jquery.atwho.min.js"></script>
+<!-- 鼠标右键菜单 -->
+<script src="../renderer/base/rightClick.js"></script>
+<!-- drap -->
+<script src="../renderer/base/drap.js"></script>
+<!-- js-xls插件 -->
+
+
+<!-- index前置 -->
+<script src="../renderer/base/baseParametersUtil.js"></script>
+<script src="../renderer/base/getParametersUtils.js"></script>
+<script src="../renderer/base/new-index.js"></script>
+<script src="../renderer/base/index.js"></script>
+<!-- index后置 -->
+<script src="../renderer/base/drawingBoard/pannelBtn.js"></script>
+<script src="../renderer/base/systemBtn.js"></script>
+<script src="../renderer/base/drawingBoard/scrollBox.js"></script>
+<script src="../renderer/base/eventOn.js"></script>
+
+
+<!--测试数据库-->
+<script src="../renderer/util/dbForMenuUtil.js"></script>
+<script src="../renderer/util/paramSwitchUtil.js"></script>
+
+<!-- 首页画板板击放置 -->
+<script src="../renderer/base/drawingBoard/index.js"></script>
+<script src="../renderer/plugins/vue.js"></script>
+<script src="../renderer/base/addSecondProcess.js"></script>
+<script src="../renderer/base/modal.js"></script>
+<script src="../renderer/base/menu/index.js"></script>
+<script src="../renderer/base/page.js"></script>
+<!-- 前端utils -->
+<script src="../renderer/base/utils/commonUtils.js"></script>
+<script src="../renderer/base/utils/workflowUtils.js"></script>
+<script src="../renderer/base/utils/domUtils.js"></script>
+<script src="../renderer/base/utils/parameterUtils.js"></script>
+<script src="../renderer/base/class/parameters.js"></script>
+<!-- 绑定全局的事件 -->
+<script src="../renderer/base/globalBindEvent.js"></script>
+<!-- webview -->
+<script src="../renderer/base/webview/index.js"></script>
+<!-- <script src="../renderer/base/fileRead.js"></script> -->
+<script src="../renderer/base/workflow.js"></script>
+<!-- <script src="../renderer/test/test.js"></script> -->
+<!--i18n国际化，暂停-->
+<!--<script>-->
+<!--const i18next=require('i18next');-->
+<!--const jqueryI18next=require('jquery-i18next');-->
+<!--const Backend=require("i18next-xhr-backend");-->
+<!--</script>-->
+<!--<script src="../renderer/plugins/i18next.min.js"></script>-->
+<!--<script src="../renderer/plugins/jquery-i18next.min.js"></script>-->
+<!--页面通用js，保存历史任务，文件别名-->
+<script src="../renderer/base/commonForTemplate.js"></script>
+
+</html>

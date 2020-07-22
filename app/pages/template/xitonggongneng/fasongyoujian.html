@@ -1,0 +1,131 @@
+<div class="main-con-item">
+    <div class="input-box">
+        <p>
+            <b>登录您的账户：</b>
+        </p>
+        <div class="input-box">
+            <input type="text" name="account" value="" />
+            <ul class="common-list parameters-can-select"></ul>
+            <i class="xiala-icon parameters"></i>
+            <i class="toggleType"></i>
+        </div>
+        <p>
+            <b>密码/授权码：</b>
+        </p>
+        <div class="input-box">
+            <input type="text" name="pwd" value="" />
+            <ul class="common-list parameters-can-select"></ul>
+            <i class="xiala-icon parameters"></i>
+            <i class="toggleType"></i>
+        </div>
+        <p>
+            <b>SMTP服务器：</b>
+        </p>
+        <div class="">
+            <input type="text" name="server" value="" />
+        </div>
+        <p>
+            <b>端口：</b>
+        </p>
+        <div class="">
+            <input type="text" name="port" value="" />
+        </div>
+        <p>
+            <b>收件人：</b>
+        </p>
+        <div class="input-box">
+            <input type="text" name="receive" value="" />
+            <ul class="common-list parameters-can-select"></ul>
+            <i class="xiala-icon parameters"></i>
+            <i class="toggleType"></i>
+        </div>
+        <p>
+            <b>抄送：</b>
+        </p>
+        <div class="input-box">
+            <input type="text" name="receive_c" value="" />
+            <ul class="common-list parameters-can-select"></ul>
+            <i class="xiala-icon parameters"></i>
+            <i class="toggleType"></i>
+        </div>
+        <p>
+            <b>主题：</b>
+        </p>
+        <div class="input-box">
+            <input type="text" name="subject" />
+            <ul class="common-list parameters-can-select"></ul>
+            <i class="xiala-icon parameters"></i>
+            <i class="toggleType"></i>
+        </div>
+        <div class="input-box">
+            <p>
+                <b>选择附件</b>
+                <b>：</b>
+            </p>
+            <button type="button" onclick="openfilePath.click();">点击选择附件</button>
+            <input type="text" class="form-control" id="openPath" name="openPath" />
+            <ul class="common-list parameters-can-select"></ul>
+            <i class="xiala-icon parameters"></i>
+            <i class="toggleType"></i>
+            <input type="file" id="openfilePath" class="hideFile" onchange="this.value==''?openPath.value=openPath.value:openPath.value=gePathVal(this,true)"
+            />
+        </div>
+    </div>
+        <p>
+            <b>邮件内容：</b>
+            <label for="isSaveHistory"><input type="checkbox" name="isTxt" id="isSaveHistory" value="true">纯文本</label>
+        </p>
+        <div class="input-box">
+            <!-- <textarea name="html" class="atwho-inputor"></textarea> -->
+            <div name="html" class="atwho-inputor" contentEditable="true"></div>
+            <input type="hidden" name="html" id="atwho">
+            <input type="hidden" name="txt_con" id="atwho_txt">
+            <!-- <i class="xiala-icon parameters"></i>
+            <i class="toggleType"></i> -->
+        </div>
+
+        <input type="hidden" class="item-type" name="confirmSend">
+</div>
+<div class="liucheng-item-tips">
+    <p class="in-parameter" title="">
+        <i class="icon-tips-in"></i>
+        <em>：</em>"
+        <b class="font-in-paramter in-paramter-receive"></b>
+        <b class="user-input-text tips-receive"></b>","
+        <b class="font-in-paramter-type">String</b>","
+        <b class="font-in-paramter in-paramter-subject"></b>
+        <b class="user-input-text tips-subject"></b>","
+        <b class="font-in-paramter-type">String</b>","
+        <b class="font-in-paramter in-paramter-html"></b>
+        <b class="user-input-text tips-html"></b>","
+        <b class="font-in-paramter-type">String</b>"</p>
+    <p class="dom-active-dec" title="">
+        <i></i>
+        <em>：</em>填入收件人，主题和邮件内容，并发送</p>
+    <!-- <p class="dom-active-dec" title=""><i></i><em>：</em>填入收件人，主题和邮件内容，并发送："<b class="font-in-paramter in-paramter-receive"></b><b class="user-input-text tips-receive"></b>","<b class="font-in-paramter-type">String</b>",主题："<b class="font-in-paramter in-paramter-subject"></b><b class="user-input-text tips-subject"></b>","
+<b class="font-in-paramter-type">String</b>",邮件内容："<b class="font-in-paramter in-paramter-html"></b><b class="user-input-text tips-html"></b>","<b class="font-in-paramter-type">String</b>"</p> -->
+    <!-- <p class="dom-active-dec" title=""><i class="icon-zanwei"></i><em class="font-zanwei">：</em>新变量："<b class="font-out-paramter"></b>","<b class="">发送邮件</b>"</p>
+<p class="in-parameter" title=""><i class="icon-tips-out"></i><em>：</em>"<b class="">发送邮件</b>"</p> -->
+</div>
+
+<script>
+    $(function () {
+        let data_at = at_v();
+        $('.atwho-inputor').atwho({
+            at: "@",
+            data: data_at,
+            limit: 100,
+            insertTpl: '<span data-id="${id}"> @${name} </span>',
+            startWithSpace: false,
+        });
+        $(".atwho-inputor").bind('DOMSubtreeModified', function (e) {
+            $('#atwho').val($('.atwho-inputor')
+                .html()
+            );
+            $('#atwho_txt').val($('.atwho-inputor')
+                .text()
+            );
+        });
+    })
+
+</script>

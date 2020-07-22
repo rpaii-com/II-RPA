@@ -1,0 +1,76 @@
+<div class="main-con-item">
+    <p>
+        口令组选择
+        <b>：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="group" id="chooseCmdGroup" readonly>
+        <i class="xiala-icon"></i>
+        <i class="toggleType"></i>
+    </div>
+    <p>
+        口令选择
+        <b>：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="groupKey" id="chooseCmdGroupChild" readonly>
+        <ul class="common-list"></ul>
+        <i class="xiala-icon"></i>
+        <i class="toggleType"></i>
+    </div>
+    <p>
+        <b>输出变量命名：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="rename" readonly>
+    </div>
+    <input type="hidden" name="groupId" style="width: 0;height: 0;">
+    <input type="hidden" class="item-type" name="koulingxuanze">
+</div>
+
+<script>
+    $("[name='groupKey']").on("input", function () {
+        // $("[name='rename']").val($(this).val().substring(1, $(this).val().length))
+    })
+
+    $("[name='groupKey']").on("change", function () {
+        // $("[name='rename']").val($(this).val().substring(1, $(this).val().length))
+    })
+    // $("#chooseCmdGroup").on("click", function () {
+    //     if ($(this).next()[0].localName == "ul") {
+    //         $(this).next().toggle();
+    //     }
+    // })
+    // $("#chooseCmdGroupChild").on("click", function () {
+    //     if ($(this).next()[0].localName == "ul") {
+    //         $(this).next().toggle();
+    //     }
+    // });
+    $("#chooseCmdGroup").parents(".main-con-item").on("click", "li", function () {
+        let text = $(this).text();
+        let i = $(this).attr("index");
+        if ($(this).parent().prev()[0].localName == "input" && $(this).parent().prev().attr("type") == "text") {
+            // $(this).parent().prev().val(text);
+            // $(this).parent().hide();
+            if ($(this).parent().prev().attr("name") == "groupKey") {
+                $(this).parents(".main-con-item").find("input[name='rename']").val(text);
+                $(this).parents(".main-con-item").find("input[name='groupId']").val(i);
+            }
+        }
+    })
+    // $("")
+    // dom.next("ul.common-list").on("click", "li", function () {
+    //     let text = $(this).text();
+    //     let index = $(this).attr("index");
+    //     dom.val(text);
+    //     dom.attr("index", index);
+    //     if (dom.parents(".main-con-item").find("input[name='groupKey']").next()[0].localName == "ul") {
+    //         dom.parents(".main-con-item").find("input[name='groupKey']").next().html("");
+    //         let childHtml;
+
+    //     }
+    //     dom.parents(".main-con-item").find("input[name='groupKey']")
+    // })
+    let cmdGroup = ctx.get("cmdGroupList") ? ctx.get("cmdGroupList") : [];
+    newChooseLI(cmdGroup, $("#chooseCmdGroup"))
+</script>

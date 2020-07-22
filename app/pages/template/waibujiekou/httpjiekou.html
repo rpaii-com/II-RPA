@@ -1,0 +1,166 @@
+<style>
+    .liadd {
+        padding-left: 15px;
+    }
+
+    .liadd input {
+        display: inline-block !important;
+        width: 200px !important;
+        margin: 0px !important;
+    }
+
+    .liadd>div {
+        position: relative;
+        display: inline-block !important;
+        width: 200px !important;
+        margin: 0px !important;
+    }
+
+    .liadd>button {
+        /* background: transparent!important; */
+        line-height: 16px !important;
+        font-size: 27px !important;
+        vertical-align: middle;
+        width: 20px;
+    }
+
+    .add {
+        /* color: chartreuse!important; */
+        background: url("../img/icon-button-add.png")no-repeat center !important;
+    }
+
+    .add:active {
+        background: url("../img/icon-button-add-click.png")no-repeat center !important;
+    }
+
+    .sub {
+        background: url("../img/icon-button-remove.png")no-repeat center !important;
+    }
+
+    .sub:active {
+        background: url("../img/icon-button-remove-click.png")no-repeat center !important
+    }
+
+    .xiala-icon {
+        top: 0px !important;
+    }
+
+    .cover-box .toggleType {
+        top: 0px !important;
+    }
+</style>
+<div class="main-con-item">
+
+    <div class="input-box">
+        <p>
+            <b>URL</b>
+            <b>：</b>
+        </p>
+        <input type="text" name="httpUrl">
+    </div>
+    <div class="input-box">
+        <p>
+            <b>请求类型</b>
+            <b>：</b>
+        </p>
+        <p class="radio-item radio-item-2">
+            <label>
+                <input type="radio" name="httpType" value="post" checked>post
+            </label>
+            <label>
+                <input type="radio" name="httpType" value="get">get
+            </label>
+        </p>
+    </div>
+    <div class="input-box">
+        <p>
+            <b>选择请求头类型</b>
+            <b>：</b>
+        </p>
+        <p class="radio-item radio-item-2">
+            <label>
+                <input type="radio" name="ContentType" value="application/json; charset=utf-8" checked>application/json
+            </label>
+            <label>
+                <input type="radio" name="ContentType" value="application/x-www-form-urlencoded">application/x-www-form-urlencoded
+            </label>
+        </p>
+    </div>
+    <div class="input-box httpparameters stipulation">
+        <p>
+            <b>变量</b>
+            <b>：</b>
+        </p>
+        <div class="liadd">
+            <lable>key:</lable>
+            <input type="text" name="key1">
+            <lable>value:</lable>
+            <div class="input-box">
+                <input type="text" name="value1">
+                <ul class="common-list parameters-can-select"></ul>
+                <i class="toggleType"></i>
+                <i class="xiala-icon parameters"></i>
+            </div>
+            <button type="button" class="add"></button>
+            <button type="button" class="sub"></button>
+        </div>
+    </div>
+    <div class="input-box">
+        <p>
+            <b>选择获取变量的类型</b>
+            <b>：</b>
+        </p>
+        <p class="radio-item radio-item-2">
+            <label>
+                <input type="radio" name="paramType" value="json" checked>json
+            </label>
+            <label>
+                <input type="radio" name="paramType" value="text">text
+            </label>
+        </p>
+    </div>
+    <div class="input-box">
+        <p>
+            <b>输出变量命名：</b>
+        </p>
+        <input type="text" name="rename">
+    </div>
+    <input type="hidden" class="item-type" name="httpApi" value="1">
+</div>
+<div class="liucheng-item-tips">
+    <p class="dom-active-dec" title="">
+        <i></i>
+        <em>：</em>POST请求
+    </p>
+</div>
+
+<script>
+    $(function () {
+        var httptemp = $(".liadd").eq(0).clone(true);
+        $(".httpparameters").on("click", ".add", function () {
+            let id = parseInt($('[name="httpApi"]').val()) + 1;
+            httptemp.clone(true).find("[name='key1']").attr("name", "key" + id).parent().find("[name='value1']").attr("name", "value" + id).parent().parent().appendTo(".httpparameters")
+            modal.refreshModal()
+            $(".liadd").eq(0).find(".sub").hide();
+            // $(".httpparameters input[name='value" + id + "']").after("<ul class='parameters-can-select'></ul>")
+            // console.log(newLI);
+            addNewLI();
+            $('[name="httpApi"]').val(id)
+        })
+        $(".httpparameters").on("click", ".sub", function () {
+            $(this).parent().remove();
+            $(".liadd").eq(0).find(".sub").hide();
+            modal.refreshModal();
+            addNewLI()
+        })
+        $(".httpparameters .liadd").eq(0).find(".sub").hide();
+    });
+
+    function addNewLI() {
+        if (modal.$data.editLiuchengItem.isEditExistedItem) {
+            newLI($('#' + modal.$data.editLiuchengItem.editItemId))
+        } else {
+            newLI()
+        }
+    }
+</script>

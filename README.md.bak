@@ -1,0 +1,49 @@
+### # robot
+
+electron+nodejs+async的全栈js项目
+### # Clone this repository
+
+git clone  https://gitee.com/Veintc/rpaV2.git
+### # Go into the repository
+
+cd rpav2
+### # Install dependencies
+
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+
+npm install electron --save-dev --verbose
+
+npm install async --save
+
+npm install silly-datetime --save
+
+npm install express --save
+
+npm install node-csv --save
+
+npm install officegen --save
+
+npm install nodemailer --save
+
+npm install formidable --save
+
+npm install mysql --save
+
+npm install iconv-lite --save
+
+npm install robotjs --save( python 2.7 (3.x不支持) VSC++的库  
+                       还需要重新编译 
+                       npm rebuild robotjs --runtime=electron --target=1.8.4 --abi=48
+                    )
+npm install sqlite3 --save(
+    npm rebuild --target=1.8.4 --arch=x64 --target_platform=win32 --dist-url=https://atom.io/download/electron/ --module_name=node_sqlite3 --module_path=../lib/binding/electron-v1.8-win32-x64
+)
+
+//需要编译的库：robotjs，sqlite3，oracledb，webworker-threads
+### # Run the app
+
+cnpm start
+
+
+分离designer 与 actuator
+

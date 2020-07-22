@@ -1,0 +1,53 @@
+<div class="main-con-item">
+    <button type="button" class="capture">捕获页面元素</button>
+    <span class="goon">
+        <input type="checkbox" checked>是否跟随脚本执行</span>
+    <p>
+        <b>元素路径</b>(xpath)
+        <b>：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="xpath">
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="toggleType"></i>
+        <i class="xiala-icon parameters"></i>
+    </div>
+    <p>
+        <b>匹配方式：</b>
+    </p>
+    <div class="input-box">
+        <p class="radio-item">
+            <label>
+                <input type="radio" name="matchType" value="all" checked>完全匹配
+            </label>
+            <label>
+                <input type="radio" name="matchType" value="like">模糊匹配
+            </label>
+            <label>
+                <input type="radio" name="matchType" value="php">正则匹配
+            </label>
+        </p>
+    </div>
+    <p>
+        <b>匹配内容</b>(输入下拉选项内容或者正则表达式)
+        <b>：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="matchText">
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="toggleType"></i>
+        <i class="xiala-icon parameters"></i>
+    </div>
+</div>
+<input type="hidden" class="item-type" name="selectOption">
+<div class="liucheng-item-tips">
+    <!-- <p class="in-parameter" title=""><i class="icon-tips-in"></i><em>：</em>"<b class="user-input-text tips-xpath"></b>","<b class="font-in-paramter-type">Xpath</b>"</p>
+<p class="dom-active-dec" title=""><i></i><em>：</em>选取元素："<b class="user-input-text tips-xpath"></b>","<b class="font-in-paramter-type">Xpath</b>"</p> -->
+    <!-- <p class="dom-active-dec" title=""><i class=""></i><em class="">：</em>获取所选元素的下拉框内容"<b class="font-out-paramter"></b>","<b class="font-out-paramter-type">Array</b>"</p> -->
+    <p class="dom-active-dec" title="">
+        <i class=""></i>
+        <em class="">：</em>将获取所选元素的下拉框的内容使用"
+        <b class="user-input-text tips-matchType"></b>"进行正则"
+        <b class="user-input-text tips-matchText"></b>"生成为数组，并输出为新变量</p>
+    <!-- <p class="in-parameter" title=""><i class="icon-tips-out"></i><em>：</em>"<b class="font-out-paramter"></b>","<b class="font-out-paramter-type">Array</b>"</p> -->
+</div>

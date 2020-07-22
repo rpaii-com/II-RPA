@@ -1,0 +1,24 @@
+<div class="main-con-item" style="overflow: hidden;">
+    <p>
+        <b>选择要删除的文件夹：</b>
+    </p>
+    <div class="input-box">
+        <button type="button" onclick="saveOriginPath.click();">点击选择文件夹</button>
+        <input type="text" class="form-control" id="originPath" name="file" />
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="xiala-icon parameters"></i>
+        <i class="toggleType"></i>
+        <input type="file" id="saveOriginPath" class="hideFile" onchange="this.value==''?originPath.value=originPath.value:originPath.value=gePathVal(this,true)"
+               webkitdirectory/>
+    </div>
+    <input type="hidden" class="item-type" name="fs_delete_dir">
+
+</div>
+
+<div class="liucheng-item-tips">
+
+    <p class="dom-active-dec" title="">
+        <i></i>
+        <em>：</em>删除文件夹：</p>
+
+</div>

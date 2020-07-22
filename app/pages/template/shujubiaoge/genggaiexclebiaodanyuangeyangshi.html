@@ -1,0 +1,90 @@
+<div class="main-con-item">
+    <div class="input-box">
+        <p>
+            <b>选择需要更改样式的文件：</b>
+        </p>
+        <button type="button" onclick="saveOriginPath.click();">点击选择文件</button>
+        <input type="text" class="form-control" id="originPath" name="filename" />
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="xiala-icon parameters"></i>
+        <i class="toggleType"></i>
+        <input type="file" id="saveOriginPath" class="hideFile" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,.csv,application/vnd.ms-excel"
+            onchange="this.value==''?originPath.value=originPath.value:originPath.value=gePathVal(this,true)" />
+    </div>
+
+    <div class="input-box">
+        <p>
+            <b>工作表名称（仅适用于Excel文件）</b>
+            <b>：</b>
+        </p>
+        <input type="text" name="sheet_name" placeholder="Sheet1">
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="xiala-icon parameters"></i>
+        <i class="toggleType"></i>
+    </div>
+    <div class="input-box">
+        <p>
+            <b>需要更改样式的矩形范围：</b>
+        </p>
+        <div class="input-box">
+            <input type="text" name="rectangle" placeholder="A1,C4/矩形框左上点，右下点">
+            <ul class="common-list parameters-can-select"></ul>
+            <i class="xiala-icon parameters"></i>
+            <i class="toggleType"></i>
+        </div>
+    </div>
+    <p>
+        <b>样式选择：</b>
+    </p>
+    <label for="isBlod">
+        <input type="checkbox" name="isBlod" id="isBlod" value="true">加粗</label>
+    <label for="isItalic">
+        <input type="checkbox" name="isItalic" id="isItalic" value="true">斜体</label>
+    <label for="isUnderline">
+        <input type="checkbox" name="isUnderline" id="isUnderline" value="true">下划线</label>
+    <div class="input-box">
+        <p>
+            <b>背景颜色：</b>
+        </p>
+        <div class="input-box">
+            <input type="text" name="RGB" placeholder="r,g,b">
+            <ul class="common-list parameters-can-select"></ul>
+            <i class="xiala-icon parameters"></i>
+            <i class="toggleType"></i>
+        </div>
+    </div>
+    <div class="input-box">
+        <p>
+            <b>字体大小(默认12)：</b>
+        </p>
+        <div class="input-box">
+            <input type="text" name="fontSize" placeholder="12/默认12">
+            <ul class="common-list parameters-can-select"></ul>
+            <i class="xiala-icon parameters"></i>
+            <i class="toggleType"></i>
+        </div>
+    </div>
+    <div class="input-box">
+        <p>
+            <b>字体颜色：</b>
+        </p>
+        <div class="input-box">
+            <input type="text" name="fontRGB" placeholder="r,g,b/默认黑色">
+            <ul class="common-list parameters-can-select"></ul>
+            <i class="xiala-icon parameters"></i>
+            <i class="toggleType"></i>
+        </div>
+    </div>
+    <input type="hidden" class="item-type" name="changeStyleExcle">
+</div>
+
+<div class="liucheng-item-tips">
+    <p class="in-parameter" title="">
+        <i class="icon-tips-in"></i>
+        <em>：</em>"
+        <b class="font-in-paramter in-paramter-valueParam"></b>","
+        <b class="font-in-paramter-type">String</b>"</p>
+    <p class="dom-active-dec" title="">
+        <i></i>
+        <em>：</em>更改Excel表格局部样式"</p>
+</div>

@@ -1,0 +1,44 @@
+<div class="main-con-item">
+
+    <div class="input-box">
+        <p>
+            <b>字符串：</b>
+        </p>
+        <div name="html" class="atwho-inputor" contentEditable="true"></div>
+        <input type="hidden" name="html" id="atwho" >
+    </div>
+    <div class="input-box">
+        <p>
+            <b>输出字符串命名：</b>
+        </p>
+        <input type="text" name="rename">
+    </div>
+    <input type="hidden" class="item-type" name="string_generacte">
+</div>
+<div class="liucheng-item-tips">
+    <p class="dom-active-dec" title="">
+        <i class=""></i>
+        <em class="">：</em>拼接字符串</p>
+    <p class="in-parameter" title="">
+        <i class="icon-tips-out"></i>
+        <em>：</em>"
+        <b class="font-out-paramter"></b>","
+        <b class="font-out-paramter-type">String</b>"</p>
+</div>
+
+<script>
+    $(function () {
+        let data_at=at_v();
+        $('.atwho-inputor').atwho({
+            at: "@",
+            data: data_at,
+            limit: 100,
+            insertTpl: '<span data-id="${id}">@${name}</span>',
+            startWithSpace: false,
+        });
+        $(".atwho-inputor").bind('DOMSubtreeModified', function(e) {
+            $('#atwho').val($('.atwho-inputor').text());
+        });
+    })
+
+</script>

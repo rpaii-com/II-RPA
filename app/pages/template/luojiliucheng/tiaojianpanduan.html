@@ -1,0 +1,119 @@
+<style>
+    .liadd {
+        padding-left: 15px;
+    }
+
+    .liadd input {
+        display: inline-block!important;
+        margin: 0px!important;
+    }
+
+    .liadd>div {
+        position: relative;
+        display: inline-block!important;
+        width: 190px!important;
+        margin: 0px!important;
+    }
+
+    .liadd>.if-else-item-mid {
+        width: 100px!important;
+
+    }
+
+    .liadd>button {
+        background: transparent!important;
+        line-height: 16px!important;
+        font-size: 27px!important;
+    }
+
+    .add {
+        color: chartreuse!important;
+    }
+
+    .sub {
+        color: red!important;
+    }
+
+    .xiala-icon {
+        top: 0px!important;
+    }
+</style>
+<div class="main-con-item case">
+    <p>满足条件</p>
+    <div class="input-boxs">
+        <div class="input-box if-else-item-left">
+            <input type="text" name="lid">
+            <ul class="common-list parameters-can-select"></ul>
+            <i class="toggleType"></i>
+            <i class="xiala-icon parameters"></i>
+        </div>
+        <div class="input-box if-else-item-mid">
+            <input type="text" name="op">
+
+            <ul class="common-list">
+                <li class="">大于</li>
+                <li class="">大于等于</li>
+                <li class="">等于</li>
+                <li class="">不等于</li>
+                <li class="">小于</li>
+                <li class="">小于等于</li>
+            </ul>
+            <i class="xiala-icon if-else-item-xia xia-op"></i>
+        </div>
+        <div class="input-box if-else-item-right">
+            <input type="text" name="rid">
+            <ul class="common-list parameters-can-select"></ul>
+            <i class="toggleType"></i>
+            <i class="xiala-icon parameters"></i>
+        </div>
+        <!-- <button type="button" class="add">+</button>
+        <button type="button" class="sub">-</button> -->
+    </div>
+    <input type="hidden" class="item-type" name="if" value="0">
+</div>
+
+<div class="liucheng-item-tips">
+
+    <p class="dom-active-dec" title="">
+        <i></i>
+        <em>：</em>将进行条件判断，左边变量"
+        <b class="user-input-text tips-op"></b>"右边变量</p>
+
+</div>
+<script>
+    $(function () {
+        $(".xia-op").on("click", function () {
+            $(this).next().toggle();
+        })
+        // $(".if-else-selection").on("click", function () {
+        //     $('[name="op"]').val($(this).text());
+        //     $(this).parent().hide()
+        // })
+        var iftemp = $(".liadd").eq(0).clone(true);
+        $(".case").on("click", ".add", function () {
+            let id = parseInt($('[name="if"]').val()) + 1;
+            iftemp.clone(true).appendTo(".case")
+            modal.refreshModal()
+            $(".liadd").eq(0).find(".sub").hide();
+            // $(".httpparameters input[name='value" + id + "']").after("<ul class='parameters-can-select'></ul>")
+            // console.log(newLI);
+            addNewLI();
+            $('[name="if"]').val(id)
+        })
+        $(".case").on("click", ".sub", function () {
+            $(this).parent().remove();
+            $(".liadd").eq(0).find(".sub").hide();
+            modal.refreshModal();
+            addNewLI()
+        })
+        $(".liadd").eq(0).find(".sub").hide();
+    });
+
+    // function addNewLI() {
+    //     if (modal.$data.editLiuchengItem.isEditExistedItem) {
+    //         newLI($('#' + modal.$data.editLiuchengItem.editItemId))
+    //     } else {
+    //         newLI()
+    //     }
+    // }
+</script>

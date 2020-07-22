@@ -1,0 +1,41 @@
+<div class="main-con-item" menu_name="import">
+    <div class="input-box">
+        <p>
+            <b>上传文件：</b>
+        </p>
+        <button type="button" onclick="saveOriginPath.click();">点击选择文件</button>
+        <input type="text" class="form-control" id="originPath" name="filePath" />
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="xiala-icon parameters"></i>
+        <i class="toggleType"></i>
+        <input type="file" id="saveOriginPath" class="hideFile" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,.csv,application/vnd.ms-excel "
+            onchange="this.value==''?originPath.value=originPath.value:originPath.value=gePathVal(this,true),previewTable(filePath)"
+        />
+    </div>
+    <div class="input-box">
+        <p>
+            <b>业务描述：</b>
+        </p>
+        <input type="text" class="form-control" name="businessDescription" placeholder="请输入业务描述" />
+        <p>
+            <b>输出变量命名：</b>
+        </p>
+        <input type="text" name="rename">
+        <br/>
+    </div>
+    <input type="hidden" class="item-type" name="importFile">
+    <div style="overflow-x: auto; overflow-y: auto; height: 200px;">
+        <table class="mytable-preview"></table>
+    </div>
+</div>
+
+<div class="liucheng-item-tips">
+    <p class="dom-active-dec" title="">
+        <i class=""></i>
+        <em class="">：</em>将读取所传文件的内容生成一个二维数组，并输出新变量</p>
+    <p class="in-parameter" title="">
+        <i class="icon-tips-out"></i>
+        <em>：</em>"
+        <b class="font-out-paramter"></b>","
+        <b class="font-out-paramter-type">Array[Array]</b>"</p>
+</div>

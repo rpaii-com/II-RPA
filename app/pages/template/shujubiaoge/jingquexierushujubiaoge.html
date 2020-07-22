@@ -1,0 +1,60 @@
+<div class="main-con-item">
+
+    <p>
+        <b>需要保存的数据名：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="valueParam">
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="toggleType"></i>
+        <i class="xiala-icon parameters"></i>
+    </div>
+    <p>
+        <b>写入位置</b>(行,列)
+        <b>：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="rectangle" placeholder="行,列">
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="xiala-icon parameters"></i>
+        <i class="toggleType"></i>
+    </div>
+    <p>
+        <b>工作表名称（仅适用于Excel文件）</b>
+        <b>：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="sheet_name" placeholder="Sheet1">
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="xiala-icon parameters"></i>
+        <i class="toggleType"></i>
+    </div>
+    <p>
+        <b>选择需要写入的文件：</b>
+    </p>
+    <div class="input-box">
+        <button type="button" onclick="saveOriginPath.click();">点击选择文件</button>
+        <input type="text" class="form-control" id="originPath" name="filename" />
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="xiala-icon parameters"></i>
+        <i class="toggleType"></i>
+        <input type="file" id="saveOriginPath" class="hideFile" onchange="this.value==''?originPath.value=originPath.value:originPath.value=gePathVal(this,true)"
+        />
+    </div>
+    <input type="hidden" class="item-type" name="PreciseWriteFile">
+</div>
+
+<div class="liucheng-item-tips">
+    <p class="in-parameter" title="">
+        <i class="icon-tips-in"></i>
+        <em>：</em>"
+        <b class="font-in-paramter in-paramter-valueParam"></b>","
+        <b class="font-in-paramter-type">String</b>"</p>
+    <!-- <p class="dom-active-dec" title=""><i></i><em>：</em>将接受变量写入到"<b class="user-input-text tips-targetPath"></b>"数据表格中"</p> -->
+    <p class="dom-active-dec" title="">
+        <i></i>
+        <em>：</em>将接受变量写入到目标路径的数据表格中"</p>
+
+    <!-- <p class="dom-active-dec" title=""><i class=""></i><em class="">：</em>新文件:"<b class="font-out-paramter"></b>","<b class="font-out-paramter-type">Array</b>"</p>
+    <p class="in-parameter" title=""><i class="icon-tips-out"></i><em>：</em>"<b class="font-out-paramter"></b>","<b class="font-out-paramter-type">Array</b>"</p> -->
+</div>

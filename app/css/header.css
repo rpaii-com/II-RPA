@@ -1,0 +1,211 @@
+.main-header {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background: url('../img/header-blue.png') no-repeat right;
+  background-size: cover;
+  box-shadow: 0 0 10px 5px rgba(137, 139, 142, 0.5);
+  z-index: 99999;
+}
+.main-header .header-box {
+  width: 1200px;
+  height: 50px;
+}
+.main-header .header-box .logo-box {
+  display: inline-block;
+  padding-left: 26px;
+  height: 50px;
+}
+.main-header .header-box .logo-box .img-logo {
+  position: absolute;
+  display: inline-block;
+  margin-top: 2px;
+  width: 40px;
+  height: 50px;
+  background: url(../img/logo-rpa-green.png) no-repeat center;
+}
+.main-header .header-box .logo-box .logo-tit-box {
+  position: relative;
+  display: inline-block;
+  padding-left: 50px;
+  padding-right: 110px;
+  vertical-align: top;
+  margin-left: 0;
+  width: 100%;
+  height: 50px;
+  text-align: left;
+  box-sizing: border-box;
+}
+.main-header .header-box .logo-box .logo-main-tit {
+  display: inline-block;
+  width: 100%;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 500;
+  font-family: 黑体;
+  line-height: 50px;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 2px rgba(1, 115, 118, 0.5);
+}
+.main-header .header-box .logo-box .status-an {
+  position: absolute;
+  display: none;
+  right: 0;
+  top: 0;
+  width: 110px;
+  height: 100%;
+}
+.main-header .header-box .logo-box .logo-little-tit {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  width: 90px;
+  height: 100%;
+  line-height: 57px;
+  font-size: 15px;
+  color: #FFF;
+  font-family: 黑体;
+  overflow: hidden;
+}
+.main-header .header-box .logo-box .animation-status {
+  animation: status 1.5s infinite;
+}
+@keyframes status {
+  0% {
+    width: 62px;
+  }
+  33% {
+    width: 65px;
+  }
+  66% {
+    width: 76px;
+  }
+  100% {
+    width: 87px;
+  }
+}
+.main-header .header-box .header-do {
+  position: absolute;
+  right: 0px;
+  top: 6px;
+}
+.main-header .header-box .header-do button {
+  display: inline-block;
+  margin: 0 10px 0 10px;
+  width: 17px;
+  height: 17px;
+  border: none;
+  cursor: pointer;
+}
+.main-header .header-box .header-do .header-set {
+  background: url("../img/theme/icon-app-btn-set-default.png") no-repeat center;
+}
+.main-header .header-box .header-do .header-min {
+  background: url("../img/theme/icon-app-btns-default.png") no-repeat -28px 0px;
+}
+.main-header .header-box .header-do .header-max {
+  background: url("../img/theme/icon-app-btns-default.png") no-repeat 0 0;
+}
+.main-header .header-box .header-do .header-close {
+  background: url("../img/theme/icon-app-btns-default.png") no-repeat -56px 0px;
+}
+.main-header .header-box .header-do .header-unmax {
+  background: url("../img/theme/icon-app-btn-umax-default.png") no-repeat center;
+}
+.main-header .header-box .header-do .header-set:hover {
+  background: url("../img/theme/icon-app-btn-set-hover.png") no-repeat center;
+}
+.main-header .header-box .header-do .header-min:hover {
+  background: url("../img/theme/icon-app-btns-hover.png") no-repeat -28px 0px;
+}
+.main-header .header-box .header-do .header-max:hover {
+  background: url("../img/theme/icon-app-btns-hover.png") no-repeat 0 0;
+}
+.main-header .header-box .header-do .header-close:hover {
+  background: url("../img/theme/icon-app-btns-hover.png") no-repeat -56px 0px;
+}
+.main-header .header-box .header-do .header-unmax:hover {
+  background: url("../img/theme/icon-app-btn-umax-hover.png") no-repeat center;
+}
+.main-header .header-box .nav-list {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  width: 850px;
+  height: 50px;
+  vertical-align: top;
+}
+.main-header .header-box .nav-list li {
+  display: inline-block;
+  padding-left: 27px;
+  padding-right: 27px;
+  height: 50px;
+}
+.main-header .header-box .nav-list li i {
+  display: inline-block;
+  width: 20px;
+  height: 50px;
+  vertical-align: top;
+  cursor: pointer;
+}
+.main-header .header-box .nav-list li .nav-icon-1 {
+  background: url("../img/icon-nav-1.png") no-repeat center;
+}
+.main-header .header-box .nav-list li .nav-icon-2 {
+  background: url("../img/icon-nav-2.png") no-repeat center;
+}
+.main-header .header-box .nav-list li .nav-icon-3 {
+  background: url("../img/icon-nav-3.png") no-repeat center;
+}
+.main-header .header-box .nav-list li span {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+.main-header .header-box .nav-list .on {
+  background: url("../img/bg-nav-li-on.png");
+}
+.main-header .header-box .header-btns {
+  float: right;
+  margin-top: 27px;
+}
+.main-header .header-box .header-btns button {
+  display: inline-block;
+  width: 120px;
+  height: 32px;
+  text-align: center;
+  border-radius: 16px;
+  line-height: 29px;
+  border: none;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0px 0 6px rgba(40, 125, 35, 0.5);
+}
+.main-header .header-box .header-btns button i {
+  display: inline-block;
+  padding: 0;
+  margin-right: 10px;
+  width: 14px;
+  height: 32px;
+  vertical-align: top;
+}
+.main-header .header-box .header-btns .btn-header-save {
+  background: -webkit-linear-gradient(left, #8ad886, #aedd7b);
+  transition: background .2s;
+}
+.main-header .header-box .header-btns .btn-header-save i {
+  background: url("../img/icon-btn-save.png") no-repeat center;
+}
+.main-header .header-box .header-btns .btn-header-fabu {
+  background: #fa8323;
+}
+.main-header .header-box .header-btns .btn-header-fabu i {
+  background: url("../img/icon-btn-fabu.png") no-repeat center;
+}
+.main-header .header-box .header-btns .btn-header-save:hover {
+  background: -webkit-linear-gradient(left, #aedd7b, #8ad886);
+}

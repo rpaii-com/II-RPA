@@ -1,0 +1,2056 @@
+{
+    "mouseMove": {
+      "point": "mouseMove.point",
+      "menuTitle": "mouseMove.menuTitle",
+      "menuNote": "mouseMove.menuNote"
+    },
+    "iconRecognition": {
+        "file": "iconRecognition.file",
+        "select_image": "iconRecognition.select_image",
+        "confidence": "iconRecognition.confidence",
+        "outParam": "iconRecognition.outParam",
+        "menuTitle": "iconRecognition.menuTitle",
+        "menuNote": "iconRecognition.menuNote"
+    },
+    "getPageCookies": {
+      "outParam": "getPageCookies.outParam",
+      "menuTitle": "getPageCookies.menuTitle",
+      "menuNote": "getPageCookies.menuNote"
+    },
+    "verCodeJuHe": {
+        "file": "verCodeJuHe.file",
+        "select_image": "verCodeJuHe.select_image",
+        "outParam": "verCodeJuHe.outParam",
+        "menuTitle": "verCodeJuHe.menuTitle",
+        "menuNote": "verCodeJuHe.menuNote"
+    },
+    "localDbCreate": {
+        "localFile": "localDbCreate.localFile",
+        "selectFile": "localDbCreate.selectFile",
+        "fileName": "localDbCreate.fileName",
+        "tableName": "localDbCreate.tableName",
+        "outParam": "localDbCreate.outParam",
+        "menuTitle": "localDbCreate.menuTitle",
+        "menuNote": "localDbCreate.menuNote"
+    },
+    "localDbOthers": {
+        "dbRename": "localDbOthers.dbRename",
+        "dbSql": "localDbOthers.dbSql",
+        "outParam": "localDbOthers.outParam",
+        "menuTitle": "localDbOthers.menuTitle",
+        "menuNote": "localDbOthers.menuNote"
+    },
+    "localDbSelect": {
+        "dbRename": "localDbSelect.dbRename",
+        "dbSql": "localDbSelect.dbSql",
+        "outParam": "localDbSelect.outParam",
+        "menuTitle": "localDbSelect.menuTitle",
+        "menuNote": "localDbSelect.menuNote"
+    },
+    "complexLogic": {
+        "html": "complexLogic.html",
+        "outParam": "complexLogic.outParam",
+        "menuTitle": "complexLogic.menuTitle",
+        "menuNote": "complexLogic.menuNote"
+    },
+    "localDbConfig": {
+        "localFile": "localDbConfig.localFile",
+        "selectFile": "localDbConfig.selectFile",
+        "outParam": "localDbConfig.outParam",
+        "menuTitle": "localDbConfig.menuTitle",
+        "menuNote": "localDbConfig.menuNote"
+    },
+    "configSeleniumExplore": {
+        "type": "configSeleniumExplore.type",
+        "IE": "configSeleniumExplore.IE",
+        "Firefox": "configSeleniumExplore.Firefox",
+        "Chrome": "configSeleniumExplore.Chrome",
+        "menuTitle": "configSeleniumExplore.menuTitle",
+        "menuNote": "configSeleniumExplore.menuNote"
+    },
+    "paramsPaste": {
+        "isFormat": "paramsPaste.isFormat",
+        "outParam": "paramsPaste.outParam",
+        "-": "剪切板导入变量",
+        "menuTitle": "paramsPaste.menuTitle",
+        "menuNote": "paramsPaste.menuNote"
+    },
+    "wordCopyInClip": {
+        "menuTitle": "wordCopyInClip.menuTitle",
+        "file": "wordCopyInClip.file",
+        "menuNote": "wordCopyInClip.menuNote",
+        "selectFile": "wordCopyInClip.selectFile"
+    },
+    "callFunction": {
+        "paramName": "callFunction.paramName",
+        "functionName": "callFunction.functionName",
+        "outParam": "callFunction.outParam",
+        "-": "常用函数",
+        "menuTitle": "callFunction.menuTitle",
+        "menuNote": "callFunction.menuNote"
+    },
+    "conArrayRowCol": {
+        "outParam": "conArrayRowCol.outParam",
+        "paramValue": "conArrayRowCol.paramValue",
+        "-": "二维数组行列互换",
+        "menuTitle": "conArrayRowCol.menuTitle",
+        "menuNote": "conArrayRowCol.menuNote"
+    },
+    "backGlobalParam": {
+        "outParam": "backGlobalParam.outParam",
+        "paramValue": "backGlobalParam.paramValue",
+        "-": "返回全局变量",
+        "menuTitle": "backGlobalParam.menuTitle",
+        "menuNote": "backGlobalParam.menuNote"
+    },
+    "paramsCopy": {
+        "paramName": "paramsCopy.paramName",
+        "-": "变量导入剪切板",
+        "menuTitle": "paramsCopy.menuTitle",
+        "menuNote": "paramsCopy.menuNote"
+    },
+    "simpleFormula": {
+        "outParam": "simpleFormula.outParam",
+        "formula": "simpleFormula.formula",
+        "menuTitle": "simpleFormula.menuTitle",
+        "menuNote": "simpleFormula.menuNote"
+    },
+    "setColParam": {
+        "paramName": "setColParam.paramName",
+        "httpparameters": "setColParam.httpparameters",
+        "menuTitle": "setColParam.menuTitle",
+        "menuNote": "setColParam.menuNote"
+    },
+    "saveNewParam": {
+        "paramValue": "saveNewParam.paramValue",
+        "outParam": "saveNewParam.outParam",
+        "menuTitle": "saveNewParam.menuTitle",
+        "menuNote": "saveNewParam.menuNote"
+    },
+    "calculateParam": {
+        "outParam": "calculateParam.outParam",
+        "param1": "calculateParam.param1",
+        "param2": "calculateParam.param2",
+        "operator": "calculateParam.operator",
+        "mo": "calculateParam.mo",
+        "menuTitle": "calculateParam.menuTitle",
+        "menuNote": "calculateParam.menuNote"
+    },
+    "numTrans": {
+        "outParam": "numTrans.outParam",
+        "paramValue": "numTrans.paramValue",
+        "type": "numTrans.type",
+        "numTozh": "numTrans.numTozh",
+        "zhTonum": "numTrans.zhTonum",
+        "menuTitle": "numTrans.menuTitle",
+        "menuNote": "numTrans.menuNote"
+    },
+    "arrayConcat": {
+        "outParam": "arrayConcat.outParam",
+        "des": "arrayConcat.des",
+        "value": "arrayConcat.value",
+        "menuTitle": "arrayConcat.menuTitle",
+        "menuNote": "arrayConcat.menuNote"
+    },
+    "extractParam": {
+        "outParam": "extractParam.outParam",
+        "regexValue": "extractParam.regexValue",
+        "key": "extractParam.key",
+        "index": "extractParam.index",
+        "quickKey": "extractParam.quickKey",
+        "extractType": "extractParam.extractType",
+        "paramName": "extractParam.paramName",
+        "menuTitle": "extractParam.menuTitle",
+        "menuNote": "extractParam.menuNote"
+    },
+    "convertParam": {
+        "outParam": "convertParam.outParam",
+        "regexValue": "convertParam.regexValue",
+        "paramName": "convertParam.paramName",
+        "menuTitle": "convertParam.menuTitle",
+        "menuNote": "convertParam.menuNote"
+    },
+    "strSplit": {
+        "outParam": "strSplit.outParam",
+        "separator": "strSplit.separator",
+        "strObject": "strSplit.strObject",
+        "menuTitle": "strSplit.menuTitle",
+        "menuNote": "strSplit.menuNote"
+    },
+    "string_generacte": {
+        "outParam": "string_generacte.outParam",
+        "html": "string_generacte.html",
+        "menuTitle": "string_generacte.menuTitle",
+        "menuNote": "string_generacte.menuNote"
+    },
+    "excelToObject": {
+        "outParam": "excelToObject.outParam",
+        "filePath": "excelToObject.filePath",
+        "menuTitle": "excelToObject.menuTitle",
+        "selectFile": "excelToObject.selectFile",
+        "menuNote": "excelToObject.menuNote"
+    },
+    "readCsvFile": {
+        "outParam": "readCsvFile.outParam",
+        "filePath": "readCsvFile.filePath",
+        "menuTitle": "readCsvFile.menuTitle",
+        "selectFile": "readCsvFile.selectFile",
+        "menuNote": "readCsvFile.menuNote"
+    },
+    "excelReadCell": {
+        "outParam": "excelReadCell.outParam",
+        "object": "excelReadCell.object",
+        "text": "excelReadCell.text",
+        "resType": "excelReadCell.resType",
+        "rectangle": "excelReadCell.rectangle",
+        "sheetName": "excelReadCell.sheetName",
+        "excelKey": "excelReadCell.excelKey",
+        "menuTitle": "excelReadCell.menuTitle",
+        "menuNote": "excelReadCell.menuNote"
+    },
+    "excelReadSheet": {
+        "outParam": "excelReadSheet.outParam",
+        "sheetName": "excelReadSheet.sheetName",
+        "allSheet": "excelReadSheet.allSheet",
+        "excelKey": "excelReadSheet.excelKey",
+        "menuTitle": "excelReadSheet.menuTitle",
+        "menuNote": "excelReadSheet.menuNote"
+    },
+    "excelReadRange": {
+        "outParam": "excelReadRange.outParam",
+        "rightDown": "excelReadRange.rightDown",
+        "leftUp": "excelReadRange.leftUp",
+        "sheetName": "excelReadRange.sheetName",
+        "excelKey": "excelReadRange.excelKey",
+        "menuTitle": "excelReadRange.menuTitle",
+        "menuNote": "excelReadRange.menuNote"
+    },
+    "excelCopyPart": {
+        "to_rectangle_right_up": "excelCopyPart.to_rectangle_right_up",
+        "to_sheet": "excelCopyPart.to_sheet",
+        "excelKey2": "excelCopyPart.excelKey2",
+        "rectangle_right_down": "excelCopyPart.rectangle_right_down",
+        "from_sheet": "excelCopyPart.from_sheet",
+        "excelKey": "excelCopyPart.excelKey",
+        "menuTitle": "excelCopyPart.menuTitle",
+        "menuNote": "excelCopyPart.menuNote"
+    },
+    "excelChangeSheet": {
+        "newSheetName": "excelChangeSheet.newSheetName",
+        "sheetName": "excelChangeSheet.sheetName",
+        "excelKey": "excelChangeSheet.excelKey",
+        "menuTitle": "excelChangeSheet.menuTitle",
+        "menuNote": "excelChangeSheet.menuNote"
+    },
+    "excelDeleRowCol": {
+        "rectangle": "excelDeleRowCol.rectangle",
+        "rowCol": "excelDeleRowCol.rowCol",
+        "sheetName": "excelDeleRowCol.sheetName",
+        "excelKey": "excelDeleRowCol.excelKey",
+        "col": "excelDeleRowCol.col",
+        "row": "excelDeleRowCol.row",
+        "menuTitle": "excelDeleRowCol.menuTitle",
+        "menuNote": "excelDeleRowCol.menuNote"
+    },
+    "writeCsvFile": {
+        "outParam": "writeCsvFile.outParam",
+        "isSaveHistory": "writeCsvFile.isSaveHistory",
+        "newFileName": "writeCsvFile.newFileName",
+        "targetPath": "writeCsvFile.targetPath",
+        "filename": "writeCsvFile.filename",
+        "valueParam": "writeCsvFile.valueParam",
+        "a": "writeCsvFile.a",
+        "w": "writeCsvFile.w",
+        "writeType": "writeCsvFile.writeType",
+        "menuTitle": "writeCsvFile.menuTitle",
+        "select_directory": "writeCsvFile.select_directory",
+        "menuNote": "writeCsvFile.menuNote"
+    },
+    "excelWriteCell": {
+        "rectangle": "excelWriteCell.rectangle",
+        "sheetName": "excelWriteCell.sheetName",
+        "excelObject": "excelWriteCell.excelObject",
+        "valueParam": "excelWriteCell.valueParam",
+        "menuTitle": "excelWriteCell.menuTitle",
+        "menuNote": "excelWriteCell.menuNote"
+    },
+    "excelWriteSheet": {
+        "valueParam": "excelWriteSheet.valueParam",
+        "add": "excelWriteSheet.add",
+        "write": "excelWriteSheet.write",
+        "resType": "excelWriteSheet.resType",
+        "sheetName": "excelWriteSheet.sheetName",
+        "excelObject": "excelWriteSheet.excelObject",
+        "menuTitle": "excelWriteSheet.menuTitle",
+        "menuNote": "excelWriteSheet.menuNote"
+    },
+    "excelWriteRowCol": {
+        "rectangle": "excelWriteRowCol.rectangle",
+        "col": "excelWriteRowCol.col",
+        "row": "excelWriteRowCol.row",
+        "rowCol": "excelWriteRowCol.rowCol",
+        "sheetName": "excelWriteRowCol.sheetName",
+        "excelObject": "excelWriteRowCol.excelObject",
+        "valueParam": "excelWriteRowCol.valueParam",
+        "menuTitle": "excelWriteRowCol.menuTitle",
+        "menuNote": "excelWriteRowCol.menuNote"
+    },
+    "excelwriteRange": {
+        "leftUp": "excelwriteRange.leftUp",
+        "valueParam": "excelwriteRange.valueParam",
+        "sheetName": "excelwriteRange.sheetName",
+        "excelObject": "excelwriteRange.excelObject",
+        "menuTitle": "excelwriteRange.menuTitle",
+        "menuNote": "excelwriteRange.menuNote"
+    },
+    "excelCreateSheet": {
+        "sheetName": "excelCreateSheet.sheetName",
+        "excelObject": "excelCreateSheet.excelObject",
+        "menuTitle": "excelCreateSheet.menuTitle",
+        "menuNote": "excelCreateSheet.menuNote"
+    },
+    "copyOrpasteDo": {
+        "ctrlCOrV": "copyOrpasteDo.ctrlCOrV",
+        "ctrlC": "copyOrpasteDo.ctrlC",
+        "ctrlV": "copyOrpasteDo.ctrlV",
+        "menuTitle": "copyOrpasteDo.menuTitle",
+        "menuNote": "copyOrpasteDo.menuNote"
+    },
+    "shortCut": {
+        "hotKey": "shortCut.hotKey",
+        "count": "shortCut.count",
+        "menuTitle": "shortCut.menuTitle",
+        "menuNote": "shortCut.menuNote"
+    },
+    "mouseClick": {
+        "mouseClickType": "mouseClick.mouseClickType.name",
+        "leftClick": "mouseClick.leftClick",
+        "midClick": "mouseClick.midClick",
+        "rightClick": "mouseClick.rightClick",
+        "leftDbclick": "mouseClick.leftDbclick",
+        "menuTitle": "mouseClick.menuTitle",
+        "menuNote": "mouseClick.menuNote"
+    },
+    "mouseRoll": {
+        "mouseRollLeftOrRight": "mouseRoll.mouseRollLeftOrRight",
+        "mouseRollUpOrDown": "mouseRoll.mouseRollUpOrDown",
+        "rectangle": "mouseRoll.rectangle",
+        "path": "mouseRoll.path",
+        "winTitle": "mouseRoll.winTitle",
+        "processName": "mouseRoll.processName",
+        "CScapture": "mouseRoll.CScapture",
+        "CScapturePos": "mouseRoll.CScapturePos",
+        "menuTitle": "mouseRoll.menuTitle",
+        "menuNote": "mouseRoll.menuNote"
+    },
+    "draftingMouse": {
+        "rectangle_end": "draftingMouse.rectangle_end",
+        "rectangle_start": "draftingMouse.rectangle_start",
+        "menuTitle": "draftingMouse.menuTitle",
+        "menuNote": "draftingMouse.menuNote"
+    },
+    "pasteDo": {
+        "text-box": "pasteDo.text-box"
+    },
+    "CSmove_position": {
+        "mouseClick": "CSmove_position.mouseClick",
+        "mouseMove": "CSmove_position.mouseMove",
+        "rectangle": "CSmove_position.rectangle",
+        "CScapturePos": "CSmove_position.CScapturePos",
+        "menuTitle": "CSmove_position.menuTitle",
+        "menuNote": "CSmove_position.menuNote"
+    },
+    "docReadTxt": {
+        "outParam": "docReadTxt.outParam",
+        "usinessDescription": "docReadTxt.usinessDescription",
+        "filePath": "docReadTxt.filePath",
+        "menuTitle": "docReadTxt.menuTitle",
+        "selectFile": "docReadTxt.selectFile",
+        "menuNote": "docReadTxt.menuNote"
+    },
+    "docReadWord": {
+        "outParam": "docReadWord.outParam",
+        "businessDescription": "docReadWord.businessDescription",
+        "filePath": "docReadWord.filePath",
+        "menuTitle": "docReadWord.menuTitle",
+        "selectFile": "docReadWord.selectFile",
+        "menuNote": "docReadWord.menuNote"
+    },
+    "docWriteTxt": {
+        "newFileName": "docWriteTxt.newFileName",
+        "isSaveHistory": "docWriteTxt.isSaveHistory",
+        "outParam": "docWriteTxt.outParam",
+        "targetPath": "docWriteTxt.targetPath",
+        "filename": "docWriteTxt.filename",
+        "a": "docWriteTxt.a",
+        "w": "docWriteTxt.w",
+        "writeType": "docWriteTxt.writeType",
+        "valueParam": "docWriteTxt.valueParam",
+        "menuTitle": "docWriteTxt.menuTitle",
+        "select_directory": "docWriteTxt.select_directory",
+        "menuNote": "docWriteTxt.menuNote"
+    },
+    "docWriteWord": {
+        "outParam": "docWriteWord.outParam",
+        "isSaveHistory": "docWriteWord.isSaveHistory",
+        "newFileName": "docWriteWord.newFileName",
+        "targetPath": "docWriteWord.targetPath",
+        "filename": "docWriteWord.filename",
+        "valueParam": "docWriteWord.valueParam",
+        "menuTitle": "docWriteWord.menuTitle",
+        "select_directory": "docWriteWord.select_directory",
+        "menuNote": "docWriteWord.menuNote"
+    },
+    "closeExecuteWindow": {
+        "text-box": "closeExecuteWindow.text-box",
+        "menuTitle": "closeExecuteWindow.menuTitle",
+        "menuNote": "closeExecuteWindow.menuNote"
+    },
+    "CMDcommand": {
+        "outParam": "CMDcommand.outParam",
+        "command": "CMDcommand.command",
+        "menuTitle": "CMDcommand.menuTitle",
+        "menuNote": "CMDcommand.menuNote"
+    },
+    "openApplication": {
+        "openPath": "openApplication.openPath",
+        "menuTitle": "openApplication.menuTitle",
+        "selectFile": "openApplication.selectFile",
+        "menuNote": "openApplication.menuNote"
+    },
+    "waitTime": {
+        "sleep": "waitTime.sleep",
+        "menuTitle": "waitTime.menuTitle",
+        "menuNote": "waitTime.menuNote"
+    },
+    "confirmSend": {
+        "isTxt": "confirmSend.isTxt",
+        "content": "confirmSend.content",
+        "openPath": "confirmSend.openPath",
+        "subject": "confirmSend.subject",
+        "receive_c": "confirmSend.receive_c",
+        "receive": "confirmSend.receive",
+        "port": "confirmSend.port",
+        "server": "confirmSend.server",
+        "pwd": "confirmSend.pwd",
+        "account": "confirmSend.account",
+        "menuTitle": "confirmSend.menuTitle",
+        "selectFile": "confirmSend.selectFile",
+        "menuNote": "confirmSend.menuNote"
+    },
+    "closeApplication": {
+        "closePath": "closeApplication.closePath",
+        "menuTitle": "closeApplication.menuTitle",
+        "menuNote": "closeApplication.menuNote"
+    },
+    "getIp": {
+        "outParam": "getIp.outParam",
+        "menuTitle": "getIp.menuTitle",
+        "menuNote": "getIp.menuNote"
+    },
+    "getScriptInfo": {
+        "outParam": "getScriptInfo.outParam",
+        "menuTitle": "getScriptInfo.menuTitle",
+        "menuNote": "getScriptInfo.menuNote"
+    },
+    "getSystemParameter": {
+        "outParam": "getSystemParameter.outParam",
+        "setParam": "getSystemParameter.setParam",
+        "getScreenSize": "getSystemParameter.getScreenSize",
+        "getCurrentPath": "getSystemParameter.getCurrentPath",
+        "getCurrentLocale": "getSystemParameter.getCurrentLocale",
+        "getSysTime": "getSystemParameter.getSysTime",
+        "getClipboard": "getSystemParameter.getClipboard",
+        "getOSVersion": "getSystemParameter.getOSVersion",
+        "getOSArchitecture": "getSystemParameter.getOSArchitecture",
+        "getRobotVersion": "getSystemParameter.getRobotVersion",
+        "systemType": "getSystemParameter.systemType",
+        "menuTitle": "getSystemParameter.menuTitle",
+        "menuNote": "getSystemParameter.menuNote"
+    },
+    "confirmReceive": {
+        "outParam": "confirmReceive.outParam",
+        "port": "confirmReceive.port",
+        "host": "confirmReceive.host",
+        "password": "confirmReceive.password",
+        "account": "confirmReceive.account",
+        "menuTitle": "confirmReceive.menuTitle",
+        "menuNote": "confirmReceive.menuNote"
+    },
+    "openExecuteWindow": {
+        "text-box": "openExecuteWindow.text-box",
+        "menuTitle": "openExecuteWindow.menuTitle",
+        "menuNote": "openExecuteWindow.menuNote"
+    },
+    "capScreenPart": {
+        "outParam": "capScreenPart.outParam",
+        "isSaveHistory": "capScreenPart.isSaveHistory",
+        "save-history": "capScreenPart.save-history",
+        "fileName": "capScreenPart.fileName",
+        "rectangle_end": "capScreenPart.rectangle_end",
+        "rectangle_start": "capScreenPart.rectangle_start",
+        "menuTitle": "capScreenPart.menuTitle",
+        "menuNote": "capScreenPart.menuNote"
+    },
+    "triggerBatVbs": {
+        "button": "triggerBatVbs.button",
+        "openfilePath": "triggerBatVbs.openfilePath",
+        "menuTitle": "triggerBatVbs.menuTitle",
+        "menuNote": "triggerBatVbs.menuNote"
+    },
+    "triggerJava": {
+        "file": "triggerJava.file",
+        "button": "triggerJava.button",
+        "menuTitle": "triggerJava.menuTitle",
+        "selectFile": "triggerJava.selectFile",
+        "menuNote": "triggerJava.menuNote"
+    },
+    "ocr_TencentCloud_getString": {
+        "outParam": "ocr_TencentCloud_getString.outParam",
+        "file": "ocr_TencentCloud_getString.file",
+        "menuTitle": "ocr_TencentCloud_getString.menuTitle",
+        "select_image": "ocr_TencentCloud_getString.select_image",
+        "menuNote": "ocr_TencentCloud_getString.menuNote"
+    },
+    "ocr_TencentCloud_getPosition": {
+        "outParam": "ocr_TencentCloud_getPosition.outParam",
+        "matchString": "ocr_TencentCloud_getPosition.matchString",
+        "file": "ocr_TencentCloud_getPosition.file",
+        "menuTitle": "ocr_TencentCloud_getPosition.menuTitle",
+        "select_image": "ocr_TencentCloud_getPosition.select_image",
+        "menuNote": "ocr_TencentCloud_getPosition.menuNote"
+    },
+    "dbSelect": {
+        "outParam": "dbSelect.outParam",
+        "dbSql": "dbSelect.dbSql",
+        "dbRename": "dbSelect.dbRename",
+        "menuTitle": "dbSelect.menuTitle",
+        "menuNote": "dbSelect.menuNote"
+    },
+    "dbConfig": {
+        "outParam": "dbConfig.outParam",
+        "test_db_config": "dbConfig.test_db_config",
+        "schema": "dbConfig.schema",
+        "password": "dbConfig.password",
+        "username": "dbConfig.username",
+        "port": "dbConfig.port",
+        "hostname": "dbConfig.hostname",
+        "oracle": "dbConfig.oracle",
+        "mssql": "dbConfig.mssql",
+        "mysql": "dbConfig.mysql",
+        "dbType": "dbConfig.dbType",
+        "menuTitle": "dbConfig.menuTitle",
+        "menuNote": "dbConfig.menuNote"
+    },
+    "dbInsert": {
+        "outParam": "dbInsert.outParam",
+        "dbSql": "dbInsert.dbSql",
+        "dbData": "dbInsert.dbData",
+        "dbRename": "dbInsert.dbRename",
+        "menuTitle": "dbInsert.menuTitle",
+        "menuNote": "dbInsert.menuNote"
+    },
+    "dbOthers": {
+        "outParam": "dbOthers.outParam",
+        "dbSql": "dbOthers.dbSql",
+        "dbRename": "dbOthers.dbRename",
+        "menuTitle": "dbOthers.menuTitle",
+        "menuNote": "dbOthers.menuNote"
+    },
+    "fs_rename": {
+        "name": "fs_rename.name",
+        "file": "fs_rename.file",
+        "menuTitle": "fs_rename.menuTitle",
+        "selectFile": "fs_rename.selectFile",
+        "menuNote": "fs_rename.menuNote"
+    },
+    "fs_cre_directory": {
+        "name": "fs_cre_directory.name",
+        "directory": "fs_cre_directory.directory",
+        "menuTitle": "fs_cre_directory.menuTitle",
+        "select_directory": "fs_cre_directory.select_directory",
+        "menuNote": "fs_cre_directory.menuNote"
+    },
+    "fs_cre_file": {
+        "name": "fs_cre_file.name",
+        "directory": "fs_cre_file.directory",
+        "menuTitle": "fs_cre_file.menuTitle",
+        "select_directory": "fs_cre_file.select_directory",
+        "menuNote": "fs_cre_file.menuNote"
+    },
+    "fs_copy": {
+        "directory": "fs_copy.directory",
+        "file": "fs_copy.file",
+        "menuTitle": "fs_copy.menuTitle",
+        "selectFile": "fs_copy.selectFile",
+        "select_directory": "fs_copy.select_directory",
+        "menuNote": "fs_copy.menuNote"
+    },
+    "fs_get_all_file": {
+        "outParam": "fs_get_all_file.outParam",
+        "filetype": "fs_get_all_file.filetype",
+        "directory": "fs_get_all_file.directory",
+        "menuTitle": "fs_get_all_file.menuTitle",
+        "select_directory": "fs_get_all_file.select_directory",
+        "menuNote": "fs_get_all_file.menuNote"
+    },
+    "unarchiverFile": {
+        "directoryRes": "unarchiverFile.directoryRes",
+        "directory": "unarchiverFile.directory",
+        "menuTitle": "unarchiverFile.menuTitle",
+        "selectFile": "unarchiverFile.selectFile",
+        "select_directory": "unarchiverFile.select_directory",
+        "menuNote": "unarchiverFile.menuNote"
+    },
+    "fs_exists": {
+        "outParam": "fs_exists.outParam",
+        "path": "fs_exists.path",
+        "menuTitle": "fs_exists.menuTitle",
+        "select_directory": "fs_exists.select_directory",
+        "menuNote": "fs_exists.menuNote"
+    },
+    "fs_delete": {
+        "file": "fs_delete.file",
+        "menuTitle": "fs_delete.menuTitle",
+        "selectFile": "fs_delete.selectFile",
+        "menuNote": "fs_delete.menuNote"
+    },
+    "archiverFile": {
+        "outParam": "archiverFile.outParam",
+        "directoryRes": "archiverFile.directoryRes",
+        "name": "archiverFile.name",
+        "directory": "archiverFile.directory",
+        "menuTitle": "archiverFile.menuTitle",
+        "select_directory": "archiverFile.select_directory",
+        "selectFile": "archiverFile.selectFile",
+        "save_directory": "archiverFile.save_directory",
+        "menuNote": "archiverFile.menuNote"
+    },
+    "fs_move": {
+        "directory": "fs_move.directory",
+        "file": "fs_move.file",
+        "menuTitle": "fs_move.menuTitle",
+        "selectFile": "fs_move.selectFile",
+        "select_directory": "fs_move.select_directory",
+        "menuNote": "fs_move.menuNote"
+    },
+    "triggerScript": {
+        "scriptId": "triggerScript.scriptId",
+        "menuTitle": "triggerScript.menuTitle",
+        "menuNote": "triggerScript.menuNote"
+    },
+    "openMstscReport": {
+        "text-box": "openMstscReport.text-box",
+        "menuTitle": "openMstscReport.menuTitle",
+        "menuNote": "openMstscReport.menuNote"
+    },
+    "returnParameterToCenter": {
+        "parameter": "returnParameterToCenter.parameter",
+        "menuTitle": "returnParameterToCenter.menuTitle",
+        "menuNote": "returnParameterToCenter.menuNote"
+    },
+    "openTips": {
+        "parameter": "openTips.parameter",
+        "menuTitle": "openTips.menuTitle",
+        "menuNote": "openTips.menuNote"
+    },
+    "getCSElement": {
+        "outParam": "getCSElement.outParam",
+        "height": "getCSElement.height",
+        "width": "getCSElement.width",
+        "offRightDownPos": "getCSElement.offRightDownPos",
+        "offRightTopPos": "getCSElement.offRightTopPos",
+        "offLeftDownPos": "getCSElement.offLeftDownPos",
+        "offLeftTopPos": "getCSElement.offLeftTopPos",
+        "offCenterPos": "getCSElement.offCenterPos",
+        "pos": "getCSElement.pos",
+        "elType": "getCSElement.elType",
+        "elValue": "getCSElement.elValue",
+        "elName": "getCSElement.elName",
+        "csPath": "getCSElement.csPath",
+        "winTitle": "getCSElement.winTitle",
+        "processName": "getCSElement.processName",
+        "CScaptureNew": {
+            "name": "getCSElement.CScaptureNew.name",
+            "note": "getCSElement.CScaptureNew.note"
+        },
+        "menuTitle": "getCSElement.menuTitle",
+        "menuNote": "getCSElement.menuNote"
+    },
+    "similarSelector": {
+        "outParam": "similarSelector.outParam",
+        "selectors": "similarSelector.selectors",
+        "target": "similarSelector.target",
+        "menuTitle": "similarSelector.menuTitle",
+        "menuNote": "similarSelector.menuNote"
+    },
+    "getCSParentElementByName": {
+        "outParam": "getCSParentElementByName.outParam",
+        "elName": {
+            "name": "getCSParentElementByName.elName.name",
+            "note": "getCSParentElementByName.elName.note"
+        },
+        "eventType": {
+            "name": "getCSParentElementByName.eventType.name",
+            "note": "getCSParentElementByName.eventType.note"
+        },
+        "Element": "getCSParentElementByName.Element",
+        "menuTitle": "getCSParentElementByName.menuTitle",
+        "menuNote": "getCSParentElementByName.menuNote"
+    },
+    "getCSBrotherElementByName": {
+        "outParam": "getCSBrotherElementByName.outParam",
+        "index": {
+            "name": "getCSBrotherElementByName.index.name",
+            "note": "getCSBrotherElementByName.index.note"
+        },
+        "elName": {
+            "name": "getCSBrotherElementByName.elName.name",
+            "note": "getCSBrotherElementByName.elName.note"
+        },
+        "isSameType": "getCSBrotherElementByName.isSameType",
+        "eventType": {
+            "name": "getCSBrotherElementByName.eventType.name",
+            "note": "getCSBrotherElementByName.eventType.note"
+        },
+        "Element": "getCSBrotherElementByName.Element",
+        "menuTitle": "getCSBrotherElementByName.menuTitle",
+        "menuNote": "getCSBrotherElementByName.menuNote"
+    },
+    "getCSChildrenElementByName": {
+        "outParam": "getCSChildrenElementByName.outParam",
+        "eventType": {
+            "name": "getCSChildrenElementByName.eventType.name",
+            "note": "getCSChildrenElementByName.eventType.note"
+        },
+        "index": {
+            "name": "getCSChildrenElementByName.index.name",
+            "note": "getCSChildrenElementByName.index.note"
+        },
+        "elName": {
+            "name": "getCSChildrenElementByName.elName.name",
+            "note": "getCSChildrenElementByName.elName.note"
+        },
+        "Element": "getCSChildrenElementByName.Element",
+        "isSameType": "getCSChildrenElementByName.isSameType",
+        "menuTitle": "getCSChildrenElementByName.menuTitle",
+        "menuNote": "getCSChildrenElementByName.menuNote"
+    },
+    "getCSParentElement": {
+        "outParam": "getCSParentElement.outParam",
+        "Element": "getCSParentElement.Element",
+        "menuTitle": "getCSParentElement.menuTitle",
+        "menuNote": "getCSParentElement.menuNote"
+    },
+    "getCSBrotherElement": {
+        "outParam": "getCSBrotherElement.outParam",
+        "last": "getCSBrotherElement.last",
+        "next": "getCSBrotherElement.next",
+        "prev": "getCSBrotherElement.prev",
+        "first": "getCSBrotherElement.first",
+        "eventType": {
+            "name": "getCSBrotherElement.eventType.name",
+            "note": "getCSBrotherElement.eventType.note"
+        },
+        "Element": "getCSBrotherElement.Element",
+        "menuTitle": "getCSBrotherElement.menuTitle",
+        "menuNote": "getCSBrotherElement.menuNote"
+    },
+    "getElementItems": {
+        "outParam": "getElementItems.outParam",
+        "Element": "getElementItems.Element",
+        "menuTitle": "getElementItems.menuTitle",
+        "menuNote": "getElementItems.menuNote"
+    },
+    "getCSChildrenElement": {
+        "outParam": "getCSChildrenElement.outParam",
+        "eventType": {
+            "name": "getCSChildrenElement.eventType.name",
+            "note": "getCSChildrenElement.eventType.note"
+        },
+        "Element": "getCSChildrenElement.Element",
+        "menuTitle": "getCSChildrenElement.menuTitle",
+        "menuNote": "getCSChildrenElement.menuNote"
+    },
+    "CSElemetClick": {
+        "mouseClickType": {
+            "name": "CSElemetClick.mouseClickType.name",
+            "note": "CSElemetClick.mouseClickType.note"
+        },
+        "noClick": "CSElemetClick.noClick",
+        "leftDbclick": "CSElemetClick.leftDbclick",
+        "rightClick": "CSElemetClick.rightClick",
+        "midClick": "CSElemetClick.midClick",
+        "leftClick": "CSElemetClick.leftClick",
+        "Element": "CSElemetClick.Element",
+        "menuTitle": "CSElemetClick.menuTitle",
+        "menuNote": "CSElemetClick.menuNote"
+    },
+    "CSElemetInput": {
+        "input": "CSElemetInput.input",
+        "inputText": {
+            "name": "CSElemetInput.inputText.name",
+            "note": "CSElemetInput.inputText.note"
+        },
+        "ctrlC": "CSElemetInput.ctrlC",
+        "keybord": "CSElemetInput.keybord",
+        "inputType": {
+            "name": "CSElemetInput.inputType.name",
+            "note": "CSElemetInput.inputType.note"
+        },
+        "Element": "CSElemetInput.Element",
+        "inputParam": "CSElemetInput.inputParam",
+        "menuTitle": "CSElemetInput.menuTitle",
+        "menuNote": "CSElemetInput.menuNote"
+    },
+    "ftpDownLoad": {
+        "localPath": "ftpDownLoad.localPath",
+        "fileNmae": "ftpDownLoad.fileNmae",
+        "remotePath": "ftpDownLoad.remotePath",
+        "pass": "ftpDownLoad.pass",
+        "user": "ftpDownLoad.user",
+        "port": "ftpDownLoad.port",
+        "host": "ftpDownLoad.host",
+        "select_directory": "ftpDownLoad.select_directory",
+        "menuTitle": "ftpDownLoad.menuTitle",
+        "menuNote": "ftpDownLoad.menuNote"
+    },
+    "httpApi": {
+        "outParam": "httpApi.outParam",
+        "text": "httpApi.text",
+        "json": "httpApi.json",
+        "paramType": "httpApi.paramType",
+        "httpparameters": "httpApi.httpparameters",
+        "ContentType": "httpApi.ContentType",
+        "post": "httpApi.post",
+        "get": "httpApi.get",
+        "httpType": "httpApi.httpType",
+        "menuTitle": "httpApi.menuTitle",
+        "menuNote": "httpApi.menuNote"
+    },
+    "http_downloadfile": {
+        "outParam": "http_downloadfile.outParam",
+        "url_download": "http_downloadfile.url_download",
+        "button": "http_downloadfile.button",
+        "directory": "http_downloadfile.directory",
+        "menuTitle": "http_downloadfile.menuTitle",
+        "menuNote": "http_downloadfile.menuNote"
+    },
+    "http_uploadfile": {
+        "url_upload": "http_uploadfile.url_upload",
+        "file": "http_uploadfile.file",
+        "menuTitle": "http_uploadfile.menuTitle",
+        "select_directory": "http_uploadfile.select_directory",
+        "menuNote": "http_uploadfile.menuNote"
+    },
+    "socketApi": {
+        "outParam": "socketApi.outParam",
+        "text": "socketApi.text",
+        "json": "socketApi.json",
+        "data_type": "socketApi.data_type",
+        "signal": "socketApi.signal",
+        "port": "socketApi.port",
+        "host": "socketApi.host",
+        "menuTitle": "socketApi.menuTitle",
+        "menuNote": "socketApi.menuNote"
+    },
+    "websocketApi": {
+        "outParam": "websocketApi.outParam",
+        "text": "websocketApi.text",
+        "json": "websocketApi.json",
+        "data_type": "websocketApi.data_type",
+        "signal": "websocketApi.signal",
+        "port": "websocketApi.port",
+        "host": "websocketApi.host",
+        "menuTitle": "websocketApi.menuTitle",
+        "menuNote": "websocketApi.menuNote"
+    },
+    "newHttpApi": {
+        "outParam": "newHttpApi.outParam",
+        "resHeaders": "newHttpApi.resHeaders",
+        "response": "newHttpApi.response",
+        "returnType": "newHttpApi.returnType",
+        "paramsKey1": "newHttpApi.paramsKey1",
+        "headerKey1": "newHttpApi.headerKey1",
+        "path": "newHttpApi.path",
+        "port": "newHttpApi.port",
+        "host": "newHttpApi.host",
+        "post": "newHttpApi.post",
+        "get": "newHttpApi.get",
+        "method": "newHttpApi.method",
+        "menuTitle": "newHttpApi.menuTitle",
+        "menuNote": "newHttpApi.menuNote"
+    },
+    "ftpUpload": {
+        "localPath": "ftpUpload.localPath",
+        "fileNmae": "ftpUpload.fileNmae",
+        "remotePath": "ftpUpload.remotePath",
+        "pass": "ftpUpload.pass",
+        "user": "ftpUpload.user",
+        "port": "ftpUpload.port",
+        "host": "ftpUpload.host",
+        "menuTitle": "ftpUpload.menuTitle",
+        "select_directory": "ftpUpload.select_directory",
+        "menuNote": "ftpUpload.menuNote"
+    },
+    "telnetClose": {
+        "telnetClient": "telnetClose.telnetClient",
+        "menuTitle": "telnetClose.menuTitle",
+        "menuNote": "telnetClose.menuNote"
+    },
+    "telnetWrite": {
+        "outParam": "telnetWrite.outParam",
+        "cmdStr": "telnetWrite.cmdStr",
+        "telnetClient": "telnetWrite.telnetClient",
+        "menuTitle": "telnetWrite.menuTitle",
+        "menuNote": "telnetWrite.menuNote"
+    },
+    "telnetConnect": {
+        "outParam": "telnetConnect.outParam",
+        "password": "telnetConnect.password",
+        "username": "telnetConnect.username",
+        "port": "telnetConnect.port",
+        "host": "telnetConnect.host",
+        "menuTitle": "telnetConnect.menuTitle",
+        "menuNote": "telnetConnect.menuNote"
+    },
+    "continue": {
+        "continueCondition": "continue.continueCondition",
+        "gt": "continue.gt",
+        "egt": "continue.egt",
+        "eq": "continue.eq",
+        "neq": "continue.neq",
+        "lt": "continue.lt",
+        "elt": "continue.elt",
+        "op": "continue.op",
+        "include": "continue.include",
+        "notInclude": "continue.notInclude",
+        "isNull": "continue.isNull",
+        "continueValue": "continue.continueValue",
+        "menuTitle": "continue.menuTitle",
+        "menuNote": "continue.menuNote"
+    },
+    "for": {
+        "rename_i": "for.rename_i",
+        "rename": "for.rename",
+        "objectList": "for.objectList",
+        "menuTitle": "for.menuTitle",
+        "menuNote": "for.menuNote"
+    },
+    "hashfor": {
+        "outParam": "hashfor.outParam",
+        "circulateCount": "hashfor.circulateCount",
+        "menuTitle": "hashfor.menuTitle",
+        "menuNote": "hashfor.menuNote"
+    },
+    "if": {
+        "rid": "if.rid",
+        "op": "if.op",
+        "gt": "if.gt",
+        "egt": "if.egt",
+        "eq": "if.eq",
+        "neq": "if.neq",
+        "lt": "if.lt",
+        "elt": "if.elt",
+        "lid": "if.lid",
+        "include": "continue.include",
+        "notInclude": "continue.notInclude",
+        "isNull": "continue.isNull",
+        "menuTitle": "if.menuTitle",
+        "menuNote": "if.menuNote"
+    },
+    "goto": {
+        "rid": "goto.rid",
+        "op": "goto.op",
+        "gt": "goto.gt",
+        "egt": "goto.egt",
+        "eq": "goto.eq",
+        "neq": "goto.neq",
+        "lt": "goto.lt",
+        "elt": "goto.elt",
+        "lid": "goto.lid",
+        "include": "continue.include",
+        "notInclude": "continue.notInclude",
+        "isNull": "continue.isNull",
+        "gotoFlow":"goto.gotoFlow"
+    },
+    "break": {
+        "breakCondition": "break.breakCondition",
+        "op": "break.op",
+        "gt": "break.gt",
+        "egt": "break.egt",
+        "eq": "break.eq",
+        "neq": "break.neq",
+        "lt": "break.lt",
+        "elt": "break.elt",
+        "include": "continue.include",
+        "notInclude": "continue.notInclude",
+        "isNull": "continue.isNull",
+        "breakValue": "break.breakValue",
+        "menuTitle": "break.menuTitle",
+        "menuNote": "break.menuNote"
+    },
+    "shangdongMenu": {
+        "outParam": "shangdongMenu.outParam",
+        "elName": "shangdongMenu.elName",
+        "eventType": "shangdongMenu.eventType",
+        "name": "shangdongMenu.name",
+        "value": "shangdongMenu.value",
+        "Element": "shangdongMenu.Element",
+        "menuTitle": "shangdongMenu.menuTitle",
+        "menuNote": "shangdongMenu.menuNote"
+    },
+    "dateFormatSpe": {
+        "outParam": "dateFormatSpe.outParam",
+        "paramValue": "dateFormatSpe.paramValue",
+        "menuTitle": "dateFormatSpe.menuTitle",
+        "menuNote": "dateFormatSpe.menuNote"
+    },
+    "ie8_getVCode": {
+        "outParam": "ie8_getVCode.outParam",
+        "capture-IE8": "ie8_getVCode.capture-IE8",
+        "xpath": "ie8_getVCode.xpath",
+        "menuTitle": "ie8_getVCode.menuTitle",
+        "menuNote": "ie8_getVCode.menuNote"
+    },
+    "slidingVerificationCode": {
+        "outParam": "slidingVerificationCode.outParam",
+        "file": "slidingVerificationCode.file",
+        "menuTitle": "slidingVerificationCode.menuTitle",
+        "select_image": "slidingVerificationCode.select_image",
+        "menuNote": "slidingVerificationCode.menuNote"
+    },
+    "getVCode": {
+        "outParam": "getVCode.outParam",
+        "capture": "getVCode.capture",
+        "xpath": "getVCode.xpath",
+        "menuTitle": "getVCode.menuTitle",
+        "menuNote": "getVCode.menuNote"
+    },
+    "assert_type": {
+        "typeName": "assert_type.typeName",
+        "paramName": "assert_type.paramName",
+        "menuTitle": "assert_type.menuTitle",
+        "menuNote": "assert_type.menuNote"
+    },
+    "assert_value": {
+        "elt": "assert_value.elt",
+        "lt": "assert_value.lt",
+        "eq": "assert_value.eq",
+        "egt": "assert_value.egt",
+        "gt": "assert_value.gt",
+        "paramName": "assert_value.paramName",
+        "menuTitle": "assert_value.menuTitle",
+        "menuNote": "assert_value.menuNote"
+    },
+    "getPixelColor": {
+        "outParam": "getPixelColor.outParam",
+        "rgb": "getPixelColor.rgb",
+        "position": "getPixelColor.position",
+        "mouse_now": "getPixelColor.mouse_now",
+        "mouse_input": "getPixelColor.mouse_input",
+        "mouse_type": "getPixelColor.mouse_type",
+        "CScapturePos": "getPixelColor.CScapturePos",
+        "menuTitle": "getPixelColor.menuTitle",
+        "menuNote": "getPixelColor.menuNote"
+    },
+    "try_catch": {
+        "from_to": "try_catch.from_to",
+        "cmd": "try_catch.cmd",
+        "cmd2": "try_catch.cmd2",
+        "cmd3": "try_catch.cmd3",
+        "forActive": "try_catch.forActive",
+        "point_to": "try_catch.point_to",
+        "list": "try_catch.list",
+        "list2": "try_catch.list2",
+        "list3": "try_catch.list3",
+        "list4": "try_catch.list4",
+        "list5": "try_catch.list5",
+        "list6": "try_catch.list6",
+        "handle_type": "try_catch.handle_type",
+        "singleNodeId": "try_catch.singleNodeId",
+        "UndefinedException": "try_catch.UndefinedException",
+        "WEBException": "try_catch.WEBException",
+        "SQLException": "try_catch.SQLException",
+        "IllegalAccessException": "try_catch.IllegalAccessException",
+        "NoSuchFieldException": "try_catch.NoSuchFieldException",
+        "ArrayIndexOutOfBoundsException": "try_catch.ArrayIndexOutOfBoundsException",
+        "ClassCastException": "try_catch.ClassCastException",
+        "FileNotCreateException": "try_catch.FileNotCreateException",
+        "FileTypeException": "try_catch.FileTypeException",
+        "FileNotFoundException": "try_catch.FileNotFoundException",
+        "SystemException": "try_catch.SystemException",
+        "SeleniumException": "try_catch.SeleniumException",
+        "ElementNotFoundException": "try_catch.ElementNotFoundException",
+        "value1": "try_catch.value1",
+        "url": "try_catch.url",
+        "menuTitle": "try_catch.menuTitle",
+        "menuNote": "try_catch.menuNote"
+    },
+    "catch_result": {
+        "from_to": "catch_result.from_to",
+        "cmd": "catch_result.cmd",
+        "cmd2": "catch_result.cmd2",
+        "cmd3": "catch_result.cmd3",
+        "forActive": "catch_result.forActive",
+        "point_to": "catch_result.point_to",
+        "list": "catch_result.list",
+        "list2": "catch_result.list2",
+        "list3": "catch_result.list3",
+        "list4": "catch_result.list4",
+        "list5": "catch_result.list5",
+        "list6": "catch_result.list6",
+        "handle_type": "catch_result.handle_type",
+        "singleNodeId": "catch_result.singleNodeId",
+        "UndefinedException": "catch_result.UndefinedException",
+        "WEBException": "catch_result.WEBException",
+        "SQLException": "catch_result.SQLException",
+        "IllegalAccessException": "catch_result.IllegalAccessException",
+        "NoSuchFieldException": "catch_result.NoSuchFieldException",
+        "ArrayIndexOutOfBoundsException": "catch_result.ArrayIndexOutOfBoundsException",
+        "ClassCastException": "catch_result.ClassCastException",
+        "FileNotCreateException": "catch_result.FileNotCreateException",
+        "FileTypeException": "catch_result.FileTypeException",
+        "FileNotFoundException": "catch_result.FileNotFoundException",
+        "SystemException": "catch_result.SystemException",
+        "ElementNotFoundException": "catch_result.ElementNotFoundException",
+        "value1": "catch_result.value1",
+        "url": "catch_result.url",
+        "menuTitle": "catch_result.menuTitle",
+        "menuNote": "catch_result.menuNote"
+    },
+    "throwError": {
+        "errDesc": "throwError.errDesc",
+        "UndefinedException": "throwError.UndefinedException",
+        "WEBException": "throwError.WEBException",
+        "SQLException": "throwError.SQLException",
+        "IllegalAccessException": "throwError.IllegalAccessException",
+        "NoSuchFieldException": "throwError.NoSuchFieldException",
+        "ArrayIndexOutOfBoundsException": "throwError.ArrayIndexOutOfBoundsException",
+        "ClassCastException": "throwError.ClassCastException",
+        "FileNotCreateException": "throwError.FileNotCreateException",
+        "FileTypeException": "throwError.FileTypeException",
+        "FileNotFoundException": "throwError.FileNotFoundException",
+        "SystemException": "throwError.SystemException",
+        "SeleniumException": "throwError.SeleniumException",
+        "ElementNotFoundException": "throwError.ElementNotFoundException",
+        "errType": "throwError.errType",
+        "menuTitle": "throwError.menuTitle",
+        "menuNote": "throwError.menuNote"
+    },
+    "saveVCode": {
+        "fileName": "saveVCode.fileName",
+        "savePath": "saveVCode.savePath",
+        "capture": "saveVCode.capture",
+        "xpath": "saveVCode.xpath",
+        "menuTitle": "saveVCode.menuTitle",
+        "menuNote": "saveVCode.menuNote"
+    },
+    "elementPos": {
+        "outParam": "elementPos.outParam",
+        "elementPos": "elementPos.elementPos",
+        "capturePos": "elementPos.capturePos"
+    },
+    "open": {
+        "url": "open.url",
+        "menuTitle": "open.menuTitle",
+        "menuNote": "open.menuNote"
+    },
+    "waitFindELe": {
+        "waitTime": "waitFindELe.waitTime",
+        "xpath": "waitFindELe.xpath",
+        "goon": "waitFindELe.goon",
+        "capture": "waitFindELe.capture",
+        "menuTitle": "waitFindELe.menuTitle",
+        "menuNote": "waitFindELe.menuNote"
+    },
+    "mouseDownOrUp": {
+        "xpath": "mouseDownOrUp.xpath",
+        "mouse_type": "mouseDownOrUp.mouse_type",
+        "mouseup": "mouseDownOrUp.mouseup",
+        "mousedown": "mouseDownOrUp.mousedown",
+        "goon": "mouseDownOrUp.goon",
+        "capture": "mouseDownOrUp.capture",
+        "menuTitle": "mouseDownOrUp.menuTitle",
+        "menuNote": "mouseDownOrUp.menuNote"
+    },
+    "click": {
+        "goon": "click.goon",
+        "hand": "click.hand",
+        "mousedown_up": "click.mousedown_up",
+        "click": "click.click",
+        "click_type": "click.click_type",
+        "xpath": "click.xpath",
+        "capture": "click.capture",
+        "menuTitle": "click.menuTitle",
+        "menuNote": "click.menuNote"
+    },
+    "changeAttributeName": {
+        "newAttr": "changeAttributeName.newAttr",
+        "attr": "changeAttributeName.attr",
+        "xpath": "changeAttributeName.xpath",
+        "menuTitle": "changeAttributeName.menuTitle",
+        "menuNote": "changeAttributeName.menuNote"
+    },
+    "classClickString": {
+        "strObject": "classClickString.strObject",
+        "className": "classClickString.className",
+        "xpath": "classClickString.xpath",
+        "capture": "classClickString.capture",
+        "menuTitle": "classClickString.menuTitle",
+        "menuNote": "classClickString.menuNote"
+    },
+    "closePage": {
+        "text-box": "closePage.text-box",
+        "menuTitle": "closePage.menuTitle",
+        "menuNote": "closePage.menuNote"
+    },
+    "getElePosition": {
+        "outParam": "getElePosition.outParam",
+        "xpath": "getElePosition.xpath",
+        "capture": "getElePosition.capture",
+        "menuTitle": "getElePosition.menuTitle",
+        "menuNote": "getElePosition.menuNote"
+    },
+    "getPageURL": {
+        "outParam": "getPageURL.outParam",
+        "menuTitle": "getPageURL.menuTitle",
+        "menuNote": "getPageURL.menuNote"
+    },
+    "openIframe": {
+        "goon": "openIframe.goon",
+        "openNew": "openIframe.openNew",
+        "xpath": "openIframe.xpath",
+        "capture-iframe": "openIframe.capture-iframe",
+        "menuTitle": "openIframe.menuTitle",
+        "menuNote": "openIframe.menuNote"
+    },
+    "InnerHTML": {
+        "outParam": "InnerHTML.outParam",
+        "xpath": "InnerHTML.xpath",
+        "xpathEle": "InnerHTML.xpathEle",
+        "html": "InnerHTML.html",
+        "text": "InnerHTML.text",
+        "getType": "InnerHTML.getType",
+        "capture": "InnerHTML.capture",
+        "menuTitle": "InnerHTML.menuTitle",
+        "menuNote": "InnerHTML.menuNote"
+    },
+    "resemblance": {
+        "outParam": "resemblance.outParam",
+        "xpath": "resemblance.xpath",
+        "html": "resemblance.html",
+        "text": "resemblance.text",
+        "getType": "resemblance.getType",
+        "xpathAlike": "resemblance.xpathAlike",
+        "capture": "resemblance.capture",
+        "menuTitle": "resemblance.menuTitle",
+        "menuNote": "resemblance.menuNote"
+    },
+    "canGetEle": {
+        "outParam": "canGetEle.outParam",
+        "xpath": "canGetEle.xpath",
+        "capture": "canGetEle.capture",
+        "menuTitle": "canGetEle.menuTitle",
+        "menuNote": "canGetEle.menuNote"
+    },
+    "getAttributeName": {
+        "outParam": "getAttributeName.outParam",
+        "capture": "getAttributeName.capture",
+        "xpath": "getAttributeName.xpath",
+        "menuTitle": "getAttributeName.menuTitle",
+        "menuNote": "getAttributeName.menuNote"
+    },
+    "mouseover": {
+        "goon": "mouseover.goon",
+        "xpath": "mouseover.xpath",
+        "capture": "mouseover.capture",
+        "menuTitle": "mouseover.menuTitle",
+        "menuNote": "mouseover.menuNote"
+    },
+    "inputInfo": {
+        "input": "inputInfo.input",
+        "xpath": "inputInfo.xpath",
+        "capture": "inputInfo.capture",
+        "menuTitle": "inputInfo.menuTitle",
+        "menuNote": "inputInfo.menuNote"
+    },
+    "historyBack": {
+        "text-box": "historyBack.text-box",
+        "menuTitle": "historyBack.menuTitle",
+        "menuNote": "historyBack.menuNote"
+    },
+    "pageFresh": {
+        "text-box": "pageFresh.text-box",
+        "menuTitle": "pageFresh.menuTitle",
+        "menuNote": "pageFresh.menuNote"
+    },
+    "getTable": {
+        "outParam": "getTable.outParam",
+        "xpath": "getTable.xpath",
+        "html": "getTable.html",
+        "text": "getTable.text",
+        "getType": "getTable.getType",
+        "capture": "getTable.capture",
+        "xpathEle": "getTable.xpathEle",
+        "menuTitle": "getTable.menuTitle",
+        "menuNote": "getTable.menuNote"
+    },
+    "getList": {
+        "outParam": "getList.outParam",
+        "xpath": "getList.xpath",
+        "html": "getList.html",
+        "text": "getList.text",
+        "getType": "getList.getType",
+        "capture": "getList.capture",
+        "xpathEle": "getList.xpathEle",
+        "menuTitle": "getList.menuTitle",
+        "menuNote": "getList.menuNote"
+    },
+    "selectOption": {
+        "goon": "selectOption.goon",
+        "matchText": "selectOption.matchText",
+        "php": "selectOption.php",
+        "like": "selectOption.like",
+        "all": "selectOption.all",
+        "matchType": "selectOption.matchType",
+        "xpathEle": "selectOption.xpathEle",
+        "capture": "selectOption.capture",
+        "menuTitle": "selectOption.menuTitle",
+        "menuNote": "selectOption.menuNote"
+    },
+    "globalWaitTime": {
+        "floatWaitTime": "globalWaitTime.floatWaitTime",
+        "WaitTime": "globalWaitTime.WaitTime",
+        "menuTitle": "globalWaitTime.menuTitle",
+        "menuNote": "globalWaitTime.menuNote",
+        "pretreatmentWaitTime":"globalWaitTime.pretreatmentWaitTime",
+        "chromeBrowserWaitTime":"globalWaitTime.chromeBrowserWaitTime",
+        "internetExplorerWaitTime":"globalWaitTime.internetExplorerWaitTime",
+        "yingyonggongnengWaitTime":"globalWaitTime.yingyonggongnengWaitTime",
+        "microsoftApplicationWaitTime":"globalWaitTime.microsoftApplicationWaitTime",
+        "variantHandlingWaitTime":"globalWaitTime.variantHandlingWaitTime",
+        "workflowControlWaitTime":"globalWaitTime.workflowControlWaitTime",
+        "shujubiaogeWaitTime":"globalWaitTime.shujubiaogeWaitTime",
+        "fileOperateWaitTime":"globalWaitTime.fileOperateWaitTime",
+        "keyboardAndMouseWaitTime":"globalWaitTime.keyboardAndMouseWaitTime",
+        "dataInterfaceUtilWaitTime":"globalWaitTime.dataInterfaceUtilWaitTime",
+        "exceptionsWaitTime":"globalWaitTime.exceptionsWaitTime",
+        "databaseUtilWaitTime":"globalWaitTime.databaseUtilWaitTime",
+        "systemUtilWaitTime":"globalWaitTime.systemUtilWaitTime",
+        "excelHandlingWaitTime":"globalWaitTime.excelHandlingWaitTime",
+        "docUtilWaitTime":"globalWaitTime.docUtilWaitTime",
+        "ocrWaitTime":"globalWaitTime.ocrWaitTime",
+        "customizedApplicationWaitTime":"globalWaitTime.customizedApplicationWaitTime",
+        "finalHandlingWaitTime":"globalWaitTime.finalHandlingWaitTime"
+    },
+    "importFile": {
+        "outParam": "importFile.outParam",
+        "businessDescription": "importFile.businessDescription",
+        "filePath": "importFile.filePath",
+        "menuTitle": "importFile.menuTitle",
+        "menuNote": "importFile.menuNote"
+    },
+    "importTextFile": {
+        "outParam": "importTextFile.outParam",
+        "businessDescription": "importTextFile.businessDescription",
+        "filePath": "importTextFile.filePath",
+        "select_filePath": "importTextFile.select_filePath",
+        "menuTitle": "importTextFile.menuTitle",
+        "menuNote": "importTextFile.menuNote"
+    },
+    "catchRecordingTime":{
+        "recordingTime":"catchRecordingTime.recordingTime",
+        "menuTitle": "catchRecordingTime.menuTitle",
+        "menuNote": "catchRecordingTime.menuNote"
+    },
+    "semantic": {
+        "outParam": "semantic.outParam",
+        "debuggerData": "semantic.debuggerData",
+        "fileName": "semantic.fileName"
+    },
+    "ActuatorForVerify": {
+        "rectangle": "ActuatorForVerify.rectangle",
+        "name": "ActuatorForVerify.name",
+        "path": "ActuatorForVerify.path",
+        "CScapture": "ActuatorForVerify.CScapture",
+        "winTitle": "ActuatorForVerify.winTitle",
+        "menuTitle": "ActuatorForVerify.menuTitle",
+        "menuNote": "ActuatorForVerify.menuNote"
+    },
+    "clipboardWaitTime": {
+        "sleep": "clipboardWaitTime.sleep",
+        "menuTitle": "clipboardWaitTime.menuTitle",
+        "menuNote": "clipboardWaitTime.menuNote"
+    },
+    "cutLogMinLength": {
+        "cutMinLength": "cutLogMinLength.cutMinLength",
+        "menuTitle": "cutLogMinLength.menuTitle"
+    },
+    "isForbidKeybroadAndMouse": {
+        "active": "isForbidKeybroadAndMouse.active",
+        "forbid": "isForbidKeybroadAndMouse.forbid",
+        "notForbid": "isForbidKeybroadAndMouse.notForbid",
+        "menuTitle": "isForbidKeybroadAndMouse.menuTitle"
+    },
+    "groupPassword": {
+        "outParam": "groupPassword.outParam",
+        "group": "groupPassword.group",
+        "menuTitle": "groupPassword.menuTitle",
+        "menuNote": "groupPassword.menuNote"
+    },
+    "setDirectory": {
+        "directory": "setDirectory.directory",
+        "select_directory": "setDirectory.select_directory"
+    },
+    "IDAccountPassword": {
+        "attache": "IDAccountPassword.attache",
+        "department": "IDAccountPassword.department",
+        "password": "IDAccountPassword.password",
+        "username": "IDAccountPassword.username",
+        "ID": "IDAccountPassword.ID",
+        "menuTitle": "IDAccountPassword.menuTitle",
+        "menuNote": "IDAccountPassword.menuNote"
+    },
+    "callback_pixel_position": {
+        "outParam": "callback_pixel_position.outParam",
+        "errorRange": "callback_pixel_position.errorRange",
+        "rectangle": "callback_pixel_position.rectangle",
+        "right_down": "callback_pixel_position.right_down",
+        "right_up": "callback_pixel_position.right_up",
+        "left_down": "callback_pixel_position.left_down",
+        "left_up": "callback_pixel_position.left_up",
+        "down_right": "callback_pixel_position.down_right",
+        "down_left": "callback_pixel_position.down_left",
+        "up_right": "callback_pixel_position.up_right",
+        "up_left": "callback_pixel_position.up_left",
+        "fd_type": "callback_pixel_position.fd_type",
+        "CScapturePos": "callback_pixel_position.CScapturePos",
+        "rgb": "callback_pixel_position.rgb",
+        "menuTitle": "callback_pixel_position.menuTitle",
+        "menuNote": "callback_pixel_position.menuNote"
+    },
+    "CSMove_element": {
+        "mouseMove": "CSMove_element.mouseMove",
+        "mouseClick": "CSMove_element.mouseClick",
+        "rectangle": "CSMove_element.rectangle",
+        "path": "CSMove_element.path",
+        "winTitle": "CSMove_element.winTitle",
+        "processName": "CSMove_element.processName",
+        "CScapture": "CSMove_element.CScapture",
+        "outParam": "CSMove_element.outParam",
+        "menuTitle": "CSMove_element.menuTitle",
+        "menuNote": "CSMove_element.menuNote"
+    },
+    "CSMoveForName": {
+        "rectangle": "CSMoveForName.rectangle",
+        "name": "CSMoveForName.name",
+        "path": "CSMoveForName.path",
+        "winTitle": "CSMoveForName.winTitle",
+        "processName": "CSMoveForName.processName",
+        "CScapture": "CSMoveForName.CScapture",
+        "menuTitle": "CSMoveForName.menuTitle",
+        "menuNote": "CSMoveForName.menuNote"
+    },
+    "CSMoveForRelative": {
+        "relative": "CSMoveForRelative.relative",
+        "path": "CSMoveForRelative.path",
+        "winTitle": "CSMoveForRelative.winTitle",
+        "processName": "CSMoveForRelative.processName",
+        "CScapture": "CSMoveForRelative.CScapture",
+        "menuTitle": "CSMoveForRelative.menuTitle",
+        "menuNote": "CSMoveForRelative.menuNote"
+    },
+    "CSMoveForVerify": {
+        "outParam": "CSMoveForVerify.outParam",
+        "rectangle": "CSMoveForVerify.rectangle",
+        "name": "CSMoveForVerify.name",
+        "path": "CSMoveForVerify.path",
+        "winTitle": "CSMoveForVerify.winTitle",
+        "processName": "CSMoveForVerify.processName",
+        "CScapture": "CSMoveForVerify.CScapture",
+        "menuTitle": "CSMoveForVerify.menuTitle",
+        "menuNote": "CSMoveForVerify.menuNote"
+    },
+    "CSMoveForChildName": {
+        "rectangle": "CSMoveForChildName.rectangle",
+        "childname": "CSMoveForChildName.childname",
+        "path": "CSMoveForChildName.path",
+        "winTitle": "CSMoveForChildName.winTitle",
+        "processName": "CSMoveForChildName.processName",
+        "CScapture": "CSMoveForChildName.CScapture",
+        "menuTitle": "CSMoveForChildName.menuTitle",
+        "menuNote": "CSMoveForChildName.menuNote"
+    },
+    "ie8_open": {
+        "ie8_url": "ie8_open.ie8_url",
+        "menuTitle": "ie8_open.menuTitle",
+        "menuNote": "ie8_open.menuNote"
+    },
+    "ie8_waitFindELe": {
+        "waitTime": "ie8_waitFindELe.waitTime",
+        "xpath": "ie8_waitFindELe.xpath",
+        "capture-IE8": "ie8_waitFindELe.capture-IE8",
+        "menuTitle": "ie8_waitFindELe.menuTitle",
+        "outParam": "ie8_waitFindELe.outParam",
+        "menuNote": "ie8_waitFindELe.menuNote"
+    },
+    "ie8_waitFindAlert": {
+        "waitTime": "ie8_waitFindAlert.waitTime",
+        "outParam": "ie8_waitFindAlert.outParam",
+        "menuTitle": "ie8_waitFindAlert.menuTitle",
+        "menuNote": "ie8_waitFindAlert.menuNote"
+    },
+    "ie8_click": {
+        "xpath": "ie8_click.xpath",
+        "no": "ie8_click.no",
+        "yes": "ie8_click.yes",
+        "returnTop": "ie8_click.returnTop",
+        "execJs": "ie8_click.execJs",
+        "capture-IE8": "ie8_click.capture-IE8",
+        "menuTitle": "ie8_click.menuTitle",
+        "menuNote": "ie8_click.menuNote"
+    },
+    "ie8_changeAttributeName": {
+        "newAttr": "ie8_changeAttributeName.newAttr",
+        "attr": "ie8_changeAttributeName.attr",
+        "inputName": "ie8_changeAttributeName.inputName",
+        "xpath": "ie8_changeAttributeName.xpath",
+        "capture-IE8": "ie8_changeAttributeName.capture-IE8",
+        "menuTitle": "ie8_changeAttributeName.menuTitle",
+        "menuNote": "ie8_changeAttributeName.menuNote"
+    },
+    "ie8_classReturnXpath": {
+        "outParam": "ie8_classReturnXpath.outParam",
+        "className": "ie8_classReturnXpath.className",
+        "xpath": "ie8_classReturnXpath.xpath",
+        "capture-IE8": "ie8_classReturnXpath.capture-IE8",
+        "menuTitle": "ie8_classReturnXpath.menuTitle",
+        "menuNote": "ie8_classReturnXpath.menuNote"
+    },
+    "ie8_quitBrowser": {
+        "text-box": "ie8_quitBrowser.text-box",
+        "menuTitle": "ie8_quitBrowser.menuTitle",
+        "menuNote": "ie8_quitBrowser.menuNote"
+    },
+    "ie8_closePage": {
+        "text-box": "ie8_closePage.text-box",
+        "menuTitle": "ie8_closePage.menuTitle",
+        "menuNote": "ie8_closePage.menuNote"
+    },
+    "ie8_operateAlert": {
+        "dismiss": "ie8_operateAlert.dismiss",
+        "accept": "ie8_operateAlert.accept",
+        "operate": "ie8_operateAlert.operate",
+        "no": "ie8_operateAlert.no",
+        "yes": "ie8_operateAlert.yes",
+        "returnTop": "ie8_operateAlert.returnTop",
+        "menuTitle": "ie8_operateAlert.menuTitle",
+        "menuNote": "ie8_operateAlert.menuNote"
+    },
+    "ie8_getPageCookies": {
+        "outParam": "ie8_getPageCookies.outParam",
+        "des": "ie8_getPageCookies.des",
+        "menuTitle": "ie8_getPageCookies.menuTitle",
+        "menuNote": "ie8_getPageCookies.menuNote"
+    },
+    "ie8_getPageURL": {
+        "outParam": "ie8_getPageURL.outParam",
+        "menuTitle": "ie8_getPageURL.menuTitle",
+        "menuNote": "ie8_getPageURL.menuNote"
+    },
+    "ie8_openIframe": {
+        "openNew": "ie8_openIframe.openNew",
+        "xpath": "ie8_openIframe.xpath",
+        "capture-IE8": "ie8_openIframe.capture-IE8",
+        "menuTitle": "ie8_openIframe.menuTitle",
+        "menuNote": "ie8_openIframe.menuNote"
+    },
+    "ie8_getAlertText": {
+        "outParam": "ie8_getAlertText.outParam",
+        "xpath": "ie8_getAlertText.xpath",
+        "capture-IE8": "ie8_getAlertText.capture-IE8",
+        "menuTitle": "ie8_getAlertText.menuTitle",
+        "menuNote": "ie8_getAlertText.menuNote"
+    },
+    "ie8_InnerHTML": {
+        "outParam": "ie8_InnerHTML.outParam",
+        "html": "ie8_InnerHTML.html",
+        "text": "ie8_InnerHTML.text",
+        "getType": "ie8_InnerHTML.getType",
+        "capture-IE8": "ie8_InnerHTML.capture-IE8",
+        "xpath": "ie8_InnerHTML.xpath",
+        "menuTitle": "ie8_InnerHTML.menuTitle",
+        "menuNote": "ie8_InnerHTML.menuNote"
+    },
+    "ie8_canGetEle": {
+        "outParam": "ie8_canGetEle.outParam",
+        "xpath": "ie8_canGetEle.xpath",
+        "capture-IE8": "ie8_canGetEle.capture-IE8",
+        "menuTitle": "ie8_canGetEle.menuTitle",
+        "menuNote": "ie8_canGetEle.menuNote"
+    },
+    "ie8_getAttributeName": {
+        "outParam": "ie8_getAttributeName.outParam",
+        "xpath": "ie8_getAttributeName.xpath",
+        "capture-IE8": "ie8_getAttributeName.capture-IE8",
+        "menuTitle": "ie8_getAttributeName.menuTitle",
+        "menuNote": "ie8_getAttributeName.menuNote"
+    },
+    "ie8_mouseover": {
+        "capture-IE8": "ie8_mouseover.capture-IE8",
+        "xpath": "ie8_mouseover.xpath",
+        "menuTitle": "ie8_mouseover.menuTitle",
+        "menuNote": "ie8_mouseover.menuNote"
+    },
+    "ie8_inputInfo": {
+        "input": "ie8_inputInfo.input",
+        "capture-IE8": "ie8_inputInfo.capture-IE8",
+        "xpath": "ie8_inputInfo.xpath",
+        "menuTitle": "ie8_inputInfo.menuTitle",
+        "menuNote": "ie8_inputInfo.menuNote"
+    },
+    "ie8_historyBack": {
+        "text-box": "ie8_historyBack.text-box",
+        "menuTitle": "ie8_historyBack.menuTitle",
+        "menuNote": "ie8_historyBack.menuNote"
+    },
+    "ie8_test": {
+        "url": "ie8_test.url",
+        "menuTitle": "ie8_test.menuTitle",
+        "menuNote": "ie8_test.menuNote"
+    },
+    "ie8_pageFresh": {
+        "text-box": "ie8_pageFresh.text-box",
+        "menuTitle": "ie8_pageFresh.menuTitle",
+        "menuNote": "ie8_pageFresh.menuNote"
+    },
+    "ie8_getTable": {
+        "outParam": "ie8_getTable.outParam",
+        "xpath": "ie8_getTable.xpath",
+        "html": "ie8_getTable.html",
+        "text": "ie8_getTable.text",
+        "getType": "ie8_getTable.getType",
+        "xpathEle": "ie8_getTable.xpathEle",
+        "capture-IE8": "ie8_getTable.capture-IE8",
+        "menuTitle": "ie8_getTable.menuTitle",
+        "menuNote": "ie8_getTable.menuNote"
+    },
+    "ie8_getList": {
+        "outParam": "ie8_getList.outParam",
+        "xpath": "ie8_getList.xpath",
+        "html": "ie8_getList.html",
+        "text": "ie8_getList.text",
+        "getType": "ie8_getList.getType",
+        "xpathEle": "ie8_getList.xpathEle",
+        "capture-IE8": "ie8_getList.capture-IE8",
+        "menuTitle": "ie8_getList.menuTitle",
+        "menuNote": "ie8_getList.menuNote"
+    },
+    "ie8_selectOption": {
+        "matchText": "ie8_selectOption.matchText",
+        "php": "ie8_selectOption.php",
+        "like": "ie8_selectOption.like",
+        "all": "ie8_selectOption.all",
+        "matchType": "ie8_selectOption.matchType",
+        "xpathEle": "ie8_selectOption.xpathEle",
+        "capture-IE8": "ie8_selectOption.capture-IE8",
+        "menuTitle": "ie8_selectOption.menuTitle",
+        "menuNote": "ie8_selectOption.menuNote"
+    },
+    "ie8_resemblance": {
+        "xpath": "ie8_resemblance.xpath",
+        "outParam": "ie8_resemblance.outParam",
+        "html": "ie8_resemblance.html",
+        "text": "ie8_resemblance.text",
+        "getType": "ie8_resemblance.getType",
+        "xpathEle": "ie8_resemblance.xpathEle",
+        "xpathParent": "ie8_resemblance.xpathParent",
+        "capture-IE8": "ie8_resemblance.capture-IE8",
+        "menuTitle": "ie8_resemblance.menuTitle",
+        "menuNote": "ie8_resemblance.menuNote"
+    },
+    "ie8_swichTo": {
+        "targetWinName": "ie8_swichTo.targetWinName",
+        "currentWinName": "ie8_swichTo.currentWinName",
+        "swichToTarget": "ie8_swichTo.swichToTarget",
+        "swichToLast": "ie8_swichTo.swichToLast",
+        "operate": "ie8_swichTo.operate",
+        "menuTitle": "ie8_swichTo.menuTitle",
+        "menuNote": "ie8_swichTo.menuNote"
+    },
+    "ie8_strReturnXpath": {
+        "outParam": "ie8_strReturnXpath.outParam",
+        "strTarget": "ie8_strReturnXpath.strTarget",
+        "xpath": "ie8_strReturnXpath.xpath",
+        "capture-IE8": "ie8_strReturnXpath.capture-IE8",
+        "menuTitle": "ie8_strReturnXpath.menuTitle",
+        "menuNote": "ie8_strReturnXpath.menuNote"
+    },
+    "readPDF": {
+        "outParam": "readPDF.outParam",
+        "openPath": "readPDF.openPath",
+        "selectFile": "readPDF.selectFile"
+    },
+    "importFile_normal": {
+        "outParam": "importFile_normal.outParam",
+        "businessDescription": "importFile_normal.businessDescription",
+        "filePath": "importFile_normal.filePath",
+        "menuTitle": "importFile_normal.menuTitle",
+        "selectFile": "importFile_normal.selectFile",
+        "menuNote": "importFile_normal.menuNote"
+    },
+    "importTextFile_normal": {
+        "outParam": "importTextFile_normal.outParam",
+        "businessDescription": "importTextFile_normal.businessDescription",
+        "filePath": "importTextFile_normal.filePath",
+        "select_filePath": "importTextFile_normal.select_filePath",
+        "menuTitle": "importTextFile_normal.menuTitle",
+        "selectFile": "importTextFile_normal.selectFile",
+        "menuNote": "importTextFile_normal.menuNote"
+    },
+    "copyExclePart": {
+        "to_rectangle_right_up": "copyExclePart.to_rectangle_right_up",
+        "to_sheet": "copyExclePart.to_sheet",
+        "to_file": "copyExclePart.to_file",
+        "rectangle": "copyExclePart.rectangle",
+        "from_sheet": "copyExclePart.from_sheet",
+        "from_file": "copyExclePart.from_file",
+        "menuTitle": "copyExclePart.menuTitle",
+        "selectFile": "copyExclePart.selectFile",
+        "menuNote": "copyExclePart.menuNote"
+    },
+    "changeStyleExcle": {
+        "fontRGB": "changeStyleExcle.fontRGB",
+        "fontSize": "changeStyleExcle.fontSize",
+        "RGB": "changeStyleExcle.RGB",
+        "isUnderline": "changeStyleExcle.isUnderline",
+        "isItalic": "changeStyleExcle.isItalic",
+        "isBlod": "changeStyleExcle.isBlod",
+        "style": "changeStyleExcle.style",
+        "rectangle": "changeStyleExcle.rectangle",
+        "sheet_name": "changeStyleExcle.sheet_name",
+        "filename": "changeStyleExcle.filename",
+        "menuTitle": "changeStyleExcle.menuTitle",
+        "selectFile": "changeStyleExcle.selectFile",
+        "menuNote": "changeStyleExcle.menuNote"
+    },
+    "PreciseReadFile": {
+        "outParam": "PreciseReadFile.outParam",
+        "text": "PreciseReadFile.text",
+        "object": "PreciseReadFile.object",
+        "dbType": "PreciseReadFile.dbType",
+        "sheet_name": "PreciseReadFile.sheet_name",
+        "rectangle": "PreciseReadFile.rectangle",
+        "filename": "PreciseReadFile.filename",
+        "menuTitle": "PreciseReadFile.menuTitle",
+        "selectFile": "PreciseReadFile.selectFile",
+        "menuNote": "PreciseReadFile.menuNote"
+    },
+    "PreciseWriteFile": {
+        "filename": "PreciseWriteFile.filename",
+        "sheet_name": "PreciseWriteFile.sheet_name",
+        "rectangle": "PreciseWriteFile.rectangle",
+        "valueParam": "PreciseWriteFile.valueParam",
+        "menuTitle": "PreciseWriteFile.menuTitle",
+        "selectFile": "PreciseWriteFile.selectFile",
+        "menuNote": "PreciseWriteFile.menuNote"
+    },
+    "exportFile": {
+        "outParam": "exportFile.outParam",
+        "save-history": "exportFile.save-history",
+        "isSaveHistory": "exportFile.isSaveHistory",
+        "targetPath": "exportFile.targetPath",
+        "filename": "exportFile.filename",
+        "valueParam": "exportFile.valueParam",
+        "sheet_name": "exportFile.sheet_name",
+        "a": "exportFile.a",
+        "w": "exportFile.w",
+        "writeType": "exportFile.writeType",
+        "excel": "exportFile.excel",
+        "csv": "exportFile.csv",
+        "fileType": "exportFile.fileType",
+        "newFileName": "exportFile.newFileName",
+        "txt": "exportFile.txt",
+        "word": "exportFile.word",
+        "menuTitle": "exportFile.menuTitle",
+        "select_directory": "exportFile.select_directory",
+        "menuNote": "exportFile.menuNote"
+    },
+    "exportTextFile": {
+        "outParam": "exportTextFile.outParam",
+        "save-history": "exportTextFile.save-history",
+        "isSaveHistory": "exportTextFile.isSaveHistory",
+        "targetPath": "exportTextFile.targetPath",
+        "filename": "exportTextFile.filename",
+        "valueParam": "exportTextFile.valueParam",
+        "sheet_name": "exportTextFile.sheet_name",
+        "a": "exportTextFile.a",
+        "w": "exportTextFile.w",
+        "writeType": "exportTextFile.writeType",
+        "excel": "exportTextFile.excel",
+        "csv": "exportTextFile.csv",
+        "fileType": "exportTextFile.fileType",
+        "newFileName": "exportTextFile.newFileName",
+        "txt": "exportTextFile.txt",
+        "word": "exportTextFile.word",
+        "menuTitle": "exportTextFile.menuTitle",
+        "menuNote": "exportTextFile.menuNote"
+    },
+    "koulingxuanze": {
+        "outParam": "koulingxuanze.outParam",
+        "groupKey": "koulingxuanze.groupKey",
+        "chooseCmdGroup": "koulingxuanze.chooseCmdGroup",
+        "menuTitle": "koulingxuanze.menuTitle",
+        "menuNote": "koulingxuanze.menuNote"
+    },
+    "saveAccount": {
+        "outParam": "saveAccount.outParam",
+        "pwdValue": "saveAccount.pwdValue",
+        "usernameValue": "saveAccount.usernameValue",
+        "realAccount": "saveAccount.realAccount",
+        "testAccount": "saveAccount.testAccount",
+        "operator": "saveAccount.operator"
+    },
+    "head": {
+        "nav": {
+            "run": "head.nav.run",
+            "clean": "head.nav.clean",
+            "save": "head.nav.save",
+            "read": "head.nav.read",
+            "import": "head.nav.import",
+            "export": "head.nav.export",
+            "showVar": "head.nav.showVar",
+            "unitTesting": "head.nav.unitTesting",
+            "unitClean": "head.nav.unitClean",
+            "prev": "head.nav.prev",
+            "next": "head.nav.next",
+            "showAnnotation": "head.nav.showAnnotation",
+            "continue": "head.nav.continue"
+        }
+    },
+    "aside": {
+        "left": {
+            "atomicProcess": "aside.left.atomicProcess",
+            "foreach": "aside.left.foreach",
+            "if": "aside.left.if",
+            "concurrence": "aside.left.concurrence",
+            "goto":"aside.left.goto",
+            "breviary": "aside.left.breviary",
+            "selectTheIterationElement":"aside.left.selectTheIterationElement",
+            "nameOfIndividualElements":"aside.left.nameOfIndividualElements",
+            "ifBlockName":"aside.left.ifBlockName",
+            "forBlockName":"aside.left.forBlockName",
+            "gotoBlockName":"aside.left.gotoBlockName",
+            "executeWhenConditionsAreMet":"aside.left.executeWhenConditionsAreMet",
+            "executeWhenTheConditionsAreNotMet":"aside.left.executeWhenTheConditionsAreNotMet",
+            "condition":"aside.left.condition"
+        }
+    },
+    "content": {
+        "main": {
+            "start": "content.main.start",
+            "pretreatment": "content.main.pretreatment",
+            "endNode": "content.main.endNode",
+            "end": " content.main.end",
+            "outParam": "content.main.outParam",
+            "inParam":"content.main.inParam",
+            "delete":"content.main.delete",
+            "copy":"content.main.copy",
+            "paste":"content.main.paste",
+            "skip":"content.main.skip",
+            "transverseCopy":"content.main.transverseCopy",
+            "point":"content.main.point",
+            "tryCatch":"content.main.tryCatch",
+            "addDesc":"content.main.addDesc",
+            "packUp":"content.main.packUp",
+            "unfold":"content.main.unfold",
+            "addFlow":"content.main.addFlow",
+            "executeWhenConditionsAreMet":"content.main.executeWhenConditionsAreMet",
+            "executeWhenTheConditionsAreNotMet":"content.main.executeWhenTheConditionsAreNotMet",
+            "isCoveredWithTheSameVariable":"content.main.isCoveredWithTheSameVariable",
+            "forLoop":"content.main.forLoop"
+        }
+    },
+    "alert": {
+        "yes": "alert.yes",
+        "no": "alert.no",
+        "OK": "alert.OK",
+        "close": "alert.close",
+        "save": "alert.save",
+        "saveAs": "alert.saveAs",
+        "continue":"alert.continue",
+        "deleteSuccess": "alert.deleteSuccess",
+        "deleteFail": "alert.deleteFail",
+        "saveSuccess": "alert.saveSuccess",
+        "saveFail": "alert.saveFail",
+        "isCleanAllProcess": "alert.isCleanAllProcess",
+        "isCleanAtomicProcess": "alert.isCleanAtomicProcess",
+        "noAuthorization": "alert.noAuthorization",
+        "repeatTypes": "alert.repeatTypes",
+        "exporting": "alert.exporting",
+        "exportSuccess": "alert.exportSuccess",
+        "exportFail": "alert.exportFail",
+        "fileTypeError": "alert.fileTypeError",
+        "connectFailSql": "alert.connectFailSql",
+        "isImport": "alert.isImport",
+        "importBtn": "alert.importBtn",
+        "importAndExecuteBtn": "alert.importAndExecuteBtn",
+        "execute": "alert.execute",
+        "cancel": "alert.cancel",
+        "fileHasTriggerHowToHandle":"alert.fileHasTriggerHowToHandle",
+        "isDelete": "alert.isDelete",
+        "insertFail": "alert.insertFail",
+        "isCoveredWithTheSame": "alert.isCoveredWithTheSame",
+        "isSaveAs": "alert.isSaveAs",
+        "isCloseApp":"alert.isCloseApp",
+        "titleTips":"alert.titleTips",
+        "isSave":"alert.isSave",
+        "isRunWithWrongWindow":"alert.isRunWithWrongWindow",
+        "globalDeclarations":"alert.globalDeclarations",
+        "mateflow":"alert.mateflow",
+        "create":"alert.create",
+        "comeFromGlobal":"alert.comeFromGlobal",
+        "comeFromMateFlow":"alert.comeFromMateFlow",
+        "compileTask":"alert.compileTask",
+        "copySuccess":"alert.copySuccess",
+        "copyFailed":"alert.copyFailed",
+        "pasteSuccess":"alert.pasteSuccess",
+        "pasteFailed":"alert.pasteFailed",
+        "isDeleteMainFlowNode":"alert.isDeleteMainFlowNode",
+        "newVersionHasDown":"alert.newVersionHasDown",
+        "nowIsTheLastestVersion":"alert.nowIsTheLastestVersion",
+        "thisNodeCantDelete":"alert.thisNodeCantDelete",
+        "update":"alert.update",
+        "checkOldScript":"alert.checkOldScript",
+        "readFailed":"alert.readFailed",
+        "thisStepWillCreateVariable":"alert.thisStepWillCreateVariable",
+        "predictedGenerationVariableType":"alert.predictedGenerationVariableType",
+        "errorReturningData":"alert.errorReturningData",
+        "launchIECshandleFailed":"alert.launchIECshandleFailed",
+        "launchJavaCshandleFailed":"alert.launchJavaCshandleFailed",
+        "launchingUtils":"alert.launchingUtils",
+        "waitingHandleReturnVariable":"alert.waitingHandleReturnVariable",
+        "launchCshandleFailed":"alert.launchCshandleFailed",
+        "error":"alert.error",
+        "setting":"alert.setting",
+        "helping":"alert.helping",
+        "toggleDevTools":"alert.toggleDevTools",
+        "viewVersionImprint":"alert.viewVersionImprint",
+        "refresh":"alert.refresh",
+        "systemSettings":"alert.systemSettings",
+        "basicSetting ":"alert.basicSetting",
+        "sudoReboot":"alert.sudoReboot",
+        "unitTestVariableDefinition":"alert.unitTestVariableDefinition",
+        "exportDataModule":"alert.exportDataModule",
+        "location":"alert.location",
+        "headline":"alert.headline",
+        "type":"alert.type",
+        "describe":"alert.describe",
+        "variableName":"alert.variableName",
+        "addNewType":"alert.addNewType",
+        "variable":"alert.variable",
+        "globalVariable":"alert.globalVariable",
+        "partVariable":"alert.partVariable",
+        "saveDataModule":"alert.saveDataModule",
+        "editNote":"alert.editNote",
+        "isCoverScript":"alert.isCoverScript",
+        "import": {
+            "title": "alert.import.title",
+            "desc": "alert.import.desc",
+            "createTime": "alert.import.createTime",
+            "updateTime": "alert.import.updateTime",
+            "homePage": "alert.import.homePage",
+            "trailerPage": "alert.import.trailerPage",
+            "operate": "alert.import.operate",
+            "select": "alert.import.select",
+            "delete": "alert.import.delete",
+            "newType": "alert.import.newType",
+            "saveDataModule": "alert.import.saveDataModule",
+            "all": "alert.import.all"
+        }
+    },
+    "fs_delete_dir": {
+        "file": "fs_delete_dir.file",
+        "menuTitle": "fs_delete_dir.menuTitle",
+        "select_directory": "fs_delete_dir.select_directory",
+        "menuNote": "fs_delete_dir.menuNote"
+    },
+    "pretreatment": {
+        "menuTitle": "pretreatment.menuTitle"
+    },
+    "chromeBrowser": {
+        "menuTitle": "chromeBrowser.menuTitle"
+    },
+    "internetExplorer": {
+        "menuTitle": "internetExplorer.menuTitle"
+    },
+    "yingyonggongneng": {
+        "menuTitle": "yingyonggongneng.menuTitle"
+    },
+    "microsoftApplication": {
+        "outParam": {
+            "note": "microsoftApplication.outParam.note"
+        },
+        "Element": {
+            "note": "microsoftApplication.Element.note"
+        },
+        "menuTitle": "microsoftApplication.menuTitle"
+    },
+    "variantHandling": {
+        "menuTitle": "variantHandling.menuTitle"
+    },
+    "workflowControl": {
+        "menuTitle": "workflowControl.menuTitle"
+    },
+    "shujubiaoge": {
+        "menuTitle": "shujubiaoge.menuTitle"
+    },
+    "fileOperate": {
+        "menuTitle": "fileOperate.menuTitle"
+    },
+    "keyboardAndMouse": {
+        "menuTitle": "keyboardAndMouse.menuTitle"
+    },
+    "dataInterfaceUtil": {
+        "menuTitle": "dataInterfaceUtil.menuTitle"
+    },
+    "exceptions": {
+        "menuTitle": "exceptions.menuTitle"
+    },
+    "databaseUtil": {
+        "menuTitle": "databaseUtil.menuTitle"
+    },
+    "excelHandling": {
+        "menuTitle": "excelHandling.menuTitle"
+    },
+    "docUtil": {
+        "menuTitle": "docUtil.menuTitle"
+    },
+    "ocr": {
+        "menuTitle": "ocr.menuTitle"
+    },
+    "customizedApplication": {
+        "menuTitle": "customizedApplication.menuTitle"
+    },
+    "finalHandling": {
+        "menuTitle": "finalHandling.menuTitle"
+    },
+    "systemUtil": {
+        "menuTitle": "systemUtil.menuTitle"
+    },
+    "setting": {
+        "host": "setting.host",
+        "name": "setting.name",
+        "port": "setting.port",
+        "beatTime": "setting.beatTime",
+        "globalWaitTime": "setting.globalWaitTime",
+        "isDev": "setting.isDev",
+        "isTrue": "setting.isTrue",
+        "isFalse": "setting.isFalse",
+        "isLocalSql": "setting.isLocalSql",
+        "waitOutTime": "setting.waitOutTime",
+        "workDirectory": "setting.workDirectory",
+        "language": "setting.language"
+    }
+}

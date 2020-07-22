@@ -1,0 +1,32 @@
+<div class="main-con-item">
+    <button type="button" class="capture">捕获页面元素</button>
+    <p>
+        <b>元素路径</b>(xpath)
+        <b>：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="xpath">
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="toggleType"></i>
+        <i class="xiala-icon parameters"></i>
+    </div>
+    <p>
+        <b>保存的路径：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" class="form-control" id="savePath" name="savePath" readonly="readonly" onclick="savePathFile1.click();"
+            placeholder="点击获取保存路径">
+        <input type="file" id="savePathFile1" class="hideFile" onchange="this.value==''?savePath.value=savePath.value:savePath.value=gePathVal(this)"
+            webkitdirectory directory/>
+        </div>
+        <p>
+            <b>验证码文件名：</b>
+        </p>
+        <div class="input-box">
+            <input type="text" name="fileName">
+            <ul class="common-list parameters-can-select"></ul>
+            <i class="xiala-icon parameters"></i>
+            <i class="toggleType"></i>
+        </div>
+        <input type="hidden" class="item-type" name="saveVCode">
+</div>

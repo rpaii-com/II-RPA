@@ -1,0 +1,17 @@
+<div class="main-con-item" style="overflow: hidden;">
+    <div>
+        <p>
+            <b>选择应用：</b>
+        </p>
+    </div>
+    <div class="input-box">
+        <button type="button" onclick="openfilePath.click();">点击选择应用</button>
+        <input type="text" class="form-control" id="openPath" name="openPath" />
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="xiala-icon parameters"></i>
+        <i class="toggleType"></i>
+        <input type="file" id="openfilePath" class="hideFile" onchange="this.value==''?openPath.value=openPath.value:openPath.value=gePathVal(this,true)"
+        />
+    </div>
+    <input type="hidden" class="item-type" name="triggerJava">
+</div>

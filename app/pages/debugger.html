@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>调试器</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        html,
+        body {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .webview-pages {
+            display: inline-flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            width: 100%;
+            height: 31px;
+            padding-right: 100px;
+            box-sizing: border-box;
+            font-size: 0;
+            list-style: none;
+            margin-top: 0;
+            background: #e4e7ec;
+            padding: 0;
+        }
+
+        .webview-pages>li {
+            position: relative;
+            height: 31px;
+            line-height: 30px;
+            flex-basis: 100px;
+            background: #F2F2F2;
+            color: #000;
+            border-right: 1px solid #cfcfcf;
+            text-align: center;
+            font-size: 12px;
+            vertical-align: top;
+            border-bottom: 1px solid #cfcfcf;
+            box-sizing: border-box;
+            cursor: pointer;
+            max-width: 100px;
+        }
+
+        .webview-page-tools {
+            position: absolute;
+            right: 0;
+            top: 6px;
+            display: block;
+            width: 20px;
+            height: 20px;
+        }
+
+        .webview-page-tools>i {
+            display: block;
+            width: 20px;
+            height: 20px;
+            background: url("../img/icon-close-16px.png") no-repeat center;
+            cursor: pointer;
+        }
+
+        .webview-pages>.page-selected {
+            position: relative;
+            background: #fff;
+            border-right: 1px solid #cfcfcf !important;
+            border-bottom: 1px solid #fff !important;
+        }
+
+        .webview-pages>li:last-child {
+            border-right: 1px solid #949191;
+        }
+
+        .page-title {
+            display: inline-block;
+            width: calc(100% - 35px);
+            height: 30px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .icon-newlabel {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: url(../img/theme/icon-newlabel.png);
+        }
+
+        webview {
+            height: calc(100% - 34px);
+        }
+
+        .webview-hide {
+            opacity: 0 !important;
+            height: 0 !important;
+            width: 0 !important;
+            z-index: -1 !important;
+        }
+
+        #main-body {
+            width: 100%;
+            height: calc(100% - 50px);
+        }
+
+        button {
+            outline: none;
+        }
+    </style>
+    <script src="../renderer/plugins/jquery/jquery.min.js"></script>
+
+    <script>
+        if (typeof module === 'object') {
+            window.jQuery = window.$ = module.exports;
+        }
+
+        process.prependListener("uncaughtException", function (err) {
+            console.error(err)
+        })
+        process.on("warning", function (warning) {
+            console.log(warning)
+        })
+        let alert1 = window.alert;
+        window.alert = function (data) {
+            console.log(data)
+        }
+    </script>
+</head>
+
+<body>
+    <div class="main-header">
+        <div class="header-box" style="width:100%">
+            <div class="header-do">
+                <button class="header-min"></button>
+                <button class="header-max header-unmax"></button>
+                <button class="header-close"></button>
+            </div>
+            <div class="logo-box">
+                <i class="img-logo"></i>
+                <div class="logo-tit-box">
+                    <span class="logo-main-tit">调试器</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main-body">
+
+    </div>
+</body>
+<script src="../renderer/plugins/layer/layer.js"></script>
+<script src="../main/debuger/Scalable/load.js"></script>
+<script src="../main/debuger/Scalable/main.js"></script>
+<script src="../main/debuger/monitor.js"></script>
+<script>
+    $(function () {
+        $(".header-do .header-close").on("click", function () {
+            remote.getCurrentWindow().close();
+        });
+        let isMax = true;
+        $(".header-do .header-min").on("click", function () {
+            remote.getCurrentWindow().minimize();
+        });
+        $(".header-do .header-max").on("click", function () {
+            remote.getCurrentWindow().maximize();
+            let $this = this;
+            setTimeout(function () {
+                $($this).addClass("header-unmax");
+            }, 0)
+            isMax = !isMax;
+        });
+        $(".header-do").on("click", ".header-unmax", function () {
+            remote.getCurrentWindow().unmaximize();
+            let $this = this;
+            setTimeout(function () {
+                $($this).removeClass("header-unmax");
+            }, 0)
+        })
+
+        $(".main-header").on("dblclick", function () {
+            if (isMax) {
+                $(".header-max").removeClass("header-unmax");
+                remote.getCurrentWindow().unmaximize();
+                isMax = !isMax
+            } else {
+                $(".header-max").addClass("header-unmax");
+                remote.getCurrentWindow().maximize();
+                isMax = !isMax
+            }
+        })
+    })
+</script>
+
+</html>

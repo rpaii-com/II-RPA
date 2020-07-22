@@ -1,0 +1,51 @@
+<div class="main-con-item">
+
+    <p>
+        <b>请选择数据库配置：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="db_rename" value="" />
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="xiala-icon parameters"></i>
+        <i class="toggleType"></i>
+    </div>
+    <p>
+        <b>请选择要插入的数据源：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="db_data" value="" />
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="xiala-icon parameters"></i>
+        <i class="toggleType"></i>
+    </div>
+    <p>
+        <b>伪插入语句：(数字是数据在单条数据组中的位置)</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="db_sql"
+               placeholder="insert into table (name,age,city) values (0,1,2)">
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="xiala-icon parameters"></i>
+        <i class="toggleType"></i>
+    </div>
+    <p>
+        <b>输出参数（受影响的行数）命名：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="rename">
+    </div>
+
+    <input type="hidden" class="item-type" name="dbInsert">
+</div>
+
+<div class="liucheng-item-tips">
+    <p class="dom-active-dec" title="">
+        <i></i>
+        <em>：</em>查询数据库
+    </p>
+    <p class="in-parameter" title="">
+        <i class="icon-tips-out"></i>
+        <em>：</em>"
+        <b class="font-out-paramter"></b>","
+        <b class="font-out-paramter-type">Array[Array]</b>"</p>
+</div>

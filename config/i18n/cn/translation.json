@@ -1,0 +1,1844 @@
+{
+    "mouseMove": {
+        "point": "移动到坐标：",
+        "menuTitle": "鼠标移动",
+        "menuNote": "mouseMove.menuNote"
+    },
+    "iconRecognition": {
+        "file": "需要识别的图标或者图片范围（Base64编码）：",
+        "select_image": "截取需要识别的图片",
+        "confidence": "设置置信度：（范围1-10，数字越大，可信度越高，将大于置信度的设为可信，小于置信度，找不到结果）",
+        "outParam": "输出变量命名：",
+        "menuTitle": "图标识别",
+        "menuNote": "iconRecognition.menuNote"
+    },
+    "getPageCookies": {
+        "outParam": "输出参数命名：",
+        "menuTitle": "获取当前页面的Cookies",
+        "menuNote": "getPageCookies.menuNote"
+    },
+    "verCodeJuHe": {
+        "file": "选择需要识别的验证码图片：",
+        "select_image": "选择图片",
+        "outParam": "输出变量命名：",
+        "menuTitle": "验证码识别接口调用",
+        "menuNote": "verCodeJuHe.menuNote"
+    },
+    "localDbCreate": {
+        "localFile": "选择数据库所在的文件夹：",
+        "selectFile": "选择文件夹",
+        "fileName": "数据库文件名：",
+        "tableName": "新建表名：",
+        "outParam": "为创建得本地数据库配置命名：",
+        "menuTitle": "创建本地数据库（SQLite）",
+        "menuNote": "localDbCreate.menuNote"
+    },
+    "localDbOthers": {
+        "dbRename": "请选择本地数据库配置：",
+        "dbSql": "增删改语句：",
+        "outParam": "输出变量（受影响的行数）命名：",
+        "menuTitle": "增、删、改本地数据库（SQLite）",
+        "menuNote": "localDbOthers.menuNote"
+    },
+    "localDbSelect": {
+        "dbRename": "请选择本地数据库配置：",
+        "dbSql": "查询语句：",
+        "outParam": "输出变量命名：",
+        "menuTitle": "查询本地数据库（SQLite）",
+        "menuNote": "localDbSelect.menuNote"
+    },
+    "complexLogic": {
+        "html": "复杂逻辑表达式：",
+        "outParam": "表达式结果输出：",
+        "menuTitle": "复杂逻辑计算",
+        "menuNote": "complexLogic.menuNote"
+    },
+    "localDbConfig": {
+        "localFile": "选择本地SQLite数据库文件：",
+        "selectFile": "选择文件",
+        "outParam": "为本地数据库配置命名：",
+        "menuTitle": "配置本地数据库（SQLite）",
+        "menuNote": "localDbConfig.menuNote"
+    },
+    "configSeleniumExplore": {
+        "type": "选择浏览器：",
+        "IE": "IE",
+        "Firefox": "Firefox",
+        "Chrome": "Chrome",
+        "menuTitle": "设置Selenium控制的浏览器",
+        "menuNote": "configSeleniumExplore.menuNote"
+    },
+    "paramsPaste": {
+        "isFormat": "是否保留原格式",
+        "outParam": "输出变量命名：",
+        "-": "剪切板导入变量",
+        "menuTitle": "剪切板导入变量",
+        "menuNote": "将剪切板中的内容，输出一个新变量并为其命名"
+    },
+    "wordCopyInClip": {
+        "menuTitle": "Word文档内容导入剪切板",
+        "file": "选择Word文件：",
+        "menuNote": "读取Word文档，并将其内容及样式复制到剪切板"
+    },
+    "callFunction": {
+        "paramName": "变量名：",
+        "functionName": "转换函数：",
+        "outParam": "输出变量命名：",
+        "-": "常用函数",
+        "menuTitle": "常用函数",
+        "menuNote": "用函数对变量进行转换，输出一个新变量并为其命名"
+    },
+    "conArrayRowCol": {
+        "outParam": "输出变量命名：",
+        "paramValue": "被转换的二维数组变量名：",
+        "-": "二维数组行列互换",
+        "menuTitle": "二维数组行列互换",
+        "menuNote": "将二维数组行列互换，输出一个新数组并为其命名"
+    },
+    "backGlobalParam": {
+        "outParam": "输出变量命名：",
+        "paramValue": "变量名：",
+        "-": "返回全局变量",
+        "menuTitle": "返回全局变量",
+        "menuNote": "将局部变量返回至全局变量"
+    },
+    "paramsCopy": {
+        "paramName": "变量名：",
+        "-": "变量导入剪切板",
+        "menuTitle": "变量导入剪切板",
+        "menuNote": "将变量内容复制到剪切板中"
+    },
+    "simpleFormula": {
+        "outParam": "结果输出变量命名：",
+        "formula": "简单公式输入：",
+        "menuTitle": "简单公式运算",
+        "menuNote": "通过简单公式计算出一个数值，输出一个新变量并为其命名（举例？）"
+    },
+    "setColParam": {
+        "paramName": "变量名：",
+        "httpparameters": "变量：",
+        "menuTitle": "设置集合变量",
+        "menuNote": "生成/修改指定的数组/对象"
+    },
+    "saveNewParam": {
+        "paramValue": "变量值：",
+        "outParam": "输出变量命名：",
+        "menuTitle": "设置新变量",
+        "menuNote": "新建变量并为之赋值和命名"
+    },
+    "calculateParam": {
+        "outParam": "输出变量命名：",
+        "param1": "变量一：",
+        "param2": "变量二：",
+        "operator": "运算符：",
+        "mo": "取余",
+        "menuTitle": "数学运算",
+        "menuNote": "将两个变量进行简单数学运算，输出一个新变量并为其命名"
+    },
+    "numTrans": {
+        "outParam": "输出变量命名：",
+        "paramValue": "变量值：",
+        "type": "选择转换方式：",
+        "numTozh": "阿拉伯数字转中文数字",
+        "zhTonum": "中文数字转阿拉伯数字",
+        "menuTitle": "中文数字阿拉伯数字互转",
+        "menuNote": "将变量中的中文数字/阿拉伯数字互转，输出一个新变量并为其命名（变量值改为待转换变量）"
+    },
+    "arrayConcat": {
+        "outParam": "输出参数命名：",
+        "des": "数组:",
+        "value": "待拼接的数组：",
+        "menuTitle": "数组拼接",
+        "menuNote": "将同维度的干数组拼接成，输出一个新数组并为其命名"
+    },
+    "extractParam": {
+        "outParam": "输出变量命名：",
+        "regexValue": "提取值：",
+        "key": "键名",
+        "index": "下标值",
+        "quickKey": "快捷提取({键名}[下标])",
+        "extractType": "提取方式：",
+        "paramName": "变量名：",
+        "menuTitle": "提取变量",
+        "menuNote": "通过变量的下标值或键名提取出部分变量，输出一个新变量并为其命名"
+    },
+    "convertParam": {
+        "outParam": "输出变量命名：",
+        "regexValue": "正则表达式：",
+        "paramName": "变量名：",
+        "menuTitle": "语法转化",
+        "menuNote": "用正则表达式对变量进行转化，输出一个新变量并为其命名"
+    },
+    "strSplit": {
+        "outParam": "输出数组命名：",
+        "separator": "分割符：",
+        "strObject": "待分割字符串：",
+        "menuTitle": "字符串分割",
+        "menuNote": "用分割符将一个字符串分割成若干个字符串，输出一个新数组并为其命名"
+    },
+    "string_generacte": {
+        "outParam": "输出字符串命名：",
+        "html": "字符串：",
+        "menuTitle": "字符串拼接",
+        "menuNote": "将若干字符串拼接，输出一个新字符串并为其命名"
+    },
+    "excelToObject": {
+        "outParam": "输出文件为变量：",
+        "filePath": "操作Excel文件：",
+        "menuTitle": "操作Excel文件",
+        "selectFile": "选择文件",
+        "menuNote": "选择一个Excel文件作为操作范围，对该excel文件的工作表/单元格进行各类读写操作 "
+    },
+    "readCsvFile": {
+        "outParam": "输出变量命名：",
+        "filePath": "读取csv文件：",
+        "menuTitle": "读取csv文件",
+        "selectFile": "选择文件",
+        "menuNote": "选择一个csv文件，读取该文件的所有内容，输出一个新变量并为其命名"
+    },
+    "excelReadCell": {
+        "outParam": "输出变量命名：",
+        "object": "单元格对象",
+        "text": "文本",
+        "resType": "选择输出结果类型：",
+        "rectangle": "读取位置(行,列)：",
+        "sheetName": "工作表名称：",
+        "excelKey": "选择Excel文件对象：",
+        "menuTitle": "读取单元格",
+        "menuNote": "选择一个Excel文件中的指定工作表的单元格，将该单元中内容输出一个新变量并为其命名"
+    },
+    "excelReadSheet": {
+        "outParam": "输出变量命名：",
+        "sheetName": "选择工作表：",
+        "allSheet": "全部工作表",
+        "excelKey": "选择Excel文件对象：",
+        "menuTitle": "读取工作表内容",
+        "menuNote": "选择一个Excel文件的若干/全部工作表，获取该工作表的内容，输出一个新变量并为其命名"
+    },
+    "excelReadRange": {
+        "outParam": "输出变量命名：",
+        "rightDown": "读取矩形范围右下点：",
+        "leftUp": "读取矩形范围左上点：",
+        "sheetName": "工作表名称：",
+        "excelKey": "选择Excel文件对象：",
+        "menuTitle": "读取指定范围",
+        "menuNote": "选择一个Excel文件中的某个工作表，读取指定范围中的内容，将内容输出一个新变量并为其命名"
+    },
+    "excelCopyPart": {
+        "to_rectangle_right_up": "复制的开始点：",
+        "to_sheet": "目标工作表名称：",
+        "excelKey2": "选择复制到的Excel文件对象：",
+        "rectangle_right_down": "需要复制的矩形范围：",
+        "from_sheet": "源工作表名称：",
+        "excelKey": "选择源Excel文件对象：",
+        "menuTitle": "复制局部至另一文件",
+        "menuNote": "选择两个Excel文件及其工作表，将一个Excel文件中的指定部分内容复制到另一个Excel文件的指定位置"
+    },
+    "excelChangeSheet": {
+        "newSheetName": "新的工作表名称：",
+        "sheetName": "工作表名称：",
+        "excelKey": "选择Excel文件对象：",
+        "menuTitle": "更改工作表名称",
+        "menuNote": "选择一个Excel文件中的某个工作表，为该工作表更改名称"
+    },
+    "excelDeleRowCol": {
+        "rectangle": "操作位置(行或者列)：",
+        "rowCol": "操作对象：",
+        "sheetName": "工作表名称：",
+        "excelKey": "选择Excel文件对象：",
+        "col": "列",
+        "row": "行",
+        "menuTitle": "清空行列数据",
+        "menuNote": "选择一个Excel文件中的某个工作表，清空该工作表中的某行/列数据"
+    },
+    "writeCsvFile": {
+        "outParam": "输出文件全路径名为参数：",
+        "isSaveHistory": "保存到历史任务",
+        "newFileName": "历史文件别名",
+        "targetPath": "保存的路径：",
+        "filename": "文件名称：",
+        "valueParam": "需要保存的数据名：",
+        "a": "添加",
+        "w": "覆盖",
+        "writeType": "写入类型：",
+        "menuTitle": "写入csv文件",
+        "select_directory": "选择路径",
+        "menuNote": "将变量写入一个csv文件并为该文件命名，并将文件路径输出一个新变量并为其命名"
+    },
+    "excelWriteCell": {
+        "rectangle": "写入位置(行,列)：",
+        "sheetName": "工作表名称：",
+        "excelObject": "选择Excel文件对象：",
+        "valueParam": "需要写入的变量：",
+        "menuTitle": "写入单元格",
+        "menuNote": "选择一个Excel文件中的指定工作表的单元格，将变量写入该单元格中"
+    },
+    "excelWriteSheet": {
+        "valueParam": "需要写入的变量：",
+        "add": "添加在末尾",
+        "write": "覆盖",
+        "resType": "写入类型：",
+        "sheetName": "工作表名称：",
+        "excelObject": "选择Excel文件对象：",
+        "menuTitle": "写入工作表",
+        "menuNote": "选择一个Excel文件中的某个工作表，将变量写入该工作表中"
+    },
+    "excelWriteRowCol": {
+        "rectangle": "写入位置(行或者列)：",
+        "col": "列",
+        "row": "行",
+        "rowCol": "写入类型：",
+        "sheetName": "工作表名称：",
+        "excelObject": "选择Excel文件对象：",
+        "valueParam": "需要写入的变量：",
+        "menuTitle": "写入行列数据",
+        "menuNote": "选择一个Excel文件中的某个工作表，将变量（一维数组）写入表格行列中"
+    },
+    "excelwriteRange": {
+        "leftUp": "写入起始点：",
+        "valueParam": "需要写入的变量：",
+        "sheetName": "工作表名称：",
+        "excelObject": "选择Excel文件对象：",
+        "menuTitle": "写入指定范围",
+        "menuNote": "选择一个Excel文件中的某个工作表，将变量写入指定起点的范围中"
+    },
+    "excelCreateSheet": {
+        "sheetName": "新建工作表名称：",
+        "excelObject": "选择Excel文件对象：",
+        "menuTitle": "新建工作表",
+        "menuNote": "选择一个Excel文件，新建一张工作表并为该工作表命名"
+    },
+    "copyOrpasteDo": {
+        "ctrlCOrV": "选择复制黏贴操作：",
+        "ctrlC": "复制操作",
+        "ctrlV": "黏贴操作",
+        "menuTitle": "复制粘贴",
+        "menuNote": "进行复制/粘贴操作"
+    },
+    "shortCut": {
+        "hotKey": "键盘热键：",
+        "count": "执行次数：",
+        "menuTitle": "键盘操作",
+        "menuNote": "设定键盘执行的具体热键和执行次数，用以运行时触发该热键和执行次数"
+    },
+    "mouseClick": {
+        "mouseClickType": "点击类型：",
+        "leftClick": "左键单击",
+        "midClick": "中键单击",
+        "rightClick": "右键单击",
+        "leftDbclick": "左键双击",
+        "menuTitle": "鼠标点击",
+        "menuNote": "进行鼠标相关的点击操作"
+    },
+    "mouseRoll": {
+        "mouseRollLeftOrRight": "左右滚动(向右为正,向左为负,滚轮键滚动的次数)：",
+        "mouseRollUpOrDown": "上下滚动(向下为正,向上为负,滚轮键滚动的次数)：",
+        "rectangle": "元素坐标(x,y)：",
+        "path": "元素下标：",
+        "winTitle": "元素窗体名称：",
+        "processName": "元素进程名称：",
+        "CScapture": "捕获桌面元素",
+        "CScapturePos": "捕获桌面元素",
+        "menuTitle": "鼠标滚动",
+        "menuNote": "鼠标在指定元素内进行滚动操作"
+    },
+    "draftingMouse": {
+        "rectangle_end": "鼠标拖动结束位置：",
+        "rectangle_start": "鼠标拖动开始位置：",
+        "menuTitle": "鼠标拖拽",
+        "menuNote": "输入鼠标活动范围的起止坐标，用以在运行时对鼠标进行拖动操作"
+    },
+    "pasteDo": {
+        "text-box": "进行黏贴操作"
+    },
+    "CSmove_position": {
+        "mouseClick": "鼠标左键点击",
+        "mouseMove": "鼠标移动",
+        "rectangle": "元素坐标(x,y):",
+        "CScapturePos": "捕获桌面元素(postion)",
+        "menuTitle": "坐标定位",
+        "menuNote": "坐标定位"
+    },
+    "docReadTxt": {
+        "outParam": "输出变量命名：",
+        "usinessDescription": "业务描述：",
+        "filePath": "读取txt文件：",
+        "menuTitle": "读取txt文件",
+        "selectFile": "选择文件",
+        "menuNote": "选取一个txt文件，获取该文件的所有内容，输出一个新变量并为其命名（业务描述：为中控发布任务时，选择文件前面的备注）"
+    },
+    "docReadWord": {
+        "outParam": "输出变量命名：",
+        "businessDescription": "业务描述：",
+        "filePath": "读取Word文件：",
+        "menuTitle": "读取Word文件",
+        "selectFile": "选择文件",
+        "menuNote": "选取一个word文件，获取该文件的所有内容，输出一个新变量并为其命名"
+    },
+    "docWriteTxt": {
+        "newFileName": "历史文件别名：",
+        "isSaveHistory": "保存到历史任务",
+        "outParam": "输出文件全路径名为变量：",
+        "targetPath": "保存的路径：",
+        "filename": "文件名称：",
+        "a": "添加",
+        "w": "覆盖",
+        "writeType": "写入类型:",
+        "valueParam": "需要保存的变量：",
+        "menuTitle": "写入txt文件",
+        "select_directory": "选择路径",
+        "menuNote": "将变量写入一个txt文件并为该文件命名，并将文件的全路径输出一个新变量并为其命名"
+    },
+    "docWriteWord": {
+        "outParam": "输出文件全路径名为变量：",
+        "isSaveHistory": "保存到历史任务",
+        "newFileName": "历史文件别名：",
+        "targetPath": "保存的路径：",
+        "filename": "文件名称：",
+        "valueParam": "需要保存的变量：",
+        "menuTitle": "写入Word文件",
+        "select_directory": "选择路径",
+        "menuNote": "将变量写入一个word文件并为该文件命名，并将文件的全路径输出一个新变量并为其命名"
+    },
+    "closeExecuteWindow": {
+        "text-box": "隐藏执行界面",
+        "menuTitle": "隐藏执行界面",
+        "menuNote": "隐藏调试器界面"
+    },
+    "CMDcommand": {
+        "outParam": "将CMD输出内容设置为变量：",
+        "command": "CMD输入命令：",
+        "menuTitle": "CMD命令行",
+        "menuNote": "向CMD内填入命令行，将获取到的内容输出一个新变量并为其命名"
+    },
+    "openApplication": {
+        "openPath": "选择应用：",
+        "menuTitle": "打开应用",
+        "selectFile": "选择应用",
+        "menuNote": "打开指定应用"
+    },
+    "waitTime": {
+        "sleep": "请输入等待时长(ms)：",
+        "menuTitle": "等待时间",
+        "menuNote": "设置上一节点和下一节点运行之间的等待之间"
+    },
+    "confirmSend": {
+        "isTxt": "纯文本",
+        "content": "邮件内容：",
+        "openPath": "选择附件：",
+        "subject": "主题：",
+        "receive_c": "抄送：",
+        "receive": "收件人：",
+        "port": "端口：",
+        "server": "SMTP服务器：",
+        "pwd": "密码/授权码：",
+        "account": "登录您的账户：",
+        "menuTitle": "发送邮件",
+        "selectFile": "选择文件",
+        "menuNote": "输入账户名/密码等信息登录邮箱，并按填写的内容将指定邮件发送/抄送给指定收件人"
+    },
+    "closeApplication": {
+        "closePath": "选择应用：",
+        "menuTitle": "关闭应用",
+        "menuNote": "关闭指定应用"
+    },
+    "getIp": {
+        "outParam": "输出本机IP为变量：",
+        "menuTitle": "获取本机IP",
+        "menuNote": "将本机IP输出一个新变量并为其命名"
+    },
+    "getScriptInfo": {
+        "outParam": "输出变量命名：",
+        "menuTitle": "获取脚本信息",
+        "menuNote": "获取脚本信息"
+    },
+    "getSystemParameter": {
+        "outParam": "输出变量命名：",
+        "setParam": "传入变量：(当前时间'YYYY-MM-DD HH:mm:ss')",
+        "getScreenSize": "当前分辨率",
+        "getCurrentPath": "应用地址",
+        "getCurrentLocale": "当前应用使用语言",
+        "getSysTime": "当前时间",
+        "getClipboard": "剪切板内容",
+        "getOSVersion": "操作系统版本",
+        "getOSArchitecture": "系统架构",
+        "getRobotVersion": "应用版本号",
+        "systemType": "选择系统变量：",
+        "menuTitle": "获取系统变量",
+        "menuNote": "获取系统相关信息，输出一个新变量并为其命名（传入变量？）"
+    },
+    "confirmReceive": {
+        "outParam": "新邮件列表输出变量命名：",
+        "port": "端口：",
+        "host": "IMap服务器：",
+        "password": "密码/授权码：",
+        "account": "登录您的账户：",
+        "menuTitle": "接收新邮件",
+        "menuNote": "输入账户名/密码等信息登录邮箱，将该邮箱中的新邮件列表输出一个新变量并为其命名"
+    },
+    "openExecuteWindow": {
+        "text-box": "显示执行界面",
+        "menuTitle": "显示执行界面",
+        "menuNote": "显示被隐藏的调试器界面"
+    },
+    "capScreenPart": {
+        "outParam": "输出文件全路径名为变量：",
+        "isSaveHistory": "保存到历史任务",
+        "save-history": "历史文件别名：",
+        "fileName": "截屏文件名：",
+        "rectangle_end": "截屏范围右下点：",
+        "rectangle_start": "截屏范围左上点：",
+        "menuTitle": "指定范围截屏",
+        "menuNote": "输入起点和终点坐标确定截屏范围，将截屏文件命名并将该文件路径输出一个新变量并为其命名"
+    },
+    "triggerBatVbs": {
+        "button": "选择应用",
+        "openfilePath": "选择应用：",
+        "menuTitle": "执行bat/vbs",
+        "menuNote": "执行bat/vbs"
+    },
+    "triggerJava": {
+        "file": "选择应用：",
+        "button": "triggerJava.button",
+        "menuTitle": "执行java",
+        "selectFile": "选择文件",
+        "menuNote": "执行目标Java文件"
+    },
+    "ocr_TencentCloud_getString": {
+        "outParam": "输出变量命名：",
+        "file": "选择需要识别的图片：",
+        "menuTitle": "腾讯云文字识别",
+        "select_image": "选择图片",
+        "menuNote": "使用腾讯云Api识别目标图片中的文本"
+    },
+    "ocr_TencentCloud_getPosition": {
+        "outParam": "输出变量命名：",
+        "matchString": "需要匹配的文字：",
+        "file": "选择需要识别的图片：",
+        "menuTitle": "腾讯云文字位置识别",
+        "select_image": "选择图片",
+        "menuNote": "使用腾讯云Api识别目标图片中目标文字在图片中的位置"
+    },
+    "dbSelect": {
+        "outParam": "输出变量命名：",
+        "dbSql": "查询语句：",
+        "dbRename": "请选择数据库配置：",
+        "menuTitle": "查询数据库",
+        "menuNote": "选择配置信息连接到目标数据库，输入查询语句查询该数据库，将查询到的内容输出一个新变量并为其命名"
+    },
+    "dbConfig": {
+        "outParam": "为数据库配置命名：",
+        "test_db_config": "测试链接",
+        "schema": "默认数据库名称/oracle服务名：",
+        "password": "密码：",
+        "username": "用户名：",
+        "port": "Port（默认端口:mysql：3306；mssql：1433，oracle：1521）：",
+        "hostname": "Hostname（主机ip）：",
+        "oracle": "oracle",
+        "mssql": "mssql",
+        "mysql": "mysql",
+        "dbType": "选择数据库类型：",
+        "menuTitle": "配置数据库",
+        "menuNote": "输入某数据库配置信息，并将该信息输出为变量为其命名，后续调用该变量即可连接该数据库"
+    },
+    "dbInsert": {
+        "outParam": "输出参数（受影响的行数）命名：",
+        "dbSql": "伪插入语句：(数字是数据在单条数据组中的位置)",
+        "dbData": "请选择要插入的数据源：",
+        "dbRename": "请选择数据库配置：",
+        "menuTitle": "批量插入数据库",
+        "menuNote": "选择配置信息连接到目标数据库，将数据源批量插入该数据库中，并将受影响的行数输出一个新变量并为其命名"
+    },
+    "dbOthers": {
+        "outParam": "输出变量（受影响的行数）命名：",
+        "dbSql": "增删改语句：",
+        "dbRename": "请选择数据库配置：",
+        "menuTitle": "增、删、改数据库",
+        "menuNote": "选择配置信息连接到目标数据库，输入增/删/改语句更改该数据库，将受影响的行数输出一个新变量并为其命名"
+    },
+    "fs_rename": {
+        "name": "新文件名称(包含文件格式)：",
+        "file": "选择需要重命名的文件：",
+        "menuTitle": "重命名文件",
+        "selectFile": "选择文件",
+        "menuNote": "给指定文件重新命名"
+    },
+    "fs_cre_directory": {
+        "name": "目录名称：",
+        "directory": "选择创建目录的位置：",
+        "menuTitle": "创建目录",
+        "select_directory": "选择目录",
+        "menuNote": "在指定位置创建新的文件夹并命名"
+    },
+    "fs_cre_file": {
+        "name": "文件名称：",
+        "directory": "选择创建文件的位置：",
+        "menuTitle": "创建文件",
+        "select_directory": "选择目录",
+        "menuNote": "在指定位置创建新的文件并命名"
+    },
+    "fs_copy": {
+        "directory": "选择复制到的目录：",
+        "file": "选择要复制的文件：",
+        "menuTitle": "复制文件",
+        "selectFile": "选择文件",
+        "select_directory": "选择目录",
+        "menuNote": "将指定文件复制到指定文件夹下"
+    },
+    "fs_get_all_file": {
+        "outParam": "为输出变量命名：",
+        "filetype": "目标文件类型：（不填默认全选）",
+        "directory": "选择目录的位置：",
+        "menuTitle": "获取目录下所有文件名",
+        "select_directory": "选择目录",
+        "menuNote": "获取指定文件夹下所有文件的路径，输出一个新变量并为其命名"
+    },
+    "unarchiverFile": {
+        "directoryRes": "选择要保存的文件夹：",
+        "directory": "选择要解压的文件：",
+        "menuTitle": "解压缩文件",
+        "selectFile": "选择文件",
+        "select_directory": "选择目录",
+        "menuNote": "选择指定文件解压并保存在指定文件夹下"
+    },
+    "fs_exists": {
+        "outParam": "为结果变量命名：",
+        "path": "选择要判断的路径：",
+        "menuTitle": "判断路径存在",
+        "select_directory": "选择路径",
+        "menuNote": "输入文件路径用以运行时判断指定路径是否存在，将结果输出一个新变量并为其命名"
+    },
+    "fs_delete": {
+        "file": "选择要删除的文件：",
+        "menuTitle": "删除文件",
+        "selectFile": "选择文件",
+        "menuNote": "删除指定文件"
+    },
+    "archiverFile": {
+        "outParam": "输出压缩文件全路径名为参数：",
+        "directoryRes": "选择要保存的文件夹：",
+        "name": "压缩文件名称：",
+        "directory": "选择要压缩的文件/文件夹：",
+        "menuTitle": "压缩文件",
+        "select_directory": "选择文件夹",
+        "selectFile": "选择文件",
+        "save_directory": "选择文件夹",
+        "menuNote": "选择指定文件压缩并保存在指定文件夹下，重命名该文件，并将该路径输出一个新变量并为其命名"
+    },
+    "fs_move": {
+        "directory": "选择移动到的目录：",
+        "file": "选择要移动的文件：",
+        "menuTitle": "移动文件",
+        "selectFile": "选择文件",
+        "select_directory": "选择目录",
+        "menuNote": "将指定文件移动到指定文件夹下"
+    },
+    "triggerScript": {
+        "scriptId": "选择参数(只在执行器生效)：",
+        "menuTitle": "触发脚本",
+        "menuNote": "触发脚本"
+    },
+    "openMstscReport": {
+        "text-box": "将会打开流程报告",
+        "menuTitle": "打开流程报告",
+        "menuNote": "打开流程报告"
+    },
+    "returnParameterToCenter": {
+        "parameter": "选择参数(只在执行器生效)：",
+        "menuTitle": "将参数返回中控",
+        "menuNote": "将指定参数返回至中控系统"
+    },
+    "openTips": {
+        "parameter": "需要显示的信息：",
+        "menuTitle": "弹出提示框",
+        "menuNote": "弹出指定内容的提示框"
+    },
+    "getCSElement": {
+        "outParam": "输出为变量：",
+        "height": "元素高度(height)：",
+        "width": "元素宽度(width)：",
+        "offRightDownPos": "元素相对右下坐标(x,y)：",
+        "offRightTopPos": "元素相对右上坐标(x,y)：",
+        "offLeftDownPos": "元素相对左下坐标(x,y)：",
+        "offLeftTopPos": "元素相对左上坐标(x,y)：",
+        "offCenterPos": "元素相对中心坐标(x,y)：",
+        "pos": "元素坐标(x,y)：",
+        "elType": "元素类型：",
+        "elValue": "元素值：",
+        "elName": "元素名称：",
+        "csPath": "元素下标：",
+        "winTitle": "元素窗体名称：",
+        "processName": "元素进程名称：",
+        "CScaptureNew": {
+            "name": "捕获桌面元素",
+            "note": "将桌面元素捕获并生成一个cs类，以在微软应用中使用"
+        },
+        "menuTitle": "捕获桌面元素",
+        "menuNote": "捕获得到目标桌面元素的各类信息并保存为变量"
+    },
+    "similarSelector": {
+        "outParam": "输出结果：",
+        "selectors": "下拉选项文本列表：",
+        "target": "目标文本：",
+        "menuTitle": "返回最相似的下拉项",
+        "menuNote": "通过输入下拉框列表数据和对应需要选取的内容，放回最相似的值并保存为变量"
+    },
+    "getCSParentElementByName": {
+        "outParam": "输出变量命名：",
+        "elName": {
+            "name": "元素名称：",
+            "note": "你需要检索的名字"
+        },
+        "eventType": {
+            "name": "检索类型：",
+            "note": "检索类型"
+        },
+        "Element": "元素对象(csPath)：",
+        "menuTitle": "根据元素名获取父级元素",
+        "menuNote": "输入桌面元素路径用以运行时通过元素名或值获取元素的父级元素并保存为变量"
+    },
+    "getCSBrotherElementByName": {
+        "outParam": "输出变量命名：",
+        "elName": {
+            "name": "元素名称：",
+            "note": "你需要检索的名字"
+        },
+        "index": {
+            "name": "index：",
+            "note": "检索出来时是个数组，这边时选择第几个，不过通常不需要写"
+        },
+        "isSameType": "是否同类型",
+        "eventType": {
+            "name": "检索类型：",
+            "note": "检索类型"
+        },
+        "Element": "元素对象(csPath)：",
+        "menuTitle": "根据元素名获取同级元素",
+        "menuNote": "输入桌面元素路径用以运行时通过元素名或值获取元素的同级元素并保存为变量"
+    },
+    "getCSChildrenElementByName": {
+        "outParam": "输出变量命名：",
+        "eventType": {
+            "name": "检索类型：",
+            "note": "检索类型"
+        },
+        "index": {
+            "name": "index：",
+            "note": "检索出来时是个数组，这边时选择第几个，不过通常不需要写"
+        },
+        "elName": {
+            "name": "元素名称：",
+            "note": "你需要检索的名字"
+        },
+        "Element": "元素对象(csPath)：",
+        "isSameType": "是否同类型",
+        "menuTitle": "根据元素名获取子级元素",
+        "menuNote": "输入桌面元素路径用以运行时通过元素名或值获取元素的子级元素并保存为变量"
+    },
+    "getCSParentElement": {
+        "outParam": "输出变量命名：",
+        "Element": "元素对象(csPath)：",
+        "menuTitle": "获取父级元素",
+        "menuNote": "输入桌面元素路径用以运行时通过选择类型获取元素的父级元素并保存为变量"
+    },
+    "getCSBrotherElement": {
+        "outParam": "输出变量命名：",
+        "last": "last",
+        "next": "next",
+        "prev": "prev",
+        "first": "first",
+        "eventType": {
+            "name": "选择类型：",
+            "note": "通过cs类获取同级元素之后的数组中的选择类型"
+        },
+        "Element": "元素对象(csPath)：",
+        "menuTitle": "获取同级元素",
+        "menuNote": "输入桌面元素路径用以运行时获取元素的同级元素并保存为变量"
+    },
+    "getElementItems": {
+        "outParam": "输出变量命名：",
+        "Element": "元素对象(csPath)：",
+        "menuTitle": "获取下拉列表数据",
+        "menuNote": "通过输入下拉框对象路径用以运行时获取该下拉框的内容并保存为变量"
+    },
+    "getCSChildrenElement": {
+        "outParam": "输出变量命名：",
+        "eventType": {
+            "name": "选择类型：",
+            "note": "通过cs类获取同级元素之后的数组中的选择类型"
+        },
+        "Element": "元素对象(csPath)：",
+        "menuTitle": "获取子级元素",
+        "menuNote": "输入桌面元素路径用以运行时通过选择类型获取元素的子级元素并保存为变量"
+    },
+    "CSElemetClick": {
+        "mouseClickType": {
+            "name": "选择类型：",
+            "note": "可以通过cs类重新定位至元素后鼠标操作的选项"
+        },
+        "noClick": "不点击",
+        "leftDbclick": "左键双击",
+        "rightClick": "右键单击",
+        "midClick": "中键单击",
+        "leftClick": "左键单击",
+        "Element": "元素对象(csPath)：",
+        "menuTitle": "桌面元素点击",
+        "menuNote": "输入桌面元素路径用以运行时点击该桌面元素"
+    },
+    "CSElemetInput": {
+        "input": "直接输入",
+        "inputText": {
+            "name": "填入内容(需要填入的内容)：",
+            "note": "需要输入至cs元素内的内容"
+        },
+        "ctrlC": "复制黏贴",
+        "keybord": "键盘输入",
+        "inputType": {
+            "name": "输入类型：",
+            "note": "可以通过cs类重新定位至元素输入操作的选项，其中键盘输入需要等同keydown,keyup,复制操作需要focus"
+        },
+        "Element": "元素对象(csPath)：",
+        "inputParam": "填入内容(需要填入的内容)：",
+        "menuTitle": "桌面元素输入",
+        "menuNote": "输入桌面元素路径用以运行时向该元素中填写内容"
+    },
+    "ftpDownLoad": {
+        "localPath": "下载路径：",
+        "fileNmae": "需要下载的文件名：",
+        "remotePath": "远程路径：",
+        "pass": "pass：",
+        "user": "user：",
+        "port": "Port：",
+        "host": "Host：",
+        "select_directory": "选择目录",
+        "menuTitle": "ftp下载",
+        "menuNote": "通过指定的ftp，将远程主机的某个文件下载至自己的计算机上"
+    },
+    "httpApi": {
+        "outParam": "输出变量命名：",
+        "text": "text",
+        "json": "json",
+        "paramType": "选择获取变量的类型：",
+        "httpparameters": "变量：",
+        "ContentType": "选择请求头类型：",
+        "post": "post",
+        "get": "get",
+        "httpType": "请求类型：",
+        "menuTitle": "http接口",
+        "menuNote": "从指定http接口中获取数据，输出一个新变量并为其命名"
+    },
+    "http_downloadfile": {
+        "outParam": "输出绝对路径为变量：",
+        "url_download": "下载地址：",
+        "button": "选择目录",
+        "directory": "选择保存文件的目录：",
+        "menuTitle": "http下载文件接口",
+        "menuNote": "通过Http接口，下载文件"
+    },
+    "http_uploadfile": {
+        "url_upload": "上传地址：",
+        "file": "选择需要上传的文件：",
+        "menuTitle": "http上传文件接口",
+        "select_directory": "选择目录",
+        "menuNote": "向指定http接口上传文件"
+    },
+    "socketApi": {
+        "outParam": "输出变量命名：",
+        "text": "text",
+        "json": "json",
+        "data_type": "选择获取变量的类型：",
+        "signal": "开始信号：",
+        "port": "Port：",
+        "host": "Host：",
+        "menuTitle": "socket接口",
+        "menuNote": "从指定socket接口中获取数据，输出一个新变量并为其命名"
+    },
+    "websocketApi": {
+        "outParam": "输出变量命名：",
+        "text": "text",
+        "json": "json",
+        "data_type": "选择获取变量的类型：",
+        "signal": "接受事件信号：",
+        "port": "Port：",
+        "host": "Host：",
+        "menuTitle": "websocket接口",
+        "menuNote": "从指定websocket接口中获取数据，输出一个新变量并为其命名"
+    },
+    "newHttpApi": {
+        "outParam": "输出变量命名：",
+        "resHeaders": "Response Headers",
+        "response": "Response",
+        "returnType": "返回结果类型：",
+        "paramsKey1": "Request Parameters：",
+        "headerKey1": "Headers：",
+        "path": "Path：",
+        "port": "Port：",
+        "host": "Host：",
+        "post": "POST",
+        "get": "GET",
+        "method": "HTTP method：",
+        "menuTitle": "http接口(新)",
+        "menuNote": "http接口(新)"
+    },
+    "ftpUpload": {
+        "localPath": "上传路径：",
+        "fileNmae": "远程文件名：",
+        "remotePath": "远程路径：",
+        "pass": "pass：",
+        "user": "user：",
+        "port": "Port：",
+        "host": "Host：",
+        "menuTitle": "ftp上传",
+        "select_directory": "选择路径",
+        "menuNote": "通过指定的ftp，将自己的计算机上某个文件上传至远程主机上"
+    },
+    "telnetClose": {
+        "telnetClient": "关闭telnet client：",
+        "menuTitle": "telnet关闭",
+        "menuNote": "选择某telnet连接信息关闭该连接"
+    },
+    "telnetWrite": {
+        "outParam": "输出变量命名：",
+        "cmdStr": "telnet命令：",
+        "telnetClient": "选择telnet Client：",
+        "menuTitle": "telnet命令",
+        "menuNote": "选择某telnet连接信息连接某服务器，向服务器中输入lelnet命令并将获取得信息输出一个新变量并为其命名"
+    },
+    "telnetConnect": {
+        "outParam": "输出变量命名：",
+        "password": "password：",
+        "username": "username：",
+        "port": "Port：",
+        "host": "Host：",
+        "menuTitle": "telnet连接",
+        "menuNote": "输入telnet连接信息，并将该信息输出为变量为其命名，后续调用该变量即可连接到服务器"
+    },
+    "continue": {
+        "continueCondition": "参数二：",
+        "gt": "大于",
+        "egt": "大于等于",
+        "eq": "等于",
+        "neq": "不等于",
+        "lt": "小于",
+        "elt": "小于等于",
+        "op": "条件：",
+        "include": "包含",
+        "notInclude": "不包含",
+        "isNull": "是否为空",
+        "continueValue": "参数一：",
+        "menuTitle": "继续循环",
+        "menuNote": "按条件判断，满足条件时继续当前循环"
+    },
+    "for": {
+        "rename_i": "单元元素下标的命名：",
+        "rename": "单元元素的命名：",
+        "objectList": "请选择迭代元素",
+        "menuTitle": "迭代循环",
+        "menuNote": "按元素个数循环若干次"
+    },
+    "hashfor": {
+        "outParam": "单元元素的命名：",
+        "circulateCount": "循环次数",
+        "menuTitle": "列表遍历",
+        "menuNote": "按指定的次数循环若干次"
+    },
+    "if": {
+        "rid": "参数二：",
+        "op": "条件：",
+        "gt": "大于",
+        "egt": "大于等于",
+        "eq": "等于",
+        "neq": "不等于",
+        "lt": "小于",
+        "elt": "小于等于",
+        "include": "包含",
+        "notInclude": "不包含",
+        "isNull": "是否为空",
+        "lid": "参数一：",
+        "menuTitle": "条件判断",
+        "menuNote": "按条件判断，满足条件时执行某一流程，不满足条件执行另一流程"
+    },
+    "break": {
+        "breakCondition": "参数二：",
+        "op": "条件：",
+        "gt": "大于",
+        "egt": "大于等于",
+        "eq": "等于",
+        "neq": "不等于",
+        "lt": "小于",
+        "elt": "小于等于",
+        "include": "包含",
+        "notInclude": "不包含",
+        "isNull": "是否为空",
+        "breakValue": "参数一：",
+        "menuTitle": "跳出循环",
+        "menuNote": "按条件判断，满足条件时退出当前的单次循环，开始下一次循环"
+    },
+    "goto": {
+        "rid": "参数二：",
+        "op": "条件：",
+        "gt": "大于",
+        "egt": "大于等于",
+        "eq": "等于",
+        "neq": "不等于",
+        "lt": "小于",
+        "elt": "小于等于",
+        "include": "包含",
+        "notInclude": "不包含",
+        "isNull": "是否为空",
+        "lid": "参数一：",
+        "gotoFlow":"指向的流程"
+    },
+    "shangdongMenu": {
+        "outParam": "输出变量命名：",
+        "elName": "元素名称：",
+        "eventType": "检索类型：",
+        "name": "name",
+        "value": "value",
+        "Element": "元素对象>(csPath)：",
+        "menuTitle": "菜单树查找（微软功能-统一业务系统）",
+        "menuNote": "菜单树查找（微软功能-统一业务系统）"
+    },
+    "dateFormatSpe": {
+        "outParam": "输出变量命名：",
+        "paramValue": "待处理变量：",
+        "menuTitle": "日期数据格式化",
+        "menuNote": "将指定变量处理成日期格式"
+    },
+    "slidingVerificationCode": {
+        "outParam": "结果输出变量命名：",
+        "file": "选择要处理的图片文件：",
+        "menuTitle": "返回滑动验证码图片缺口中心点",
+        "select_image": "选择图片",
+        "menuNote": "保存缺口图片，并将缺口位置坐标输出一个新变量并为其命名"
+    },
+    "getVCode": {
+        "outParam": "输出变量命名：",
+        "capture": "抓取",
+        "xpath": "元素路径(xpath)：",
+        "menuTitle": "获取验证码",
+        "menuNote": "输入验证码路径用以运行时获得该验证码中的内容，输出一个新变量并为其命名"
+    },
+    "assert_type": {
+        "typeName": "变量类型",
+        "paramName": "变量名：",
+        "menuTitle": "类型断言",
+        "menuNote": "（空）"
+    },
+    "assert_value": {
+        "elt": "小于等于",
+        "lt": "小于",
+        "eq": "等于",
+        "egt": "大于等于",
+        "gt": "大于",
+        "paramName": "满足条件",
+        "menuTitle": "变量值断言",
+        "menuNote": "（空）"
+    },
+    "getPixelColor": {
+        "outParam": "结果输出为变量（true/false）",
+        "rgb": "坐标处像素",
+        "position": "元素坐标",
+        "mouse_now": "当前鼠标位置（流程运行过程中）",
+        "mouse_input": "捕获鼠标位置",
+        "mouse_type": "选择鼠标位置类型",
+        "CScapturePos": "捕获桌面元素(postion)",
+        "menuTitle": "屏幕像素点识别",
+        "menuNote": "通过对元素的rgb选取判定桌面是否存在此颜色的像素点"
+    },
+    "try_catch": {
+        "from_to": "指定元流程 ：",
+        "cmd": "break",
+        "cmd2": "continue",
+        "cmd3": "again",
+        "forActive": "执行命令 ：",
+        "point_to": "选择节点 ：",
+        "list": "当前元流程节点重新执行",
+        "list2": "当前元流程节点的下一个节点执行",
+        "list3": "跳出指定循环",
+        "list4": "流程终止",
+        "list5": "指向元流程第一个节点开始",
+        "list6": "回到指定主流程节点",
+        "handle_type": "解决方式 ：",
+        "singleNodeId": "单节点ID：",
+        "UndefinedException": "UndefinedException-未定义异常",
+        "WEBException": "WEBException-网络访问异常",
+        "SQLException": "SQLException-操作数据库异常",
+        "IllegalAccessException": "IllegalAccessException-权限不足异常",
+        "NoSuchFieldException": "NoSuchFieldException-属性不存在异常",
+        "ArrayIndexOutOfBoundsException": "ArrayIndexOutOfBoundsException-数组下标越界异常",
+        "ClassCastException": "ClassCastException-类型强制转换异常",
+        "FileNotCreateException": "FileNotCreateException-创建文件异常",
+        "FileTypeException": "FileTypeException-文件类型异常",
+        "FileNotFoundException": "FileNotFoundException-文件未找到异常",
+        "SystemException": "SystemException-系统异常",
+        "SeleniumException": "SeleniumException-IE浏览器模块异常",
+        "ElementNotFoundException": "ElementNotFoundException-元素未找到异常",
+        "value1": "捕获类型：",
+        "url": "名称：",
+        "menuTitle": "异常捕获",
+        "menuNote": "设置可能出现的异常类型，并选择解决方式"
+    },
+    "catch_result": {
+        "from_to": "指定元流程 ：",
+        "cmd": "break",
+        "cmd2": "continue",
+        "cmd3": "again",
+        "forActive": "执行命令 ：",
+        "point_to": "选择节点 ：",
+        "list": "当前元流程节点重新执行",
+        "list2": "当前元流程节点的下一个节点执行",
+        "list3": "跳出指定循环",
+        "list4": "流程终止",
+        "list5": "指向元流程第一个节点开始",
+        "list6": "回到指定主流程节点",
+        "handle_type": "解决方式 ：",
+        "singleNodeId": "单节点ID：",
+        "UndefinedException": "UndefinedException-未定义异常",
+        "WEBException": "WEBException-网络访问异常",
+        "SQLException": "SQLException-操作数据库异常",
+        "IllegalAccessException": "IllegalAccessException-权限不足异常",
+        "NoSuchFieldException": "NoSuchFieldException-属性不存在异常",
+        "ArrayIndexOutOfBoundsException": "ArrayIndexOutOfBoundsException-数组下标越界异常",
+        "ClassCastException": "ClassCastException-类型强制转换异常",
+        "FileNotCreateException": "FileNotCreateException-创建文件异常",
+        "FileTypeException": "FileTypeException-文件类型异常",
+        "FileNotFoundException": "FileNotFoundException-文件未找到异常",
+        "SystemException": "SystemException-系统异常",
+        "ElementNotFoundException": "ElementNotFoundException-元素未找到异常",
+        "value1": "捕获类型：",
+        "url": "名称：",
+        "menuTitle": "异常处理",
+        "menuNote": "设置可能出现的异常类型，并选择解决方式"
+    },
+    "throwError": {
+        "errDesc": "异常描述：",
+        "UndefinedException": "UndefinedException-未定义异常",
+        "WEBException": "WEBException-网络访问异常",
+        "SQLException": "SQLException-操作数据库异常",
+        "IllegalAccessException": "IllegalAccessException-权限不足异常",
+        "NoSuchFieldException": "NoSuchFieldException-属性不存在异常",
+        "ArrayIndexOutOfBoundsException": "ArrayIndexOutOfBoundsException-数组下标越界异常",
+        "ClassCastException": "ClassCastException-类型强制转换异常",
+        "FileNotCreateException": "FileNotCreateException-创建文件异常",
+        "FileTypeException": "FileTypeException-文件类型异常",
+        "FileNotFoundException": "FileNotFoundException-文件未找到异常",
+        "SystemException": "SystemException-系统异常",
+        "SeleniumException": "SeleniumException-IE浏览器模块异常",
+        "ElementNotFoundException": "ElementNotFoundException-元素未找到异常",
+        "errType": "异常类型：",
+        "menuTitle": "异常抛出",
+        "menuNote": "将异常抛出，通常配合异常捕获使用或者强行终止流程"
+    },
+    "saveVCode": {
+        "fileName": "验证码文件名：",
+        "savePath": "保存的路径：",
+        "capture": "抓取",
+        "xpath": "元素路径(xpath):",
+        "menuTitle": "保存验证码图片",
+        "menuNote": "输入验证码元素位置用以运行时获取验证码图片并保存至指定路径"
+    },
+    "elementPos": {
+        "outParam": "输出变量命名：",
+        "elementPos": "元素位置(Pos)：",
+        "capturePos": "捕获页面元素（Pos）"
+    },
+    "open": {
+        "url": "打开网址:",
+        "menuTitle": "打开网页",
+        "menuNote": "打开输入网址的网页"
+    },
+    "waitFindELe": {
+        "waitTime": "选择超时时间:(毫秒)",
+        "xpath": "元素路径(xpath)：",
+        "goon": "是否跟随脚本执行",
+        "capture": "抓取",
+        "menuTitle": "等待至目标元素出现继续",
+        "menuNote": "等待目标元素加载，待元素出现时，流程继续"
+    },
+    "mouseDownOrUp": {
+        "xpath": "元素路径(xpath)：",
+        "mouse_type": "鼠标方式",
+        "mouseup": "mouseup",
+        "mousedown": "mousedown",
+        "goon": "是否跟随脚本执行",
+        "capture": "抓取",
+        "menuTitle": "点击网页元素(mouseDown/mouseUp)",
+        "menuNote": "（之后会删除）"
+    },
+    "click": {
+        "goon": "是否跟随脚本执行",
+        "hand": "模拟手势",
+        "mousedown_up": "模拟mousedown,up",
+        "click": "click",
+        "click_type": "动作:",
+        "xpath": "元素路径(xpath):",
+        "capture": "抓取",
+        "menuTitle": "点击网页元素",
+        "menuNote": "输入元素位置用以运行时点击该元素"
+    },
+    "changeAttributeName": {
+        "newAttr": "更改后的值：",
+        "attr": "选择更改的属性：",
+        "xpath": "元素路径(xpath):",
+        "menuTitle": "更改网页元素属性",
+        "menuNote": "更改目标元素的目标属性"
+    },
+    "classClickString": {
+        "strObject": "需要匹配的文本值:",
+        "className": "元素的Class:",
+        "xpath": "iframe路径(xpath):",
+        "capture": "抓取",
+        "menuTitle": "根据class名点击特定元素",
+        "menuNote": "根据指定文本，点击特定范围内的符合条件的元素"
+    },
+    "closePage": {
+        "text-box": "关闭当前页面（选项卡）",
+        "menuTitle": "关闭当前页面（选项卡）",
+        "menuNote": "关闭当前页面或选项卡"
+    },
+    "getElePosition": {
+        "outParam": "输出变量命名：",
+        "xpath": "元素路径(xpath):",
+        "capture": "抓取",
+        "menuTitle": "获得元素运行中的屏幕位置",
+        "menuNote": "输入元素路径用以运行时获得元素在屏幕上的坐标值并保存为变量"
+    },
+    "getPageURL": {
+        "outParam": "输出变量命名：",
+        "menuTitle": "获取当前页面的URL URI",
+        "menuNote": "获取当前页面URL并保存为变量"
+    },
+    "openIframe": {
+        "goon": "是否跟随脚本执行",
+        "openNew": "新标签页",
+        "xpath": "框架元素路径(xpath):",
+        "capture-iframe": "抓取",
+        "menuTitle": "打开框架",
+        "menuNote": "输入框架路径用以运行时打开目标框架"
+    },
+    "InnerHTML": {
+        "outParam": "输出变量命名：",
+        "xpath": "xpath",
+        "xpathEle": "元素路径(xpath):",
+        "html": "html",
+        "text": "text",
+        "getType": "数据类型：",
+        "capture": "抓取",
+        "menuTitle": "获取页面元素内容",
+        "menuNote": "输入元素路径用以运行时获得该元素中的内容并保存为变量"
+    },
+    "resemblance": {
+        "outParam": "输出变量命名：",
+        "xpath": "xpath",
+        "html": "html",
+        "text": "text",
+        "getType": "数据类型:",
+        "xpathAlike": "元素路径(xpath):",
+        "capture": "抓取",
+        "menuTitle": "获取相似元素内容",
+        "menuNote": "输入元素路径用以运行时获得该元素及其相似元素的内容并保存为变量"
+    },
+    "canGetEle": {
+        "outParam": "输出参数命名：",
+        "xpath": "元素路径(xpath):",
+        "capture": "抓取",
+        "menuTitle": "判断元素是否存在",
+        "menuNote": "输入元素路径用以运行时检测该元素是否存在"
+    },
+    "getAttributeName": {
+        "outParam": "输出变量命名:",
+        "capture": "抓取",
+        "xpath": "元素路径(xpath):",
+        "menuTitle": "获取网页元素属性",
+        "menuNote": "输入元素路径用以运行时获得该元素属性并保存为变量"
+    },
+    "mouseover": {
+        "goon": "是否跟随脚本执行",
+        "xpath": "元素路径(xpath):",
+        "capture": "抓取",
+        "menuTitle": "鼠标移动到元素",
+        "menuNote": "输入元素路径用以在运行时将鼠标移动到该元素的位置"
+    },
+    "inputInfo": {
+        "input": "填入内容:",
+        "xpath": "元素路径(xpath):",
+        "capture": "抓取",
+        "menuTitle": "填写输入框内容",
+        "menuNote": "输入输入框路径用以运行时在该输入框内填写指定的内容"
+    },
+    "historyBack": {
+        "text-box": "页面回退的功能",
+        "menuTitle": "页面后退",
+        "menuNote": "当前页面后退"
+    },
+    "pageFresh": {
+        "text-box": "页面刷新的功能",
+        "menuTitle": "页面刷新",
+        "menuNote": "当前页面刷新"
+    },
+    "getTable": {
+        "outParam": "输出变量命名:",
+        "xpath": "xpath",
+        "html": "html",
+        "text": "text",
+        "getType": "数据类型:",
+        "capture": "抓取",
+        "xpathEle": "元素路径(xpath):",
+        "menuTitle": "选取表格内容",
+        "menuNote": "输入表格路径用以运行时获得该表格中的内容并保存为变量"
+    },
+    "getList": {
+        "outParam": "输出变量命名:",
+        "xpath": "xpath",
+        "html": "html",
+        "text": "text",
+        "getType": "数据类型:",
+        "capture": "抓取",
+        "xpathEle": "元素路径(xpath):",
+        "menuTitle": "选取列表内容",
+        "menuNote": "输入列表路径用以运行时获取该列表中的内容并保存为变量"
+    },
+    "selectOption": {
+        "goon": "是否跟随脚本执行",
+        "matchText": "匹配内容(输入下拉选项内容或者正则表达式):",
+        "php": "正则匹配",
+        "like": "模糊匹配",
+        "all": "完全匹配",
+        "matchType": "匹配方式：",
+        "xpathEle": "元素路径(xpath):",
+        "capture": "抓取",
+        "menuTitle": "选择下拉框内容",
+        "menuNote": "输入下拉框路径用以运行时选中目标选项"
+    },
+    "globalWaitTime": {
+        "floatWaitTime": "请输入等待浮动时长(ms)(选填)：",
+        "WaitTime": "请输入等待时长(ms)：",
+        "menuTitle": "全局等待时间",
+        "menuNote": "设置全局节点与节点间运行的等待时间。",
+        "pretreatmentWaitTime":"请输入预处理等待时长(ms)(选填)：",
+        "chromeBrowserWaitTime":"请输入浏览器(chrome)模块等待时长(ms)(选填)：",
+        "internetExplorerWaitTime":"请输入浏览器(IE)模块等待时长(ms)(选填)：",
+        "yingyonggongnengWaitTime":"请输入应用功能模块等待时长(ms)(选填)：",
+        "microsoftApplicationWaitTime":"请输入微软应用模块等待时长(ms)(选填)：",
+        "variantHandlingWaitTime":"请输入变量处理模块等待时长(ms)(选填)：",
+        "workflowControlWaitTime":"请输入逻辑流程模块等待时长(ms)(选填)：",
+        "shujubiaogeWaitTime":"请输入数据表格模块等待时长(ms)(选填)：",
+        "fileOperateWaitTime":"请输入文件操作等待时长(ms)(选填)：",
+        "keyboardAndMouseWaitTime":"请输入鼠标键盘模块等待时长(ms)(选填)：",
+        "dataInterfaceUtilWaitTime":"请输入数据库模块等待时长(ms)(选填)：",
+        "exceptionsWaitTime":"请输入异常捕获模块等待时长(ms)(选填)：",
+        "databaseUtilWaitTime":"请输入外部接口模块等待时长(ms)(选填)：",
+        "systemUtilWaitTime":"请输入系统功能模块等待时长(ms)(选填)：",
+        "excelHandlingWaitTime":"请输入Excel功能模块等待时长(ms)(选填)：",
+        "docUtilWaitTime":"请输入文档功能模块等待时长(ms)(选填)：",
+        "ocrWaitTime":"请输入OCR功能模块等待时长(ms)(选填)：",
+        "customizedApplicationWaitTime":"请输入试用功能模块等待时长(ms)(选填)：",
+        "finalHandlingWaitTime":"请输入结束处理模块等待时长(ms)(选填)："
+    },
+    "importFile": {
+        "outParam": "输出变量命名：",
+        "businessDescription": "业务描述：",
+        "filePath": "选择文件",
+        "menuTitle": "读取数据表格",
+        "menuNote": "对接中控传输过来的数据表格数据"
+    },
+    "importTextFile": {
+        "outParam": "输出变量命名：",
+        "businessDescription": "业务描述：",
+        "filePath": "文件名：",
+        "select_filePath": "选择文件",
+        "menuTitle": "读取文本文件",
+        "menuNote": "对接中控传输过来的文本文件数据"
+    },
+    "catchRecordingTime":{
+        "recordingTime":"请输入异常录屏时长(ms)",
+        "menuTitle": "设置异常后录屏时间",
+        "menuNote": "设置异常后录屏时间"
+    },
+    "semantic": {
+        "outParam": "输出变量命名：",
+        "debuggerData": "调试用例：",
+        "fileName": "文件名："
+    },
+    "ActuatorForVerify": {
+        "rectangle": "目标元素坐标(x,y)：",
+        "name": "目标元素名称：",
+        "path": "目标元素下标：",
+        "CScapture": "抓取",
+        "winTitle": "目标元素窗体名称：",
+        "menuTitle": "判断窗口是否正确（根据选择的标志性元素）",
+        "menuNote": "辅助执行器，判断目标窗口是否存在"
+    },
+    "clipboardWaitTime": {
+        "sleep": "请输入全局剪切板等待时长(ms)：",
+        "menuTitle": "设置全局剪切板等待时间",
+        "menuNote": "设置全局与剪切板有关节点操作的等待时间"
+    },
+    "cutLogMinLength": {
+        "cutMinLength": "截取最小长度",
+        "menuTitle": "截取日志最小长度"
+    },
+    "isForbidKeybroadAndMouse": {
+        "active": "是否禁止鼠标键盘",
+        "forbid": "禁止",
+        "notForbid": "不禁止",
+        "menuTitle": "是否禁止鼠标键盘"
+    },
+    "groupPassword": {
+        "outParam": "输出变量命名：",
+        "group": "请选择口令组：",
+        "menuTitle": "口令组",
+        "menuNote": "口令组"
+    },
+    "setDirectory": {
+        "directory": "选择工作目录：",
+        "select_directory": "选择目录"
+    },
+    "IDAccountPassword": {
+        "attache": "归属地：",
+        "department": "部门：",
+        "password": "密码：",
+        "username": "账户名：",
+        "ID": "设置口令组名：",
+        "menuTitle": "设置口令",
+        "menuNote": "对接中控传输过来的口令组数据"
+    },
+    "callback_pixel_position": {
+        "outParam": "输出变量命名：",
+        "errorRange": "像素点允许误差值：（默认0）",
+        "rectangle": "查找的屏幕矩形范围：",
+        "right_down": "右下",
+        "right_up": "右上",
+        "left_down": "左下",
+        "left_up": "左上",
+        "down_right": "下右",
+        "down_left": "下左",
+        "up_right": "上右",
+        "up_left": "上左",
+        "fd_type": "选择查找的方向：",
+        "CScapturePos": "捕获桌面元素(postion)",
+        "rgb": "输入要查找的像素rgb：",
+        "menuTitle": "定位像素坐标",
+        "menuNote": "定位像素坐标"
+    },
+    "CSMove_element": {
+        "mouseMove": "鼠标移动",
+        "mouseClick": "鼠标左键点击",
+        "rectangle": "元素坐标(x,y)：",
+        "path": "元素下标：",
+        "winTitle": "元素窗体名称：",
+        "processName": "元素进程名称：",
+        "CScapture": "捕获桌面元素",
+        "outParam": "CSMove_element.outParam",
+        "menuTitle": "元素定位",
+        "menuNote": "定位窗口元素"
+    },
+    "CSMoveForName": {
+        "rectangle": "元素坐标(x,y)：",
+        "name": "元素名称：",
+        "path": "元素下标：",
+        "winTitle": "元素窗体名称：",
+        "processName": "元素进程名称：",
+        "CScapture": "捕获桌面元素",
+        "menuTitle": "元素同级寻名定位",
+        "menuNote": "元素同级寻名定位"
+    },
+    "CSMoveForRelative": {
+        "relative": "元素相对坐标：",
+        "path": "元素下标：",
+        "winTitle": "元素窗体名称：",
+        "processName": "元素进程名称：",
+        "CScapture": "捕获桌面元素",
+        "menuTitle": "元素相对定位",
+        "menuNote": "元素相对定位"
+    },
+    "CSMoveForVerify": {
+        "outParam": "返回值(true or false)：",
+        "rectangle": "元素坐标(x,y)：",
+        "name": "元素名称：",
+        "path": "元素下标：",
+        "winTitle": "元素窗体名称：",
+        "processName": "元素进程名称：",
+        "CScapture": "捕获桌面元素",
+        "menuTitle": "元素验证定位",
+        "menuNote": "验证窗口元素定位"
+    },
+    "CSMoveForChildName": {
+        "rectangle": "元素坐标(x,y)：",
+        "childname": "子元素名称：",
+        "path": "元素下标：",
+        "winTitle": "元素窗体名称：",
+        "processName": "元素进程名称：",
+        "CScapture": "捕获桌面元素",
+        "menuTitle": "元素子级寻名定位",
+        "menuNote": "元素子级寻名定位"
+    },
+    "readPDF": {
+        "outParam": "输出变量命名：",
+        "openPath": "选择PDF文件：",
+        "selectFile": "选择文件"
+    },
+    "importFile_normal": {
+        "outParam": "输出变量命名：",
+        "businessDescription": "业务描述：",
+        "filePath": "读取文件（支持csv，xls，xlsx文件类型）：",
+        "menuTitle": "读取数据表格",
+        "selectFile": "选择文件",
+        "menuNote": "读取目标数据表格文件的内容"
+    },
+    "importTextFile_normal": {
+        "outParam": "输出变量命名：",
+        "businessDescription": "业务描述：",
+        "filePath": "读取文件（支持word,txt文件类型）：",
+        "select_filePath": "importTextFile_normal.select_filePath",
+        "menuTitle": "读取文档",
+        "selectFile": "选择文件",
+        "menuNote": "读取目标文档文件的内容"
+    },
+    "copyExclePart": {
+        "to_rectangle_right_up": "复制的开始点：",
+        "to_sheet": "源工作表名称：",
+        "to_file": "选择复制到的文件：",
+        "rectangle": "需要复制的矩形范围：",
+        "from_sheet": "源工作表名称：",
+        "from_file": "选择源文件：",
+        "menuTitle": "复制Excel表格局部",
+        "selectFile": "选择文件",
+        "menuNote": "复制目标Excel文件中的局部范围，至另一目标文件中的特定位置"
+    },
+    "changeStyleExcle": {
+        "fontRGB": "字体颜色：",
+        "fontSize": "字体大小(默认12)：",
+        "RGB": "背景颜色：",
+        "isUnderline": "下划线",
+        "isItalic": "斜体",
+        "isBlod": "加粗",
+        "style": "样式选择：",
+        "rectangle": "需要更改样式的矩形范围：",
+        "sheet_name": "工作表名称（仅适用于Excel文件）：",
+        "filename": "选择需要更改样式的文件：",
+        "menuTitle": "更改Excel表单元格样式",
+        "selectFile": "选择文件",
+        "menuNote": "更改Excel文件中，目标范围的样式"
+    },
+    "PreciseReadFile": {
+        "outParam": "输出变量命名：",
+        "text": "文本",
+        "object": "单元格对象",
+        "dbType": "选择输出结果类型：",
+        "sheet_name": "工作表名称（仅适用于Excel文件）：",
+        "rectangle": "读取位置(行,列)：",
+        "filename": "选择需要读取的文件：",
+        "menuTitle": "读取数据表单元格",
+        "selectFile": "选择文件",
+        "menuNote": "读取目标文件中目标单元格的数据"
+    },
+    "PreciseWriteFile": {
+        "filename": "选择需要写入的文件：",
+        "sheet_name": "工作表名称（仅适用于Excel文件）：",
+        "rectangle": "写入位置(行,列)：",
+        "valueParam": "需要保存的数据名：",
+        "menuTitle": "写入数据表单元格",
+        "selectFile": "选择文件",
+        "menuNote": "将数据填写至目标文件的目标单元格"
+    },
+    "exportFile": {
+        "outParam": "输出文件全路径名为变量：",
+        "save-history": "历史文件别名：",
+        "isSaveHistory": "保存到历史任务",
+        "targetPath": "保存的路径：",
+        "filename": "文件名称：",
+        "valueParam": "需要保存的数据名：",
+        "sheet_name": "工作表名称（仅适用于Excel文件）：",
+        "a": "添加",
+        "w": "覆盖",
+        "writeType": "写入类型(仅适用于txt)：",
+        "excel": "Excel",
+        "csv": "csv",
+        "fileType": "文件类型：",
+        "newFileName": "历史文件别名：",
+        "txt": "txt",
+        "word": "word",
+        "menuTitle": "写入数据表格",
+        "select_directory": "选择目录",
+        "menuNote": "将数据写入至目标数据表格文件"
+    },
+    "exportTextFile": {
+        "outParam": "exportTextFile.outParam",
+        "save-history": "exportTextFile.save-history",
+        "isSaveHistory": "exportTextFile.isSaveHistory",
+        "targetPath": "exportTextFile.targetPath",
+        "filename": "exportTextFile.filename",
+        "valueParam": "exportTextFile.valueParam",
+        "sheet_name": "exportTextFile.sheet_name",
+        "a": "exportTextFile.a",
+        "w": "exportTextFile.w",
+        "writeType": "exportTextFile.writeType",
+        "excel": "exportTextFile.excel",
+        "csv": "exportTextFile.csv",
+        "fileType": "exportTextFile.fileType",
+        "newFileName": "exportTextFile.newFileName",
+        "txt": "exportTextFile.txt",
+        "word": "exportTextFile.word",
+        "menuTitle": "写入文档",
+        "menuNote": "将数据写入至目标文档文件"
+    },
+    "koulingxuanze": {
+        "outParam": "输出变量命名：",
+        "groupKey": "口令选择：",
+        "chooseCmdGroup": "口令组选择：",
+        "menuTitle": "口令选择",
+        "menuNote": "选择一个口令，输出一个新变量并为其命名"
+    },
+    "saveAccount": {
+        "outParam": "saveAccount.outParam",
+        "pwdValue": "saveAccount.pwdValue",
+        "usernameValue": "saveAccount.usernameValue",
+        "realAccount": "saveAccount.realAccount",
+        "testAccount": "saveAccount.testAccount",
+        "operator": "saveAccount.operator"
+    },
+    "head": {
+        "nav": {
+            "run": "运行",
+            "clean": "清空",
+            "save": "保存",
+            "read": "读取",
+            "import": "导入",
+            "export": "导出",
+            "showVar": "查看参数",
+            "unitTesting": "单元测试",
+            "unitClean": "清空",
+            "prev": "撤销",
+            "next": "重做",
+            "showAnnotation": "显示注释",
+            "continue": "继续"
+        }
+    },
+    "aside": {
+        "left": {
+            "atomicProcess": "元流程",
+            "foreach": "列表循环",
+            "if": "条件判断",
+            "concurrence": " 并发处理",
+            "goto":"指向流程",
+            "breviary": "主流程",
+            "selectTheIterationElement":"请选择迭代元素",
+            "nameOfIndividualElements":"单个元素的命名",
+            "ifBlockName":"条件判断块名",
+            "forBlockName":"列表循环块名",
+            "gotoBlockName":"指向流程块名",
+            "executeWhenConditionsAreMet":"满足条件",
+            "executeWhenTheConditionsAreNotMet":"不满足条件",
+            "condition":"条件"
+        }
+    },
+    "content": {
+        "main": {
+            "start": "开始流程",
+            "pretreatment": "预处理",
+            "endNode": "结束节点",
+            "end": " 流程结束",
+            "outParam": "出参",
+            "inParam":"入参",
+            "delete":"删除",
+            "copy":"复制节点",
+            "paste":"粘贴节点",
+            "skip":"跳过节点",
+            "transverseCopy":"横向复制",
+            "point":"加断点",
+            "tryCatch":"异常捕获",
+            "addDesc":"添加注释",
+            "packUp":"收起",
+            "unfold":"展开",
+            "addFlow":"请添加流程",
+            "executeWhenConditionsAreMet":"满足条件时执行",
+            "executeWhenTheConditionsAreNotMet":"不满足条件时执行",
+            "isCoveredWithTheSameVariable":"检测到重名变量，建议修改当前变量名，否则会覆盖之前的重名变量",
+            "forLoop":"for循环"
+        }
+        
+    },
+    "alert": {
+        "yes": "是",
+        "no": "否",
+        "OK": "确定",
+        "close": "关闭",
+        "save": "保存",
+        "saveAs": "另存为",
+        "continue":"继续",
+        "deleteSuccess": "删除成功",
+        "deleteFail": "删除失败",
+        "saveSuccess": "保存成功",
+        "saveFail": "保存失败",
+        "isCleanAllProcess": "是否清空流程图？",
+        "isCleanAtomicProcess": "是否清空该元流程？",
+        "noAuthorization": "授权无效或已过期",
+        "repeatTypes": "重复类型,请重新输入！",
+        "exporting": "正在导出",
+        "exportSuccess": "导出成功",
+        "exportFail": "导出失败",
+        "fileTypeError": "文件类型错误",
+        "connectFailSql": "无法获取数据库信息",
+        "isImport": "是否导入",
+        "importBtn": "导入",
+        "importAndExecuteBtn": "导入并执行",
+        "execute": "执行",
+        "cancel": "取消",
+        "fileHasTriggerHowToHandle":"文件被触发，请问需要触发何种操作？",
+        "isDelete": "是否删除",
+        "insertFail": "插入失败",
+        "isCoveredWithTheSame": "发现同名，是否覆盖？",
+        "titleTips":"提示",
+        "isCloseApp":"是否关闭应用",
+        "isSaveAs": "是否另存为？",
+        "isSave":"是否保存？",
+        "isRunWithWrongWindow":"未发现正确的起始运行窗口！是否继续执行？",
+        "globalDeclarations":"全局声明",
+        "mateflow":"元流程",
+        "create":"创建",
+        "comeFromGlobal":"来自全局变量",
+        "comeFromMateFlow":"来自元流程",
+        "compileTask":"编译任务中",
+        "copySuccess":"复制成功",
+        "copyFailed":"复制失败",
+        "pasteSuccess":"粘贴成功",
+        "pasteFailed":"粘贴失败",
+        "isDeleteMainFlowNode":"是否删除该主流程节点",
+        "newVersionHasDown":"新版本内容已下载好，是否立即重启更新？",
+        "nowIsTheLastestVersion":"当前已是最新版本！",
+        "thisNodeCantDelete":"该节点不可删除！",
+        "update":"更新",
+        "checkOldScript":"检测到旧版本脚本，是否更新？",
+        "readFailed":"读取错误",
+        "thisStepWillCreateVariable":"本次步骤生成变量：",
+        "predictedGenerationVariableType":"预计生成变量类型为：",
+        "errorReturningData":"回传数据有误！",
+        "launchIECshandleFailed":"启动抓取IE元素工具失败！",
+        "launchJavaCshandleFailed":"启动抓取JAVA元素工具失败！",
+        "launchingUtils":"正在打开工具",
+        "waitingHandleReturnVariable":"正在等待工具变量返回",
+        "launchCshandleFailed":"启动桌面工具失败！",
+        "error":"错误",
+        "setting":"设置",
+        "helping":"帮助",
+        "toggleDevTools":"切换开发者工具",
+        "viewVersionImprint":"查看版本说明",
+        "refresh":"刷新",
+        "systemSettings":"系统设置",
+        "basicSetting ":"基本设置",
+        "sudoReboot":"标志位重启后生效",
+        "unitTestVariableDefinition":"单元测试变量定义",
+        "exportDataModule":"导出数据模块",
+        "location":"位置：",
+        "headline":"标题：",
+        "type":"类型：",
+        "describe":"描述",
+        "variableName":"变量名",
+        "addNewType":"新增类型",
+        "variable":"变量",
+        "globalVariable":"全局变量",
+        "partVariable":"局部变量",
+        "saveDataModule":"保存数据模块",
+        "editNote":"编辑注释",
+        "isCoverScript":"是否覆盖？",
+        "import": {
+            "title": "标题",
+            "desc": "描述",
+            "createTime": "创建时间",
+            "updateTime": "更新时间",
+            "homePage": "首页",
+            "trailerPage": "尾页",
+            "operate": "操作",
+            "select": "选择",
+            "delete": "删除",
+            "newType": "新增类型",
+            "saveDataModule": "保存数据模块",
+            "all": "全部"
+        }
+    },
+    "fs_delete_dir": {
+        "file": "选择要删除的文件夹：",
+        "menuTitle": "删除文件夹",
+        "select_directory": "选择目录",
+        "menuNote": "删除指定文件夹"
+    },
+    "pretreatment": {
+        "menuTitle": "预处理"
+    },
+    "chromeBrowser": {
+        "menuTitle": "浏览器(Chrome)"
+    },
+    "internetExplorer": {
+        "menuTitle": "浏览器(IE)"
+    },
+    "yingyonggongneng": {
+        "menuTitle": "应用功能"
+    },
+    "microsoftApplication": {
+        "outParam": {
+            "note": "输出一个定义的CS类，主要在微软应用中使用"
+        },
+        "Element": {
+            "note": "输入一个CS类"
+        },
+        "menuTitle": "微软应用"
+    },
+    "variantHandling": {
+        "menuTitle": "变量处理"
+    },
+    "workflowControl": {
+        "menuTitle": "逻辑流程"
+    },
+    "shujubiaoge": {
+        "menuTitle": "数据表格"
+    },
+    "fileOperate": {
+        "menuTitle": "文件操作"
+    },
+    "keyboardAndMouse": {
+        "menuTitle": "键盘鼠标"
+    },
+    "dataInterfaceUtil": {
+        "menuTitle": "外部接口"
+    },
+    "exceptions": {
+        "menuTitle": "异常捕获"
+    },
+    "databaseUtil": {
+        "menuTitle": "数据库"
+    },
+    "excelHandling": {
+        "menuTitle": "Excel功能"
+    },
+    "docUtil": {
+        "menuTitle": "文档功能"
+    },
+    "ocr": {
+        "menuTitle": "OCR功能"
+    },
+    "customizedApplication": {
+        "menuTitle": "试用功能"
+    },
+    "finalHandling": {
+        "menuTitle": "结束处理"
+    },
+    "systemUtil": {
+        "menuTitle": "系统功能"
+    },
+    "setting": {
+        "host": "中控地址",
+        "name": "是",
+        "port": "中控端口",
+        "beatTime": "心跳时间",
+        "globalWaitTime": "全局等待时间",
+        "isDev": "是否为开发模式",
+        "isTrue": "是",
+        "isFalse": "否",
+        "isLocalSql": "是否为本地数据库",
+        "waitOutTime": "超时时间",
+        "workDirectory": "工作目录",
+        "language": "语言"
+    }
+}

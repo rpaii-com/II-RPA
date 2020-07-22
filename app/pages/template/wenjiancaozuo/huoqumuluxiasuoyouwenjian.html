@@ -1,0 +1,39 @@
+<div class="main-con-item">
+    <p>
+        <b>选择目录的位置：</b>
+    </p>
+    <div class="input-box">
+        <button type="button" onclick="saveOriginPath.click();">点击选择目录</button>
+        <input type="text" class="form-control" id="originPath" name="directory" />
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="xiala-icon parameters"></i>
+        <i class="toggleType"></i>
+        <input type="file" id="saveOriginPath" class="hideFile" onchange="this.value==''?originPath.value=originPath.value:originPath.value=gePathVal(this,true)"
+            webkitdirectory/>
+    </div>
+    <p>
+        <b>目标文件类型：（不填默认全选）</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="filetype" value="" placeholder="txt/csv" />
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="xiala-icon parameters"></i>
+        <i class="toggleType"></i>
+    </div>
+    <p>
+        <b>为输出变量命名：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="rename">
+    </div>
+    <input type="hidden" class="item-type" name="fs_get_all_file">
+    <!-- <i class="toggleType"></i> -->
+</div>
+
+<div class="liucheng-item-tips">
+
+    <p class="dom-active-dec" title="">
+        <i></i>
+        <em>：</em>获取目录下所有文件名：</p>
+
+</div>

@@ -1,0 +1,33 @@
+<div class="main-con-item">
+    <p>
+        <b>选择创建目录的位置：</b>
+    </p>
+    <div class="input-box">
+        <button type="button" onclick="saveOriginPath.click();">点击选择目录</button>
+        <input type="text" class="form-control" id="originPath" name="directory" />
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="xiala-icon parameters"></i>
+        <i class="toggleType"></i>
+        <input type="file" id="saveOriginPath" class="hideFile" onchange="this.value==''?originPath.value=originPath.value:originPath.value=gePathVal(this,true)"
+            webkitdirectory/>
+    </div>
+    <p>
+        <b>目录名称：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="name" value="" />
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="xiala-icon parameters"></i>
+        <i class="toggleType"></i>
+    </div>
+    <input type="hidden" class="item-type" name="fs_cre_directory">
+    <!-- <i class="toggleType"></i> -->
+</div>
+
+<div class="liucheng-item-tips">
+
+    <p class="dom-active-dec" title="">
+        <i></i>
+        <em>：</em>创建目录：</p>
+
+</div>

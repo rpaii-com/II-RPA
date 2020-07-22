@@ -1,0 +1,72 @@
+html {
+    height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+ul, li {
+    padding: 0;
+    margin: 0;
+}
+.clear {
+    zoom: 1;
+  }
+  .clear:after {
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+    content: '';
+  }
+  button {
+    outline:none;
+  }
+* {
+    font-family: "Microsoft YaHei";
+}
+span {
+    -webkit-user-select: none;
+    user-select: none;
+}
+a {
+    -webkit-user-select: none;
+    user-select: none;
+}
+li {
+    -webkit-user-select: none;
+    user-select: none;
+}
+.icon-zanwei {
+    background-image: none !important;
+}
+.font-zanwei {
+    display: inline-block !important;
+    width: 12px !important;
+    height: 1px !important;
+    overflow: hidden;
+}
+.font-in-paramter,
+.font-out-paramter {
+    color: #34afb4;
+}
+.user-input-text {
+    color: blue;
+}
+
+// 所有添加下拉父级添加 stipulation 规定
+.stipulation {
+    max-height: 200px;
+    overflow-y: auto;
+}
+.stipulation::-webkit-scrollbar {
+    width: 0px;
+}
+
+// 所有input下拉 不可编辑 添加readonly 不可编辑 为input添加 属性readonly
+.readonly {
+    background: #fff;
+}

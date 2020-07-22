@@ -1,0 +1,25 @@
+<div class="main-con-item">
+    <p>
+        <b>选择Word文件：</b>
+    </p>
+    <div class="input-box">
+        <button type="button" onclick="saveOriginPath.click();">点击选择文件</button>
+        <input type="text" class="form-control" id="originPath" name="file" />
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="xiala-icon parameters"></i>
+        <i class="toggleType"></i>
+        <input type="file" id="saveOriginPath" class="hideFile" accept="application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/msword"
+               onchange="this.value==''?originPath.value=originPath.value:originPath.value=gePathVal(this,true)"
+        />
+    </div>
+
+    <input type="hidden" class="item-type" name="wordCopyInClip">
+</div>
+
+<div class="liucheng-item-tips">
+
+    <p class="dom-active-dec" title="">
+        <i></i>
+        <em>：</em>Word文档内容复制到剪切板：</p>
+
+</div>

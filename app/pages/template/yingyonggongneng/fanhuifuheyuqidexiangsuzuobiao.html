@@ -1,0 +1,73 @@
+<div class="main-con-item">
+    <button type="button" class="CScapturePos">捕获桌面元素(postion)</button>
+    <div class="input-box">
+        <p>
+            <b>输入要查找的像素rgb：</b>
+        </p>
+        <input type="text" name="rgb" placeholder="r,g,b">
+    </div>
+    <div class="input-box">
+        <p>
+            <b>像素点允许误差值：（默认0）</b>
+        </p>
+        <input type="text" name="errorRange" placeholder="输入整数，r，g，b值分别在此误差内，±误差值">
+    </div>
+    <div class="input-box">
+        <p>
+            <b>选择查找的方向</b>
+            <b>：</b>
+        </p>
+        <p class="radio-item">
+            <label>
+                <input type="radio" name="fd_type" value="up_left" checked>上左
+            </label>
+            <label>
+                <input type="radio" name="fd_type" value="up_right">上右
+            </label>
+            <label>
+                <input type="radio" name="fd_type" value="down_left">下左
+            </label>
+            <label>
+                <input type="radio" name="fd_type" value="down_right">下右
+            </label>
+            <label>
+                <input type="radio" name="fd_type" value="left_up">左上
+            </label>
+            <label>
+                <input type="radio" name="fd_type" value="left_down">左下
+            </label>
+            <label>
+                <input type="radio" name="fd_type" value="right_up">右上
+            </label>
+            <label>
+                <input type="radio" name="fd_type" value="right_down">右下
+            </label>
+        </p>
+    </div>
+    <div class="input-box">
+        <p>
+            查找的屏幕矩形范围：
+        </p>
+        <input type="text" name="rectangle_left_up" placeholder="x,y/矩形框左上点">
+        <input type="text" name="rectangle_right_down" placeholder="x,y/矩形框右下点">
+    </div>
+    <div class="input-box">
+        <p>
+            <b>输出变量命名：</b>
+        </p>
+        <input type="text" name="rename">
+    </div>
+    <input type="hidden" class="item-type" name="callback_pixel_position">
+</div>
+
+<div class="liucheng-item-tips">
+    <p class="dom-active-dec" title="">
+        <i></i>
+        <em>：</em>返回符合预期的像素屏幕坐标
+    </p>
+    <p class="in-parameter" title="">
+        <i class="icon-tips-out"></i>
+        <em>：</em>"
+        <b class="font-out-paramter"></b>","
+        <b class="font-out-paramter-type">Array[Array]</b>"</p>
+</div>

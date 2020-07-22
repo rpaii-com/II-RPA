@@ -1,0 +1,11 @@
+{
+    "sysConfig": {
+        "globalWaitTime": "200",
+        "isDev": false,
+        "isLocalSQL": false,
+        "beatDelay": "1",
+        "outTime": "600",
+        "isBuffer": false,
+        "rootDirectory": "D:/rpa_file"
+    }
+}

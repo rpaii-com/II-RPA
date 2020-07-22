@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../renderer/plugins/jquery/jquery.min.js"></script>
+    <script>
+        if (typeof module === 'object') {
+            window.jQuery = window.$ = module.exports;
+        }
+        let alert = window.alert;
+        window.alert = function (data) {
+            console.log(data)
+            alert(data);
+        }
+    </script>
+
+</head>
+
+<body>
+    <script src="../renderer/calc/index.js"></script>
+</body>
+
+</html>

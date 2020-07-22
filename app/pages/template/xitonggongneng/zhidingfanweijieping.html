@@ -1,0 +1,47 @@
+<div class="main-con-item">
+    <!--<button type="button" class="CScapturePos">捕获桌面元素(postion)</button>-->
+    <p>
+        <b>截屏范围左上点：</b>
+    </p>
+    <div class="input-box">
+
+        <input type="text" name="rectangle_start" placeholder="x,y(无输入，默认截全屏)">
+    </div>
+    <p>
+        <b>截屏范围右下点：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="rectangle_end" placeholder="x,y(无输入，默认截全屏)">
+    </div>
+    <p>
+        <b>截屏文件名：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="fileName">
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="xiala-icon parameters"></i>
+        <i class="toggleType"></i>
+    </div>
+    <div class="input-box">
+        <p>
+            <b>输出文件全路径名为变量：</b>
+        </p>
+        <input type="text" name="rename">
+    </div>
+    <label for="isSaveHistory"><input type="checkbox" name="isSaveHistory" id="isSaveHistory" value="true">保存到历史任务</label>
+    <div class="input-box save-history" style="display: none;">
+        <p>
+            <b>历史文件别名：</b>
+        </p>
+        <input type="text" name="newFileName" placeholder="保存历史任务">
+    </div>
+
+    <input type="hidden" class="item-type" name="capScreenPart">
+</div>
+
+<div class="liucheng-item-tips">
+    <p class="dom-active-dec" title="">
+        <i></i>
+        <em>：</em>指定范围截屏；
+    </p>
+</div>

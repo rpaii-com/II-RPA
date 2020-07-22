@@ -1,0 +1,37 @@
+<div class="main-con-item">
+    <p>满足条件</p>
+    <div class="input-box if-else-item-left i-top-0">
+        <input type="text" name="paramName">
+        <i class="toggleType"></i>
+        <i class="xiala-icon parameters"></i>
+    </div>
+    <div class="input-box if-else-item-mid i-top-0">
+        <input type="text" name="op">
+        <i class="xiala-icon if-else-item-xia xia-op"></i>
+        <ul>
+            <li class="if-else-selection">大于</li>
+            <li class="if-else-selection">大于等于</li>
+            <li class="if-else-selection">等于</li>
+            <li class="if-else-selection">小于</li>
+            <li class="if-else-selection">小于等于</li>
+        </ul>
+    </div>
+    <div class="input-box if-else-item-right i-top-0">
+        <input type="text" name="assertValue">
+        <i class="toggleType"></i>
+        <i class="xiala-icon parameters"></i>
+    </div>
+</div>
+<input type="hidden" class="item-type" name="assert_value">
+<input type="hidden" name="type" value="assert_value" />
+<script>
+    $(function() {
+        $(".xia-op").on("click", function() {
+            $(this).next().toggle();
+        })
+        $(".if-else-selection").on("click", function() {
+            $('[name="op"]').val($(this).text());
+            $(this).parent().hide()
+        })
+    })
+</script>

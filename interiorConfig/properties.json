@@ -1,0 +1,18 @@
+{
+    "sysConfig": {
+        "mstscPort": 81,
+        "globalWaitTime": 200,
+        "isDev": true,
+        "isPackager": false,
+        "isLocalSQL": false,
+        "beatDelay": 10000,
+        "category": "designer",
+        "outTime": 60000,
+        "isBuffer": false,
+        "rootDirectory": "D:/rpa_file",
+        "stopTask": "Control+Shift+Q",
+        "goonTask": "Control+Shift+S",
+        "version": "V1.0.9",
+        "i18n":"cn"
+    }
+}

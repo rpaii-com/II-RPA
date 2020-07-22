@@ -1,0 +1,64 @@
+<div class="main-con-item">
+
+    <div class="input-box">
+        <p>
+            <b>Host</b>
+            <b>：</b>
+        </p>
+        <input type="text" name="host">
+    </div>
+
+    <div class="input-box">
+        <p>
+            <b>Port</b>
+            <b>：</b>
+        </p>
+        <input type="text" name="port">
+    </div>
+
+    <div class="input-box">
+        <p>
+            <b>user</b>
+            <b>：</b>
+        </p>
+        <input type="text" name="user" placeholder="defaults to 'anonymous'">
+    </div>
+
+    <div class="input-box">
+        <p>
+            <b>pass</b>
+            <b>：</b>
+        </p>
+        <input type="text" name="pass" placeholder="defaults to '@anonymous'">
+    </div>
+    <div class="input-box">
+        <p>
+            <b>远程路径</b>
+            <b>：</b>
+        </p>
+        <input type="text" class="form-control" name="remotePath" />
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="xiala-icon parameters"></i>
+        <i class="toggleType"></i>
+    </div>
+    <div class="input-box">
+        <p>
+            <b>远程文件名</b>
+            <b>：</b>
+        </p>
+        <input type="text" class="form-control" name="fileNmae" />
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="xiala-icon parameters"></i>
+        <i class="toggleType"></i>
+    </div>
+    <div class="input-box">
+        <p>
+            <b>上传路径</b>
+            <b>：</b>
+        </p>
+        <input type="text" class="form-control" id="originPath" name="localPath" onclick="saveOriginPath.click();" placeholder="点击获取路径"
+        />
+        <input type="file" id="saveOriginPath" class="hideFile" onchange="this.value==''?originPath.value=originPath.value:originPath.value=gePathVal(this,true)">
+    </div>
+    <input type="hidden" class="item-type" name="ftpUpload">
+</div>

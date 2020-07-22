@@ -1,0 +1,55 @@
+body {
+    .layer-ext-dataDel{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -138px;
+        margin-top: -73px;
+        width: 268px;
+        height: 146px;
+        background: url(../img/bg-tips-box-big.png) no-repeat center;
+        .layui-layer-title{//warming-icon
+            display: block;
+            position: absolute;
+            top: -26px;
+            left: 50%;
+            margin-left: -26px;
+            width: 52px;
+            height: 52px;
+            background: url(../img/icon-tips-warning.png) no-repeat center;
+            cursor: pointer;
+        }
+        .layui-layer-content {
+            i {
+                display: none;
+            }
+        }
+        .layui-layer-setwin {
+            display: none;
+        }
+        .layui-layer-resize {
+            display: none;
+        }
+        .layui-layer-btn{
+            a {
+                text-decoration: none;
+                display: inline-block;
+                width: 70px;
+                height: 42px;
+                // text-justify: center;
+                line-height: 40px;
+                box-sizing: border-box;
+                color: #87705e;
+                font-size: 14px;
+                transition: all .2s;
+            }
+            .layui-layer-btn0 {
+                background: url(./bg-btn-left-orange.png) no-repeat center;
+            }//left
+            .layui-layer-btn1 {
+                background: url(./bg-btn-right-orange.png) no-repeat center;
+            }//right
+        }
+    }
+
+}

@@ -1,0 +1,30 @@
+<div class="main-con-item">
+    <p>
+        <b>选择要处理的图片文件：</b>
+    </p>
+    <div class="input-box">
+        <button type="button" onclick="saveOriginPath.click();">点击选择文件</button>
+        <input type="text" class="form-control" id="originPath" name="file" />
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="xiala-icon parameters"></i>
+        <i class="toggleType"></i>
+        <input type="file" id="saveOriginPath" class="hideFile" onchange="this.value==''?originPath.value=originPath.value:originPath.value=gePathVal(this,true)"
+        />
+    </div>
+    <p>
+        <b>结果输出变量命名：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="rename">
+    </div>
+
+    <input type="hidden" class="item-type" name="slidingVerificationCode">
+</div>
+
+<div class="liucheng-item-tips">
+
+    <p class="dom-active-dec" title="">
+        <i></i>
+        <em>：</em>滑动验证码中心点计算：</p>
+
+</div>

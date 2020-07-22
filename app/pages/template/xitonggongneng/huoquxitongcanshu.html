@@ -1,0 +1,45 @@
+<div class="main-con-item">
+    <p>
+        <b>选择系统变量：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="systemType" readonly="readonly">
+        <ul class="common-list options-list">
+            <li data-targetli="getRobotVersion" data-haschoiced="0">应用版本号</li>
+            <li data-targetli="getOSArchitecture" data-haschoiced="0">系统架构</li>
+            <li data-targetli="getOSVersion" data-haschoiced="0">操作系统版本</li>
+            <li data-targetli="getClipboard" data-haschoiced="0">剪切板内容</li>
+            <li data-targetli="getSysTime" data-haschoiced="0">当前时间</li>
+            <li data-targetli="getCurrentLocale" data-haschoiced="0">当前应用使用语言</li>
+            <li data-targetli="getCurrentPath" data-haschoiced="0">应用地址</li>
+            <li data-targetli="getScreenSize" data-haschoiced="0">当前分辨率</li>
+        </ul>
+        <i class="xiala-icon common-xia-list"></i>
+    </div>
+    <p>
+        <b>传入变量：(当前时间'YYYY-MM-DD HH:mm:ss')</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="setParam">
+    </div>
+    <p>
+        <b>输出变量命名：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="rename">
+        <!-- <i class="toggleType"></i> -->
+    </div>
+    <input type="hidden" class="item-type" name="getSystemParameter">
+</div>
+<div class="liucheng-item-tips">
+
+    <p class="dom-active-dec" title="">
+        <i></i>
+        <em>：</em>获得"
+        <b class="user-input-text tips-systemType"></b>"的系统变量</p>
+    <p class="in-parameter" title="">
+        <i class="icon-tips-out"></i>
+        <em>：</em>"
+        <b class="font-out-paramter"></b>","
+        <b class="font-out-paramter-type">String</b>"</p>
+</div>

@@ -1,0 +1,239 @@
+<style>
+    .params-item ,.header-item {
+        padding-left: 15px;
+    }
+
+    .params-item input,.header-item input {
+        display: inline-block !important;
+        width: 200px !important;
+        margin: 0px !important;
+    }
+
+    .params-item>div ,.header-item>div {
+        position: relative;
+        display: inline-block !important;
+        width: 200px !important;
+        margin: 0px !important;
+    }
+
+    .params-item>button ,.header-item>button {
+        /* background: transparent!important; */
+        line-height: 16px !important;
+        font-size: 27px !important;
+        vertical-align: middle;
+        width: 20px;
+    }
+
+    .addH , .addP {
+        /* color: chartreuse!important; */
+        background: url("../img/icon-button-add.png")no-repeat center !important;
+    }
+
+    .addH:active, .addP:active {
+        background: url("../img/icon-button-add-click.png")no-repeat center !important;
+    }
+
+    .subH, .subP {
+        background: url("../img/icon-button-remove.png")no-repeat center !important;
+    }
+
+    .subH:active, .subP:active {
+        background: url("../img/icon-button-remove-click.png")no-repeat center !important
+    }
+
+    .xiala-icon {
+        top: 0px !important;
+    }
+
+    .cover-box .toggleType {
+        top: 0px !important;
+    }
+</style>
+
+<div class="main-con-item">
+    <div class="input-box">
+        <p>
+            <b>HTTP method：</b>
+        </p>
+        <p class="radio-item">
+            <label>
+                <input type="radio" name="method" value="get" checked>GET
+            </label>
+            <label>
+                <input type="radio" name="method" value="post">POST
+            </label>
+        </p>
+
+        <p>
+            <b>Host：</b>
+        </p>
+        <div class="input-box">
+            <input type="text" name="host" value="" />
+            <ul class="common-list parameters-can-select"></ul>
+            <i class="xiala-icon parameters"></i>
+            <i class="toggleType"></i>
+        </div>
+
+        <p>
+            <b>Port：</b>
+        </p>
+        <div class="input-box">
+            <input type="text" name="port" value="" />
+            <ul class="common-list parameters-can-select"></ul>
+            <i class="xiala-icon parameters"></i>
+            <i class="toggleType"></i>
+        </div>
+
+        <p>
+            <b>Path：</b>
+        </p>
+        <div class="input-box">
+            <input type="text" name="path" value="" />
+            <ul class="common-list parameters-can-select"></ul>
+            <i class="xiala-icon parameters"></i>
+            <i class="toggleType"></i>
+        </div>
+
+        <p>
+            <b>Headers：</b>
+        </p>
+        <div class="input-box http-headers stipulation">
+
+            <div class="header-item">
+                <div class="input-box">
+                    <input type="text" name="headerKey1">
+                    <ul class="common-list parameters-can-select"></ul>
+                    <i class="toggleType"></i>
+                    <i class="xiala-icon parameters"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="headerValue1">
+                    <ul class="common-list parameters-can-select"></ul>
+                    <i class="toggleType"></i>
+                    <i class="xiala-icon parameters"></i>
+                </div>
+                <button type="button" class="addH"></button>
+                <button type="button" class="subH"></button>
+            </div>
+        </div>
+
+        <p>
+            <b>Request Parameters：</b>
+        </p>
+        <div class="input-box http-params stipulation">
+
+            <div class="params-item">
+                <div class="input-box">
+                    <input type="text" name="paramsKey1">
+                    <ul class="common-list parameters-can-select"></ul>
+                    <i class="toggleType"></i>
+                    <i class="xiala-icon parameters"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="paramsValue1">
+                    <ul class="common-list parameters-can-select"></ul>
+                    <i class="toggleType"></i>
+                    <i class="xiala-icon parameters"></i>
+                </div>
+                <button type="button" class="addP"></button>
+                <button type="button" class="subP"></button>
+            </div>
+        </div>
+        <div class="input-box">
+            <p>
+                <b>返回结果类型</b>
+                <b>：</b>
+            </p>
+            <p class="radio-item radio-item-2">
+                <label>
+                    <input type="radio" name="returnType" value="response" checked>Response
+                </label>
+                <label>
+                    <input type="radio" name="returnType" value="resHeaders">Response Headers
+                </label>
+            </p>
+            <p>
+                <b>输出变量命名：</b>
+            </p>
+            <input type="text" name="rename">
+        </div>
+    </div>
+    <input type="hidden" class="item-type" name="newHttpApi">
+
+    <input type="hidden" name="headerId" value="1">
+    <input type="hidden" name="parameterId" value="1">
+</div>
+
+<div class="liucheng-item-tips">
+    <p class="in-parameter" title="">
+        <i class="icon-tips-in"></i>
+        <em>：</em>
+    <p class="dom-active-dec" title="">
+        <i></i>
+        <em>：</em>填入收件人，主题和邮件内容，并发送</p>
+</div>
+
+<script>
+    $(function () {
+        //请求头参数
+        let headersTemp=$(".header-item").eq(0).clone(true);
+
+        $(".http-headers").on("click", ".addH", function () {
+            let id = parseInt($('[name="headerId"]').val()) + 1;
+            console.log("复制id："+id);
+            headersTemp.clone(true).find("[name='headerKey1']").attr("name", "headerKey" + id)
+                .parent().parent().find("[name='headerValue1']").attr("name", "headerValue" + id)
+                .parent().parent().appendTo(".http-headers");
+            modal.refreshModal();
+
+            addNewLI();
+            $('[name="headerId"]').val(id);
+        });
+
+        $(".http-headers").on("click", ".subH", function () {
+            $(this).parent().remove();
+
+            $(".header-item").eq(0).find(".subH").hide();
+            modal.refreshModal();
+            addNewLI()
+            let id=parseInt($('[name="headerId"]').val());
+            $('[name="headerId"]').val(id-1);
+        });
+        //请求参数
+        let paramsTemp=$(".params-item").eq(0).clone(true);
+
+        $(".http-params").on("click", ".addP", function () {
+            let id = parseInt($('[name="parameterId"]').val()) + 1;
+            console.log("复制id："+id);
+            paramsTemp.clone(true).find("[name='paramsKey1']").attr("name", "paramsKey" + id)
+                .parent().parent().find("[name='paramsValue1']").attr("name", "paramsValue" + id)
+                .parent().parent().appendTo(".http-params");
+            modal.refreshModal();
+
+            addNewLI();
+            $('[name="parameterId"]').val(id);
+        });
+
+        $(".http-params").on("click", ".subP", function () {
+            $(this).parent().remove();
+
+            $(".params-item").eq(0).find(".subH").hide();
+            modal.refreshModal();
+            addNewLI()
+            let id=parseInt($('[name="headerId"]').val());
+            $('[name="parameterId"]').val(id-1);
+        });
+
+        $(".header-item").eq(0).find(".subH").hide();
+        $(".params-item").eq(0).find(".subP").hide();
+
+    });
+
+    function addNewLI() {
+        if (modal.$data.editLiuchengItem.isEditExistedItem) {
+            newLI($('#' + modal.$data.editLiuchengItem.editItemId))
+        } else {
+            newLI()
+        }
+    }
+</script>

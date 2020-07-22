@@ -1,0 +1,41 @@
+<div class="main-con-item">
+    <p>
+        <b>选择保存文件的目录：</b>
+    </p>
+    <div class="input-box">
+        <button type="button" onclick="saveOriginPath.click();">点击选择目录</button>
+        <input type="text" class="form-control" id="originPath" name="directory" />
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="xiala-icon parameters"></i>
+        <i class="toggleType"></i>
+        <input type="file" id="saveOriginPath" class="hideFile" onchange="this.value==''?originPath.value=originPath.value:originPath.value=gePathVal(this,true)"
+               webkitdirectory/>
+    </div>
+    <p>
+        <b>下载地址：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="url_download" />
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="xiala-icon parameters"></i>
+        <i class="toggleType"></i>
+    </div>
+
+    <div class="input-box">
+        <p>
+            <b>输出绝对路径为变量：</b>
+        </p>
+        <input type="text" name="rename">
+    </div>
+
+    <input type="hidden" class="item-type" name="http_downloadfile">
+
+</div>
+
+<div class="liucheng-item-tips">
+
+    <p class="dom-active-dec" title="">
+        <i></i>
+        <em>：</em>创建文件：</p>
+
+</div>

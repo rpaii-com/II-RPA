@@ -1,0 +1,52 @@
+<div class="main-con-item">
+    <button type="button" class="CScapturePos">捕获桌面元素(postion)</button>
+    <div class="input-box">
+        <p>
+            <b>选择鼠标位置类型</b>
+            <b>：</b>
+        </p>
+        <p class="radio-item">
+            <span>
+                <input type="radio" name="mouse_type" value="mouse_input" checked>捕获鼠标位置
+            </span>
+            <span>
+                <input type="radio" name="mouse_type" value="mouse_now">当前鼠标位置（流程运行过程中）
+            </span>
+        </p>
+    </div>
+    <div class="input-box">
+        <p>
+            <b>元素坐标</b>(x,y)
+            <b>：</b>
+        </p>
+        <input type="text" name="position" placeholder="x,y">
+    </div>
+    <div class="input-box">
+        <p>
+            <b>坐标处像素</b>
+            <b>：</b>
+        </p>
+        <input type="text" name="rgb" placeholder="">
+    </div>
+    <div class="input-box">
+        <p>
+            <b>结果输出为变量（true/false）</b>
+            <b>：</b>
+        </p>
+        <input type="text" name="rename">
+    </div>
+
+    <input type="hidden" class="item-type" name="getPixelColor">
+</div>
+
+<div class="liucheng-item-tips">
+    <p class="dom-active-dec" title="">
+        <i></i>
+        <em>：</em>屏幕像素点识别
+    </p>
+    <p class="in-parameter" title="">
+        <i class="icon-tips-out"></i>
+        <em>：</em>"
+        <b class="font-out-paramter"></b>","
+        <b class="font-out-paramter-type">Array[Array]</b>"</p>
+</div>

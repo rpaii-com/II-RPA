@@ -1,0 +1,84 @@
+<div class="main-con-item">
+    <div class="input-box">
+        <p>
+            <b>文件类型：</b>
+        </p>
+        <p class="radio-item">
+            <label>
+                <input type="radio" name="fileType" value="word" checked>word</label>
+            <label>
+                <input type="radio" name="fileType" value="txt">txt</label>
+        </p>
+    </div>
+    <div class="input-box">
+        <p>
+            <b>写入类型(仅适用于txt)：</b>
+        </p>
+        <p class="radio-item">
+            <label>
+                <input type="radio" name="writeType" value="w+" checked>覆盖</label>
+            <label>
+                <input type="radio" name="writeType" value="a+">添加</label>
+        </p>
+    </div>
+    <p>
+        <b>需要保存的数据名：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="valueParam">
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="toggleType"></i>
+        <i class="xiala-icon parameters"></i>
+    </div>
+    <p>
+        <b>文件名称：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="filename">
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="xiala-icon parameters"></i>
+        <i class="toggleType"></i>
+    </div>
+    <p>
+        <b>保存的路径：</b>
+    </p>
+    <div class="input-box">
+        <button type="button" onclick="saveTargetPath.click();">点击选择路径</button>
+        <input type="text" class="form-control" id="targetPath" name="targetPath" placeholder="点击获取保存路径">
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="xiala-icon parameters"></i>
+        <i class="toggleType"></i>
+        <input type="file" id="saveTargetPath" class="hideFile" onchange="this.value==''?targetPath.value=targetPath.value:targetPath.value=gePathVal(this)"
+            webkitdirectory directory/>
+    </div>
+    <div class="input-box">
+        <p>
+            <b>输出文件全路径名为变量：</b>
+        </p>
+        <input type="text" name="rename">
+    </div>
+    <label for="isSaveHistory">
+        <input type="checkbox" name="isSaveHistory" id="isSaveHistory" value="true">保存到历史任务</label>
+    <div class="input-box save-history" style="display: none;">
+        <p>
+            <b>历史文件别名：</b>
+        </p>
+        <input type="text" name="newFileName" placeholder="保存历史任务">
+    </div>
+    <input type="hidden" class="item-type" name="exportFile">
+</div>
+
+<div class="liucheng-item-tips">
+    <p class="in-parameter" title="">
+        <i class="icon-tips-in"></i>
+        <em>：</em>"
+        <b class="font-in-paramter in-paramter-valueParam"></b>","
+        <b class="font-in-paramter-type">String</b>"</p>
+    <!-- <p class="dom-active-dec" title=""><i></i><em>：</em>将接受变量写入到"<b class="user-input-text tips-targetPath"></b>"数据表格中"</p> -->
+    <p class="dom-active-dec" title="">
+        <i></i>
+        <em>：</em>将接受变量写入到目标路径的数据表格中"</p>
+
+    <!-- <p class="dom-active-dec" title=""><i class=""></i><em class="">：</em>新文件:"<b class="font-out-paramter"></b>","<b class="font-out-paramter-type">Array</b>"</p>
+    <p class="in-parameter" title=""><i class="icon-tips-out"></i><em>：</em>"<b class="font-out-paramter"></b>","<b class="font-out-paramter-type">Array</b>"</p> -->
+</div>
