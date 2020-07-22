@@ -1,7 +1,7 @@
 # II-RPA
 		不需要安装，不需要注册，纯开源，纯代码，无限制，自由使用研究，只要感兴趣，都可以尝试，有想法问题可以及时沟通，看到即回，
 
-###II-RPA：Infinite intelligence RPA，人力有限，而智慧无穷，
+#### II-RPA：Infinite intelligence RPA，人力有限，而智慧无穷，
 
 #### 介绍关于RPA，流程自动化机器人，
 		流程机器人是一个模拟人进行逻辑判断和操作应用的软件程序。它结合人工智能的应用实现工作流程的自动化，主要由两部分能力组成，一部分是软件应用的操作能力，模拟人进行软硬件的操作；另一部分是人工智能的能力，模拟人类进行语义识别、图像识别、逻辑判断等。流程机器人通过两部分能力的组合在应用系统上辅助人类完成复杂的业务流程。
@@ -10,50 +10,50 @@
 
 #### 安装依赖
 
-		>1、简单方式，这边为了方便大家启动项目，把项目依赖打了个压缩包，方便大家使用，本地已测试，是没问题的，有问题及时反馈，一起研究。天翼云和网盘都上传了，看大家需求，
-		下载依赖路径，
-		>>1、天翼云，https://cloud.189.cn/t/jeyiIjBF3Ufu (访问码:omz3)，
-		>>2、网盘，链接：https://pan.baidu.com/s/11eXNjs3S7z6HeoLMYAUTUw ，提取码：gn80
+>1、简单方式，这边为了方便大家启动项目，把项目依赖打了个压缩包，方便大家使用，本地已测试，是没问题的，有问题及时反馈，一起研究。天翼云和网盘都上传了，看大家需求，
+下载依赖路径，
+>>1、天翼云，https://cloud.189.cn/t/jeyiIjBF3Ufu (访问码:omz3)，
+>>2、网盘，链接：https://pan.baidu.com/s/11eXNjs3S7z6HeoLMYAUTUw ，提取码：gn80
 
-		>2、麻烦点的方式，自行安装依赖，大概需要注意的步骤如下，本地测试也是可以的。有问题及时反馈，一起看下。（本地环境是win10系统的）
-		>>1、确保路径不能有中文，主要是安装opencv时会提示异常，
-		>>2、Admin方式启动PowerShell，执行npm install --global windows-build-tools， 
-		>>3、配置python27环境变量，
-		>>4、安装目录python27\Lib\site-packages下新增sitecustomize.py，
-		>>>写入配置，
-		>>># encoding='GBK'
-		>>>import sys  
-		>>>reload(sys)  
-		>>>sys.setdefaultencoding('GBK')  
-		>>5、npm install -g node-gyp， 
-		>>6、对应npm命令执行目录下，新增binding.gyp文件， 
-		>>>写入配置，
-		>>>{
-		>>>  "targets": [
-		>>>    {
-		>>>      "target_name": "binding",
-		>>>      "sources": [ "src/binding.cc" ]
-		>>>    }
-		>>>  ]
-		>>>}
-		>>7、执行npm config edit， 
-		>>>写入配置，
-		>>>electron_mirror=https://npm.taobao.org/mirrors/electron/
-		>>8、执行node-gyp configure，如果已经有build目录，要手动删掉，
-		>>9、前往https://github.com/nodejs/node-gyp#on-windows下载并安装 Visual Studio Build Tools， 
-		>>10、项目根目录下，新增src目录，src目录下，新增binding.cc空文件， 
-		>>11、前往https://cmake.org/download/下载对应cmake安装包并安装， 
-		>>12、配置cmake环境变量， 
-		>>13、在admin-powershell下执行 Get-ExecutionPolicy -List查看权限，执行 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser赋予权限，
-		>>14、执行git config --global http.postBuffer 88880000， 
-		>>15、执行git config --global http.sslVerify "false"， 
-		>>16、执行npm config edit， 
-		>>>写入配置，
-		>>>node_sqlite3_binary_host_mirror=http://npm.taobao.org/mirrors
-		>>17、opencv会经常出现有文件下载遗漏的问题，其它依赖已经处理完成，本地下载有时候会提示文件遗漏，可以自己单独去下，然后放进去就可以了，
-		>>>可以试下vpn多次尝试下载，
-		>>>可以先删掉opencv依赖，后续单独下载移包进来，对应opencv代码已注释，等包好了，可以自行放开，opencv主要使用在识别验证码处，看大家需求，如果不用到识别这块，可以先注释掉，
-		>>18、执行npm install
+>2、麻烦点的方式，自行安装依赖，大概需要注意的步骤如下，本地测试也是可以的。有问题及时反馈，一起看下。（本地环境是win10系统的）
+>>1、确保路径不能有中文，主要是安装opencv时会提示异常，
+>>2、Admin方式启动PowerShell，执行npm install --global windows-build-tools， 
+>>3、配置python27环境变量，
+>>4、安装目录python27\Lib\site-packages下新增sitecustomize.py，
+>>>写入配置，
+>>># encoding='GBK'
+>>>import sys  
+>>>reload(sys)  
+>>>sys.setdefaultencoding('GBK')  
+>>5、npm install -g node-gyp， 
+>>6、对应npm命令执行目录下，新增binding.gyp文件， 
+>>>写入配置，
+>>>{
+>>>  "targets": [
+>>>    {
+>>>      "target_name": "binding",
+>>>      "sources": [ "src/binding.cc" ]
+>>>    }
+>>>  ]
+>>>}
+>>7、执行npm config edit， 
+>>>写入配置，
+>>>electron_mirror=https://npm.taobao.org/mirrors/electron/
+>>8、执行node-gyp configure，如果已经有build目录，要手动删掉，
+>>9、前往https://github.com/nodejs/node-gyp#on-windows下载并安装 Visual Studio Build Tools， 
+>>10、项目根目录下，新增src目录，src目录下，新增binding.cc空文件， 
+>>11、前往https://cmake.org/download/下载对应cmake安装包并安装， 
+>>12、配置cmake环境变量， 
+>>13、在admin-powershell下执行 Get-ExecutionPolicy -List查看权限，执行 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser赋予权限，
+>>14、执行git config --global http.postBuffer 88880000， 
+>>15、执行git config --global http.sslVerify "false"， 
+>>16、执行npm config edit， 
+>>>写入配置，
+>>>node_sqlite3_binary_host_mirror=http://npm.taobao.org/mirrors
+>>17、opencv会经常出现有文件下载遗漏的问题，其它依赖已经处理完成，本地下载有时候会提示文件遗漏，可以自己单独去下，然后放进去就可以了，
+>>>可以试下vpn多次尝试下载，
+>>>可以先删掉opencv依赖，后续单独下载移包进来，对应opencv代码已注释，等包好了，可以自行放开，opencv主要使用在识别验证码处，看大家需求，如果不用到识别这块，可以先注释掉，
+>>18、执行npm install
 
 #### 启动教程
 		cnpm start
@@ -71,29 +71,29 @@
 
 #### 项目结构目录
 
-		>Package.json------模块描述文件，
-		>Webpack.config.js------Webpack执行配置文件，
-		>Main.js------主js入口，
-		>Obfuscator.js------Javascript代码压缩与混淆，
-		>gulpfile.js------前端自动化构建工具，浏览器刷新，
-		>node_modules------依赖目录，
-		>interiorConfig，
-		>>menu.json------配置组件菜单，
-		>>properties.json------默认配置，快捷键，全局等待时间，中英文，版本号，日志目录，超时时间，远程端口，之类，
-		>>version.json------迭代版本信息，
-		>extend------扩展组件目录，
-		>config------i18n主要是中英文配置，
-		>build------构建目录，
-		>app------主要项目目录，
-		>css------css样式目录，
-		>img------静态资源目录，
-		>main------主进程代码 ，核心部分，
-		>pages------对应所有页面，
-		>renderer------渲染进程代码，核心部分，
-		>tool------工具目录，
-		>>uiautomation------uispy，微软提供的UI自动化库，
-		>>log------日志配置，及存放目录，
-		>renderer.js------electron渲染配置，
+>Package.json------模块描述文件，
+>Webpack.config.js------Webpack执行配置文件，
+>Main.js------主js入口，
+>Obfuscator.js------Javascript代码压缩与混淆，
+>gulpfile.js------前端自动化构建工具，浏览器刷新，
+>node_modules------依赖目录，
+>interiorConfig，
+>>menu.json------配置组件菜单，
+>>properties.json------默认配置，快捷键，全局等待时间，中英文，版本号，日志目录，超时时间，远程端口，之类，
+>>version.json------迭代版本信息，
+>extend------扩展组件目录，
+>config------i18n主要是中英文配置，
+>build------构建目录，
+>app------主要项目目录，
+>css------css样式目录，
+>img------静态资源目录，
+>main------主进程代码 ，核心部分，
+>pages------对应所有页面，
+>renderer------渲染进程代码，核心部分，
+>tool------工具目录，
+>>uiautomation------uispy，微软提供的UI自动化库，
+>>log------日志配置，及存放目录，
+>renderer.js------electron渲染配置，
 
 #### 软件截图
 
