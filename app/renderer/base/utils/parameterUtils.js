@@ -476,6 +476,9 @@ let parameterUtils = {
      */
     setDataType: function (node, nodeType) {
         switch (nodeType) {
+            case "open_browser": //获取浏览器变量，
+                node.dataType = "string";
+                break;
             case "getSystemParameter": //获取系统变量
                 node.dataType = "string";
                 break;

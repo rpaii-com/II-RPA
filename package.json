@@ -68,6 +68,7 @@
     "opencv4nodejs": "4.5.0",
     "oracledb": "^2.1.2",
     "pdf2json": "^1.1.7",
+    "python-shell": "^2.0.1",
     "regedit": "^3.0.0",
     "request": "^2.88.0",
     "robotjs": "^0.4.7",

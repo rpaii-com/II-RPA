@@ -109,6 +109,9 @@ function isTargetOutParameter(ele) {
         case "getVCode":
             hasOut = true;
             break;
+        case "open_browser":
+            hasOut = true;
+            break;
         default:
             hasOut = false;
             break;

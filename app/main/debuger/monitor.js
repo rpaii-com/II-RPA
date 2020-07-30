@@ -1,5 +1,87 @@
 const DevicePixelRatio = window.devicePixelRatio;
 
+//启动python服务，
+function pythonStart(){
+    var isFrist_python=true;
+    if (isFrist_python){
+        const { PythonShell } = require('python-shell');
+        const iconv = require('iconv-lite');
+        const path = require('path')
+        console.log(process.execPath)
+        console.log(__dirname)
+        console.log(process.cwd())
+        const python_filePath = path.join(process.cwd(),"./extend/python/python_service.py")
+        const python_execPath = path.join(process.cwd(),"./extend/python/python37/python.exe")
+        let filePath =  python_filePath;//需要执行的python文件路径
+        let port=18081;
+        let options = {
+            mode: 'binary',
+            pythonPath: python_execPath,//具体python.exe位置
+            args: [port],//设置端口
+            pythonOptions: ['-u'],
+            parser: (data) => iconv.decode(data, 'GBK'),
+            stderrParser: (data) => iconv.decode(data, 'GBK'),
+        };
+        let shell = new PythonShell(filePath, options);
+        shell.on('message', function (message) {
+            console.log(filePath, `\npython服务已启动，请打开下面链接访问:\nhttp://127.0.0.1:${port}`)
+            console.log(`[python server]`, message)
+        });
+        shell.on('error', function (message) {
+            console.error(`[python server]`, message)
+        });
+        shell.on('close', function (message) {
+            console.info("[python server] python server is closed !");
+        });
+        isFrist_python = false;
+    }else{
+        return
+    }
+    //关闭
+    // shell && shell.terminate()
+    //console.log(`[python server] python server is closed`)
+    //node axios,httpclient,	
+}
+
+//执行python，
+function python_exec(pythonfilePath,functionName,parameters){
+    let axios_flag = true;
+    const axios = require('axios');
+    const data = {
+                    "pythonfilePath": pythonfilePath,
+                    "functionName": functionName,
+                    "parameters": parameters,
+                    "timestamp": Date.now()
+    }
+
+    const headers = { 
+    ContentType: "application/json; charset=utf-8"
+    };
+    //var rename_python = "";
+    if(axios_flag){
+        axios_flag = false;
+        return axios({
+            method: 'post',
+            url: 'http://localhost:18081',
+            data: data,
+            headers: headers
+        })
+            .then(function(response) {
+                console.log("response.status:------------");
+                console.log(response.status);
+                axios_flag = true;
+                return response.data.content;
+            })
+            .catch(function (error) {
+                console.log(error);
+                axios_flag = true;
+            });
+    }else{
+        return
+    }
+    //return rename_python
+}
+
 //添加once方法
 function once(dom, event, callback) {
     var handle = function (e) {
@@ -1952,3 +2034,50 @@ incident.addEVent("telnetClose", function (step, callback, ctx) {
 })
 
 /*********************telnet***************/
+
+/******************python_selenium*********************/
+//python打开浏览器，
+incident.addEVent("open_browser", async function (step, callback, ctx) {
+    const path = require('path')
+    pythonStart();
+    console.log(process.cwd())
+    const pythonfilePath = path.join(process.cwd(),"./extend/python/app_selenium.py")
+    const functionName = "open_selenium";
+    const parameters = {
+        url:step.parameters.url,
+        browser_type:step.parameters.browser_type,
+        path_selenium:step.parameters.path_selenium,
+        chrome_driver:step.parameters.chrome_driver,
+        open_type:step.parameters.open_type
+      };
+    try{
+        ctx.set(step.parameters.rename, await python_exec(pythonfilePath,functionName,parameters));
+    }catch(e){
+		return callback(e);
+	}
+    callback();
+})
+
+//python浏览器输入，
+incident.addEVent("input_browser", async function (step, callback, ctx) {
+    const path = require('path')
+    pythonStart();
+    const pythonfilePath = path.join(process.cwd(),"./extend/python/app_selenium.py")
+    const functionName = "input_selenium";
+    const parameters = {
+        xpath:step.parameters.xpath,
+        text:step.parameters.text,
+        browser_name:step.parameters.browser_name
+      };
+    try{
+        ctx.set(step.parameters.rename, await python_exec(pythonfilePath,functionName,parameters));
+    }catch(e){
+		return callback(e);
+	}
+    callback();
+})
+
+
+
+
+/******************python_selenium*********************/

@@ -1,0 +1,93 @@
+<div class="main-con-item">
+    <div class="input-box">
+        <p>
+            <b>打开网址(必填)</b>(如：https://www.baidu.com)
+            <b>：</b>
+        </p>
+        <input type="text" name="url">
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="xiala-icon parameters"></i>
+        <i class="toggleType"></i>
+    </div>
+    <p>
+        <b>浏览器类型：</b>
+    </p>
+    <div class="input-box">
+        <p class="radio-item">
+            <label>
+                <input type="radio" name="browser_type" value="br360" checked>360浏览器
+            </label>
+            <label>
+                <input type="radio" name="browser_type" value="chrome">chrome内核系列浏览器
+            </label>
+            <label>
+                <input type="radio" name="browser_type" value="firefox">火狐firefox浏览器
+            </label>
+            <label>
+                <input type="radio" name="browser_type" value="ie">IE内核系列浏览器
+            </label>
+        </p>
+    </div>
+    <p>
+        <b>指定本地浏览器路径：(选填)</b>(默认读取360浏览器安装位置，)
+    </p>
+    <button type="button" onclick="path_selenium_path.click();">点击选择文件</button>
+    <div class="input-box">
+        <input type="text" class="form-control" id="path_selenium" name="path_selenium" placeholder="选择要读取的文件" />
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="xiala-icon parameters"></i>
+        <i class="toggleType"></i>
+        <input type="file" id="path_selenium_path" class="hideFile" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,.csv,application/vnd.ms-excel"
+                onchange="this.value==''?path_selenium.value=path_selenium.value:path_selenium.value=gePathVal(this,true)" />
+    </div>
+    <p>
+        <b>指定内核驱动路径：(选填)</b>
+    </p>
+    <button type="button" onclick="chrome_driver_path.click();">点击选择文件</button>
+        <div class="input-box">
+            <input type="text" class="form-control" id="chrome_driver" name="chrome_driver" placeholder="选择要读取的文件" />
+            <ul class="common-list parameters-can-select"></ul>
+            <i class="xiala-icon parameters"></i>
+            <i class="toggleType"></i>
+            <input type="file" id="chrome_driver_path" class="hideFile" 
+                   onchange="this.value==''?chrome_driver.value=chrome_driver.value:chrome_driver.value=gePathVal(this,true)" />
+        </div>
+    <p>
+        <b>打开浏览器方式</b>
+    </p>
+    <div class="input-box">
+        <p class="radio-item">
+            <label>
+                <input type="radio" name="open_type" value="newDriver" checked>新窗口
+            </label>
+            <label>
+                <input type="radio" name="open_type" value="newWindow">新标签
+            </label>
+            <label>
+                <input type="radio" name="open_type" value="nowWindow">本标签
+            </label>
+        </p>
+    </div>
+    <p>
+        <b>输出参数命名：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="rename">
+    </div>
+</div>
+<input type="hidden" class="item-type" name="open_browser">
+<div class="liucheng-item-tips">
+
+    <p class="dom-active-dec" title="">
+        <i></i>
+        <em>：</em>打开网址："
+        <b class="user-input-text tips-url"></b>"</p>
+    <p class="dom-active-dec" title="">
+        <i class=""></i>
+        <em class="">：</em>输出浏览器对象：</p>
+    <p class="in-parameter" title="">
+        <i class="icon-tips-out"></i>
+        <em>：</em>"
+        <b class="font-out-paramter"></b>","
+        <b class="font-out-paramter-type">String</b>"</p>
+</div>

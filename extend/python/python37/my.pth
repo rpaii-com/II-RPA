@@ -1,0 +1,2 @@
+import os;
+import site;site.addsitedir(os.path.join(sitedir,"..\lib\site-packages")+'');

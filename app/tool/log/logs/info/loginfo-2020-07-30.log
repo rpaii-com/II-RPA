@@ -1,0 +1,6 @@
+[2020-07-30 10:11:04.386] [ERROR] - 错误信息：Uncaught TypeError: Cannot read property 'type' of undefined
+出错文件：D:\rpa\master\RPA-V1-designer\app\main\debuger\Scalable\incident.js
+出错行号：271
+出错列号：13
+错误详情：TypeError: Cannot read property 'type' of undefined
+

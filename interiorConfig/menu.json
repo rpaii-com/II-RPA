@@ -181,6 +181,24 @@
         ]
     },
     {
+        "name": "浏览器(selenium)",
+        "className": "icon menu-icon-1",
+        "children": [
+            {
+                "name": "填写输入框内容",
+                "url": "selenium_browser/input_browser.html",
+                "className": "diy-icon-menu1-7",
+                "nodeType": "input_browser"
+            },
+            {
+                "name": "打开网页",
+                "url": "selenium_browser/open_browser.html",
+                "className": "diy-icon-menu1-14",
+                "nodeType": "open_browser"
+            }
+        ]
+    },
+    {
         "name": "应用功能",
         "className": "main-menu-icon menu-icon-3 menu-icon",
         "children": [
