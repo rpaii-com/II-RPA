@@ -12,7 +12,7 @@
         "rootDirectory": "D:/rpa_file",
         "stopTask": "Control+Shift+Q",
         "goonTask": "Control+Shift+S",
-        "version": "V1.0.9",
-        "i18n":"cn"
+        "version": "V1.0.12",
+        "i18n":"en"
     }
 }

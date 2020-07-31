@@ -1,2056 +1,1869 @@
 {
     "mouseMove": {
-      "point": "mouseMove.point",
-      "menuTitle": "mouseMove.menuTitle",
-      "menuNote": "mouseMove.menuNote"
+    "point":"Move to coordinates.",
+    "menuTitle":"Mouse movement",
+    "menuNote":"mouseMove.menuNote"
     },
     "iconRecognition": {
-        "file": "iconRecognition.file",
-        "select_image": "iconRecognition.select_image",
-        "confidence": "iconRecognition.confidence",
-        "outParam": "iconRecognition.outParam",
-        "menuTitle": "iconRecognition.menuTitle",
-        "menuNote": "iconRecognition.menuNote"
+    "file":"Range of icons or pictures to be identified (Base64 encoding)",
+    "select_image":"Capture the image to be identified",
+    "confidence":"Set the confidence level (the range is 1-10, the larger the number, the higher the confidence level. If the confidence level is greater than the confidence level, the confidence level will be set as reliable. If the confidence level is less than the confidence level, the result will not be found)",
+    "outParam":"Output variable naming",
+    "menuTitle":"Icon recognition",
+    "menuNote":"iconRecognition.menuNote"
     },
     "getPageCookies": {
-      "outParam": "getPageCookies.outParam",
-      "menuTitle": "getPageCookies.menuTitle",
-      "menuNote": "getPageCookies.menuNote"
+    "outParam":"Output parameter naming",
+    "menuTitle":"Get cookies of current page",
+    "menuNote":"getPageCookies.menuNote"
     },
     "verCodeJuHe": {
-        "file": "verCodeJuHe.file",
-        "select_image": "verCodeJuHe.select_image",
-        "outParam": "verCodeJuHe.outParam",
-        "menuTitle": "verCodeJuHe.menuTitle",
-        "menuNote": "verCodeJuHe.menuNote"
+    "file":"Select the captcha image to be recognized",
+    "select_image":"Select picture",
+    "outParam":"Output variable naming",
+    "menuTitle":"Captcha identification interface call",
+    "menuNote":"verCodeJuHe.menuNote"
     },
     "localDbCreate": {
-        "localFile": "localDbCreate.localFile",
-        "selectFile": "localDbCreate.selectFile",
-        "fileName": "localDbCreate.fileName",
-        "tableName": "localDbCreate.tableName",
-        "outParam": "localDbCreate.outParam",
-        "menuTitle": "localDbCreate.menuTitle",
-        "menuNote": "localDbCreate.menuNote"
+    "localFile":"Select the folder where the database is located.",
+    "selectFile":"Select Folder",
+    "fileName":"Database file name",
+    "tableName":"New table name",
+    "outParam":"Name the local database configuration created.",
+    "menuTitle":"Create local database (SQLite)",
+    "menuNote":"localDbCreate.menuNote"
     },
     "localDbOthers": {
-        "dbRename": "localDbOthers.dbRename",
-        "dbSql": "localDbOthers.dbSql",
-        "outParam": "localDbOthers.outParam",
-        "menuTitle": "localDbOthers.menuTitle",
-        "menuNote": "localDbOthers.menuNote"
+    "dbRename":"Please select local database configuration",
+    "dbSql":"Add, delete and modify statements",
+    "outParam":"Output variable (number of rows affected)",
+    "menuTitle":"Add, delete and modify local database (SQLite)",
+    "menuNote":"localDbOthers.menuNote"
     },
     "localDbSelect": {
-        "dbRename": "localDbSelect.dbRename",
-        "dbSql": "localDbSelect.dbSql",
-        "outParam": "localDbSelect.outParam",
-        "menuTitle": "localDbSelect.menuTitle",
-        "menuNote": "localDbSelect.menuNote"
+    "dbRename":"Please select local database configuration",
+    "dbSql":"Query statements",
+    "outParam":"Output variable naming",
+    "menuTitle":"Query local database (SQLite)",
+    "menuNote":"localDbSelect.menuNote"
     },
     "complexLogic": {
-        "html": "complexLogic.html",
-        "outParam": "complexLogic.outParam",
-        "menuTitle": "complexLogic.menuTitle",
-        "menuNote": "complexLogic.menuNote"
+    "html":"Complex logical expressions",
+    "outParam":"Expression result output",
+    "menuTitle":"Complex logic computing",
+    "menuNote":"complexLogic.menuNote"
     },
     "localDbConfig": {
-        "localFile": "localDbConfig.localFile",
-        "selectFile": "localDbConfig.selectFile",
-        "outParam": "localDbConfig.outParam",
-        "menuTitle": "localDbConfig.menuTitle",
-        "menuNote": "localDbConfig.menuNote"
+    "localFile":"Select local SQLite database file",
+    "selectFile":"Select file",
+    "outParam":"Configure naming for local database",
+    "menuTitle":"Configure local database (SQLite)",
+    "menuNote":"localDbConfig.menuNote"
     },
     "configSeleniumExplore": {
-        "type": "configSeleniumExplore.type",
-        "IE": "configSeleniumExplore.IE",
-        "Firefox": "configSeleniumExplore.Firefox",
-        "Chrome": "configSeleniumExplore.Chrome",
-        "menuTitle": "configSeleniumExplore.menuTitle",
-        "menuNote": "configSeleniumExplore.menuNote"
+    "type":"Select browser",
+    "IE":"IE",
+    "Firefox":"Firefox",
+    "Chrome":"Chrome",
+    "menuTitle":"Set up selenium controlled browsers",
+    "menuNote":"configSeleniumExplore.menuNote"
     },
     "paramsPaste": {
-        "isFormat": "paramsPaste.isFormat",
-        "outParam": "paramsPaste.outParam",
-        "-": "剪切板导入变量",
-        "menuTitle": "paramsPaste.menuTitle",
-        "menuNote": "paramsPaste.menuNote"
+    "isFormat":"Do you want to keep the original format",
+    "outParam":"Output variable naming",
+    "-":"Clipboard import variables",
+    "menuTitle":"Clipboard import variables",
+    "menuNote":"Output a new variable and name it"
     },
     "wordCopyInClip": {
-        "menuTitle": "wordCopyInClip.menuTitle",
-        "file": "wordCopyInClip.file",
-        "menuNote": "wordCopyInClip.menuNote",
-        "selectFile": "wordCopyInClip.selectFile"
+    "menuTitle":"Word document content import clipboard",
+    "file":"Select word file",
+    "menuNote":"Read a word document and copy its contents and styles to the clipboard"
     },
     "callFunction": {
-        "paramName": "callFunction.paramName",
-        "functionName": "callFunction.functionName",
-        "outParam": "callFunction.outParam",
-        "-": "常用函数",
-        "menuTitle": "callFunction.menuTitle",
-        "menuNote": "callFunction.menuNote"
+    "paramName":"Variable name",
+    "functionName":"Conversion function",
+    "outParam":"Output variable naming",
+    "-":"Common functions",
+    "menuTitle":"Common functions",
+    "menuNote":"Convert variables with functions, output a new variable and name it"
     },
     "conArrayRowCol": {
-        "outParam": "conArrayRowCol.outParam",
-        "paramValue": "conArrayRowCol.paramValue",
-        "-": "二维数组行列互换",
-        "menuTitle": "conArrayRowCol.menuTitle",
-        "menuNote": "conArrayRowCol.menuNote"
+    "outParam":"Output variable naming",
+    "paramValue":"The name of the converted 2D array variable.",
+    "-":"Two dimensional array row column swap",
+    "menuTitle":"Two dimensional array row column swap",
+    "menuNote":"Swap rows and columns of two-dimensional array, output a new array and name it"
     },
     "backGlobalParam": {
-        "outParam": "backGlobalParam.outParam",
-        "paramValue": "backGlobalParam.paramValue",
-        "-": "返回全局变量",
-        "menuTitle": "backGlobalParam.menuTitle",
-        "menuNote": "backGlobalParam.menuNote"
+    "outParam":"Output variable naming",
+    "paramValue":"Variable name",
+    "-":"Return global variables",
+    "menuTitle":"Return global variables",
+    "menuNote":"Return local variables to global variables"
     },
     "paramsCopy": {
-        "paramName": "paramsCopy.paramName",
-        "-": "变量导入剪切板",
-        "menuTitle": "paramsCopy.menuTitle",
-        "menuNote": "paramsCopy.menuNote"
+    "paramName":"Variable name",
+    "-":"Variable import clipboard",
+    "menuTitle":"Variable import clipboard",
+    "menuNote":"Copy variable contents to clipboard"
     },
     "simpleFormula": {
-        "outParam": "simpleFormula.outParam",
-        "formula": "simpleFormula.formula",
-        "menuTitle": "simpleFormula.menuTitle",
-        "menuNote": "simpleFormula.menuNote"
+    "outParam":"Result output variable naming",
+    "formula":"Simple formula input",
+    "menuTitle":"Simple formula operation",
+    "menuNote":"Calculate a value through a simple formula, output a new variable and name it (example?) "
     },
     "setColParam": {
-        "paramName": "setColParam.paramName",
-        "httpparameters": "setColParam.httpparameters",
-        "menuTitle": "setColParam.menuTitle",
-        "menuNote": "setColParam.menuNote"
+    "paramName":"Variable name",
+    "httpparameters":"Variables",
+    "menuTitle":"Set set collection variables",
+    "menuNote":"Generate / modify specified array / object"
     },
     "saveNewParam": {
-        "paramValue": "saveNewParam.paramValue",
-        "outParam": "saveNewParam.outParam",
-        "menuTitle": "saveNewParam.menuTitle",
-        "menuNote": "saveNewParam.menuNote"
+        "paramValue":"Variable values",
+        "outParam":"Output variable naming",
+        "menuTitle":"Set variables",
+        "menuNote":"Create a new variable, assign and name it"
     },
     "calculateParam": {
-        "outParam": "calculateParam.outParam",
-        "param1": "calculateParam.param1",
-        "param2": "calculateParam.param2",
-        "operator": "calculateParam.operator",
-        "mo": "calculateParam.mo",
-        "menuTitle": "calculateParam.menuTitle",
-        "menuNote": "calculateParam.menuNote"
+    "outParam":"Output variable naming",
+    "param1":"Variable one",
+    "param2":"Variable two",
+    "operator":"Operators",
+    "mo":"Take the surplus",
+    "menuTitle":"Mathematical operations.",
+    "menuNote":"Do simple mathematical operation on two variables, output a new variable and name it"
     },
     "numTrans": {
-        "outParam": "numTrans.outParam",
-        "paramValue": "numTrans.paramValue",
-        "type": "numTrans.type",
-        "numTozh": "numTrans.numTozh",
-        "zhTonum": "numTrans.zhTonum",
-        "menuTitle": "numTrans.menuTitle",
-        "menuNote": "numTrans.menuNote"
+    "outParam":"Output variable naming",
+    "paramValue":"Variable values",
+    "type":"Select conversion mode",
+    "numTozh":"Arabic numerals to Chinese numerals",
+    "zhTonum":"Chinese numerals to Arabic numerals",
+    "menuTitle":"Conversion of Chinese numerals to Arabic numerals",
+    "menuNote":"Convert Chinese numerals / Arabic numerals in variables to each other, output a new variable and name it (change the variable value to the variable to be converted)"
     },
     "arrayConcat": {
-        "outParam": "arrayConcat.outParam",
-        "des": "arrayConcat.des",
-        "value": "arrayConcat.value",
-        "menuTitle": "arrayConcat.menuTitle",
-        "menuNote": "arrayConcat.menuNote"
+    "outParam":"Output parameter naming",
+    "des":"Array",
+    "value":"Array to be spliced",
+    "menuTitle":"Array splicing",
+    "menuNote":"Concatenate dry arrays of the same dimension into a new array and name it"
     },
     "extractParam": {
-        "outParam": "extractParam.outParam",
-        "regexValue": "extractParam.regexValue",
-        "key": "extractParam.key",
-        "index": "extractParam.index",
-        "quickKey": "extractParam.quickKey",
-        "extractType": "extractParam.extractType",
-        "paramName": "extractParam.paramName",
-        "menuTitle": "extractParam.menuTitle",
-        "menuNote": "extractParam.menuNote"
+    "outParam":"Output variable naming",
+    "regexValue":"Extracted values",
+    "key":"Key name",
+    "index":"Subscript value",
+    "quickKey":"Quick extraction ({key name} [subscript])",
+    "extractType":"Extraction method",
+    "paramName":"Variable name",
+    "menuTitle":"Extract variables.",
+    "menuNote":"Extract some variables through their subscript values or key names, output a new variable and name it"
     },
     "convertParam": {
-        "outParam": "convertParam.outParam",
-        "regexValue": "convertParam.regexValue",
-        "paramName": "convertParam.paramName",
-        "menuTitle": "convertParam.menuTitle",
-        "menuNote": "convertParam.menuNote"
+    "outParam":"Output variable naming",
+    "regexValue":"Regular expressions",
+    "paramName":"Variable name",
+    "menuTitle":"Grammatical transformation",
+    "menuNote":"Convert variables with regular expressions, output a new variable and name it"
     },
     "strSplit": {
-        "outParam": "strSplit.outParam",
-        "separator": "strSplit.separator",
-        "strObject": "strSplit.strObject",
-        "menuTitle": "strSplit.menuTitle",
-        "menuNote": "strSplit.menuNote"
+    "outParam":"Output array naming",
+    "separator":"Separator",
+    "strObject":"String to be split",
+    "menuTitle":"String segmentation.",
+    "menuNote":"Split a string into several strings with a separator, output a new array and name it"
     },
     "string_generacte": {
-        "outParam": "string_generacte.outParam",
-        "html": "string_generacte.html",
-        "menuTitle": "string_generacte.menuTitle",
-        "menuNote": "string_generacte.menuNote"
+    "outParam":"Output string naming",
+    "html":"String",
+    "menuTitle":"String concatenation",
+    "menuNote":"Concatenate several strings to output a new string and name it"
     },
     "excelToObject": {
-        "outParam": "excelToObject.outParam",
-        "filePath": "excelToObject.filePath",
-        "menuTitle": "excelToObject.menuTitle",
-        "selectFile": "excelToObject.selectFile",
-        "menuNote": "excelToObject.menuNote"
+    "outParam":"Output file as variable",
+    "filePath":"Operating Excel files",
+    "menuTitle":"Operating Excel files",
+    "selectFile":"Select file",
+    "menuNote":"Select an excel file as the operation range to perform various reading and writing operations on the worksheet / cell of the excel file"
     },
     "readCsvFile": {
-        "outParam": "readCsvFile.outParam",
-        "filePath": "readCsvFile.filePath",
-        "menuTitle": "readCsvFile.menuTitle",
-        "selectFile": "readCsvFile.selectFile",
-        "menuNote": "readCsvFile.menuNote"
+    "outParam":"Output variable naming",
+    "filePath":"Read CSV file",
+    "menuTitle":"Read CSV file",
+    "selectFile":"Select file",
+    "menuNote":"Select a CSV file, read all the contents of the file, output a new variable and name it"
     },
     "excelReadCell": {
-        "outParam": "excelReadCell.outParam",
-        "object": "excelReadCell.object",
-        "text": "excelReadCell.text",
-        "resType": "excelReadCell.resType",
-        "rectangle": "excelReadCell.rectangle",
-        "sheetName": "excelReadCell.sheetName",
-        "excelKey": "excelReadCell.excelKey",
-        "menuTitle": "excelReadCell.menuTitle",
-        "menuNote": "excelReadCell.menuNote"
+    "outParam":"Output variable naming",
+    "object":"Cell object",
+    "text":"Text",
+    "resType":"Select output result type",
+    "rectangle":"Read position (row, column)",
+    "sheetName":"Sheet name",
+    "excelKey":"Select excel file object",
+    "menuTitle":"Read cells",
+    "menuNote":"Select a cell in the specified worksheet in an excel file, output a new variable from the cell and name it"
     },
     "excelReadSheet": {
-        "outParam": "excelReadSheet.outParam",
-        "sheetName": "excelReadSheet.sheetName",
-        "allSheet": "excelReadSheet.allSheet",
-        "excelKey": "excelReadSheet.excelKey",
-        "menuTitle": "excelReadSheet.menuTitle",
-        "menuNote": "excelReadSheet.menuNote"
+    "outParam":"Output variable naming",
+    "sheetName":"Select sheet",
+    "allSheet":"All worksheets",
+    "excelKey":"Select excel file object",
+    "menuTitle":"Read sheet contents",
+    "menuNote":"Select several / all worksheets of an excel file, get the contents of the worksheet, output a new variable and name it"
     },
     "excelReadRange": {
-        "outParam": "excelReadRange.outParam",
-        "rightDown": "excelReadRange.rightDown",
-        "leftUp": "excelReadRange.leftUp",
-        "sheetName": "excelReadRange.sheetName",
-        "excelKey": "excelReadRange.excelKey",
-        "menuTitle": "excelReadRange.menuTitle",
-        "menuNote": "excelReadRange.menuNote"
+    "outParam":"Output variable naming",
+    "rightDown":"Read the lower right point of the rectangle range.",
+    "leftUp":"Read the upper left point of the rectangle range",
+    "sheetName":"Sheet name",
+    "excelKey":"Select excel file object",
+    "menuTitle":"Read the specified range",
+    "menuNote":"Select a worksheet in an excel file, read the contents in the specified range, output the contents into a new variable and name it"
     },
     "excelCopyPart": {
-        "to_rectangle_right_up": "excelCopyPart.to_rectangle_right_up",
-        "to_sheet": "excelCopyPart.to_sheet",
-        "excelKey2": "excelCopyPart.excelKey2",
-        "rectangle_right_down": "excelCopyPart.rectangle_right_down",
-        "from_sheet": "excelCopyPart.from_sheet",
-        "excelKey": "excelCopyPart.excelKey",
-        "menuTitle": "excelCopyPart.menuTitle",
-        "menuNote": "excelCopyPart.menuNote"
+    "to_rectangle_right_up":"Start point of replication",
+    "to_sheet":"Target sheet name",
+    "excelKey2":"Select the excel file object to copy to",
+    "rectangle_right_down":"Rectangle range to be copied",
+    "from_sheet":"Source sheet name",
+    "excelKey":"Select the source excel file object",
+    "menuTitle":"Copy part to another file",
+    "menuNote":"Select two Excel files and their worksheets to copy the specified part of one excel file to the specified location of another excel file"
     },
     "excelChangeSheet": {
-        "newSheetName": "excelChangeSheet.newSheetName",
-        "sheetName": "excelChangeSheet.sheetName",
-        "excelKey": "excelChangeSheet.excelKey",
-        "menuTitle": "excelChangeSheet.menuTitle",
-        "menuNote": "excelChangeSheet.menuNote"
+    "newSheetName":"New sheet name",
+    "sheetName":"Sheet name",
+    "excelKey":"Select excel file object",
+    "menuTitle":"Change sheet name",
+    "menuNote":"Select a worksheet in an excel file and change its name"
     },
     "excelDeleRowCol": {
-        "rectangle": "excelDeleRowCol.rectangle",
-        "rowCol": "excelDeleRowCol.rowCol",
-        "sheetName": "excelDeleRowCol.sheetName",
-        "excelKey": "excelDeleRowCol.excelKey",
-        "col": "excelDeleRowCol.col",
-        "row": "excelDeleRowCol.row",
-        "menuTitle": "excelDeleRowCol.menuTitle",
-        "menuNote": "excelDeleRowCol.menuNote"
+    "rectangle":"Operation position (row or column)",
+    "rowCol":"Operation object",
+    "sheetName":"Sheet name",
+    "excelKey":"Select excel file object",
+    "col":"Column",
+    "row":"Xing",
+    "menuTitle":"Clear row and column data.",
+    "menuNote":"Select a worksheet in an excel file to clear the row / column data in the worksheet"
     },
     "writeCsvFile": {
-        "outParam": "writeCsvFile.outParam",
-        "isSaveHistory": "writeCsvFile.isSaveHistory",
-        "newFileName": "writeCsvFile.newFileName",
-        "targetPath": "writeCsvFile.targetPath",
-        "filename": "writeCsvFile.filename",
-        "valueParam": "writeCsvFile.valueParam",
-        "a": "writeCsvFile.a",
-        "w": "writeCsvFile.w",
-        "writeType": "writeCsvFile.writeType",
-        "menuTitle": "writeCsvFile.menuTitle",
-        "select_directory": "writeCsvFile.select_directory",
-        "menuNote": "writeCsvFile.menuNote"
+    "outParam":"The full path name of the output file is a parameter.",
+    "isSaveHistory":"Save to historical task",
+    "newFileName":"History file alias",
+    "targetPath":"Saved path",
+    "filename":"File name",
+    "valueParam":"Data name to be saved",
+    "a":"Add",
+    "w":"Overlay",
+    "writeType":"Write type",
+    "menuTitle":"Write to a CSV file",
+    "select_directory":"Choose a path.",
+    "menuNote":"Write variables to a CSV file and name the file, and output a new variable from the file path and name it"
     },
     "excelWriteCell": {
-        "rectangle": "excelWriteCell.rectangle",
-        "sheetName": "excelWriteCell.sheetName",
-        "excelObject": "excelWriteCell.excelObject",
-        "valueParam": "excelWriteCell.valueParam",
-        "menuTitle": "excelWriteCell.menuTitle",
-        "menuNote": "excelWriteCell.menuNote"
+    "rectangle":"Write position (row, column)",
+    "sheetName":"Sheet name",
+    "excelObject":"Select excel file object",
+    "valueParam":"Variables to write to",
+    "menuTitle":"Write to cell",
+    "menuNote":"Select a cell in the specified sheet in an excel file and write the variable to that cell"
     },
     "excelWriteSheet": {
-        "valueParam": "excelWriteSheet.valueParam",
-        "add": "excelWriteSheet.add",
-        "write": "excelWriteSheet.write",
-        "resType": "excelWriteSheet.resType",
-        "sheetName": "excelWriteSheet.sheetName",
-        "excelObject": "excelWriteSheet.excelObject",
-        "menuTitle": "excelWriteSheet.menuTitle",
-        "menuNote": "excelWriteSheet.menuNote"
+    "valueParam":"Variables to write to",
+    "add":"Add at the end",
+    "write":"Overlay",
+    "resType":"Write type",
+    "sheetName":"Sheet name",
+    "excelObject":"Select excel file object",
+    "menuTitle":"Write to worksheet",
+    "menuNote":"Select a worksheet in an excel file and write variables to the worksheet"
     },
     "excelWriteRowCol": {
-        "rectangle": "excelWriteRowCol.rectangle",
-        "col": "excelWriteRowCol.col",
-        "row": "excelWriteRowCol.row",
-        "rowCol": "excelWriteRowCol.rowCol",
-        "sheetName": "excelWriteRowCol.sheetName",
-        "excelObject": "excelWriteRowCol.excelObject",
-        "valueParam": "excelWriteRowCol.valueParam",
-        "menuTitle": "excelWriteRowCol.menuTitle",
-        "menuNote": "excelWriteRowCol.menuNote"
+    "rectangle":"Write position (row or column)",
+    "col":"Column",
+    "row":"Xing",
+    "rowCol":"Write type",
+    "sheetName":"Sheet name",
+    "excelObject":"Select excel file object",
+    "valueParam":"Variables to write to",
+    "menuTitle":"Write row and column data.",
+    "menuNote":"Select a worksheet in an excel file and write variables (one-dimensional array) into the table rows and columns"
     },
     "excelwriteRange": {
-        "leftUp": "excelwriteRange.leftUp",
-        "valueParam": "excelwriteRange.valueParam",
-        "sheetName": "excelwriteRange.sheetName",
-        "excelObject": "excelwriteRange.excelObject",
-        "menuTitle": "excelwriteRange.menuTitle",
-        "menuNote": "excelwriteRange.menuNote"
+    "leftUp":"Write start point",
+    "valueParam":"Variables to write to",
+    "sheetName":"Sheet name",
+    "excelObject":"Select excel file object",
+    "menuTitle":"Write to specified range",
+    "menuNote":"Select a worksheet in an excel file to write the variable to the specified starting point range"
     },
     "excelCreateSheet": {
-        "sheetName": "excelCreateSheet.sheetName",
-        "excelObject": "excelCreateSheet.excelObject",
-        "menuTitle": "excelCreateSheet.menuTitle",
-        "menuNote": "excelCreateSheet.menuNote"
+    "sheetName":"New sheet name",
+    "excelObject":"Select excel file object",
+    "menuTitle":"New sheet",
+    "menuNote":"Select an excel file, create a new sheet and name it"
     },
     "copyOrpasteDo": {
-        "ctrlCOrV": "copyOrpasteDo.ctrlCOrV",
-        "ctrlC": "copyOrpasteDo.ctrlC",
-        "ctrlV": "copyOrpasteDo.ctrlV",
-        "menuTitle": "copyOrpasteDo.menuTitle",
-        "menuNote": "copyOrpasteDo.menuNote"
+    "ctrlCOrV":"Select copy paste operation",
+    "ctrlC":"Copy operations",
+    "ctrlV":"Paste operation",
+    "menuTitle":"Copy and paste",
+    "menuNote":"Copy / paste"
     },
     "shortCut": {
-        "hotKey": "shortCut.hotKey",
-        "count": "shortCut.count",
-        "menuTitle": "shortCut.menuTitle",
-        "menuNote": "shortCut.menuNote"
+    "hotKey":"Keyboard hotkeys",
+    "count":"Number of times of execution.",
+    "menuTitle":"Keyboard operations",
+    "menuNote":"Set the specific hotkey and execution times executed by the keyboard to trigger the hotkey and execution times at runtime"
     },
     "mouseClick": {
-        "mouseClickType": "mouseClick.mouseClickType.name",
-        "leftClick": "mouseClick.leftClick",
-        "midClick": "mouseClick.midClick",
-        "rightClick": "mouseClick.rightClick",
-        "leftDbclick": "mouseClick.leftDbclick",
-        "menuTitle": "mouseClick.menuTitle",
-        "menuNote": "mouseClick.menuNote"
+    "mouseClickType":"Click type",
+    "leftClick":"Left click",
+    "midClick":"Middle click",
+    "rightClick":"Right click",
+    "leftDbclick":"Left double click",
+    "menuTitle":"Mouse click",
+    "menuNote":"Click on mouse"
     },
     "mouseRoll": {
-        "mouseRollLeftOrRight": "mouseRoll.mouseRollLeftOrRight",
-        "mouseRollUpOrDown": "mouseRoll.mouseRollUpOrDown",
-        "rectangle": "mouseRoll.rectangle",
-        "path": "mouseRoll.path",
-        "winTitle": "mouseRoll.winTitle",
-        "processName": "mouseRoll.processName",
-        "CScapture": "mouseRoll.CScapture",
-        "CScapturePos": "mouseRoll.CScapturePos",
-        "menuTitle": "mouseRoll.menuTitle",
-        "menuNote": "mouseRoll.menuNote"
+    "mouseRollLeftOrRight":"Left and right scrolling (positive to the right, negative to the left, the number of times the scroll key scrolls)",
+    "mouseRollUpOrDown":"Scroll up and down (down is positive, up is negative, the number of times the wheel key scrolls)",
+    "rectangle":"Element coordinates (x, y)",
+    "path":"Element subscript",
+    "winTitle":"Element form name",
+    "processName":"Element process name",
+    "CScapture":"Capture desktop elements",
+    "CScapturePos":"Capture desktop elements",
+    "menuTitle":"Mouse scrolling",
+    "menuNote":"Mouse scrolls within the specified element"
     },
     "draftingMouse": {
-        "rectangle_end": "draftingMouse.rectangle_end",
-        "rectangle_start": "draftingMouse.rectangle_start",
-        "menuTitle": "draftingMouse.menuTitle",
-        "menuNote": "draftingMouse.menuNote"
+    "rectangle_end":"Mouse drag end position",
+    "rectangle_start":"Mouse drag start position",
+    "menuTitle":"Mouse drag.",
+    "menuNote":"Enter the start and end coordinates of the mouse's active range to drag the mouse at runtime"
     },
     "pasteDo": {
-        "text-box": "pasteDo.text-box"
+    "text-box":"Paste operation"
     },
     "CSmove_position": {
-        "mouseClick": "CSmove_position.mouseClick",
-        "mouseMove": "CSmove_position.mouseMove",
-        "rectangle": "CSmove_position.rectangle",
-        "CScapturePos": "CSmove_position.CScapturePos",
-        "menuTitle": "CSmove_position.menuTitle",
-        "menuNote": "CSmove_position.menuNote"
+    "mouseClick":"Left click",
+    "mouseMove":"Mouse movement",
+    "rectangle":"Element coordinates (x, y)",
+    "CScapturePos":"Capture desktop element (position)",
+    "menuTitle":"Coordinate positioning",
+    "menuNote":"Coordinate positioning"
     },
     "docReadTxt": {
-        "outParam": "docReadTxt.outParam",
-        "usinessDescription": "docReadTxt.usinessDescription",
-        "filePath": "docReadTxt.filePath",
-        "menuTitle": "docReadTxt.menuTitle",
-        "selectFile": "docReadTxt.selectFile",
-        "menuNote": "docReadTxt.menuNote"
+    "outParam":"Output variable naming",
+    "usinessDescription":"Business description",
+    "filePath":"Read TXT file",
+    "menuTitle":"Read TXT file",
+    "selectFile":"Select file",
+    "menuNote":"Select a TXT file, get all the contents of the file, output a new variable and name it (when the business description is a central control publishing task, select the remarks in front of the file)"
     },
     "docReadWord": {
-        "outParam": "docReadWord.outParam",
-        "businessDescription": "docReadWord.businessDescription",
-        "filePath": "docReadWord.filePath",
-        "menuTitle": "docReadWord.menuTitle",
-        "selectFile": "docReadWord.selectFile",
-        "menuNote": "docReadWord.menuNote"
+    "outParam":"Output variable naming",
+    "businessDescription":"Business description",
+    "filePath":"Read word file",
+    "menuTitle":"Read word file",
+    "selectFile":"Select file",
+    "menuNote":"Select a word file, get all the contents of the file, output a new variable and name it"
     },
     "docWriteTxt": {
-        "newFileName": "docWriteTxt.newFileName",
-        "isSaveHistory": "docWriteTxt.isSaveHistory",
-        "outParam": "docWriteTxt.outParam",
-        "targetPath": "docWriteTxt.targetPath",
-        "filename": "docWriteTxt.filename",
-        "a": "docWriteTxt.a",
-        "w": "docWriteTxt.w",
-        "writeType": "docWriteTxt.writeType",
-        "valueParam": "docWriteTxt.valueParam",
-        "menuTitle": "docWriteTxt.menuTitle",
-        "select_directory": "docWriteTxt.select_directory",
-        "menuNote": "docWriteTxt.menuNote"
+    "newFileName":"History file alias",
+    "isSaveHistory":"Save to historical task",
+    "outParam":"The full path name of the output file is a variable.",
+    "targetPath":"Saved path",
+    "filename":"File name",
+    "a":"Add",
+    "w":"Overlay",
+    "writeType":"Write type",
+    "valueParam":"Variables to save",
+    "menuTitle":"Write to TXT file",
+    "select_directory":"Choose a path.",
+    "menuNote":"Write variables to a TXT file and name the file, and output a new variable from the full path of the file and name it"
     },
     "docWriteWord": {
-        "outParam": "docWriteWord.outParam",
-        "isSaveHistory": "docWriteWord.isSaveHistory",
-        "newFileName": "docWriteWord.newFileName",
-        "targetPath": "docWriteWord.targetPath",
-        "filename": "docWriteWord.filename",
-        "valueParam": "docWriteWord.valueParam",
-        "menuTitle": "docWriteWord.menuTitle",
-        "select_directory": "docWriteWord.select_directory",
-        "menuNote": "docWriteWord.menuNote"
+    "outParam":"The full path name of the output file is a variable.",
+    "isSaveHistory":"Save to historical task",
+    "newFileName":"History file alias",
+    "targetPath":"Saved path",
+    "filename":"File name",
+    "valueParam":"Variables to save",
+    "menuTitle":"Write to word file",
+    "select_directory":"Choose a path.",
+    "menuNote":"Write variables to a word file and name the file, and output a new variable from the full path of the file and name it"
     },
     "closeExecuteWindow": {
-        "text-box": "closeExecuteWindow.text-box",
-        "menuTitle": "closeExecuteWindow.menuTitle",
-        "menuNote": "closeExecuteWindow.menuNote"
+    "text-box":"Hide the execution interface",
+    "menuTitle":"Hide the execution interface",
+    "menuNote":"Hide debugger interface"
     },
     "CMDcommand": {
-        "outParam": "CMDcommand.outParam",
-        "command": "CMDcommand.command",
-        "menuTitle": "CMDcommand.menuTitle",
-        "menuNote": "CMDcommand.menuNote"
+    "outParam":"Set CMD output as variable",
+    "command":"CMD input command",
+    "menuTitle":"CMD command line",
+    "menuNote":"Fill in the command line into the CMD, output a new variable and name it"
     },
     "openApplication": {
-        "openPath": "openApplication.openPath",
-        "menuTitle": "openApplication.menuTitle",
-        "selectFile": "openApplication.selectFile",
-        "menuNote": "openApplication.menuNote"
+    "openPath":"Select app",
+    "menuTitle":"Open app",
+    "selectFile":"Select app",
+    "menuNote":"Open the specified app"
     },
     "waitTime": {
-        "sleep": "waitTime.sleep",
-        "menuTitle": "waitTime.menuTitle",
-        "menuNote": "waitTime.menuNote"
+    "sleep":"Please enter the waiting time (MS)",
+    "menuTitle":"Waiting time",
+    "menuNote":"Set the wait between the previous node and the next node run"
     },
     "confirmSend": {
-        "isTxt": "confirmSend.isTxt",
-        "content": "confirmSend.content",
-        "openPath": "confirmSend.openPath",
-        "subject": "confirmSend.subject",
-        "receive_c": "confirmSend.receive_c",
-        "receive": "confirmSend.receive",
-        "port": "confirmSend.port",
-        "server": "confirmSend.server",
-        "pwd": "confirmSend.pwd",
-        "account": "confirmSend.account",
-        "menuTitle": "confirmSend.menuTitle",
-        "selectFile": "confirmSend.selectFile",
-        "menuNote": "confirmSend.menuNote"
+    "isTxt":"Plain text",
+    "content":"Message content",
+    "openPath":"Select attachment",
+    "subject":"Subject",
+    "receive_c":"CC",
+    "receive":"To",
+    "port":"Port",
+    "server":"SMTP server",
+    "pwd":"Password / authorization code",
+    "account":"Log in to your account.",
+    "menuTitle":"Send mail.",
+    "selectFile":"Select file",
+    "menuNote":"Input the account name / password and other information to log in to the email address, and send / CC the designated email to the designated recipient according to the content filled in"
     },
     "closeApplication": {
-        "closePath": "closeApplication.closePath",
-        "menuTitle": "closeApplication.menuTitle",
-        "menuNote": "closeApplication.menuNote"
+    "closePath":"Select app",
+    "menuTitle":"Close app",
+    "menuNote":"Close the specified app"
     },
     "getIp": {
-        "outParam": "getIp.outParam",
-        "menuTitle": "getIp.menuTitle",
-        "menuNote": "getIp.menuNote"
+    "outParam":"Output native IP as variable",
+    "menuTitle":"Get local IP",
+    "menuNote":"Output a new variable for native IP and name it"
     },
     "getScriptInfo": {
-        "outParam": "getScriptInfo.outParam",
-        "menuTitle": "getScriptInfo.menuTitle",
-        "menuNote": "getScriptInfo.menuNote"
+    "outParam":"Output variable naming",
+    "menuTitle":"Get script information",
+    "menuNote":"Get script information"
     },
     "getSystemParameter": {
-        "outParam": "getSystemParameter.outParam",
-        "setParam": "getSystemParameter.setParam",
-        "getScreenSize": "getSystemParameter.getScreenSize",
-        "getCurrentPath": "getSystemParameter.getCurrentPath",
-        "getCurrentLocale": "getSystemParameter.getCurrentLocale",
-        "getSysTime": "getSystemParameter.getSysTime",
-        "getClipboard": "getSystemParameter.getClipboard",
-        "getOSVersion": "getSystemParameter.getOSVersion",
-        "getOSArchitecture": "getSystemParameter.getOSArchitecture",
-        "getRobotVersion": "getSystemParameter.getRobotVersion",
-        "systemType": "getSystemParameter.systemType",
-        "menuTitle": "getSystemParameter.menuTitle",
-        "menuNote": "getSystemParameter.menuNote"
+    "outParam":"Output variable naming",
+    "setParam":"Pass in variable (current time 'yyyy-mm-dd HH",
+    "getScreenSize":"Current resolution",
+    "getCurrentPath":"Application address",
+    "getCurrentLocale":"Current application language",
+    "getSysTime":"Current time",
+    "getClipboard":"Clipboard content.",
+    "getOSVersion":"Operating system version",
+    "getOSArchitecture":"System architecture",
+    "getRobotVersion":"Application version number",
+    "systemType":"Select system variables",
+    "menuTitle":"Get system variables",
+    "menuNote":"Get information about the system, output a new variable and name it (pass in variable?) "
     },
     "confirmReceive": {
-        "outParam": "confirmReceive.outParam",
-        "port": "confirmReceive.port",
-        "host": "confirmReceive.host",
-        "password": "confirmReceive.password",
-        "account": "confirmReceive.account",
-        "menuTitle": "confirmReceive.menuTitle",
-        "menuNote": "confirmReceive.menuNote"
+    "outParam":"New mailing list output variable naming",
+    "port":"Port",
+    "host":"IMAP server",
+    "password":"Password / authorization code",
+    "account":"Log in to your account.",
+    "menuTitle":"Receive new mail",
+    "menuNote":"Input the account name / password and other information to log in to the mailbox, and output a new variable for the new mailing list in the mailbox and name it"
     },
     "openExecuteWindow": {
-        "text-box": "openExecuteWindow.text-box",
-        "menuTitle": "openExecuteWindow.menuTitle",
-        "menuNote": "openExecuteWindow.menuNote"
+    "text-box":"Display execution interface",
+    "menuTitle":"Display execution interface",
+    "menuNote":"Show hidden debugger interface"
     },
     "capScreenPart": {
-        "outParam": "capScreenPart.outParam",
-        "isSaveHistory": "capScreenPart.isSaveHistory",
-        "save-history": "capScreenPart.save-history",
-        "fileName": "capScreenPart.fileName",
-        "rectangle_end": "capScreenPart.rectangle_end",
-        "rectangle_start": "capScreenPart.rectangle_start",
-        "menuTitle": "capScreenPart.menuTitle",
-        "menuNote": "capScreenPart.menuNote"
+    "outParam":"The full path name of the output file is a variable.",
+    "isSaveHistory":"Save to historical task",
+    "save-history":"History file alias",
+    "fileName":"Screen capture file name",
+    "rectangle_end":"Screen capture range, bottom right",
+    "rectangle_start":"Screen capture range, top left",
+    "menuTitle":"Screen capture of specified range",
+    "menuNote":"Enter the starting and ending coordinates to determine the screen capture range, name the screen capture file and output a new variable for the file path and name it"
     },
     "triggerBatVbs": {
-        "button": "triggerBatVbs.button",
-        "openfilePath": "triggerBatVbs.openfilePath",
-        "menuTitle": "triggerBatVbs.menuTitle",
-        "menuNote": "triggerBatVbs.menuNote"
+    "button":"Select app",
+    "openfilePath":"Select app",
+    "menuTitle":"Execute bat / VBS. ",
+    "menuNote":"Execute bat / VBS"
     },
     "triggerJava": {
-        "file": "triggerJava.file",
-        "button": "triggerJava.button",
-        "menuTitle": "triggerJava.menuTitle",
-        "selectFile": "triggerJava.selectFile",
-        "menuNote": "triggerJava.menuNote"
+    "file":"Select app",
+    "button":"triggerJava.button",
+    "menuTitle":"Executing Java",
+    "selectFile":"Select file",
+    "menuNote":"Execute target java file"
     },
     "ocr_TencentCloud_getString": {
-        "outParam": "ocr_TencentCloud_getString.outParam",
-        "file": "ocr_TencentCloud_getString.file",
-        "menuTitle": "ocr_TencentCloud_getString.menuTitle",
-        "select_image": "ocr_TencentCloud_getString.select_image",
-        "menuNote": "ocr_TencentCloud_getString.menuNote"
+    "outParam":"Output variable naming",
+    "file":"Select the image you want to identify.",
+    "menuTitle":"Tencent cloud character recognition",
+    "select_image":"Select picture",
+    "menuNote":"Use Tencent cloud API to identify the text in the target image"
     },
     "ocr_TencentCloud_getPosition": {
-        "outParam": "ocr_TencentCloud_getPosition.outParam",
-        "matchString": "ocr_TencentCloud_getPosition.matchString",
-        "file": "ocr_TencentCloud_getPosition.file",
-        "menuTitle": "ocr_TencentCloud_getPosition.menuTitle",
-        "select_image": "ocr_TencentCloud_getPosition.select_image",
-        "menuNote": "ocr_TencentCloud_getPosition.menuNote"
+    "outParam":"Output variable naming",
+    "matchString":"Text to match",
+    "file":"Select the image you want to identify.",
+    "menuTitle":"Tencent cloud text location recognition",
+    "select_image":"Select picture",
+    "menuNote":"Use Tencent cloud API to identify the position of target text in the image"
     },
     "dbSelect": {
-        "outParam": "dbSelect.outParam",
-        "dbSql": "dbSelect.dbSql",
-        "dbRename": "dbSelect.dbRename",
-        "menuTitle": "dbSelect.menuTitle",
-        "menuNote": "dbSelect.menuNote"
+    "outParam":"Output variable naming",
+    "dbSql":"Query statements",
+    "dbRename":"Please select database configuration",
+    "menuTitle":"Query database",
+    "menuNote":"Select the configuration information to connect to the target database, enter the query statement to query the database, output a new variable and name it"
     },
     "dbConfig": {
-        "outParam": "dbConfig.outParam",
-        "test_db_config": "dbConfig.test_db_config",
-        "schema": "dbConfig.schema",
-        "password": "dbConfig.password",
-        "username": "dbConfig.username",
-        "port": "dbConfig.port",
-        "hostname": "dbConfig.hostname",
-        "oracle": "dbConfig.oracle",
-        "mssql": "dbConfig.mssql",
-        "mysql": "dbConfig.mysql",
-        "dbType": "dbConfig.dbType",
-        "menuTitle": "dbConfig.menuTitle",
-        "menuNote": "dbConfig.menuNote"
+    "outParam":"Name the database configuration.",
+    "test_db_config":"Test links",
+    "schema":"Default database name / Oracle service name",
+    "password":"Password",
+    "username":"User name",
+    "port":"Port (default port",
+    "hostname":"Hostname (host IP)",
+    "oracle":"oracle",
+    "mssql":"mssql",
+    "mysql":"mysql",
+    "dbType":"Select database type",
+    "menuTitle":"Configuration database",
+    "menuNote":"Input the configuration information of a database and output the information as a variable to name it. Call the variable later to connect to the database"
     },
     "dbInsert": {
-        "outParam": "dbInsert.outParam",
-        "dbSql": "dbInsert.dbSql",
-        "dbData": "dbInsert.dbData",
-        "dbRename": "dbInsert.dbRename",
-        "menuTitle": "dbInsert.menuTitle",
-        "menuNote": "dbInsert.menuNote"
+    "outParam":"Output parameter (number of rows affected)",
+    "dbSql":"Pseudo insert statement (number is the position of data in a single data group)",
+    "dbData":"Please select the data source to insert.",
+    "dbRename":"Please select database configuration",
+    "menuTitle":"Batch insert database",
+    "menuNote":"Select configuration information to connect to the target database, insert data sources into the database in batches, and output a new variable for the number of rows affected and name it"
     },
     "dbOthers": {
-        "outParam": "dbOthers.outParam",
-        "dbSql": "dbOthers.dbSql",
-        "dbRename": "dbOthers.dbRename",
-        "menuTitle": "dbOthers.menuTitle",
-        "menuNote": "dbOthers.menuNote"
+    "outParam":"Output variable (number of rows affected)",
+    "dbSql":"Add, delete and modify statements",
+    "dbRename":"Please select database configuration",
+    "menuTitle":"Adding, deleting, and modifying databases.",
+    "menuNote":"Select configuration information to connect to the target database, enter add / delete / modify statements to change the database, output a new variable for the number of rows affected and name it"
     },
     "fs_rename": {
-        "name": "fs_rename.name",
-        "file": "fs_rename.file",
-        "menuTitle": "fs_rename.menuTitle",
-        "selectFile": "fs_rename.selectFile",
-        "menuNote": "fs_rename.menuNote"
+    "name":"New file name (including file format)",
+    "file":"Select the file you want to rename.",
+    "menuTitle":"Rename a file",
+    "selectFile":"Select file",
+    "menuNote":"Rename the specified file"
     },
     "fs_cre_directory": {
-        "name": "fs_cre_directory.name",
-        "directory": "fs_cre_directory.directory",
-        "menuTitle": "fs_cre_directory.menuTitle",
-        "select_directory": "fs_cre_directory.select_directory",
-        "menuNote": "fs_cre_directory.menuNote"
+    "name":"Directory name",
+    "directory":"Select the location to create the directory.",
+    "menuTitle":"Create directory",
+    "select_directory":"Select directory",
+    "menuNote":"Create a new folder in the specified location and name it"
     },
     "fs_cre_file": {
-        "name": "fs_cre_file.name",
-        "directory": "fs_cre_file.directory",
-        "menuTitle": "fs_cre_file.menuTitle",
-        "select_directory": "fs_cre_file.select_directory",
-        "menuNote": "fs_cre_file.menuNote"
+    "name":"File name",
+    "directory":"Select the location to create the file.",
+    "menuTitle":"Create file",
+    "select_directory":"Select directory",
+    "menuNote":"Create a new file in the specified location and name it"
     },
     "fs_copy": {
-        "directory": "fs_copy.directory",
-        "file": "fs_copy.file",
-        "menuTitle": "fs_copy.menuTitle",
-        "selectFile": "fs_copy.selectFile",
-        "select_directory": "fs_copy.select_directory",
-        "menuNote": "fs_copy.menuNote"
+    "directory":"Select the directory to copy to",
+    "file":"Select files to copy",
+    "menuTitle":"Copy file",
+    "selectFile":"Select file",
+    "select_directory":"Select directory",
+    "menuNote":"Copy the specified file to the specified folder"
     },
     "fs_get_all_file": {
-        "outParam": "fs_get_all_file.outParam",
-        "filetype": "fs_get_all_file.filetype",
-        "directory": "fs_get_all_file.directory",
-        "menuTitle": "fs_get_all_file.menuTitle",
-        "select_directory": "fs_get_all_file.select_directory",
-        "menuNote": "fs_get_all_file.menuNote"
+    "outParam":"Name the output variable",
+    "filetype":"Target file type (default to select all)",
+    "directory":"Select the location of the directory.",
+    "menuTitle":"Get all file names in the directory.",
+    "select_directory":"Select directory",
+    "menuNote":"Get the path of all files in the specified folder, output a new variable and name it"
     },
     "unarchiverFile": {
-        "directoryRes": "unarchiverFile.directoryRes",
-        "directory": "unarchiverFile.directory",
-        "menuTitle": "unarchiverFile.menuTitle",
-        "selectFile": "unarchiverFile.selectFile",
-        "select_directory": "unarchiverFile.select_directory",
-        "menuNote": "unarchiverFile.menuNote"
+    "directoryRes":"Select the folder to save.",
+    "directory":"Select the file to decompress.",
+    "menuTitle":"Unzip file",
+    "selectFile":"Select file",
+    "select_directory":"Select directory",
+    "menuNote":"Select the specified file to decompress and save in the specified folder"
     },
     "fs_exists": {
-        "outParam": "fs_exists.outParam",
-        "path": "fs_exists.path",
-        "menuTitle": "fs_exists.menuTitle",
-        "select_directory": "fs_exists.select_directory",
-        "menuNote": "fs_exists.menuNote"
+    "outParam":"Name the result variable",
+    "path":"Select the path to judge.",
+    "menuTitle":"Judging the existence of the path",
+    "select_directory":"Choose a path.",
+    "menuNote":"The input file path is used to determine whether the specified path exists at runtime, and output a new variable and name it"
     },
     "fs_delete": {
-        "file": "fs_delete.file",
-        "menuTitle": "fs_delete.menuTitle",
-        "selectFile": "fs_delete.selectFile",
-        "menuNote": "fs_delete.menuNote"
+    "file":"Select files to delete",
+    "menuTitle":"Delete file",
+    "selectFile":"Select file",
+    "menuNote":"Delete specified file"
     },
     "archiverFile": {
-        "outParam": "archiverFile.outParam",
-        "directoryRes": "archiverFile.directoryRes",
-        "name": "archiverFile.name",
-        "directory": "archiverFile.directory",
-        "menuTitle": "archiverFile.menuTitle",
-        "select_directory": "archiverFile.select_directory",
-        "selectFile": "archiverFile.selectFile",
-        "save_directory": "archiverFile.save_directory",
-        "menuNote": "archiverFile.menuNote"
+    "outParam":"Output compressed file full path name as parameter",
+    "directoryRes":"Select the folder to save.",
+    "name":"Compressed file name",
+    "directory":"Select files / folders to compress",
+    "menuTitle":"Compressed files",
+    "select_directory":"Select Folder",
+    "selectFile":"Select file",
+    "save_directory":"Select Folder",
+    "menuNote":"Select the specified file to compress and save in the specified folder, rename the file, and output a new variable from the path and name it"
     },
     "fs_move": {
-        "directory": "fs_move.directory",
-        "file": "fs_move.file",
-        "menuTitle": "fs_move.menuTitle",
-        "selectFile": "fs_move.selectFile",
-        "select_directory": "fs_move.select_directory",
-        "menuNote": "fs_move.menuNote"
+    "directory":"Select directory to move to",
+    "file":"Select files to move",
+    "menuTitle":"Moving files",
+    "selectFile":"Select file",
+    "select_directory":"Select directory",
+    "menuNote":"Move the specified file to the specified folder"
     },
     "triggerScript": {
-        "scriptId": "triggerScript.scriptId",
-        "menuTitle": "triggerScript.menuTitle",
-        "menuNote": "triggerScript.menuNote"
+    "scriptId":"Select parameters (only valid for actuators)",
+    "menuTitle":"Trigger script",
+    "menuNote":"Trigger script"
     },
     "openMstscReport": {
-        "text-box": "openMstscReport.text-box",
-        "menuTitle": "openMstscReport.menuTitle",
-        "menuNote": "openMstscReport.menuNote"
+    "text-box":"The process report will open.",
+    "menuTitle":"Open process report",
+    "menuNote":"Open process report"
     },
     "returnParameterToCenter": {
-        "parameter": "returnParameterToCenter.parameter",
-        "menuTitle": "returnParameterToCenter.menuTitle",
-        "menuNote": "returnParameterToCenter.menuNote"
+    "parameter":"Select parameters (only valid for actuators)",
+    "menuTitle":"Return parameters to central control",
+    "menuNote":"Return specified parameters to central control system"
     },
     "openTips": {
-        "parameter": "openTips.parameter",
-        "menuTitle": "openTips.menuTitle",
-        "menuNote": "openTips.menuNote"
+    "parameter":"Information to display",
+    "menuTitle":"Pop up prompt box",
+    "menuNote":"Pop up the prompt box of the specified content"
     },
     "getCSElement": {
-        "outParam": "getCSElement.outParam",
-        "height": "getCSElement.height",
-        "width": "getCSElement.width",
-        "offRightDownPos": "getCSElement.offRightDownPos",
-        "offRightTopPos": "getCSElement.offRightTopPos",
-        "offLeftDownPos": "getCSElement.offLeftDownPos",
-        "offLeftTopPos": "getCSElement.offLeftTopPos",
-        "offCenterPos": "getCSElement.offCenterPos",
-        "pos": "getCSElement.pos",
-        "elType": "getCSElement.elType",
-        "elValue": "getCSElement.elValue",
-        "elName": "getCSElement.elName",
-        "csPath": "getCSElement.csPath",
-        "winTitle": "getCSElement.winTitle",
-        "processName": "getCSElement.processName",
-        "CScaptureNew": {
-            "name": "getCSElement.CScaptureNew.name",
-            "note": "getCSElement.CScaptureNew.note"
-        },
-        "menuTitle": "getCSElement.menuTitle",
-        "menuNote": "getCSElement.menuNote"
+    "outParam":"Output as variable",
+    "height":"Height",
+    "width":"Element width",
+    "offRightDownPos":"Element relative lower right coordinate (x, y)",
+    "offRightTopPos":"Element relative upper right coordinate (x, y)",
+    "offLeftDownPos":"Element relative lower left coordinate (x, y)",
+    "offLeftTopPos":"Element relative upper left coordinates (x, y)",
+    "offCenterPos":"Relative center coordinates of elements (x, y)",
+    "pos":"Element coordinates (x, y)",
+    "elType":"Element type",
+    "elValue":"Element values",
+    "elName":"Element name",
+    "csPath":"Element subscript",
+    "winTitle":"Element form name",
+    "processName":"Element process name",
+    "CScaptureNew": {
+    "name":"Capture desktop elements",
+    "note":"Capture desktop elements and generate a CS class for use in Microsoft applications"
+    },
+    "menuTitle":"Capture desktop elements",
+    "menuNote":"Capture all kinds of information about the target desktop elements and save them as variables"
     },
     "similarSelector": {
-        "outParam": "similarSelector.outParam",
-        "selectors": "similarSelector.selectors",
-        "target": "similarSelector.target",
-        "menuTitle": "similarSelector.menuTitle",
-        "menuNote": "similarSelector.menuNote"
+    "outParam":"Output results",
+    "selectors":"Drop down options text list",
+    "target":"Target text",
+    "menuTitle":"Returns the most similar drop-down item.",
+    "menuNote":"Put back the most similar value and save it as a variable by entering the drop-down list data and corresponding content to be selected"
     },
     "getCSParentElementByName": {
-        "outParam": "getCSParentElementByName.outParam",
-        "elName": {
-            "name": "getCSParentElementByName.elName.name",
-            "note": "getCSParentElementByName.elName.note"
-        },
-        "eventType": {
-            "name": "getCSParentElementByName.eventType.name",
-            "note": "getCSParentElementByName.eventType.note"
-        },
-        "Element": "getCSParentElementByName.Element",
-        "menuTitle": "getCSParentElementByName.menuTitle",
-        "menuNote": "getCSParentElementByName.menuNote"
+    "outParam":"Output variable naming",
+    "elName": {
+    "name":"Element name",
+    "note":"Name you need to retrieve"
+    },
+    "eventType": {
+    "name":"Search type",
+    "note":"Search type"
+    },
+    "Element":"Element object (cspath)",
+    "menuTitle":"Get parent element by element name",
+    "menuNote":"Enter the desktop element path to get the parent element of an element by element name or value at runtime and save it as a variable"
     },
     "getCSBrotherElementByName": {
-        "outParam": "getCSBrotherElementByName.outParam",
-        "index": {
-            "name": "getCSBrotherElementByName.index.name",
-            "note": "getCSBrotherElementByName.index.note"
-        },
-        "elName": {
-            "name": "getCSBrotherElementByName.elName.name",
-            "note": "getCSBrotherElementByName.elName.note"
-        },
-        "isSameType": "getCSBrotherElementByName.isSameType",
-        "eventType": {
-            "name": "getCSBrotherElementByName.eventType.name",
-            "note": "getCSBrotherElementByName.eventType.note"
-        },
-        "Element": "getCSBrotherElementByName.Element",
-        "menuTitle": "getCSBrotherElementByName.menuTitle",
-        "menuNote": "getCSBrotherElementByName.menuNote"
+    "outParam":"Output variable naming",
+    "elName": {
+    "name":"Element name",
+    "note":"Name you need to retrieve"
+    },
+    "index": {
+    "name":"index",
+    "note":"It is an array when it is retrieved. Select the first one here, but it is usually not necessary to write"
+    },
+    "isSameType":"Is it the same type",
+    "eventType": {
+    "name":"Search type",
+    "note":"Search type"
+    },
+    "Element":"Element object (cspath)",
+    "menuTitle":"Get sibling elements according to element name",
+    "menuNote":"Enter the desktop element path to get the sibling elements of an element by element name or value at runtime and save as a variable"
     },
     "getCSChildrenElementByName": {
-        "outParam": "getCSChildrenElementByName.outParam",
-        "eventType": {
-            "name": "getCSChildrenElementByName.eventType.name",
-            "note": "getCSChildrenElementByName.eventType.note"
-        },
-        "index": {
-            "name": "getCSChildrenElementByName.index.name",
-            "note": "getCSChildrenElementByName.index.note"
-        },
-        "elName": {
-            "name": "getCSChildrenElementByName.elName.name",
-            "note": "getCSChildrenElementByName.elName.note"
-        },
-        "Element": "getCSChildrenElementByName.Element",
-        "isSameType": "getCSChildrenElementByName.isSameType",
-        "menuTitle": "getCSChildrenElementByName.menuTitle",
-        "menuNote": "getCSChildrenElementByName.menuNote"
+    "outParam":"Output variable naming",
+    "eventType": {
+    "name":"Search type",
+    "note":"Search type"
+    },
+    "index": {
+    "name":"index",
+    "note":"It is an array when it is retrieved. Select the first one here, but it is usually not necessary to write"
+    },
+    "elName": {
+    "name":"Element name",
+    "note":"Name you need to retrieve"
+    },
+    "Element":"Element object (cspath)",
+    "isSameType":"Is it the same type",
+    "menuTitle":"Get child elements by element name",
+    "menuNote":"Enter the desktop element path to get the child elements of an element by element name or value at runtime and save as a variable"
     },
     "getCSParentElement": {
-        "outParam": "getCSParentElement.outParam",
-        "Element": "getCSParentElement.Element",
-        "menuTitle": "getCSParentElement.menuTitle",
-        "menuNote": "getCSParentElement.menuNote"
+    "outParam":"Output variable naming",
+    "Element":"Element object (cspath)",
+    "menuTitle":"Get parent element",
+    "menuNote":"Enter the desktop element path to get the parent element of the element by selecting a type and save it as a variable"
     },
     "getCSBrotherElement": {
-        "outParam": "getCSBrotherElement.outParam",
-        "last": "getCSBrotherElement.last",
-        "next": "getCSBrotherElement.next",
-        "prev": "getCSBrotherElement.prev",
-        "first": "getCSBrotherElement.first",
-        "eventType": {
-            "name": "getCSBrotherElement.eventType.name",
-            "note": "getCSBrotherElement.eventType.note"
-        },
-        "Element": "getCSBrotherElement.Element",
-        "menuTitle": "getCSBrotherElement.menuTitle",
-        "menuNote": "getCSBrotherElement.menuNote"
+    "outParam":"Output variable naming",
+    "last":"last",
+    "next":"next",
+    "prev":"prev",
+    "first":"first",
+    "eventType": {
+    "name":"Select type",
+    "note":"The selection type in the array after getting the same level element through CS class"
+    },
+    "Element":"Element object (cspath)",
+    "menuTitle":"Get sibling elements",
+    "menuNote":"Enter the desktop element path to get the sibling elements of the element at runtime and save it as a variable"
     },
     "getElementItems": {
-        "outParam": "getElementItems.outParam",
-        "Element": "getElementItems.Element",
-        "menuTitle": "getElementItems.menuTitle",
-        "menuNote": "getElementItems.menuNote"
+    "outParam":"Output variable naming",
+    "Element":"Element object (cspath)",
+    "menuTitle":"Get dropdown list data",
+    "menuNote":"Input the path of the drop-down box object to get the contents of the drop-down box at runtime and save it as a variable"
     },
     "getCSChildrenElement": {
-        "outParam": "getCSChildrenElement.outParam",
-        "eventType": {
-            "name": "getCSChildrenElement.eventType.name",
-            "note": "getCSChildrenElement.eventType.note"
-        },
-        "Element": "getCSChildrenElement.Element",
-        "menuTitle": "getCSChildrenElement.menuTitle",
-        "menuNote": "getCSChildrenElement.menuNote"
+    "outParam":"Output variable naming",
+    "eventType": {
+    "name":"Select type",
+    "note":"The selection type in the array after getting the same level element through CS class"
+    },
+    "Element":"Element object (cspath)",
+    "menuTitle":"Get child elements",
+    "menuNote":"Enter the desktop element path to get the child elements of the element by selecting the type and save them as variables"
     },
     "CSElemetClick": {
-        "mouseClickType": {
-            "name": "CSElemetClick.mouseClickType.name",
-            "note": "CSElemetClick.mouseClickType.note"
-        },
-        "noClick": "CSElemetClick.noClick",
-        "leftDbclick": "CSElemetClick.leftDbclick",
-        "rightClick": "CSElemetClick.rightClick",
-        "midClick": "CSElemetClick.midClick",
-        "leftClick": "CSElemetClick.leftClick",
-        "Element": "CSElemetClick.Element",
-        "menuTitle": "CSElemetClick.menuTitle",
-        "menuNote": "CSElemetClick.menuNote"
+    "mouseClickType": {
+    "name":"Select type",
+    "note":"Mouse action options that can be repositioned to an element via the CS class"
+    },
+    "noClick":"No click",
+    "leftDbclick":"Left double click",
+    "rightClick":"Right click",
+    "midClick":"Middle click",
+    "leftClick":"Left click",
+    "Element":"Element object (cspath)",
+    "menuTitle":"Desktop element click",
+    "menuNote":"Enter the path of the desktop element to use to click the desktop element at runtime"
     },
     "CSElemetInput": {
-        "input": "CSElemetInput.input",
-        "inputText": {
-            "name": "CSElemetInput.inputText.name",
-            "note": "CSElemetInput.inputText.note"
-        },
-        "ctrlC": "CSElemetInput.ctrlC",
-        "keybord": "CSElemetInput.keybord",
-        "inputType": {
-            "name": "CSElemetInput.inputType.name",
-            "note": "CSElemetInput.inputType.note"
-        },
-        "Element": "CSElemetInput.Element",
-        "inputParam": "CSElemetInput.inputParam",
-        "menuTitle": "CSElemetInput.menuTitle",
-        "menuNote": "CSElemetInput.menuNote"
+    "input":"Direct input",
+    "inputText": {
+    "name":"Fill in the content (what needs to be filled in)",
+    "note":"Content to be entered into CS element"
+    },
+    "ctrlC":"Copy and paste",
+    "keybord":"Keyboard input",
+    "inputType": {
+    "name":"Input type",
+    "note":"You can reposition the option of element input operation through CS class, where keyboard input needs to be equal to Keydown and Keyup, and copy operation needs to focus"
+    },
+    "Element":"Element object (cspath)",
+    "inputParam":"Fill in the content (what needs to be filled in)",
+    "menuTitle":"Desktop element input",
+    "menuNote":"Enter the desktop element path to fill in the element at runtime"
     },
     "ftpDownLoad": {
-        "localPath": "ftpDownLoad.localPath",
-        "fileNmae": "ftpDownLoad.fileNmae",
-        "remotePath": "ftpDownLoad.remotePath",
-        "pass": "ftpDownLoad.pass",
-        "user": "ftpDownLoad.user",
-        "port": "ftpDownLoad.port",
-        "host": "ftpDownLoad.host",
-        "select_directory": "ftpDownLoad.select_directory",
-        "menuTitle": "ftpDownLoad.menuTitle",
-        "menuNote": "ftpDownLoad.menuNote"
+    "localPath":"Download path",
+    "fileNmae":"File name to download",
+    "remotePath":"Remote path",
+    "pass":"pass",
+    "user":"user",
+    "port":"Port",
+    "host":"Host",
+    "select_directory":"Select directory",
+    "menuTitle":"FTP download",
+    "menuNote":"Download a file from the remote host to your own computer through the specified FTP"
     },
     "httpApi": {
-        "outParam": "httpApi.outParam",
-        "text": "httpApi.text",
-        "json": "httpApi.json",
-        "paramType": "httpApi.paramType",
-        "httpparameters": "httpApi.httpparameters",
-        "ContentType": "httpApi.ContentType",
-        "post": "httpApi.post",
-        "get": "httpApi.get",
-        "httpType": "httpApi.httpType",
-        "menuTitle": "httpApi.menuTitle",
-        "menuNote": "httpApi.menuNote"
+    "outParam":"Output variable naming",
+    "text":"text",
+    "json":"json",
+    "paramType":"Select the type to get the variable.",
+    "httpparameters":"Variables",
+    "ContentType":"Select request header type",
+    "post":"post",
+    "get":"get",
+    "httpType":"Request type",
+    "menuTitle":"HTTP interface",
+    "menuNote":"Get data from the specified HTTP interface, output a new variable and name it"
     },
     "http_downloadfile": {
-        "outParam": "http_downloadfile.outParam",
-        "url_download": "http_downloadfile.url_download",
-        "button": "http_downloadfile.button",
-        "directory": "http_downloadfile.directory",
-        "menuTitle": "http_downloadfile.menuTitle",
-        "menuNote": "http_downloadfile.menuNote"
+    "outParam":"Output absolute path as variable",
+    "url_download":"Download address",
+    "button":"Select directory",
+    "directory":"Select the directory to save the file in.",
+    "menuTitle":"HTTP download file interface",
+    "menuNote":"Download files through HTTP interface"
     },
     "http_uploadfile": {
-        "url_upload": "http_uploadfile.url_upload",
-        "file": "http_uploadfile.file",
-        "menuTitle": "http_uploadfile.menuTitle",
-        "select_directory": "http_uploadfile.select_directory",
-        "menuNote": "http_uploadfile.menuNote"
+    "url_upload":"Upload address",
+    "file":"Select the file to upload",
+    "menuTitle":"HTTP upload file interface",
+    "select_directory":"Select directory",
+    "menuNote":"Upload file to specified HTTP interface"
     },
     "socketApi": {
-        "outParam": "socketApi.outParam",
-        "text": "socketApi.text",
-        "json": "socketApi.json",
-        "data_type": "socketApi.data_type",
-        "signal": "socketApi.signal",
-        "port": "socketApi.port",
-        "host": "socketApi.host",
-        "menuTitle": "socketApi.menuTitle",
-        "menuNote": "socketApi.menuNote"
+    "outParam":"Output variable naming",
+    "text":"text",
+    "json":"json",
+    "data_type":"Select the type to get the variable.",
+    "signal":"Start signal",
+    "port":"Port",
+    "host":"Host",
+    "menuTitle":"Socket interface",
+    "menuNote":"Get data from the specified socket interface, output a new variable and name it"
     },
     "websocketApi": {
-        "outParam": "websocketApi.outParam",
-        "text": "websocketApi.text",
-        "json": "websocketApi.json",
-        "data_type": "websocketApi.data_type",
-        "signal": "websocketApi.signal",
-        "port": "websocketApi.port",
-        "host": "websocketApi.host",
-        "menuTitle": "websocketApi.menuTitle",
-        "menuNote": "websocketApi.menuNote"
+    "outParam":"Output variable naming",
+    "text":"text",
+    "json":"json",
+    "data_type":"Select the type to get the variable.",
+    "signal":"Receive event signals.",
+    "port":"Port",
+    "host":"Host",
+    "menuTitle":"Websocket interface",
+    "menuNote":"Get data from the specified websocket interface, output a new variable and name it"
     },
     "newHttpApi": {
-        "outParam": "newHttpApi.outParam",
-        "resHeaders": "newHttpApi.resHeaders",
-        "response": "newHttpApi.response",
-        "returnType": "newHttpApi.returnType",
-        "paramsKey1": "newHttpApi.paramsKey1",
-        "headerKey1": "newHttpApi.headerKey1",
-        "path": "newHttpApi.path",
-        "port": "newHttpApi.port",
-        "host": "newHttpApi.host",
-        "post": "newHttpApi.post",
-        "get": "newHttpApi.get",
-        "method": "newHttpApi.method",
-        "menuTitle": "newHttpApi.menuTitle",
-        "menuNote": "newHttpApi.menuNote"
+    "outParam":"Output variable naming",
+    "resHeaders":"Response Headers",
+    "response":"Response",
+    "returnType":"Return result type",
+    "paramsKey1":"Request Parameters",
+    "headerKey1":"Headers",
+    "path":"Path",
+    "port":"Port",
+    "host":"Host",
+    "post":"POST",
+    "get":"GET",
+    "method":"HTTP method",
+    "menuTitle":"HTTP interface (New)",
+    "menuNote":"New interface"
     },
     "ftpUpload": {
-        "localPath": "ftpUpload.localPath",
-        "fileNmae": "ftpUpload.fileNmae",
-        "remotePath": "ftpUpload.remotePath",
-        "pass": "ftpUpload.pass",
-        "user": "ftpUpload.user",
-        "port": "ftpUpload.port",
-        "host": "ftpUpload.host",
-        "menuTitle": "ftpUpload.menuTitle",
-        "select_directory": "ftpUpload.select_directory",
-        "menuNote": "ftpUpload.menuNote"
+    "localPath":"Upload path",
+    "fileNmae":"Remote file name",
+    "remotePath":"Remote path",
+    "pass":"pass",
+    "user":"user",
+    "port":"Port",
+    "host":"Host",
+    "menuTitle":"FTP upload",
+    "select_directory":"Choose a path.",
+    "menuNote":"Upload a file on your computer to the remote host through the specified FTP"
     },
     "telnetClose": {
-        "telnetClient": "telnetClose.telnetClient",
-        "menuTitle": "telnetClose.menuTitle",
-        "menuNote": "telnetClose.menuNote"
+    "telnetClient":"Close telnet client",
+    "menuTitle":"Telnet off",
+    "menuNote":"Select a telnet connection information to close the connection"
     },
     "telnetWrite": {
-        "outParam": "telnetWrite.outParam",
-        "cmdStr": "telnetWrite.cmdStr",
-        "telnetClient": "telnetWrite.telnetClient",
-        "menuTitle": "telnetWrite.menuTitle",
-        "menuNote": "telnetWrite.menuNote"
+    "outParam":"Output variable naming",
+    "cmdStr":"Telnet command",
+    "telnetClient":"Select telnet client",
+    "menuTitle":"Telnet command",
+    "menuNote":"Select a telnet connection information to connect to a server, enter the lelnet command into the server, and output a new variable with the obtained information and name it"
     },
     "telnetConnect": {
-        "outParam": "telnetConnect.outParam",
-        "password": "telnetConnect.password",
-        "username": "telnetConnect.username",
-        "port": "telnetConnect.port",
-        "host": "telnetConnect.host",
-        "menuTitle": "telnetConnect.menuTitle",
-        "menuNote": "telnetConnect.menuNote"
+    "outParam":"Output variable naming",
+    "password":"password",
+    "username":"username",
+    "port":"Port",
+    "host":"Host",
+    "menuTitle":"Telnet connection",
+    "menuNote":"Input the telnet connection information, output the information as a variable, name it, and then call the variable to connect to the server"
     },
     "continue": {
-        "continueCondition": "continue.continueCondition",
-        "gt": "continue.gt",
-        "egt": "continue.egt",
-        "eq": "continue.eq",
-        "neq": "continue.neq",
-        "lt": "continue.lt",
-        "elt": "continue.elt",
-        "op": "continue.op",
-        "include": "continue.include",
-        "notInclude": "continue.notInclude",
-        "isNull": "continue.isNull",
-        "continueValue": "continue.continueValue",
-        "menuTitle": "continue.menuTitle",
-        "menuNote": "continue.menuNote"
+    "continueCondition":"Parameter 2",
+    "gt":"Greater than",
+    "egt":"Greater than or equal to",
+    "eq":"Equal to",
+    "neq":"Not equal to",
+    "lt":"Less than",
+    "elt":"Less than or equal to",
+    "op":"Conditions.",
+    "include":"Contains",
+    "notInclude":"Does not contain",
+    "isNull":"Is it empty",
+    "continueValue":"Parameter 1",
+    "menuTitle":"Continue the cycle.",
+    "menuNote":"Judge by condition, continue current loop when condition is satisfied"
+    },
+    "foreach": {
+        "rename_i":"Naming of unit element subscripts",
+        "rename":"Naming of unit elements",
+        "objectList":"Please select iteration element",
+        "menuTitle":"List loop",
+        "menuNote":"Loop several times by the number of elements"
+        },
+    "concurrence":{
+        "menuTitle": "Concurrent processing"
     },
     "for": {
-        "rename_i": "for.rename_i",
-        "rename": "for.rename",
-        "objectList": "for.objectList",
-        "menuTitle": "for.menuTitle",
-        "menuNote": "for.menuNote"
+    "rename_i":"Naming of unit element subscripts",
+    "rename":"Naming of unit elements",
+    "objectList":"Please select iteration element",
+    "menuTitle":"Iteration loop.",
+    "menuNote":"Loop several times by the number of elements"
     },
     "hashfor": {
-        "outParam": "hashfor.outParam",
-        "circulateCount": "hashfor.circulateCount",
-        "menuTitle": "hashfor.menuTitle",
-        "menuNote": "hashfor.menuNote"
+    "outParam":"Naming of unit elements",
+    "circulateCount":"Number of cycles.",
+    "menuTitle":"List traversal",
+    "menuNote":"Loop several times as many times as you specify"
     },
     "if": {
-        "rid": "if.rid",
-        "op": "if.op",
-        "gt": "if.gt",
-        "egt": "if.egt",
-        "eq": "if.eq",
-        "neq": "if.neq",
-        "lt": "if.lt",
-        "elt": "if.elt",
-        "lid": "if.lid",
-        "include": "continue.include",
-        "notInclude": "continue.notInclude",
-        "isNull": "continue.isNull",
-        "menuTitle": "if.menuTitle",
-        "menuNote": "if.menuNote"
-    },
-    "goto": {
-        "rid": "goto.rid",
-        "op": "goto.op",
-        "gt": "goto.gt",
-        "egt": "goto.egt",
-        "eq": "goto.eq",
-        "neq": "goto.neq",
-        "lt": "goto.lt",
-        "elt": "goto.elt",
-        "lid": "goto.lid",
-        "include": "continue.include",
-        "notInclude": "continue.notInclude",
-        "isNull": "continue.isNull",
-        "gotoFlow":"goto.gotoFlow"
+    "rid":"Parameter 2",
+    "op":"Conditions.",
+    "gt":"Greater than",
+    "egt":"Greater than or equal to",
+    "eq":"Equal to",
+    "neq":"Not equal to",
+    "lt":"Less than",
+    "elt":"Less than or equal to",
+    "include":"Contains",
+    "notInclude":"Does not contain",
+    "isNull":"Is it empty",
+    "lid":"Parameter 1",
+    "menuTitle":"Conditional judgment",
+    "menuNote":"Judging according to the conditions, one process will be executed when the conditions are satisfied, and another process will be executed if the conditions are not satisfied"
     },
     "break": {
-        "breakCondition": "break.breakCondition",
-        "op": "break.op",
-        "gt": "break.gt",
-        "egt": "break.egt",
-        "eq": "break.eq",
-        "neq": "break.neq",
-        "lt": "break.lt",
-        "elt": "break.elt",
-        "include": "continue.include",
-        "notInclude": "continue.notInclude",
-        "isNull": "continue.isNull",
-        "breakValue": "break.breakValue",
-        "menuTitle": "break.menuTitle",
-        "menuNote": "break.menuNote"
+    "breakCondition":"Parameter 2",
+    "op":"Conditions.",
+    "gt":"Greater than",
+    "egt":"Greater than or equal to",
+    "eq":"Equal to",
+    "neq":"Not equal to",
+    "lt":"Less than",
+    "elt":"Less than or equal to",
+    "include":"Contains",
+    "notInclude":"Does not contain",
+    "isNull":"Is it empty",
+    "breakValue":"Parameter 1",
+    "menuTitle":"Out of loop.",
+    "menuNote":"According to the conditions, exit the current single cycle and start the next cycle when the conditions are met"
+    },
+    "goto": {
+    "rid":"Parameter 2",
+    "op":"Conditions.",
+    "gt":"Greater than",
+    "egt":"Greater than or equal to",
+    "eq":"Equal to",
+    "neq":"Not equal to",
+    "lt":"Less than",
+    "elt":"Less than or equal to",
+    "include":"Contains",
+    "notInclude":"Does not contain",
+    "isNull":"Is it empty",
+    "lid":"Parameter 1",
+    "gotoFlow":"Directed process"
     },
     "shangdongMenu": {
-        "outParam": "shangdongMenu.outParam",
-        "elName": "shangdongMenu.elName",
-        "eventType": "shangdongMenu.eventType",
-        "name": "shangdongMenu.name",
-        "value": "shangdongMenu.value",
-        "Element": "shangdongMenu.Element",
-        "menuTitle": "shangdongMenu.menuTitle",
-        "menuNote": "shangdongMenu.menuNote"
+    "outParam":"Output variable naming",
+    "elName":"Element name",
+    "eventType":"Search type",
+    "name":"name",
+    "value":"value",
+    "Element":"Element object > (cspath)",
+    "menuTitle":"Menu tree search (Microsoft functions - unified business system)",
+    "menuNote":"Menu tree search (Microsoft functions - unified business system)"
     },
     "dateFormatSpe": {
-        "outParam": "dateFormatSpe.outParam",
-        "paramValue": "dateFormatSpe.paramValue",
-        "menuTitle": "dateFormatSpe.menuTitle",
-        "menuNote": "dateFormatSpe.menuNote"
-    },
-    "ie8_getVCode": {
-        "outParam": "ie8_getVCode.outParam",
-        "capture-IE8": "ie8_getVCode.capture-IE8",
-        "xpath": "ie8_getVCode.xpath",
-        "menuTitle": "ie8_getVCode.menuTitle",
-        "menuNote": "ie8_getVCode.menuNote"
+    "outParam":"Output variable naming",
+    "paramValue":"Variables to be processed",
+    "menuTitle":"Date data format",
+    "menuNote":"Process the specified variable into date format"
     },
     "slidingVerificationCode": {
-        "outParam": "slidingVerificationCode.outParam",
-        "file": "slidingVerificationCode.file",
-        "menuTitle": "slidingVerificationCode.menuTitle",
-        "select_image": "slidingVerificationCode.select_image",
-        "menuNote": "slidingVerificationCode.menuNote"
+    "outParam":"Result output variable naming",
+    "file":"Select the image file to process.",
+    "menuTitle":"Return to the center of the image gap of the sliding captcha",
+    "select_image":"Select picture",
+    "menuNote":"Save the notch image and output a new variable for the notch location coordinates and name it"
     },
     "getVCode": {
-        "outParam": "getVCode.outParam",
-        "capture": "getVCode.capture",
-        "xpath": "getVCode.xpath",
-        "menuTitle": "getVCode.menuTitle",
-        "menuNote": "getVCode.menuNote"
+    "outParam":"Output variable naming",
+    "capture":"Grab.",
+    "xpath":"Element path (XPath)",
+    "menuTitle":"Get captcha",
+    "menuNote":"Enter the captcha path to get the contents of the captcha at run time, output a new variable and name it"
     },
+    "ie8_getVCode": {
+        "outParam":"Output variable naming",
+        "capture":"Grab.",
+        "xpath":"Element path (XPath)",
+        "menuTitle":"Get captcha(IE)",
+        "menuNote":"Enter the captcha path to get the contents of the captcha at run time, output a new variable and name it"
+        },
     "assert_type": {
-        "typeName": "assert_type.typeName",
-        "paramName": "assert_type.paramName",
-        "menuTitle": "assert_type.menuTitle",
-        "menuNote": "assert_type.menuNote"
+    "typeName":"Variable type",
+    "paramName":"Variable name",
+    "menuTitle":"Type assertion",
+    "menuNote":"(empty)"
     },
     "assert_value": {
-        "elt": "assert_value.elt",
-        "lt": "assert_value.lt",
-        "eq": "assert_value.eq",
-        "egt": "assert_value.egt",
-        "gt": "assert_value.gt",
-        "paramName": "assert_value.paramName",
-        "menuTitle": "assert_value.menuTitle",
-        "menuNote": "assert_value.menuNote"
+    "elt":"Less than or equal to",
+    "lt":"Less than",
+    "eq":"Equal to",
+    "egt":"Greater than or equal to",
+    "gt":"Greater than",
+    "paramName":"Meet conditions",
+    "menuTitle":"Variable value assertion",
+    "menuNote":"(empty)"
     },
     "getPixelColor": {
-        "outParam": "getPixelColor.outParam",
-        "rgb": "getPixelColor.rgb",
-        "position": "getPixelColor.position",
-        "mouse_now": "getPixelColor.mouse_now",
-        "mouse_input": "getPixelColor.mouse_input",
-        "mouse_type": "getPixelColor.mouse_type",
-        "CScapturePos": "getPixelColor.CScapturePos",
-        "menuTitle": "getPixelColor.menuTitle",
-        "menuNote": "getPixelColor.menuNote"
+    "outParam":"Result output as variable (true / false)",
+    "rgb":"Pixel at coordinates",
+    "position":"Element coordinates",
+    "mouse_now":"Current mouse position (during process running)",
+    "mouse_input":"Capture mouse position",
+    "mouse_type":"Select mouse position type",
+    "CScapturePos":"Capture desktop element (position)",
+    "menuTitle":"Screen pixel recognition",
+    "menuNote":"Determine whether there are pixels of this color on the desktop by selecting the RGB of the element"
     },
     "try_catch": {
-        "from_to": "try_catch.from_to",
-        "cmd": "try_catch.cmd",
-        "cmd2": "try_catch.cmd2",
-        "cmd3": "try_catch.cmd3",
-        "forActive": "try_catch.forActive",
-        "point_to": "try_catch.point_to",
-        "list": "try_catch.list",
-        "list2": "try_catch.list2",
-        "list3": "try_catch.list3",
-        "list4": "try_catch.list4",
-        "list5": "try_catch.list5",
-        "list6": "try_catch.list6",
-        "handle_type": "try_catch.handle_type",
-        "singleNodeId": "try_catch.singleNodeId",
-        "UndefinedException": "try_catch.UndefinedException",
-        "WEBException": "try_catch.WEBException",
-        "SQLException": "try_catch.SQLException",
-        "IllegalAccessException": "try_catch.IllegalAccessException",
-        "NoSuchFieldException": "try_catch.NoSuchFieldException",
-        "ArrayIndexOutOfBoundsException": "try_catch.ArrayIndexOutOfBoundsException",
-        "ClassCastException": "try_catch.ClassCastException",
-        "FileNotCreateException": "try_catch.FileNotCreateException",
-        "FileTypeException": "try_catch.FileTypeException",
-        "FileNotFoundException": "try_catch.FileNotFoundException",
-        "SystemException": "try_catch.SystemException",
-        "SeleniumException": "try_catch.SeleniumException",
-        "ElementNotFoundException": "try_catch.ElementNotFoundException",
-        "value1": "try_catch.value1",
-        "url": "try_catch.url",
-        "menuTitle": "try_catch.menuTitle",
-        "menuNote": "try_catch.menuNote"
+    "from_to":"Specify meta process",
+    "cmd":"break",
+    "cmd2":"continue",
+    "cmd3":"again",
+    "forActive":"Execute command",
+    "point_to":"Select node",
+    "list":"Re execution of current meta process node",
+    "list2":"The next node execution of the current meta process node",
+    "list3":"Jump out of specified loop",
+    "list4":"Process termination",
+    "list5":"Point to the start of the first node of the meta process",
+    "list6":"Return to the specified main process node",
+    "handle_type":"Solutions.",
+    "singleNodeId":"Single node ID",
+    "UndefinedException":"Undefined exception - undefined exception",
+    "WEBException":"Webexception - network access exception",
+    "SQLException":"Sqlexception - operation database exception",
+    "IllegalAccessException":"Illegalaccessexception - insufficient privilege exception",
+    "NoSuchFieldException":"Nosuchfieldexception - there is no exception for the property",
+    "ArrayIndexOutOfBoundsException":"ArrayIndexOutOfBoundsException array subscript out of bounds exception",
+    "ClassCastException":"ClassCastException - type cast exception",
+    "FileNotCreateException":"Filenotcreateexception - create file exception",
+    "FileTypeException":"Filetypeexception - file type exception",
+    "FileNotFoundException":"FileNotFoundException - file not found exception",
+    "SystemException":"SystemException - system exception",
+    "SeleniumException":"Selenium exception IE browser module exception",
+    "ElementNotFoundException":"Elementnotfoundexception - element not found exception",
+    "value1":"Capture type",
+    "url":"Name",
+    "menuTitle":"Exception capture",
+    "menuNote":"Set the type of exception that may occur and choose a resolution"
     },
     "catch_result": {
-        "from_to": "catch_result.from_to",
-        "cmd": "catch_result.cmd",
-        "cmd2": "catch_result.cmd2",
-        "cmd3": "catch_result.cmd3",
-        "forActive": "catch_result.forActive",
-        "point_to": "catch_result.point_to",
-        "list": "catch_result.list",
-        "list2": "catch_result.list2",
-        "list3": "catch_result.list3",
-        "list4": "catch_result.list4",
-        "list5": "catch_result.list5",
-        "list6": "catch_result.list6",
-        "handle_type": "catch_result.handle_type",
-        "singleNodeId": "catch_result.singleNodeId",
-        "UndefinedException": "catch_result.UndefinedException",
-        "WEBException": "catch_result.WEBException",
-        "SQLException": "catch_result.SQLException",
-        "IllegalAccessException": "catch_result.IllegalAccessException",
-        "NoSuchFieldException": "catch_result.NoSuchFieldException",
-        "ArrayIndexOutOfBoundsException": "catch_result.ArrayIndexOutOfBoundsException",
-        "ClassCastException": "catch_result.ClassCastException",
-        "FileNotCreateException": "catch_result.FileNotCreateException",
-        "FileTypeException": "catch_result.FileTypeException",
-        "FileNotFoundException": "catch_result.FileNotFoundException",
-        "SystemException": "catch_result.SystemException",
-        "ElementNotFoundException": "catch_result.ElementNotFoundException",
-        "value1": "catch_result.value1",
-        "url": "catch_result.url",
-        "menuTitle": "catch_result.menuTitle",
-        "menuNote": "catch_result.menuNote"
+    "from_to":"Specify meta process",
+    "cmd":"break",
+    "cmd2":"continue",
+    "cmd3":"again",
+    "forActive":"Execute command",
+    "point_to":"Select node",
+    "list":"Re execution of current meta process node",
+    "list2":"The next node execution of the current meta process node",
+    "list3":"Jump out of specified loop",
+    "list4":"Process termination",
+    "list5":"Point to the start of the first node of the meta process",
+    "list6":"Return to the specified main process node",
+    "handle_type":"Solutions.",
+    "singleNodeId":"Single node ID",
+    "UndefinedException":"Undefined exception - undefined exception",
+    "WEBException":"Webexception - network access exception",
+    "SQLException":"Sqlexception - operation database exception",
+    "IllegalAccessException":"Illegalaccessexception - insufficient privilege exception",
+    "NoSuchFieldException":"Nosuchfieldexception - there is no exception for the property",
+    "ArrayIndexOutOfBoundsException":"ArrayIndexOutOfBoundsException array subscript out of bounds exception",
+    "ClassCastException":"ClassCastException - type cast exception",
+    "FileNotCreateException":"Filenotcreateexception - create file exception",
+    "FileTypeException":"Filetypeexception - file type exception",
+    "FileNotFoundException":"FileNotFoundException - file not found exception",
+    "SystemException":"SystemException - system exception",
+    "ElementNotFoundException":"Elementnotfoundexception - element not found exception",
+    "value1":"Capture type",
+    "url":"Name",
+    "menuTitle":"Exception handling",
+    "menuNote":"Set the type of exception that may occur and choose a resolution"
     },
     "throwError": {
-        "errDesc": "throwError.errDesc",
-        "UndefinedException": "throwError.UndefinedException",
-        "WEBException": "throwError.WEBException",
-        "SQLException": "throwError.SQLException",
-        "IllegalAccessException": "throwError.IllegalAccessException",
-        "NoSuchFieldException": "throwError.NoSuchFieldException",
-        "ArrayIndexOutOfBoundsException": "throwError.ArrayIndexOutOfBoundsException",
-        "ClassCastException": "throwError.ClassCastException",
-        "FileNotCreateException": "throwError.FileNotCreateException",
-        "FileTypeException": "throwError.FileTypeException",
-        "FileNotFoundException": "throwError.FileNotFoundException",
-        "SystemException": "throwError.SystemException",
-        "SeleniumException": "throwError.SeleniumException",
-        "ElementNotFoundException": "throwError.ElementNotFoundException",
-        "errType": "throwError.errType",
-        "menuTitle": "throwError.menuTitle",
-        "menuNote": "throwError.menuNote"
+    "errDesc":"Exception description",
+    "UndefinedException":"Undefined exception - undefined exception",
+    "WEBException":"Webexception - network access exception",
+    "SQLException":"Sqlexception - operation database exception",
+    "IllegalAccessException":"Illegalaccessexception - insufficient privilege exception",
+    "NoSuchFieldException":"Nosuchfieldexception - there is no exception for the property",
+    "ArrayIndexOutOfBoundsException":"ArrayIndexOutOfBoundsException array subscript out of bounds exception",
+    "ClassCastException":"ClassCastException - type cast exception",
+    "FileNotCreateException":"Filenotcreateexception - create file exception",
+    "FileTypeException":"Filetypeexception - file type exception",
+    "FileNotFoundException":"FileNotFoundException - file not found exception",
+    "SystemException":"SystemException - system exception",
+    "SeleniumException":"Selenium exception IE browser module exception",
+    "ElementNotFoundException":"Elementnotfoundexception - element not found exception",
+    "errType":"Exception type",
+    "menuTitle":"Exception throw",
+    "menuNote":"Throw an exception, usually used with exception capture or force the process to terminate"
     },
     "saveVCode": {
-        "fileName": "saveVCode.fileName",
-        "savePath": "saveVCode.savePath",
-        "capture": "saveVCode.capture",
-        "xpath": "saveVCode.xpath",
-        "menuTitle": "saveVCode.menuTitle",
-        "menuNote": "saveVCode.menuNote"
-    },
-    "elementPos": {
-        "outParam": "elementPos.outParam",
-        "elementPos": "elementPos.elementPos",
-        "capturePos": "elementPos.capturePos"
-    },
-    "open": {
-        "url": "open.url",
-        "menuTitle": "open.menuTitle",
-        "menuNote": "open.menuNote"
-    },
-    "waitFindELe": {
-        "waitTime": "waitFindELe.waitTime",
-        "xpath": "waitFindELe.xpath",
-        "goon": "waitFindELe.goon",
-        "capture": "waitFindELe.capture",
-        "menuTitle": "waitFindELe.menuTitle",
-        "menuNote": "waitFindELe.menuNote"
-    },
-    "mouseDownOrUp": {
-        "xpath": "mouseDownOrUp.xpath",
-        "mouse_type": "mouseDownOrUp.mouse_type",
-        "mouseup": "mouseDownOrUp.mouseup",
-        "mousedown": "mouseDownOrUp.mousedown",
-        "goon": "mouseDownOrUp.goon",
-        "capture": "mouseDownOrUp.capture",
-        "menuTitle": "mouseDownOrUp.menuTitle",
-        "menuNote": "mouseDownOrUp.menuNote"
-    },
-    "click": {
-        "goon": "click.goon",
-        "hand": "click.hand",
-        "mousedown_up": "click.mousedown_up",
-        "click": "click.click",
-        "click_type": "click.click_type",
-        "xpath": "click.xpath",
-        "capture": "click.capture",
-        "menuTitle": "click.menuTitle",
-        "menuNote": "click.menuNote"
-    },
-    "changeAttributeName": {
-        "newAttr": "changeAttributeName.newAttr",
-        "attr": "changeAttributeName.attr",
-        "xpath": "changeAttributeName.xpath",
-        "menuTitle": "changeAttributeName.menuTitle",
-        "menuNote": "changeAttributeName.menuNote"
-    },
-    "classClickString": {
-        "strObject": "classClickString.strObject",
-        "className": "classClickString.className",
-        "xpath": "classClickString.xpath",
-        "capture": "classClickString.capture",
-        "menuTitle": "classClickString.menuTitle",
-        "menuNote": "classClickString.menuNote"
-    },
-    "closePage": {
-        "text-box": "closePage.text-box",
-        "menuTitle": "closePage.menuTitle",
-        "menuNote": "closePage.menuNote"
-    },
-    "getElePosition": {
-        "outParam": "getElePosition.outParam",
-        "xpath": "getElePosition.xpath",
-        "capture": "getElePosition.capture",
-        "menuTitle": "getElePosition.menuTitle",
-        "menuNote": "getElePosition.menuNote"
-    },
-    "getPageURL": {
-        "outParam": "getPageURL.outParam",
-        "menuTitle": "getPageURL.menuTitle",
-        "menuNote": "getPageURL.menuNote"
-    },
-    "openIframe": {
-        "goon": "openIframe.goon",
-        "openNew": "openIframe.openNew",
-        "xpath": "openIframe.xpath",
-        "capture-iframe": "openIframe.capture-iframe",
-        "menuTitle": "openIframe.menuTitle",
-        "menuNote": "openIframe.menuNote"
-    },
-    "InnerHTML": {
-        "outParam": "InnerHTML.outParam",
-        "xpath": "InnerHTML.xpath",
-        "xpathEle": "InnerHTML.xpathEle",
-        "html": "InnerHTML.html",
-        "text": "InnerHTML.text",
-        "getType": "InnerHTML.getType",
-        "capture": "InnerHTML.capture",
-        "menuTitle": "InnerHTML.menuTitle",
-        "menuNote": "InnerHTML.menuNote"
-    },
-    "resemblance": {
-        "outParam": "resemblance.outParam",
-        "xpath": "resemblance.xpath",
-        "html": "resemblance.html",
-        "text": "resemblance.text",
-        "getType": "resemblance.getType",
-        "xpathAlike": "resemblance.xpathAlike",
-        "capture": "resemblance.capture",
-        "menuTitle": "resemblance.menuTitle",
-        "menuNote": "resemblance.menuNote"
-    },
-    "canGetEle": {
-        "outParam": "canGetEle.outParam",
-        "xpath": "canGetEle.xpath",
-        "capture": "canGetEle.capture",
-        "menuTitle": "canGetEle.menuTitle",
-        "menuNote": "canGetEle.menuNote"
-    },
-    "getAttributeName": {
-        "outParam": "getAttributeName.outParam",
-        "capture": "getAttributeName.capture",
-        "xpath": "getAttributeName.xpath",
-        "menuTitle": "getAttributeName.menuTitle",
-        "menuNote": "getAttributeName.menuNote"
-    },
-    "mouseover": {
-        "goon": "mouseover.goon",
-        "xpath": "mouseover.xpath",
-        "capture": "mouseover.capture",
-        "menuTitle": "mouseover.menuTitle",
-        "menuNote": "mouseover.menuNote"
-    },
-    "inputInfo": {
-        "input": "inputInfo.input",
-        "xpath": "inputInfo.xpath",
-        "capture": "inputInfo.capture",
-        "menuTitle": "inputInfo.menuTitle",
-        "menuNote": "inputInfo.menuNote"
-    },
-    "historyBack": {
-        "text-box": "historyBack.text-box",
-        "menuTitle": "historyBack.menuTitle",
-        "menuNote": "historyBack.menuNote"
-    },
-    "pageFresh": {
-        "text-box": "pageFresh.text-box",
-        "menuTitle": "pageFresh.menuTitle",
-        "menuNote": "pageFresh.menuNote"
-    },
-    "getTable": {
-        "outParam": "getTable.outParam",
-        "xpath": "getTable.xpath",
-        "html": "getTable.html",
-        "text": "getTable.text",
-        "getType": "getTable.getType",
-        "capture": "getTable.capture",
-        "xpathEle": "getTable.xpathEle",
-        "menuTitle": "getTable.menuTitle",
-        "menuNote": "getTable.menuNote"
-    },
-    "getList": {
-        "outParam": "getList.outParam",
-        "xpath": "getList.xpath",
-        "html": "getList.html",
-        "text": "getList.text",
-        "getType": "getList.getType",
-        "capture": "getList.capture",
-        "xpathEle": "getList.xpathEle",
-        "menuTitle": "getList.menuTitle",
-        "menuNote": "getList.menuNote"
-    },
-    "selectOption": {
-        "goon": "selectOption.goon",
-        "matchText": "selectOption.matchText",
-        "php": "selectOption.php",
-        "like": "selectOption.like",
-        "all": "selectOption.all",
-        "matchType": "selectOption.matchType",
-        "xpathEle": "selectOption.xpathEle",
-        "capture": "selectOption.capture",
-        "menuTitle": "selectOption.menuTitle",
-        "menuNote": "selectOption.menuNote"
-    },
-    "globalWaitTime": {
-        "floatWaitTime": "globalWaitTime.floatWaitTime",
-        "WaitTime": "globalWaitTime.WaitTime",
-        "menuTitle": "globalWaitTime.menuTitle",
-        "menuNote": "globalWaitTime.menuNote",
-        "pretreatmentWaitTime":"globalWaitTime.pretreatmentWaitTime",
-        "chromeBrowserWaitTime":"globalWaitTime.chromeBrowserWaitTime",
-        "internetExplorerWaitTime":"globalWaitTime.internetExplorerWaitTime",
-        "yingyonggongnengWaitTime":"globalWaitTime.yingyonggongnengWaitTime",
-        "microsoftApplicationWaitTime":"globalWaitTime.microsoftApplicationWaitTime",
-        "variantHandlingWaitTime":"globalWaitTime.variantHandlingWaitTime",
-        "workflowControlWaitTime":"globalWaitTime.workflowControlWaitTime",
-        "shujubiaogeWaitTime":"globalWaitTime.shujubiaogeWaitTime",
-        "fileOperateWaitTime":"globalWaitTime.fileOperateWaitTime",
-        "keyboardAndMouseWaitTime":"globalWaitTime.keyboardAndMouseWaitTime",
-        "dataInterfaceUtilWaitTime":"globalWaitTime.dataInterfaceUtilWaitTime",
-        "exceptionsWaitTime":"globalWaitTime.exceptionsWaitTime",
-        "databaseUtilWaitTime":"globalWaitTime.databaseUtilWaitTime",
-        "systemUtilWaitTime":"globalWaitTime.systemUtilWaitTime",
-        "excelHandlingWaitTime":"globalWaitTime.excelHandlingWaitTime",
-        "docUtilWaitTime":"globalWaitTime.docUtilWaitTime",
-        "ocrWaitTime":"globalWaitTime.ocrWaitTime",
-        "customizedApplicationWaitTime":"globalWaitTime.customizedApplicationWaitTime",
-        "finalHandlingWaitTime":"globalWaitTime.finalHandlingWaitTime"
-    },
-    "importFile": {
-        "outParam": "importFile.outParam",
-        "businessDescription": "importFile.businessDescription",
-        "filePath": "importFile.filePath",
-        "menuTitle": "importFile.menuTitle",
-        "menuNote": "importFile.menuNote"
-    },
-    "importTextFile": {
-        "outParam": "importTextFile.outParam",
-        "businessDescription": "importTextFile.businessDescription",
-        "filePath": "importTextFile.filePath",
-        "select_filePath": "importTextFile.select_filePath",
-        "menuTitle": "importTextFile.menuTitle",
-        "menuNote": "importTextFile.menuNote"
-    },
-    "catchRecordingTime":{
-        "recordingTime":"catchRecordingTime.recordingTime",
-        "menuTitle": "catchRecordingTime.menuTitle",
-        "menuNote": "catchRecordingTime.menuNote"
-    },
-    "semantic": {
-        "outParam": "semantic.outParam",
-        "debuggerData": "semantic.debuggerData",
-        "fileName": "semantic.fileName"
-    },
-    "ActuatorForVerify": {
-        "rectangle": "ActuatorForVerify.rectangle",
-        "name": "ActuatorForVerify.name",
-        "path": "ActuatorForVerify.path",
-        "CScapture": "ActuatorForVerify.CScapture",
-        "winTitle": "ActuatorForVerify.winTitle",
-        "menuTitle": "ActuatorForVerify.menuTitle",
-        "menuNote": "ActuatorForVerify.menuNote"
-    },
-    "clipboardWaitTime": {
-        "sleep": "clipboardWaitTime.sleep",
-        "menuTitle": "clipboardWaitTime.menuTitle",
-        "menuNote": "clipboardWaitTime.menuNote"
-    },
-    "cutLogMinLength": {
-        "cutMinLength": "cutLogMinLength.cutMinLength",
-        "menuTitle": "cutLogMinLength.menuTitle"
-    },
-    "isForbidKeybroadAndMouse": {
-        "active": "isForbidKeybroadAndMouse.active",
-        "forbid": "isForbidKeybroadAndMouse.forbid",
-        "notForbid": "isForbidKeybroadAndMouse.notForbid",
-        "menuTitle": "isForbidKeybroadAndMouse.menuTitle"
-    },
-    "groupPassword": {
-        "outParam": "groupPassword.outParam",
-        "group": "groupPassword.group",
-        "menuTitle": "groupPassword.menuTitle",
-        "menuNote": "groupPassword.menuNote"
-    },
-    "setDirectory": {
-        "directory": "setDirectory.directory",
-        "select_directory": "setDirectory.select_directory"
-    },
-    "IDAccountPassword": {
-        "attache": "IDAccountPassword.attache",
-        "department": "IDAccountPassword.department",
-        "password": "IDAccountPassword.password",
-        "username": "IDAccountPassword.username",
-        "ID": "IDAccountPassword.ID",
-        "menuTitle": "IDAccountPassword.menuTitle",
-        "menuNote": "IDAccountPassword.menuNote"
-    },
-    "callback_pixel_position": {
-        "outParam": "callback_pixel_position.outParam",
-        "errorRange": "callback_pixel_position.errorRange",
-        "rectangle": "callback_pixel_position.rectangle",
-        "right_down": "callback_pixel_position.right_down",
-        "right_up": "callback_pixel_position.right_up",
-        "left_down": "callback_pixel_position.left_down",
-        "left_up": "callback_pixel_position.left_up",
-        "down_right": "callback_pixel_position.down_right",
-        "down_left": "callback_pixel_position.down_left",
-        "up_right": "callback_pixel_position.up_right",
-        "up_left": "callback_pixel_position.up_left",
-        "fd_type": "callback_pixel_position.fd_type",
-        "CScapturePos": "callback_pixel_position.CScapturePos",
-        "rgb": "callback_pixel_position.rgb",
-        "menuTitle": "callback_pixel_position.menuTitle",
-        "menuNote": "callback_pixel_position.menuNote"
-    },
-    "CSMove_element": {
-        "mouseMove": "CSMove_element.mouseMove",
-        "mouseClick": "CSMove_element.mouseClick",
-        "rectangle": "CSMove_element.rectangle",
-        "path": "CSMove_element.path",
-        "winTitle": "CSMove_element.winTitle",
-        "processName": "CSMove_element.processName",
-        "CScapture": "CSMove_element.CScapture",
-        "outParam": "CSMove_element.outParam",
-        "menuTitle": "CSMove_element.menuTitle",
-        "menuNote": "CSMove_element.menuNote"
-    },
-    "CSMoveForName": {
-        "rectangle": "CSMoveForName.rectangle",
-        "name": "CSMoveForName.name",
-        "path": "CSMoveForName.path",
-        "winTitle": "CSMoveForName.winTitle",
-        "processName": "CSMoveForName.processName",
-        "CScapture": "CSMoveForName.CScapture",
-        "menuTitle": "CSMoveForName.menuTitle",
-        "menuNote": "CSMoveForName.menuNote"
-    },
-    "CSMoveForRelative": {
-        "relative": "CSMoveForRelative.relative",
-        "path": "CSMoveForRelative.path",
-        "winTitle": "CSMoveForRelative.winTitle",
-        "processName": "CSMoveForRelative.processName",
-        "CScapture": "CSMoveForRelative.CScapture",
-        "menuTitle": "CSMoveForRelative.menuTitle",
-        "menuNote": "CSMoveForRelative.menuNote"
-    },
-    "CSMoveForVerify": {
-        "outParam": "CSMoveForVerify.outParam",
-        "rectangle": "CSMoveForVerify.rectangle",
-        "name": "CSMoveForVerify.name",
-        "path": "CSMoveForVerify.path",
-        "winTitle": "CSMoveForVerify.winTitle",
-        "processName": "CSMoveForVerify.processName",
-        "CScapture": "CSMoveForVerify.CScapture",
-        "menuTitle": "CSMoveForVerify.menuTitle",
-        "menuNote": "CSMoveForVerify.menuNote"
-    },
-    "CSMoveForChildName": {
-        "rectangle": "CSMoveForChildName.rectangle",
-        "childname": "CSMoveForChildName.childname",
-        "path": "CSMoveForChildName.path",
-        "winTitle": "CSMoveForChildName.winTitle",
-        "processName": "CSMoveForChildName.processName",
-        "CScapture": "CSMoveForChildName.CScapture",
-        "menuTitle": "CSMoveForChildName.menuTitle",
-        "menuNote": "CSMoveForChildName.menuNote"
-    },
-    "ie8_open": {
-        "ie8_url": "ie8_open.ie8_url",
-        "menuTitle": "ie8_open.menuTitle",
-        "menuNote": "ie8_open.menuNote"
-    },
-    "ie8_waitFindELe": {
-        "waitTime": "ie8_waitFindELe.waitTime",
-        "xpath": "ie8_waitFindELe.xpath",
-        "capture-IE8": "ie8_waitFindELe.capture-IE8",
-        "menuTitle": "ie8_waitFindELe.menuTitle",
-        "outParam": "ie8_waitFindELe.outParam",
-        "menuNote": "ie8_waitFindELe.menuNote"
-    },
-    "ie8_waitFindAlert": {
-        "waitTime": "ie8_waitFindAlert.waitTime",
-        "outParam": "ie8_waitFindAlert.outParam",
-        "menuTitle": "ie8_waitFindAlert.menuTitle",
-        "menuNote": "ie8_waitFindAlert.menuNote"
-    },
-    "ie8_click": {
-        "xpath": "ie8_click.xpath",
-        "no": "ie8_click.no",
-        "yes": "ie8_click.yes",
-        "returnTop": "ie8_click.returnTop",
-        "execJs": "ie8_click.execJs",
-        "capture-IE8": "ie8_click.capture-IE8",
-        "menuTitle": "ie8_click.menuTitle",
-        "menuNote": "ie8_click.menuNote"
-    },
-    "ie8_changeAttributeName": {
-        "newAttr": "ie8_changeAttributeName.newAttr",
-        "attr": "ie8_changeAttributeName.attr",
-        "inputName": "ie8_changeAttributeName.inputName",
-        "xpath": "ie8_changeAttributeName.xpath",
-        "capture-IE8": "ie8_changeAttributeName.capture-IE8",
-        "menuTitle": "ie8_changeAttributeName.menuTitle",
-        "menuNote": "ie8_changeAttributeName.menuNote"
-    },
-    "ie8_classReturnXpath": {
-        "outParam": "ie8_classReturnXpath.outParam",
-        "className": "ie8_classReturnXpath.className",
-        "xpath": "ie8_classReturnXpath.xpath",
-        "capture-IE8": "ie8_classReturnXpath.capture-IE8",
-        "menuTitle": "ie8_classReturnXpath.menuTitle",
-        "menuNote": "ie8_classReturnXpath.menuNote"
-    },
-    "ie8_quitBrowser": {
-        "text-box": "ie8_quitBrowser.text-box",
-        "menuTitle": "ie8_quitBrowser.menuTitle",
-        "menuNote": "ie8_quitBrowser.menuNote"
-    },
-    "ie8_closePage": {
-        "text-box": "ie8_closePage.text-box",
-        "menuTitle": "ie8_closePage.menuTitle",
-        "menuNote": "ie8_closePage.menuNote"
-    },
-    "ie8_operateAlert": {
-        "dismiss": "ie8_operateAlert.dismiss",
-        "accept": "ie8_operateAlert.accept",
-        "operate": "ie8_operateAlert.operate",
-        "no": "ie8_operateAlert.no",
-        "yes": "ie8_operateAlert.yes",
-        "returnTop": "ie8_operateAlert.returnTop",
-        "menuTitle": "ie8_operateAlert.menuTitle",
-        "menuNote": "ie8_operateAlert.menuNote"
-    },
-    "ie8_getPageCookies": {
-        "outParam": "ie8_getPageCookies.outParam",
-        "des": "ie8_getPageCookies.des",
-        "menuTitle": "ie8_getPageCookies.menuTitle",
-        "menuNote": "ie8_getPageCookies.menuNote"
-    },
-    "ie8_getPageURL": {
-        "outParam": "ie8_getPageURL.outParam",
-        "menuTitle": "ie8_getPageURL.menuTitle",
-        "menuNote": "ie8_getPageURL.menuNote"
-    },
-    "ie8_openIframe": {
-        "openNew": "ie8_openIframe.openNew",
-        "xpath": "ie8_openIframe.xpath",
-        "capture-IE8": "ie8_openIframe.capture-IE8",
-        "menuTitle": "ie8_openIframe.menuTitle",
-        "menuNote": "ie8_openIframe.menuNote"
-    },
-    "ie8_getAlertText": {
-        "outParam": "ie8_getAlertText.outParam",
-        "xpath": "ie8_getAlertText.xpath",
-        "capture-IE8": "ie8_getAlertText.capture-IE8",
-        "menuTitle": "ie8_getAlertText.menuTitle",
-        "menuNote": "ie8_getAlertText.menuNote"
-    },
-    "ie8_InnerHTML": {
-        "outParam": "ie8_InnerHTML.outParam",
-        "html": "ie8_InnerHTML.html",
-        "text": "ie8_InnerHTML.text",
-        "getType": "ie8_InnerHTML.getType",
-        "capture-IE8": "ie8_InnerHTML.capture-IE8",
-        "xpath": "ie8_InnerHTML.xpath",
-        "menuTitle": "ie8_InnerHTML.menuTitle",
-        "menuNote": "ie8_InnerHTML.menuNote"
-    },
-    "ie8_canGetEle": {
-        "outParam": "ie8_canGetEle.outParam",
-        "xpath": "ie8_canGetEle.xpath",
-        "capture-IE8": "ie8_canGetEle.capture-IE8",
-        "menuTitle": "ie8_canGetEle.menuTitle",
-        "menuNote": "ie8_canGetEle.menuNote"
-    },
-    "ie8_getAttributeName": {
-        "outParam": "ie8_getAttributeName.outParam",
-        "xpath": "ie8_getAttributeName.xpath",
-        "capture-IE8": "ie8_getAttributeName.capture-IE8",
-        "menuTitle": "ie8_getAttributeName.menuTitle",
-        "menuNote": "ie8_getAttributeName.menuNote"
-    },
-    "ie8_mouseover": {
-        "capture-IE8": "ie8_mouseover.capture-IE8",
-        "xpath": "ie8_mouseover.xpath",
-        "menuTitle": "ie8_mouseover.menuTitle",
-        "menuNote": "ie8_mouseover.menuNote"
-    },
-    "ie8_inputInfo": {
-        "input": "ie8_inputInfo.input",
-        "capture-IE8": "ie8_inputInfo.capture-IE8",
-        "xpath": "ie8_inputInfo.xpath",
-        "menuTitle": "ie8_inputInfo.menuTitle",
-        "menuNote": "ie8_inputInfo.menuNote"
-    },
-    "ie8_historyBack": {
-        "text-box": "ie8_historyBack.text-box",
-        "menuTitle": "ie8_historyBack.menuTitle",
-        "menuNote": "ie8_historyBack.menuNote"
-    },
-    "ie8_test": {
-        "url": "ie8_test.url",
-        "menuTitle": "ie8_test.menuTitle",
-        "menuNote": "ie8_test.menuNote"
-    },
-    "ie8_pageFresh": {
-        "text-box": "ie8_pageFresh.text-box",
-        "menuTitle": "ie8_pageFresh.menuTitle",
-        "menuNote": "ie8_pageFresh.menuNote"
-    },
-    "ie8_getTable": {
-        "outParam": "ie8_getTable.outParam",
-        "xpath": "ie8_getTable.xpath",
-        "html": "ie8_getTable.html",
-        "text": "ie8_getTable.text",
-        "getType": "ie8_getTable.getType",
-        "xpathEle": "ie8_getTable.xpathEle",
-        "capture-IE8": "ie8_getTable.capture-IE8",
-        "menuTitle": "ie8_getTable.menuTitle",
-        "menuNote": "ie8_getTable.menuNote"
-    },
-    "ie8_getList": {
-        "outParam": "ie8_getList.outParam",
-        "xpath": "ie8_getList.xpath",
-        "html": "ie8_getList.html",
-        "text": "ie8_getList.text",
-        "getType": "ie8_getList.getType",
-        "xpathEle": "ie8_getList.xpathEle",
-        "capture-IE8": "ie8_getList.capture-IE8",
-        "menuTitle": "ie8_getList.menuTitle",
-        "menuNote": "ie8_getList.menuNote"
-    },
-    "ie8_selectOption": {
-        "matchText": "ie8_selectOption.matchText",
-        "php": "ie8_selectOption.php",
-        "like": "ie8_selectOption.like",
-        "all": "ie8_selectOption.all",
-        "matchType": "ie8_selectOption.matchType",
-        "xpathEle": "ie8_selectOption.xpathEle",
-        "capture-IE8": "ie8_selectOption.capture-IE8",
-        "menuTitle": "ie8_selectOption.menuTitle",
-        "menuNote": "ie8_selectOption.menuNote"
-    },
-    "ie8_resemblance": {
-        "xpath": "ie8_resemblance.xpath",
-        "outParam": "ie8_resemblance.outParam",
-        "html": "ie8_resemblance.html",
-        "text": "ie8_resemblance.text",
-        "getType": "ie8_resemblance.getType",
-        "xpathEle": "ie8_resemblance.xpathEle",
-        "xpathParent": "ie8_resemblance.xpathParent",
-        "capture-IE8": "ie8_resemblance.capture-IE8",
-        "menuTitle": "ie8_resemblance.menuTitle",
-        "menuNote": "ie8_resemblance.menuNote"
-    },
-    "ie8_swichTo": {
-        "targetWinName": "ie8_swichTo.targetWinName",
-        "currentWinName": "ie8_swichTo.currentWinName",
-        "swichToTarget": "ie8_swichTo.swichToTarget",
-        "swichToLast": "ie8_swichTo.swichToLast",
-        "operate": "ie8_swichTo.operate",
-        "menuTitle": "ie8_swichTo.menuTitle",
-        "menuNote": "ie8_swichTo.menuNote"
-    },
-    "ie8_strReturnXpath": {
-        "outParam": "ie8_strReturnXpath.outParam",
-        "strTarget": "ie8_strReturnXpath.strTarget",
-        "xpath": "ie8_strReturnXpath.xpath",
-        "capture-IE8": "ie8_strReturnXpath.capture-IE8",
-        "menuTitle": "ie8_strReturnXpath.menuTitle",
-        "menuNote": "ie8_strReturnXpath.menuNote"
-    },
-    "readPDF": {
-        "outParam": "readPDF.outParam",
-        "openPath": "readPDF.openPath",
-        "selectFile": "readPDF.selectFile"
-    },
-    "importFile_normal": {
-        "outParam": "importFile_normal.outParam",
-        "businessDescription": "importFile_normal.businessDescription",
-        "filePath": "importFile_normal.filePath",
-        "menuTitle": "importFile_normal.menuTitle",
-        "selectFile": "importFile_normal.selectFile",
-        "menuNote": "importFile_normal.menuNote"
-    },
-    "importTextFile_normal": {
-        "outParam": "importTextFile_normal.outParam",
-        "businessDescription": "importTextFile_normal.businessDescription",
-        "filePath": "importTextFile_normal.filePath",
-        "select_filePath": "importTextFile_normal.select_filePath",
-        "menuTitle": "importTextFile_normal.menuTitle",
-        "selectFile": "importTextFile_normal.selectFile",
-        "menuNote": "importTextFile_normal.menuNote"
-    },
-    "copyExclePart": {
-        "to_rectangle_right_up": "copyExclePart.to_rectangle_right_up",
-        "to_sheet": "copyExclePart.to_sheet",
-        "to_file": "copyExclePart.to_file",
-        "rectangle": "copyExclePart.rectangle",
-        "from_sheet": "copyExclePart.from_sheet",
-        "from_file": "copyExclePart.from_file",
-        "menuTitle": "copyExclePart.menuTitle",
-        "selectFile": "copyExclePart.selectFile",
-        "menuNote": "copyExclePart.menuNote"
-    },
-    "changeStyleExcle": {
-        "fontRGB": "changeStyleExcle.fontRGB",
-        "fontSize": "changeStyleExcle.fontSize",
-        "RGB": "changeStyleExcle.RGB",
-        "isUnderline": "changeStyleExcle.isUnderline",
-        "isItalic": "changeStyleExcle.isItalic",
-        "isBlod": "changeStyleExcle.isBlod",
-        "style": "changeStyleExcle.style",
-        "rectangle": "changeStyleExcle.rectangle",
-        "sheet_name": "changeStyleExcle.sheet_name",
-        "filename": "changeStyleExcle.filename",
-        "menuTitle": "changeStyleExcle.menuTitle",
-        "selectFile": "changeStyleExcle.selectFile",
-        "menuNote": "changeStyleExcle.menuNote"
-    },
-    "PreciseReadFile": {
-        "outParam": "PreciseReadFile.outParam",
-        "text": "PreciseReadFile.text",
-        "object": "PreciseReadFile.object",
-        "dbType": "PreciseReadFile.dbType",
-        "sheet_name": "PreciseReadFile.sheet_name",
-        "rectangle": "PreciseReadFile.rectangle",
-        "filename": "PreciseReadFile.filename",
-        "menuTitle": "PreciseReadFile.menuTitle",
-        "selectFile": "PreciseReadFile.selectFile",
-        "menuNote": "PreciseReadFile.menuNote"
-    },
-    "PreciseWriteFile": {
-        "filename": "PreciseWriteFile.filename",
-        "sheet_name": "PreciseWriteFile.sheet_name",
-        "rectangle": "PreciseWriteFile.rectangle",
-        "valueParam": "PreciseWriteFile.valueParam",
-        "menuTitle": "PreciseWriteFile.menuTitle",
-        "selectFile": "PreciseWriteFile.selectFile",
-        "menuNote": "PreciseWriteFile.menuNote"
-    },
-    "exportFile": {
-        "outParam": "exportFile.outParam",
-        "save-history": "exportFile.save-history",
-        "isSaveHistory": "exportFile.isSaveHistory",
-        "targetPath": "exportFile.targetPath",
-        "filename": "exportFile.filename",
-        "valueParam": "exportFile.valueParam",
-        "sheet_name": "exportFile.sheet_name",
-        "a": "exportFile.a",
-        "w": "exportFile.w",
-        "writeType": "exportFile.writeType",
-        "excel": "exportFile.excel",
-        "csv": "exportFile.csv",
-        "fileType": "exportFile.fileType",
-        "newFileName": "exportFile.newFileName",
-        "txt": "exportFile.txt",
-        "word": "exportFile.word",
-        "menuTitle": "exportFile.menuTitle",
-        "select_directory": "exportFile.select_directory",
-        "menuNote": "exportFile.menuNote"
-    },
-    "exportTextFile": {
-        "outParam": "exportTextFile.outParam",
-        "save-history": "exportTextFile.save-history",
-        "isSaveHistory": "exportTextFile.isSaveHistory",
-        "targetPath": "exportTextFile.targetPath",
-        "filename": "exportTextFile.filename",
-        "valueParam": "exportTextFile.valueParam",
-        "sheet_name": "exportTextFile.sheet_name",
-        "a": "exportTextFile.a",
-        "w": "exportTextFile.w",
-        "writeType": "exportTextFile.writeType",
-        "excel": "exportTextFile.excel",
-        "csv": "exportTextFile.csv",
-        "fileType": "exportTextFile.fileType",
-        "newFileName": "exportTextFile.newFileName",
-        "txt": "exportTextFile.txt",
-        "word": "exportTextFile.word",
-        "menuTitle": "exportTextFile.menuTitle",
-        "menuNote": "exportTextFile.menuNote"
-    },
-    "koulingxuanze": {
-        "outParam": "koulingxuanze.outParam",
-        "groupKey": "koulingxuanze.groupKey",
-        "chooseCmdGroup": "koulingxuanze.chooseCmdGroup",
-        "menuTitle": "koulingxuanze.menuTitle",
-        "menuNote": "koulingxuanze.menuNote"
-    },
-    "saveAccount": {
-        "outParam": "saveAccount.outParam",
-        "pwdValue": "saveAccount.pwdValue",
-        "usernameValue": "saveAccount.usernameValue",
-        "realAccount": "saveAccount.realAccount",
-        "testAccount": "saveAccount.testAccount",
-        "operator": "saveAccount.operator"
-    },
-    "head": {
-        "nav": {
-            "run": "head.nav.run",
-            "clean": "head.nav.clean",
-            "save": "head.nav.save",
-            "read": "head.nav.read",
-            "import": "head.nav.import",
-            "export": "head.nav.export",
-            "showVar": "head.nav.showVar",
-            "unitTesting": "head.nav.unitTesting",
-            "unitClean": "head.nav.unitClean",
-            "prev": "head.nav.prev",
-            "next": "head.nav.next",
-            "showAnnotation": "head.nav.showAnnotation",
-            "continue": "head.nav.continue"
-        }
-    },
-    "aside": {
-        "left": {
-            "atomicProcess": "aside.left.atomicProcess",
-            "foreach": "aside.left.foreach",
-            "if": "aside.left.if",
-            "concurrence": "aside.left.concurrence",
-            "goto":"aside.left.goto",
-            "breviary": "aside.left.breviary",
-            "selectTheIterationElement":"aside.left.selectTheIterationElement",
-            "nameOfIndividualElements":"aside.left.nameOfIndividualElements",
-            "ifBlockName":"aside.left.ifBlockName",
-            "forBlockName":"aside.left.forBlockName",
-            "gotoBlockName":"aside.left.gotoBlockName",
-            "executeWhenConditionsAreMet":"aside.left.executeWhenConditionsAreMet",
-            "executeWhenTheConditionsAreNotMet":"aside.left.executeWhenTheConditionsAreNotMet",
-            "condition":"aside.left.condition"
-        }
-    },
-    "content": {
-        "main": {
-            "start": "content.main.start",
-            "pretreatment": "content.main.pretreatment",
-            "endNode": "content.main.endNode",
-            "end": " content.main.end",
-            "outParam": "content.main.outParam",
-            "inParam":"content.main.inParam",
-            "delete":"content.main.delete",
-            "copy":"content.main.copy",
-            "paste":"content.main.paste",
-            "skip":"content.main.skip",
-            "transverseCopy":"content.main.transverseCopy",
-            "point":"content.main.point",
-            "tryCatch":"content.main.tryCatch",
-            "addDesc":"content.main.addDesc",
-            "packUp":"content.main.packUp",
-            "unfold":"content.main.unfold",
-            "addFlow":"content.main.addFlow",
-            "executeWhenConditionsAreMet":"content.main.executeWhenConditionsAreMet",
-            "executeWhenTheConditionsAreNotMet":"content.main.executeWhenTheConditionsAreNotMet",
-            "isCoveredWithTheSameVariable":"content.main.isCoveredWithTheSameVariable",
-            "forLoop":"content.main.forLoop"
-        }
-    },
-    "alert": {
-        "yes": "alert.yes",
-        "no": "alert.no",
-        "OK": "alert.OK",
-        "close": "alert.close",
-        "save": "alert.save",
-        "saveAs": "alert.saveAs",
-        "continue":"alert.continue",
-        "deleteSuccess": "alert.deleteSuccess",
-        "deleteFail": "alert.deleteFail",
-        "saveSuccess": "alert.saveSuccess",
-        "saveFail": "alert.saveFail",
-        "isCleanAllProcess": "alert.isCleanAllProcess",
-        "isCleanAtomicProcess": "alert.isCleanAtomicProcess",
-        "noAuthorization": "alert.noAuthorization",
-        "repeatTypes": "alert.repeatTypes",
-        "exporting": "alert.exporting",
-        "exportSuccess": "alert.exportSuccess",
-        "exportFail": "alert.exportFail",
-        "fileTypeError": "alert.fileTypeError",
-        "connectFailSql": "alert.connectFailSql",
-        "isImport": "alert.isImport",
-        "importBtn": "alert.importBtn",
-        "importAndExecuteBtn": "alert.importAndExecuteBtn",
-        "execute": "alert.execute",
-        "cancel": "alert.cancel",
-        "fileHasTriggerHowToHandle":"alert.fileHasTriggerHowToHandle",
-        "isDelete": "alert.isDelete",
-        "insertFail": "alert.insertFail",
-        "isCoveredWithTheSame": "alert.isCoveredWithTheSame",
-        "isSaveAs": "alert.isSaveAs",
-        "isCloseApp":"alert.isCloseApp",
-        "titleTips":"alert.titleTips",
-        "isSave":"alert.isSave",
-        "isRunWithWrongWindow":"alert.isRunWithWrongWindow",
-        "globalDeclarations":"alert.globalDeclarations",
-        "mateflow":"alert.mateflow",
-        "create":"alert.create",
-        "comeFromGlobal":"alert.comeFromGlobal",
-        "comeFromMateFlow":"alert.comeFromMateFlow",
-        "compileTask":"alert.compileTask",
-        "copySuccess":"alert.copySuccess",
-        "copyFailed":"alert.copyFailed",
-        "pasteSuccess":"alert.pasteSuccess",
-        "pasteFailed":"alert.pasteFailed",
-        "isDeleteMainFlowNode":"alert.isDeleteMainFlowNode",
-        "newVersionHasDown":"alert.newVersionHasDown",
-        "nowIsTheLastestVersion":"alert.nowIsTheLastestVersion",
-        "thisNodeCantDelete":"alert.thisNodeCantDelete",
-        "update":"alert.update",
-        "checkOldScript":"alert.checkOldScript",
-        "readFailed":"alert.readFailed",
-        "thisStepWillCreateVariable":"alert.thisStepWillCreateVariable",
-        "predictedGenerationVariableType":"alert.predictedGenerationVariableType",
-        "errorReturningData":"alert.errorReturningData",
-        "launchIECshandleFailed":"alert.launchIECshandleFailed",
-        "launchJavaCshandleFailed":"alert.launchJavaCshandleFailed",
-        "launchingUtils":"alert.launchingUtils",
-        "waitingHandleReturnVariable":"alert.waitingHandleReturnVariable",
-        "launchCshandleFailed":"alert.launchCshandleFailed",
-        "error":"alert.error",
-        "setting":"alert.setting",
-        "helping":"alert.helping",
-        "toggleDevTools":"alert.toggleDevTools",
-        "viewVersionImprint":"alert.viewVersionImprint",
-        "refresh":"alert.refresh",
-        "systemSettings":"alert.systemSettings",
-        "basicSetting ":"alert.basicSetting",
-        "sudoReboot":"alert.sudoReboot",
-        "unitTestVariableDefinition":"alert.unitTestVariableDefinition",
-        "exportDataModule":"alert.exportDataModule",
-        "location":"alert.location",
-        "headline":"alert.headline",
-        "type":"alert.type",
-        "describe":"alert.describe",
-        "variableName":"alert.variableName",
-        "addNewType":"alert.addNewType",
-        "variable":"alert.variable",
-        "globalVariable":"alert.globalVariable",
-        "partVariable":"alert.partVariable",
-        "saveDataModule":"alert.saveDataModule",
-        "editNote":"alert.editNote",
-        "isCoverScript":"alert.isCoverScript",
-        "import": {
-            "title": "alert.import.title",
-            "desc": "alert.import.desc",
-            "createTime": "alert.import.createTime",
-            "updateTime": "alert.import.updateTime",
-            "homePage": "alert.import.homePage",
-            "trailerPage": "alert.import.trailerPage",
-            "operate": "alert.import.operate",
-            "select": "alert.import.select",
-            "delete": "alert.import.delete",
-            "newType": "alert.import.newType",
-            "saveDataModule": "alert.import.saveDataModule",
-            "all": "alert.import.all"
-        }
-    },
-    "fs_delete_dir": {
-        "file": "fs_delete_dir.file",
-        "menuTitle": "fs_delete_dir.menuTitle",
-        "select_directory": "fs_delete_dir.select_directory",
-        "menuNote": "fs_delete_dir.menuNote"
-    },
-    "pretreatment": {
-        "menuTitle": "pretreatment.menuTitle"
-    },
-    "chromeBrowser": {
-        "menuTitle": "chromeBrowser.menuTitle"
-    },
-    "internetExplorer": {
-        "menuTitle": "internetExplorer.menuTitle"
-    },
-    "yingyonggongneng": {
-        "menuTitle": "yingyonggongneng.menuTitle"
-    },
-    "microsoftApplication": {
-        "outParam": {
-            "note": "microsoftApplication.outParam.note"
-        },
-        "Element": {
-            "note": "microsoftApplication.Element.note"
-        },
-        "menuTitle": "microsoftApplication.menuTitle"
-    },
-    "variantHandling": {
-        "menuTitle": "variantHandling.menuTitle"
-    },
-    "workflowControl": {
-        "menuTitle": "workflowControl.menuTitle"
-    },
-    "shujubiaoge": {
-        "menuTitle": "shujubiaoge.menuTitle"
-    },
-    "fileOperate": {
-        "menuTitle": "fileOperate.menuTitle"
-    },
-    "keyboardAndMouse": {
-        "menuTitle": "keyboardAndMouse.menuTitle"
-    },
-    "dataInterfaceUtil": {
-        "menuTitle": "dataInterfaceUtil.menuTitle"
-    },
-    "exceptions": {
-        "menuTitle": "exceptions.menuTitle"
-    },
-    "databaseUtil": {
-        "menuTitle": "databaseUtil.menuTitle"
-    },
-    "excelHandling": {
-        "menuTitle": "excelHandling.menuTitle"
-    },
-    "docUtil": {
-        "menuTitle": "docUtil.menuTitle"
-    },
-    "ocr": {
-        "menuTitle": "ocr.menuTitle"
-    },
-    "customizedApplication": {
-        "menuTitle": "customizedApplication.menuTitle"
-    },
-    "finalHandling": {
-        "menuTitle": "finalHandling.menuTitle"
-    },
-    "systemUtil": {
-        "menuTitle": "systemUtil.menuTitle"
-    },
-    "setting": {
-        "host": "setting.host",
-        "name": "setting.name",
-        "port": "setting.port",
-        "beatTime": "setting.beatTime",
-        "globalWaitTime": "setting.globalWaitTime",
-        "isDev": "setting.isDev",
-        "isTrue": "setting.isTrue",
-        "isFalse": "setting.isFalse",
-        "isLocalSql": "setting.isLocalSql",
-        "waitOutTime": "setting.waitOutTime",
-        "workDirectory": "setting.workDirectory",
-        "language": "setting.language"
-    }
-}
+    "fileName":"Captcha file name",
+          "savePath":"Saved path",
+          "capture":"Grab.",
+          "xpath":"Element path (XPath)",
+          "menuTitle":"Save captcha image",
+          "menuNote":"Enter the location of captcha element to get captcha image at runtime and save it to the specified path"
+      },
+      "elementPos": {
+          "outParam":"Output variable naming",
+          "elementPos":"Element position (POS)",
+          "capturePos":"Capture page elements (POS)"
+      },
+      "open": {
+          "url":"Open the web address",
+          "menuTitle":"Open web page",
+          "menuNote":"Open the web page where you enter the web address"
+      },
+      "waitFindELe": {
+          "waitTime":"Select the timeout",
+          "xpath":"Element path (XPath)",
+          "goon":"Do you want to follow script execution",
+          "capture":"Grab.",
+          "menuTitle":"Wait until the target element appears to continue",
+          "menuNote":"Wait for the target element to load, and when the element appears, the process continues"
+      },
+      "mouseDownOrUp": {
+          "xpath":"Element path (XPath)",
+          "mouse_type":"Mouse mode",
+          "mouseup":"mouseup",
+          "mousedown":"mousedown",
+          "goon":"Do you want to follow script execution",
+          "capture":"Grab.",
+          "menuTitle":"Click on the web element (MouseDown / mouseup)",
+          "menuNote":"(will be deleted later)"
+      },
+      "click": {
+          "goon":"Do you want to follow script execution",
+          "hand":"Simulated gestures.",
+          "mousedown_up":"Simulate MouseDown, up",
+          "click":"click",
+          "click_type":"Action",
+          "xpath":"Element path (XPath)",
+          "capture":"Grab.",
+          "menuTitle":"Click on the page element.",
+          "menuNote":"Enter element location for runtime click on element"
+      },
+      "changeAttributeName": {
+          "newAttr":"Changed value",
+          "attr":"Select properties to change",
+          "xpath":"Element path (XPath)",
+          "menuTitle":"Change page element properties",
+          "menuNote":"Change target attribute of target element"
+      },
+      "classClickString": {
+          "strObject":"A matching text value is required",
+          "className":"The class of the element",
+          "xpath":"Iframe path (XPath)",
+          "capture":"Grab.",
+          "menuTitle":"Click a specific element according to the class name.",
+          "menuNote":"According to the specified text, click the eligible elements in a specific range"
+      },
+      "closePage": {
+          "text-box":"Close current page (TAB)",
+          "menuTitle":"Close current page (TAB)",
+          "menuNote":"Close current page or tab"
+      },
+      "getElePosition": {
+          "outParam":"Output variable naming",
+          "xpath":"Element path (XPath)",
+          "capture":"Grab.",
+          "menuTitle":"Get the screen position of the element in operation",
+          "menuNote":"Enter the element path to get the coordinates of the element on the screen at runtime and save it as a variable"
+      },
+      "getPageURL": {
+          "outParam":"Output variable naming",
+          "menuTitle":"Get URL URI of current page",
+          "menuNote":"Get current page URL and save as variable"
+      },
+      "openIframe": {
+          "goon":"Do you want to follow script execution",
+          "openNew":"New tab",
+          "xpath":"Framework element path (XPath)",
+          "capture-iframe":"Grab.",
+          "menuTitle":"Open frame",
+          "menuNote":"Enter the frame path to open the target frame at runtime"
+      },
+      "InnerHTML": {
+          "outParam":"Output variable naming",
+          "xpath":"xpath",
+          "xpathEle":"Element path (XPath)",
+          "html":"html",
+          "text":"text",
+          "getType":"Data type",
+          "capture":"Grab.",
+          "menuTitle":"Get page element content",
+          "menuNote":"Enter the element path to get the contents of the element at runtime and save them as variables"
+      },
+      "resemblance": {
+          "outParam":"Output variable naming",
+          "xpath":"xpath",
+          "html":"html",
+          "text":"text",
+          "getType":"Data type",
+          "xpathAlike":"Element path (XPath)",
+          "capture":"Grab.",
+          "menuTitle":"Get similar element content",
+          "menuNote":"Enter the element path to get the contents of the element and its similar elements at runtime and save them as variables"
+      },
+      "canGetEle": {
+          "outParam":"Output parameter naming",
+          "xpath":"Element path (XPath)",
+          "capture":"Grab.",
+          "menuTitle":"Determine whether an element exists.",
+          "menuNote":"Enter the path of the element to use at runtime to detect the existence of the element"
+      },
+      "getAttributeName": {
+          "outParam":"Output variable naming",
+          "capture":"Grab.",
+          "xpath":"Element path (XPath)",
+          "menuTitle":"Get page element properties",
+          "menuNote":"Enter the element path to get the element property at runtime and save it as a variable"
+      },
+      "mouseover": {
+          "goon":"Do you want to follow script execution",
+          "xpath":"Element path (XPath)",
+          "capture":"Grab.",
+          "menuTitle":"Mouse move to element",
+          "menuNote":"Enter the element path to move the mouse to the location of the element at run time"
+      },
+      "inputInfo": {
+          "input":"Fill in the content",
+          "xpath":"Element path (XPath)",
+          "capture":"Grab.",
+          "menuTitle":"Fill in the input box",
+          "menuNote":"Enter the input box path to fill in the input box at runtime"
+      },
+      "historyBack": {
+          "text-box":"Page fallback function",
+          "menuTitle":"Page back",
+          "menuNote":"Current page back"
+      },
+      "pageFresh": {
+          "text-box":"Page refresh function",
+          "menuTitle":"Page refresh",
+          "menuNote":"Current page refresh"
+      },
+      "getTable": {
+          "outParam":"Output variable naming",
+          "xpath":"xpath",
+          "html":"html",
+          "text":"text",
+          "getType":"Data type",
+          "capture":"Grab.",
+          "xpathEle":"Element path (XPath)",
+          "menuTitle":"Select table contents",
+          "menuNote":"Enter a table path to get the contents of the table at run time and save them as variables"
+      },
+      "getList": {
+          "outParam":"Output variable naming",
+          "xpath":"xpath",
+          "html":"html",
+          "text":"text",
+          "getType":"Data type",
+          "capture":"Grab.",
+          "xpathEle":"Element path (XPath)",
+          "menuTitle":"Select list contents",
+          "menuNote":"Enter the list path to get the contents of the list at run time and save them as variables"
+      },
+      "selectOption": {
+          "goon":"Do you want to follow script execution",
+          "matchText":"Match content (input drop-down option content or regular expression)",
+          "php":"Regular matching",
+          "like":"Congealing matching",
+          "all":"Exact match",
+          "matchType":"Matching mode",
+          "xpathEle":"Element path (XPath)",
+          "capture":"Grab.",
+          "menuTitle":"Select the contents of the drop-down box",
+          "menuNote":"Enter drop-down path to select target option at runtime"
+      },
+      "globalWaitTime": {
+          "floatWaitTime":"Please input the waiting floating time (MS) (optional)",
+          "WaitTime":"Please enter the waiting time (MS)",
+          "menuTitle":"Global waiting time",
+          "menuNote":"Set the waiting time for running between global nodes.",
+          "pretreatmentWaitTime":"Please input the preprocessing waiting time (MS) (optional)",
+          "chromeBrowserWaitTime":"Please input the waiting time (MS) of browser (chrome) module (optional)",
+          "internetExplorerWaitTime":"Please input the waiting time of browser (ie) module (MS) (optional)",
+          "yingyonggongnengWaitTime":"Please input the waiting time of application function module (MS) (optional)",
+          "microsoftApplicationWaitTime":"Please input the waiting time of Microsoft Application module (MS) (optional)",
+          "variantHandlingWaitTime":"Please input the waiting time of variable processing module (MS) (optional)",
+          "workflowControlWaitTime":"Please input the waiting time of logical process module (MS) (optional)",
+          "shujubiaogeWaitTime":"Please input the waiting time (MS) of data table module (optional)",
+          "fileOperateWaitTime":"Please enter the file operation waiting time (MS) (optional)",
+          "keyboardAndMouseWaitTime":"Please fill in the Ms button",
+          "dataInterfaceUtilWaitTime":"Please input the waiting time of database module (MS) (optional)",
+          "exceptionsWaitTime":"Please input the waiting time of exception capture module (MS) (optional)",
+          "databaseUtilWaitTime":"Please input the waiting time of external interface module (MS) (optional)",
+          "systemUtilWaitTime":"Please input the waiting time of system function module (MS) (optional)",
+          "excelHandlingWaitTime":"Please input the waiting time (MS) of Excel function module (optional)",
+          "docUtilWaitTime":"Please input the waiting time of document function module (MS) (optional)",
+          "ocrWaitTime":"Please input the waiting time (MS) of OCR function module (optional)",
+          "customizedApplicationWaitTime":"Please fill in the Ms option",
+          "finalHandlingWaitTime":"Please enter the waiting time (MS) of the end processing module (optional)"
+      },
+      "importFile": {
+          "outParam":"Output variable naming",
+          "businessDescription":"Business description",
+          "filePath":"Select file",
+          "menuTitle":"Read data table",
+          "menuNote":"Docking the data table data transmitted from central control"
+      },
+      "importTextFile": {
+          "outParam":"Output variable naming",
+          "businessDescription":"Business description",
+          "filePath":"File name",
+          "select_filePath":"Select file",
+          "menuTitle":"Read text file",
+          "menuNote":"Docking text file data transferred from central control"
+      },
+      "catchRecordingTime":{
+          "recordingTime":"Please input abnormal screen recording time (MS)",
+          "menuTitle":"Setting the screen recording time of the strange ugliness",
+          "menuNote":"Set screen recording time"
+      },
+      "semantic": {
+          "outParam":"Output variable naming",
+          "debuggerData":"Debug use cases",
+          "fileName":"File name"
+      },
+      "ActuatorForVerify": {
+          "rectangle":"Y, coordinate)",
+          "name":"Target element name",
+          "path":"Target element subscript",
+          "CScapture":"Grab.",
+          "winTitle":"Target element form name",
+          "menuTitle":"Determine whether the window is correct (based on the selected symbolic element)",
+          "menuNote":"Auxiliary actuator, determine whether the target window exists"
+      },
+      "clipboardWaitTime": {
+          "sleep":"Please enter the global clipboard waiting time (MS)",
+          "menuTitle":"Set global clipboard wait time.",
+          "menuNote":"Set global wait time for clipboard related node operations"
+      },
+      "cutLogMinLength": {
+          "cutMinLength":"Intercept minimum length",
+          "menuTitle":"Minimum length of intercepted log"
+      },
+      "isForbidKeybroadAndMouse": {
+          "active":"Disable mouse and keyboard",
+          "forbid":"Prohibition",
+          "notForbid":"No prohibition",
+          "menuTitle":"Disable mouse and keyboard"
+      },
+      "groupPassword": {
+          "outParam":"Output variable naming",
+          "group":"Please select password group",
+          "menuTitle":"Password group",
+          "menuNote":"Password group"
+      },
+      "setDirectory": {
+          "directory":"Select working directory",
+          "select_directory":"Select directory"
+      },
+      "IDAccountPassword": {
+          "attache":"Place of ownership",
+          "department":"Departments",
+          "password":"Password",
+          "username":"Account name",
+          "ID":"Set password group name",
+          "menuTitle":"Set password",
+          "menuNote":"Connect password group data transmitted from central control"
+      },
+      "callback_pixel_position": {
+          "outParam":"Output variable naming",
+          "errorRange":"Pixel allowable error value (default 0)",
+          "rectangle":"Screen rectangle range to find",
+          "right_down":"Bottom right.",
+          "right_up":"Top right.",
+          "left_down":"Bottom left.",
+          "left_up":"Top left.",
+          "down_right":"Lower right",
+          "down_left":"Lower left",
+          "up_right":"Up right.",
+          "up_left":"Upper left",
+          "fd_type":"Select the direction of search.",
+          "CScapturePos":"Capture desktop element (position)",
+          "rgb":"Enter the pixel RGB you want to find.",
+          "menuTitle":"Positioning pixel coordinates",
+          "menuNote":"Positioning pixel coordinates"
+      },
+      "CSMove_element": {
+          "mouseMove":"Mouse movement",
+          "mouseClick":"Left click",
+          "rectangle":"Element coordinates (x, y)",
+          "path":"Element subscript",
+          "winTitle":"Element form name",
+          "processName":"Element process name",
+          "CScapture":"Capture desktop elements",
+          "outParam":"CSMove_element.outParam",
+          "menuTitle":"Element positioning",
+          "menuNote":"Locate window elements"
+      },
+      "CSMoveForName": {
+          "rectangle":"Element coordinates (x, y)",
+          "name":"Element name",
+          "path":"Element subscript",
+          "winTitle":"Element form name",
+          "processName":"Element process name",
+          "CScapture":"Capture desktop elements",
+          "menuTitle":"Element name finding and location at the same level",
+          "menuNote":"Element sibling name finding and positioning"
+      },
+      "CSMoveForRelative": {
+          "relative":"Element relative coordinates",
+          "path":"Element subscript",
+          "winTitle":"Element form name",
+          "processName":"Element process name",
+          "CScapture":"Capture desktop elements",
+          "menuTitle":"Relative positioning of elements",
+          "menuNote":"Element relative positioning"
+      },
+      "CSMoveForVerify": {
+          "outParam":"Return value (true or false)",
+          "rectangle":"Element coordinates (x, y)",
+          "name":"Element name",
+          "path":"Element subscript",
+          "winTitle":"Element form name",
+          "processName":"Element process name",
+          "CScapture":"Capture desktop elements",
+          "menuTitle":"Element validation positioning",
+          "menuNote":"Verify window element positioning"
+      },
+      "CSMoveForChildName": {
+          "rectangle":"Element coordinates (x, y)",
+          "childname":"Sub element name",
+          "path":"Element subscript",
+          "winTitle":"Element form name",
+          "processName":"Element process name",
+          "CScapture":"Capture desktop elements",
+          "menuTitle":"Element sub level name finding and location",
+          "menuNote":"Element sub level name finding and location"
+      },
+      "readPDF": {
+          "outParam":"Output variable naming",
+          "openPath":"Select PDF file",
+          "selectFile":"Select file"
+      },
+      "importFile_normal": {
+          "outParam":"Output variable naming",
+          "businessDescription":"Business description",
+          "filePath":"Read file (supports CSV, xls, xlsx file types)",
+          "menuTitle":"Read data table",
+          "selectFile":"Select file",
+          "menuNote":"Read the contents of the target data table file"
+      },
+      "importTextFile_normal": {
+          "outParam":"Output variable naming",
+          "businessDescription":"Business description",
+          "filePath":"Read file (support word, TXT file type)",
+          "select_filePath":"importTextFile_normal.select_filePath",
+          "menuTitle":"Read document",
+          "selectFile":"Select file",
+          "menuNote":"Read the contents of the target document file"
+      },
+      "copyExclePart": {
+          "to_rectangle_right_up":"Start point of replication",
+          "to_sheet":"Source sheet name",
+          "to_file":"Select the file to copy to",
+          "rectangle":"Rectangle range to be copied",
+          "from_sheet":"Source sheet name",
+          "from_file":"Select source file",
+          "menuTitle":"Copy part of Excel table",
+          "selectFile":"Select file",
+          "menuNote":"Copy local ranges in the destination excel file to a specific location in another destination file"
+      },
+      "changeStyleExcle": {
+          "fontRGB":"Font color",
+          "fontSize":"Font size (default 12)",
+          "RGB":"Background color",
+          "isUnderline":"Underline.",
+          "isItalic":"Italics",
+          "isBlod":"Bold",
+          "style":"Style selection",
+          "rectangle":"Rectangle range for which the style needs to be changed.",
+          "sheet_name":"Sheet name (Excel file only)",
+          "filename":"Select the file you want to change the style of",
+          "menuTitle":"Change excel table cell style",
+          "selectFile":"Select file",
+          "menuNote":"Change the style of the target range in the excel file"
+      },
+      "PreciseReadFile": {
+          "outParam":"Output variable naming",
+          "text":"Text",
+          "object":"Cell object",
+          "dbType":"Select output result type",
+          "sheet_name":"Sheet name (Excel file only)",
+          "rectangle":"Read position (row, column)",
+          "filename":"Select the file you want to read.",
+          "menuTitle":"Reading data table cells",
+          "selectFile":"Select file",
+          "menuNote":"Read the data of the target cell in the target file"
+      },
+      "PreciseWriteFile": {
+          "filename":"Select the file to write to",
+          "sheet_name":"Sheet name (Excel file only)",
+          "rectangle":"Write position (row, column)",
+          "valueParam":"Data name to be saved",
+          "menuTitle":"Write data table cells",
+          "selectFile":"Select file",
+          "menuNote":"Fill in data to the target cell of the target file"
+      },
+      "exportFile": {
+          "outParam":"The full path name of the output file is a variable.",
+          "save-history":"History file alias",
+          "isSaveHistory":"Save to historical task",
+          "targetPath":"Saved path",
+          "filename":"File name",
+          "valueParam":"Data name to be saved",
+          "sheet_name":"Sheet name (Excel file only)",
+          "a":"Add",
+          "w":"Overlay",
+          "writeType":"Write type (txt only)",
+          "excel":"Excel",
+          "csv":"csv",
+          "fileType":"File types",
+          "newFileName":"History file alias",
+          "txt":"txt",
+          "word":"word",
+          "menuTitle":"Write data table",
+          "select_directory":"Select directory",
+          "menuNote":"Write data to target data table file"
+      },
+      "exportTextFile": {
+          "outParam":"Output variable naming",
+          "save-history":"Save history",
+          "isSaveHistory":"Do you want to keep history",
+          "targetPath":"Target path",
+          "filename":"File name",
+          "valueParam":"Value param",
+          "sheet_name":"Sheet name",
+          "a":"Additional",
+          "w":"Cover",
+          "writeType":"Write type",
+          "excel":"excel",
+          "csv":"csv",
+          "fileType":"File type",
+          "newFileName":"New file name",
+          "txt":"txt",
+          "word":"word",
+          "menuTitle":"Write document",
+          "menuNote":"Write data to target document file"
+      },
+      "koulingxuanze": {
+          "outParam":"Output variable naming",
+          "groupKey":"Password selection",
+          "chooseCmdGroup":"Password group selection",
+          "menuTitle":"Password selection",
+          "menuNote":"Select a password, output a new variable and name it"
+      },
+      "saveAccount": {
+          "outParam":"Output variable naming",
+          "pwdValue":"password",
+          "usernameValue":"username",
+          "realAccount":"Real account",
+          "testAccount":"Test account",
+          "operator":"Operator"
+      },
+      "head": {
+          "nav": {
+              "run":"Running",
+              "clean":"Empty",
+              "save":"Save.",
+              "read":"Read",
+              "import":"Import",
+              "export":"Export",
+              "showVar":"View parameters",
+              "unitTesting":"Unit testing",
+              "unitClean":"Empty",
+              "prev":"Revocation",
+              "next":"Redo.",
+              "showAnnotation":"Show comments",
+              "continue":"Continue"
+          }
+      },
+      "aside": {
+          "left": {
+              "atomicProcess":"Meta process",
+              "foreach":"List loop",
+              "if":"Conditional judgment",
+              "concurrence":"Concurrent processing",
+              "goto":"Point to process",
+              "breviary":"Mainstream process",
+              "selectTheIterationElement":"Please select iteration element",
+              "nameOfIndividualElements":"Naming of individual elements",
+              "ifBlockName":"Conditional block name",
+              "forBlockName":"List loop block name",
+              "gotoBlockName":"Point to process block name",
+              "executeWhenConditionsAreMet":"Meet conditions",
+              "executeWhenTheConditionsAreNotMet":"Does not meet the conditions",
+              "condition":"Conditions"
+          }
+      },
+      "content": {
+          "main": {
+              "start":"Start the process.",
+              "pretreatment":"Preprocessing",
+              "endNode":"End node",
+              "end":"End of process",
+              "outParam":"Out of ginseng",
+              "inParam":"Entering the reference",
+              "delete":"Delete",
+              "copy":"Replication node",
+              "paste":"Paste node",
+              "skip":"Skip node",
+              "transverseCopy":"Horizontal replication",
+              "point":"Add breakpoints",
+              "tryCatch":"Exception capture",
+              "addDesc":"Add comments.",
+              "packUp":"Put it away.",
+              "unfold":"Expand",
+              "addFlow":"Please add process",
+              "executeWhenConditionsAreMet":"Execute when conditions are met",
+              "executeWhenTheConditionsAreNotMet":"Execute when conditions are not met",
+              "isCoveredWithTheSameVariable":"A duplicate variable is detected. It is recommended to modify the current variable name, otherwise the previous duplicate variable will be overwritten.",
+              "forLoop":"For loop"
+          }
+      },
+      "alert": {
+          "yes":"Yes.",
+          "no":"No.",
+          "OK":"OK.",
+          "close":"Close",
+          "save":"Save.",
+          "saveAs":"Save as",
+          "continue":"Continue.",
+          "deleteSuccess":"Deleted successfully.",
+          "deleteFail":"Delete failed",
+          "saveSuccess":"Saved successfully.",
+          "saveFail":"Save failed",
+          "isCleanAllProcess":"Clear the flowchart?",
+          "isCleanAtomicProcess":"Clear the meta process?",
+          "noAuthorization":"Authorization is invalid or expired.",
+          "repeatTypes":"Duplicate type, please re-enter!",
+          "exporting":"Exporting",
+          "exportSuccess":"Export succeeded.",
+          "exportFail":"Export failed",
+          "fileTypeError":"File type error",
+          "connectFailSql":"Unable to get database information",
+          "isImport":"Import or not",
+          "importBtn":"Import",
+          "importAndExecuteBtn":"Import and execute",
+          "execute":"Execution.",
+          "cancel":"Cancel.",
+          "fileHasTriggerHowToHandle":"The file has been triggered. What kind of operation do you need to trigger?",
+          "isDelete":"Delete",
+          "insertFail":"Insert failed",
+          "isCoveredWithTheSame":"The same name is found. Do you want to override it?",
+          "titleTips":"Tips",
+          "isCloseApp":"Do you want to close the app",
+          "isSaveAs":"Save as?",
+          "isSave":"Save?",
+          "isRunWithWrongWindow":"No correct start window found! Do you want to continue?",
+          "globalDeclarations":"Global statement",
+          "mateflow":"Meta process",
+          "create":"Create",
+          "comeFromGlobal":"From global variables",
+          "comeFromMateFlow":"From meta process",
+          "compileTask":"Compiling task",
+          "copySuccess":"Copy succeeded.",
+          "copyFailed":"Copy failed",
+          "pasteSuccess":"Paste succeeded.",
+          "pasteFailed":"Paste failed",
+          "isDeleteMainFlowNode":"Delete the master process node",
+          "newVersionHasDown":"The new version has been downloaded. Do you want to restart the update now?",
+          "nowIsTheLastestVersion":"This is the latest version!",
+          "thisNodeCantDelete":"This node cannot be deleted!",
+          "update":"Update",
+          "checkOldScript":"Old version script detected, update?",
+          "readFailed":"Read error",
+          "thisStepWillCreateVariable":"Variables generated in this step",
+          "predictedGenerationVariableType":"Expected generation variable type is",
+          "errorReturningData":"Error in returning data!",
+          "launchIECshandleFailed":"Failed to start the tool to grab ie elements!",
+          "launchJavaCshandleFailed":"Failed to start grabbing Java element tool!",
+          "launchingUtils":"Opening tool",
+          "waitingHandleReturnVariable":"Waiting for tool variables to return",
+          "launchCshandleFailed":"Failed to start desktop tools!",
+          "error":"Error.",
+          "setting":"Settings",
+          "helping":"Help",
+          "toggleDevTools":"Switch developer tools",
+          "viewVersionImprint":"View version notes",
+          "refresh":"Refresh",
+          "systemSettings":"System settings",
+          "basicSetting ":"Basic settings",
+          "sudoReboot":"Bit flag after restart",
+          "unitTestVariableDefinition":"Unit test variable definition",
+          "exportDataModule":"Export data module",
+          "location":"Location",
+          "headline":"Title",
+          "type":"Type",
+          "describe":"Description",
+          "variableName":"Variable name",
+          "addNewType":"New type",
+          "variable":"Variables",
+          "globalVariable":"Global variables",
+          "partVariable":"Local variables",
+          "saveDataModule":"Save data module",
+          "editNote":"Edit comments",
+          "isCoverScript":"Is it covered?",
+          "import": {
+              "title":"Title",
+              "desc":"Description",
+              "createTime":"Creation time",
+              "updateTime":"Update time",
+              "homePage":"Home page",
+              "trailerPage":"Last page",
+              "operate":"Operation",
+              "select":"Select",
+              "delete":"Delete",
+              "newType":"New type",
+              "saveDataModule":"Save data module",
+              "all":"All"
+          }
+      },
+      "fs_delete_dir": {
+          "file":"Select the folder to delete.",
+          "menuTitle":"Delete folder",
+          "select_directory":"Select directory",
+          "menuNote":"Delete specified folder"
+      },
+      "pretreatment": {
+          "menuTitle":"Preprocessing"
+      },
+      "endNode": {
+        "menuTitle":"End node"
+      },
+      "chromeBrowser": {
+          "menuTitle":"Browser (chrome)"
+      },
+      "SeleniumBrowser": {
+        "menuTitle": "Browser(selenium)"
+    },
+    "Customized function": {
+        "menuTitle": "Customized function"
+    },
+      "internetExplorer": {
+          "menuTitle":"Browser (ie)"
+      },
+      "yingyonggongneng": {
+          "menuTitle":"Application function"
+      },
+      "microsoftApplication": {
+          "outParam": {
+              "note":"Output a defined CS class, mainly used in Microsoft applications"
+          },
+          "Element": {
+              "note":"Enter a CS class"
+          },
+          "menuTitle":"Microsoft applications"
+      },
+      "variantHandling": {
+          "menuTitle":"Variable processing"
+      },
+      "workflowControl": {
+          "menuTitle":"Logical flow"
+      },
+      "shujubiaoge": {
+          "menuTitle":"Data table"
+      },
+      "fileOperate": {
+          "menuTitle":"File operations"
+      },
+      "keyboardAndMouse": {
+          "menuTitle":"Keyboard and mouse"
+      },
+      "dataInterfaceUtil": {
+          "menuTitle":"External interface"
+      },
+      "exceptions": {
+          "menuTitle":"Exception capture"
+      },
+      "databaseUtil": {
+          "menuTitle":"Database"
+      },
+      "excelHandling": {
+          "menuTitle":"Excel function"
+      },
+      "docUtil": {
+          "menuTitle":"Document function"
+      },
+      "ocr": {
+          "menuTitle":"OCR function"
+      },
+      "customizedApplication": {
+          "menuTitle":"Trial function"
+      },
+      "finalHandling": {
+          "menuTitle":"End processing"
+      },
+      "systemUtil": {
+          "menuTitle":"System functions"
+      },
+      "setting": {
+          "host":"Central control address",
+          "name":"Yes.",
+          "port":"Central control port",
+          "beatTime":"Heartbeat time.",
+          "globalWaitTime":"Global waiting time",
+          "isDev":"Is it a development mode",
+          "isTrue":"Yes.",
+          "isFalse":"No.",
+          "isLocalSql":"Is it a local database",
+          "waitOutTime":"Timeout",
+          "workDirectory":"Working directory",
+          "language":"Language"
+      }
+  }

@@ -123,7 +123,7 @@
     "saveNewParam": {
         "paramValue": "变量值：",
         "outParam": "输出变量命名：",
-        "menuTitle": "设置新变量",
+        "menuTitle": "设置变量",
         "menuNote": "新建变量并为之赋值和命名"
     },
     "calculateParam": {
@@ -929,6 +929,16 @@
         "menuTitle": "继续循环",
         "menuNote": "按条件判断，满足条件时继续当前循环"
     },
+    "foreach": {
+        "rename_i": "单元元素下标的命名：",
+        "rename": "单元元素的命名：",
+        "objectList": "请选择迭代元素",
+        "menuTitle": "列表循环",
+        "menuNote": "按元素个数循环若干次"
+    },
+    "concurrence":{
+        "menuTitle": "并发处理"
+    },
     "for": {
         "rename_i": "单元元素下标的命名：",
         "rename": "单元元素的命名：",
@@ -1017,6 +1027,13 @@
         "capture": "抓取",
         "xpath": "元素路径(xpath)：",
         "menuTitle": "获取验证码",
+        "menuNote": "输入验证码路径用以运行时获得该验证码中的内容，输出一个新变量并为其命名"
+    },
+    "ie8_getVCode":{
+        "outParam": "输出变量命名：",
+        "capture": "抓取",
+        "xpath": "元素路径(xpath)：",
+        "menuTitle": "获取验证码(IE)",
         "menuNote": "输入验证码路径用以运行时获得该验证码中的内容，输出一个新变量并为其命名"
     },
     "assert_type": {
@@ -1565,22 +1582,22 @@
         "menuNote": "将数据写入至目标数据表格文件"
     },
     "exportTextFile": {
-        "outParam": "exportTextFile.outParam",
-        "save-history": "exportTextFile.save-history",
-        "isSaveHistory": "exportTextFile.isSaveHistory",
-        "targetPath": "exportTextFile.targetPath",
-        "filename": "exportTextFile.filename",
-        "valueParam": "exportTextFile.valueParam",
-        "sheet_name": "exportTextFile.sheet_name",
-        "a": "exportTextFile.a",
-        "w": "exportTextFile.w",
-        "writeType": "exportTextFile.writeType",
-        "excel": "exportTextFile.excel",
-        "csv": "exportTextFile.csv",
-        "fileType": "exportTextFile.fileType",
-        "newFileName": "exportTextFile.newFileName",
-        "txt": "exportTextFile.txt",
-        "word": "exportTextFile.word",
+        "outParam": "输出变量命名：",
+        "save-history": "保存历史记录",
+        "isSaveHistory": "是否保存历史记录",
+        "targetPath": "目标路径",
+        "filename": "文件名",
+        "valueParam": "输入数据",
+        "sheet_name": "sheet名称",
+        "a": "追加",
+        "w": "覆盖",
+        "writeType": "写入类型",
+        "excel": "excel",
+        "csv": "csv",
+        "fileType": "文件类型",
+        "newFileName": "新文件名",
+        "txt": "txt",
+        "word": "word",
         "menuTitle": "写入文档",
         "menuNote": "将数据写入至目标文档文件"
     },
@@ -1592,12 +1609,12 @@
         "menuNote": "选择一个口令，输出一个新变量并为其命名"
     },
     "saveAccount": {
-        "outParam": "saveAccount.outParam",
-        "pwdValue": "saveAccount.pwdValue",
-        "usernameValue": "saveAccount.usernameValue",
-        "realAccount": "saveAccount.realAccount",
-        "testAccount": "saveAccount.testAccount",
-        "operator": "saveAccount.operator"
+        "outParam": "输出变量命名：",
+        "pwdValue": "密码",
+        "usernameValue": "用户名",
+        "realAccount": "真实账号",
+        "testAccount": "测试账号",
+        "operator": "操作人员"
     },
     "head": {
         "nav": {
@@ -1621,7 +1638,7 @@
             "atomicProcess": "元流程",
             "foreach": "列表循环",
             "if": "条件判断",
-            "concurrence": " 并发处理",
+            "concurrence": "并发处理",
             "goto":"指向流程",
             "breviary": "主流程",
             "selectTheIterationElement":"请选择迭代元素",
@@ -1767,8 +1784,17 @@
     "pretreatment": {
         "menuTitle": "预处理"
     },
+    "endNode": {
+        "menuTitle": "结束节点"
+    },
     "chromeBrowser": {
         "menuTitle": "浏览器(Chrome)"
+    },
+    "SeleniumBrowser": {
+        "menuTitle": "浏览器(selenium)"
+    },
+    "Customized function": {
+        "menuTitle": "定制化功能"
     },
     "internetExplorer": {
         "menuTitle": "浏览器(IE)"

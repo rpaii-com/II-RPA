@@ -23,7 +23,7 @@
                 "nodeType": "importFile"
             },
             {
-                "name": "设置全局变量",
+                "name": "设置变量",
                 "url": "pretreatment/shezhixincanshu.html",
                 "className": "diy-icon-menu3-1",
                 "nodeType": "saveNewParam"
@@ -323,7 +323,7 @@
         "className": "main-menu-icon menu-icon-3 menu-icon",
         "children": [
             {
-                "name": "设置新变量",
+                "name": "设置变量",
                 "url": "canshuchuli/shezhixincanshu.html",
                 "className": "diy-icon-menu3-1",
                 "nodeType": "saveNewParam"
