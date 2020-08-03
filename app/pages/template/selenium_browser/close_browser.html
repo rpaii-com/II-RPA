@@ -1,4 +1,26 @@
 <div class="main-con-item">
-    <span>关闭当前页面（选项卡）1</span>
-    <input type="hidden" class="item-type" name="selenium_close">
+    <p>
+        <b>选择浏览器变量</b>(选填，输入要操作的浏览器变量名，)
+        <b>：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="browser_name">
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="toggleType"></i>
+        <i class="xiala-icon parameters"></i>
+    </div>
+    <p>
+        <b>关闭类型：</b>（选填，）
+    </p>
+    <div class="input-box">
+        <p class="radio-item">
+            <label>
+                <input type="radio" name="close_type" value="allClose" checked>全部关闭
+            </label>
+            <label>
+                <input type="radio" name="close_type" value="un_nowClose">关闭除第一个外的所有页面
+            </label>
+        </p>
+    </div>
 </div>
+<input type="hidden" class="item-type" name="close_browser">

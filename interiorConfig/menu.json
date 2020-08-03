@@ -185,16 +185,76 @@
         "className": "icon menu-icon-1",
         "children": [
             {
-                "name": "填写输入框内容",
+                "name": "填写输入框内容(selenium)",
                 "url": "selenium_browser/input_browser.html",
                 "className": "diy-icon-menu1-7",
                 "nodeType": "input_browser"
             },
             {
-                "name": "打开网页",
+                "name": "打开网页(selenium)",
                 "url": "selenium_browser/open_browser.html",
-                "className": "diy-icon-menu1-14",
+                "className": "diy-icon-menu1-1",
                 "nodeType": "open_browser"
+            },
+            {
+                "name": "关闭所有网页(selenium)",
+                "url": "selenium_browser/close_browser.html",
+                "className": "diy-icon-menu1-14",
+                "nodeType": "close_browser"
+            },
+            {
+                "name": "关闭当前网页(selenium)",
+                "url": "selenium_browser/close_browser_page.html",
+                "className": "diy-icon-menu1-14",
+                "nodeType": "close_browser_page"
+            },
+            {
+                "name": "判断元素是否存在(selenium)",
+                "url": "selenium_browser/existence_browser.html",
+                "className": "diy-icon-menu1-13",
+                "nodeType": "existence_browser"
+            },
+            {
+                "name": "网页刷新(selenium)",
+                "url": "selenium_browser/refresh_browser.html",
+                "className": "diy-icon-menu1-2",
+                "nodeType": "refresh_browser"
+            },
+            {
+                "name": "网页前进(selenium)",
+                "url": "selenium_browser/forward_browser.html",
+                "className": "diy-icon-menu1-2",
+                "nodeType": "forward_browser"
+            },
+            {
+                "name": "网页后退(selenium)",
+                "url": "selenium_browser/back_browser.html",
+                "className": "diy-icon-menu1-2",
+                "nodeType": "back_browser"
+            },
+            {
+                "name": "操作弹出框(selenium)",
+                "url": "selenium_browser/alert_click_browser.html",
+                "className": "diy-icon-menu1-2",
+                "nodeType": "alert_click_browser"
+            },
+            {
+                "name": "批量抓取元素数据(selenium)",
+                "url": "selenium_browser/batchGrab_browser.html",
+                "className": "diy-icon-menu1-8",
+                "nodeType": "batchGrab_browser"
+            },
+            {
+                "name": "抓取单个元素数据(selenium)",
+                "url": "selenium_browser/grab_browser.html",
+                "className": "diy-icon-menu1-8",
+                "nodeType": "grab_browser"
+            },
+            {
+                "name": "点击网页元素(selenium)",
+                "url": "selenium_browser/click_browser.html",
+                "className": "diy-icon-menu1-6",
+                "nodeType": "click_browser"
             }
         ]
     },

@@ -1,0 +1,44 @@
+<div class="main-con-item">
+    <p>
+        <b>选择浏览器变量</b>(必填，输入要操作的浏览器变量名，)
+        <b>：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="browser_name">
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="toggleType"></i>
+        <i class="xiala-icon parameters"></i>
+    </div>
+    <p>
+        <b>输入超时时间</b>(选填，默认20秒，)
+        <b>：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="time_out">
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="toggleType"></i>
+        <i class="xiala-icon parameters"></i>
+    </div>
+    <p>
+        <b>操作类型：</b>（选填，）
+    </p>
+    <div class="input-box">
+        <p class="radio-item">
+            <label>
+                <input type="radio" name="operation_type" value="confirm" checked>确定
+            </label>
+            <label>
+                <input type="radio" name="operation_type" value="cancel">取消
+            </label>
+        </p>
+    </div>
+    
+    <p>
+        <b>输出参数命名：</b>（选填，）
+    </p>
+    <div class="input-box">
+        <input type="text" name="rename">
+    </div>
+</div>
+
+<input type="hidden" class="item-type" name="alert_click_browser">

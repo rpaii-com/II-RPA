@@ -1,0 +1,43 @@
+<div class="main-con-item">
+    <button type="button" class="capture">捕获页面元素</button>
+    <p>
+        <b>元素路径</b>(xpath，必填，)
+        <b>：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="xpath">
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="toggleType"></i>
+        <i class="xiala-icon parameters"></i>
+    </div>
+    <p>
+        <b>选择浏览器变量</b>(选填，输入要操作的浏览器变量名，)
+        <b>：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="browser_name">
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="toggleType"></i>
+        <i class="xiala-icon parameters"></i>
+    </div>
+    <p>
+        <b>打开浏览器方式</b>（选填，）
+    </p>
+    <div class="input-box">
+        <p class="radio-item">
+            <label>
+                <input type="radio" name="click_type" value="left_click" checked>左键点击
+            </label>
+            <label>
+                <input type="radio" name="click_type" value="left_double_click">左键双击
+            </label>
+            <label>
+                <input type="radio" name="click_type" value="click_and_hold">左键点击不释放
+            </label>
+            <label>
+                <input type="radio" name="click_type" value="right_click">右键单击
+            </label>
+        </p>
+    </div>
+</div>
+<input type="hidden" class="item-type" name="click_browser">

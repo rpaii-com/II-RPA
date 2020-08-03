@@ -2038,20 +2038,16 @@ incident.addEVent("telnetClose", function (step, callback, ctx) {
 /******************python_selenium*********************/
 //python打开浏览器，
 incident.addEVent("open_browser", async function (step, callback, ctx) {
-    const path = require('path')
     pythonStart();
-    console.log(process.cwd())
-    const pythonfilePath = path.join(process.cwd(),"./extend/python/app_selenium.py")
-    const functionName = "open_selenium";
-    const parameters = {
-        url:step.parameters.url,
-        browser_type:step.parameters.browser_type,
-        path_selenium:step.parameters.path_selenium,
-        chrome_driver:step.parameters.chrome_driver,
-        open_type:step.parameters.open_type
-      };
     try{
-        ctx.set(step.parameters.rename, await python_exec(pythonfilePath,functionName,parameters));
+        const path = require('path')
+        ctx.set(step.parameters.rename, await python_exec(path.join(process.cwd(),"./extend/python/app_selenium.py"),"open_selenium",{
+            url:step.parameters.url,
+            browser_type:step.parameters.browser_type,
+            path_selenium:step.parameters.path_selenium,
+            chrome_driver:step.parameters.chrome_driver,
+            open_type:step.parameters.open_type
+          }));
     }catch(e){
 		return callback(e);
 	}
@@ -2060,21 +2056,169 @@ incident.addEVent("open_browser", async function (step, callback, ctx) {
 
 //python浏览器输入，
 incident.addEVent("input_browser", async function (step, callback, ctx) {
-    const path = require('path')
     pythonStart();
-    const pythonfilePath = path.join(process.cwd(),"./extend/python/app_selenium.py")
-    const functionName = "input_selenium";
-    const parameters = {
-        xpath:step.parameters.xpath,
-        text:step.parameters.text,
-        browser_name:step.parameters.browser_name
-      };
     try{
-        ctx.set(step.parameters.rename, await python_exec(pythonfilePath,functionName,parameters));
+        const path = require('path')
+        ctx.set(step.parameters.rename, await python_exec(path.join(process.cwd(),"./extend/python/app_selenium.py"),"input_selenium",{
+            xpath:step.parameters.xpath,
+            text:step.parameters.text,
+            browser_name:step.parameters.browser_name
+          }));
     }catch(e){
 		return callback(e);
 	}
     callback();
+})
+
+//python浏览器关闭，
+incident.addEVent("close_browser", async function (step, callback, ctx) { //ִ
+    pythonStart();
+	try{
+        const path = require('path')
+		ctx.set(await python_exec(path.join(process.cwd(),"./extend/python/app_selenium.py"),"close_selenium",{
+			close_type:step.parameters.close_type,
+			browser_name:step.parameters.browser_name
+		}))
+	}catch(e){
+		return callback(e);
+	}
+	callback();
+})
+
+//python关闭当前页面，
+incident.addEVent("close_browser_page", async function (step, callback, ctx) { //ִ
+    pythonStart();
+	try{
+		const path = require("path");
+		ctx.set(await python_exec(path.join(process.cwd(),"./extend/python/app_selenium.py"),"close_selenium_page",{
+			browser_name:step.parameters.browser_name
+		}))
+	}catch(e){
+		return callback(e);
+	}
+	callback();
+})
+
+//判断元素是否存在，
+incident.addEVent("existence_browser", async function (step, callback, ctx) { //ִ
+    pythonStart();
+	try{
+		const path = require("path");
+		ctx.set(step.parameters.rename,await python_exec(path.join(process.cwd(),"./extend/python/app_selenium.py"),"existence_selenium",{
+			xpath:step.parameters.xpath,
+			browser_name:step.parameters.browser_name
+		}))
+	}catch(e){
+		return callback(e);
+	}
+	callback();
+})
+
+//网页刷新，
+incident.addEVent("refresh_browser", async function (step, callback, ctx) { //ִ
+    pythonStart();
+	try{
+		const path = require("path");
+		ctx.set(await python_exec(path.join(process.cwd(),"./extend/python/app_selenium.py"),"refresh_selenium",{
+			browser_name:step.parameters.browser_name
+		}))
+	}catch(e){
+		return callback(e);
+	}
+	callback();
+})
+
+//网页前进，
+incident.addEVent("forward_browser", async function (step, callback, ctx) { //ִ
+    pythonStart();
+	try{
+		const path = require("path");
+		ctx.set(await python_exec(path.join(process.cwd(),"./extend/python/app_selenium.py"),"forward_selenium",{
+			browser_name:step.parameters.browser_name
+		}))
+	}catch(e){
+		return callback(e);
+	}
+	callback();
+})
+
+//网页后退，
+incident.addEVent("back_browser", async function (step, callback, ctx) { //ִ
+    pythonStart();
+	try{
+		const path = require("path");
+		ctx.set(await python_exec(path.join(process.cwd(),"./extend/python/app_selenium.py"),"back_selenium",{
+			browser_name:step.parameters.browser_name
+		}))
+	}catch(e){
+		return callback(e);
+	}
+	callback();
+})
+
+//操作弹出框，
+incident.addEVent("alert_click_browser", async function (step, callback, ctx) { //ִ
+    pythonStart();
+    if(step.parameters.time_out.length==0){
+        step.parameters.time_out=20;
+    }
+	try{
+        const path = require("path");
+    	ctx.set(step.parameters.rename,await python_exec(path.join(process.cwd(),"./extend/python/app_selenium.py"),"alert_click_selenium",{
+			browser_name:step.parameters.browser_name,
+			time_out:step.parameters.time_out,
+			operation_type:step.parameters.operation_type
+		}))
+	}catch(e){
+		return callback(e);
+	}
+	callback();
+})
+
+//批量抓取元素，
+incident.addEVent("batchGrab_browser", async function (step, callback, ctx) { //ִ
+    pythonStart();
+	try{
+		const path = require("path");
+		ctx.set(step.parameters.rename,await python_exec(path.join(process.cwd(),"./extend/python/app_selenium.py"),"batch_grab_selenium",{
+			xpath:step.parameters.xpath,
+			browser_name:step.parameters.browser_name
+		}))
+	}catch(e){
+		return callback(e);
+	}
+	callback();
+})
+
+//抓取单个元素，
+incident.addEVent("grab_browser", async function (step, callback, ctx) { //ִ
+    pythonStart();
+	try{
+		const path = require("path");
+		ctx.set(step.parameters.rename,await python_exec(path.join(process.cwd(),"./extend/python/app_selenium.py"),"grab_selenium",{
+			xpath:step.parameters.xpath,
+			browser_name:step.parameters.browser_name
+		}))
+	}catch(e){
+		return callback(e);
+	}
+	callback();
+})
+
+//点击网页元素，
+incident.addEVent("click_browser", async function (step, callback, ctx) { //ִ
+    pythonStart();
+	try{
+		const path = require("path");
+		ctx.set(step.parameters.rename,await python_exec(path.join(process.cwd(),"./extend/python/app_selenium.py"),"click_selenium",{
+			xpath:step.parameters.xpath,
+			click_type:step.parameters.click_type,
+			browser_name:step.parameters.browser_name
+		}))
+	}catch(e){
+		return callback(e);
+	}
+	callback();
 })
 
 

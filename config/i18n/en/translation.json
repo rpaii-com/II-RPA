@@ -1789,9 +1789,6 @@
       "chromeBrowser": {
           "menuTitle":"Browser (chrome)"
       },
-      "SeleniumBrowser": {
-        "menuTitle": "Browser(selenium)"
-    },
     "Customized function": {
         "menuTitle": "Customized function"
     },
@@ -1865,5 +1862,45 @@
           "waitOutTime":"Timeout",
           "workDirectory":"Working directory",
           "language":"Language"
-      }
-  }
+        },
+
+      "SeleniumBrowser": {
+        "menuTitle": "Browser(selenium)"
+        },
+        "input_browser": {
+            "menuTitle": "Fill in the input box(selenium)"
+        },
+        "open_browser": {
+            "menuTitle": "Open web page(selenium)"
+        },
+        "close_browser": {
+            "menuTitle": "Close all pages(selenium)"
+        },
+        "close_browser_page": {
+            "menuTitle": "Close current page(selenium)"
+        },
+        "existence_browser": {
+            "menuTitle": "Determine whether the element exists(selenium)"
+        },
+        "refresh_browser": {
+            "menuTitle": "Web forward(selenium)"
+        },
+        "forward_browser": {
+            "menuTitle": "Web forward(selenium)"
+        },
+        "back_browser": {
+            "menuTitle": "Page back(selenium)"
+        },
+        "alert_click_browser": {
+            "menuTitle": "Operation pop up box(selenium)"
+        },
+        "batchGrab_browser": {
+            "menuTitle": "Batch grab element data(selenium)"
+        },
+        "grab_browser": {
+            "menuTitle": "Grab single element data(selenium)"
+        },
+        "click_browser": {
+            "menuTitle": "Click on page elements(selenium)"
+        }
+    }

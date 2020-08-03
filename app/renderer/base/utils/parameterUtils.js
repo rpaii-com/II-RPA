@@ -479,6 +479,19 @@ let parameterUtils = {
             case "open_browser": //获取浏览器变量，
                 node.dataType = "string";
                 break;
+            case "existence_browser": 
+                node.dataType = "string";
+                break;
+            case "alert_click_browser": 
+                node.dataType = "string";
+                break;    
+            case "batchGrab_browser": 
+                node.dataType = "array";
+                break;      
+            case "grab_browser": 
+                node.dataType = "string";
+                break;     
+
             case "getSystemParameter": //获取系统变量
                 node.dataType = "string";
                 break;

@@ -112,6 +112,18 @@ function isTargetOutParameter(ele) {
         case "open_browser":
             hasOut = true;
             break;
+        case "existence_browser":
+            hasOut = true;
+            break;
+        case "alert_click_browser":
+            hasOut = true;
+            break;
+        case "batchGrab_browser":
+            hasOut = true;
+            break;
+        case "grab_browser":
+            hasOut = true;
+            break;
         default:
             hasOut = false;
             break;

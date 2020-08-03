@@ -261,5 +261,14 @@
         "readme文档更新，"
     ],
     "date": "2020-07-31"
+},
+{
+    "version": "1.0.13",
+    "data": [
+        "python-selenium组件更新60%，",
+        "python-selenium测试demo，",
+        "python-selenium国际化，"
+    ],
+    "date": "2020-08-03"
 }
 ]

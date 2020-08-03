@@ -1,7 +1,7 @@
 <div class="main-con-item">
     <div class="input-box">
         <p>
-            <b>打开网址(必填)</b>(如：https://www.baidu.com)
+            <b>打开网址</b>(必填，如：https://www.baidu.com)
             <b>：</b>
         </p>
         <input type="text" name="url">
@@ -10,7 +10,7 @@
         <i class="toggleType"></i>
     </div>
     <p>
-        <b>浏览器类型：</b>
+        <b>浏览器类型：</b>（选填，）
     </p>
     <div class="input-box">
         <p class="radio-item">
@@ -29,7 +29,7 @@
         </p>
     </div>
     <p>
-        <b>指定本地浏览器路径：(选填)</b>(默认读取360浏览器安装位置，)
+        <b>指定本地浏览器路径：</b>(选填，默认读取360浏览器安装位置，)
     </p>
     <button type="button" onclick="path_selenium_path.click();">点击选择文件</button>
     <div class="input-box">
@@ -41,7 +41,7 @@
                 onchange="this.value==''?path_selenium.value=path_selenium.value:path_selenium.value=gePathVal(this,true)" />
     </div>
     <p>
-        <b>指定内核驱动路径：(选填)</b>
+        <b>指定内核驱动路径：</b>（选填，）
     </p>
     <button type="button" onclick="chrome_driver_path.click();">点击选择文件</button>
         <div class="input-box">
@@ -53,7 +53,7 @@
                    onchange="this.value==''?chrome_driver.value=chrome_driver.value:chrome_driver.value=gePathVal(this,true)" />
         </div>
     <p>
-        <b>打开浏览器方式</b>
+        <b>打开浏览器方式</b>（选填，）
     </p>
     <div class="input-box">
         <p class="radio-item">

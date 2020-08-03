@@ -1790,9 +1790,6 @@
     "chromeBrowser": {
         "menuTitle": "浏览器(Chrome)"
     },
-    "SeleniumBrowser": {
-        "menuTitle": "浏览器(selenium)"
-    },
     "Customized function": {
         "menuTitle": "定制化功能"
     },
@@ -1866,5 +1863,44 @@
         "waitOutTime": "超时时间",
         "workDirectory": "工作目录",
         "language": "语言"
+    },
+    "SeleniumBrowser": {
+        "menuTitle": "浏览器(selenium)"
+    },
+    "input_browser": {
+        "menuTitle": "填写输入框内容(selenium)"
+    },
+    "open_browser": {
+        "menuTitle": "打开网页(selenium)"
+    },
+    "close_browser": {
+        "menuTitle": "关闭所有网页(selenium)"
+    },
+    "close_browser_page": {
+        "menuTitle": "关闭当前网页(selenium)"
+    },
+    "existence_browser": {
+        "menuTitle": "判断元素是否存在(selenium)"
+    },
+    "refresh_browser": {
+        "menuTitle": "网页前进(selenium)"
+    },
+    "forward_browser": {
+        "menuTitle": "网页前进(selenium)"
+    },
+    "back_browser": {
+        "menuTitle": "网页后退(selenium)"
+    },
+    "alert_click_browser": {
+        "menuTitle": "操作弹出框(selenium)"
+    },
+    "batchGrab_browser": {
+        "menuTitle": "批量抓取元素数据(selenium)"
+    },
+    "grab_browser": {
+        "menuTitle": "抓取单个元素数据(selenium)"
+    },
+    "click_browser": {
+        "menuTitle": "点击网页元素(selenium)"
     }
 }
