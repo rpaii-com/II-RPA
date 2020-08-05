@@ -1,8 +1,8 @@
 const DevicePixelRatio = window.devicePixelRatio;
 
+var isFrist_python=true;
 //启动python服务，
 function pythonStart(){
-    var isFrist_python=true;
     if (isFrist_python){
         const { PythonShell } = require('python-shell');
         const iconv = require('iconv-lite');
@@ -35,7 +35,7 @@ function pythonStart(){
         });
         isFrist_python = false;
     }else{
-        return
+        console.log("python服务已启动，");
     }
     //关闭
     // shell && shell.terminate()
@@ -2221,7 +2221,102 @@ incident.addEVent("click_browser", async function (step, callback, ctx) { //ִ
 	callback();
 })
 
+//窗口最大化，
+incident.addEVent("max_browser", async function (step, callback, ctx) { //ִ
+    pythonStart();
+	try{
+		const path = require("path");
+		ctx.set(await python_exec(path.join(process.cwd(),"./extend/python/app_selenium.py"),"max_selenium",{
+			browser_name:step.parameters.browser_name
+		}))
+	}catch(e){
+		return callback(e);
+	}
+	callback();
+})
 
+//等待网页元素出现继续，
+incident.addEVent("wait_browser", async function (step, callback, ctx) { //ִ
+    pythonStart();
+    if(step.parameters.wait_second.length==0){
+        step.parameters.wait_second=20;
+    }
+	try{
+		const path = require("path");
+		ctx.set(step.parameters.rename,await python_exec(path.join(process.cwd(),"./extend/python/app_selenium.py"),"selenium_driver_wait",{
+			xpath:step.parameters.xpath,
+			browser_name:step.parameters.browser_name,
+			wait_second:step.parameters.wait_second
+		}))
+	}catch(e){
+		return callback(e);
+	}
+	callback();
+})
 
+//获取url，
+incident.addEVent("url_browser", async function (step, callback, ctx) { //ִ
+    pythonStart();
+	try{
+		const path = require("path");
+		ctx.set(step.parameters.rename,await python_exec(path.join(process.cwd(),"./extend/python/app_selenium.py"),"url_selenium",{
+			browser_name:step.parameters.browser_name
+		}))
+	}catch(e){
+		return callback(e);
+	}
+	callback();
+})
+
+//获取浏览器弹出框内容，
+incident.addEVent("grab_alert_browser", async function (step, callback, ctx) { //ִ
+    pythonStart();
+    if(step.parameters.time_out.length==0){
+        step.parameters.time_out=20;
+    }
+	try{
+        const path = require("path");
+		ctx.set(step.parameters.rename,await python_exec(path.join(process.cwd(),"./extend/python/app_selenium.py"),"alert_grab_selenium",{
+			browser_name:step.parameters.browser_name,
+			time_out:step.parameters.time_out
+		}))
+	}catch(e){
+		return callback(e);
+	}
+	callback();
+})
+
+//获取网页元素属性,
+incident.addEVent("attribute_browser", async function (step, callback, ctx) { //ִ
+    pythonStart();
+	try{
+		const path = require("path");
+		ctx.set(step.parameters.rename,await python_exec(path.join(process.cwd(),"./extend/python/app_selenium.py"),"attribute_selenium",{
+			xpath:step.parameters.xpath,
+			attribute_name:step.parameters.attribute_name,
+			browser_name:step.parameters.browser_name
+		}))
+	}catch(e){
+		return callback(e);
+	}
+	callback();
+})
+
+//选择网页下拉框选项,
+incident.addEVent("select_browser", async function (step, callback, ctx) { //ִ
+    pythonStart();
+	try{
+		const path = require("path");
+		ctx.set(await python_exec(path.join(process.cwd(),"./extend/python/app_selenium.py"),"select_selenium",{
+			xpath:step.parameters.xpath,
+			text:step.parameters.text,
+			match_type:step.parameters.match_type,
+			browser_name:step.parameters.browser_name
+		}))
+	}catch(e){
+		return callback(e);
+	}
+	callback();
+})
 
 /******************python_selenium*********************/

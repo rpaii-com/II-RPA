@@ -1883,7 +1883,7 @@
             "menuTitle": "Determine whether the element exists(selenium)"
         },
         "refresh_browser": {
-            "menuTitle": "Web forward(selenium)"
+            "menuTitle": "Web refresh(selenium)"
         },
         "forward_browser": {
             "menuTitle": "Web forward(selenium)"
@@ -1902,5 +1902,23 @@
         },
         "click_browser": {
             "menuTitle": "Click on page elements(selenium)"
+        },
+        "max_browser":{
+            "menuTitle": "Maximize web window(selenium)"
+        },
+        "wait_browser":{
+            "menuTitle": "Wait for the page element to appear and continue(selenium)"
+        },
+        "url_browser":{
+            "menuTitle": "Get URL variable(selenium)"
+        },
+        "grab_alert_browser":{
+            "menuTitle": "Get browser pop-up content(selenium)"
+        },
+        "attribute_browser":{
+            "menuTitle": "Get page element properties(selenium)"
+        },
+        "select_browser":{
+            "menuTitle": "Select the page drop-down box option(selenium)"
         }
     }

@@ -124,6 +124,18 @@ function isTargetOutParameter(ele) {
         case "grab_browser":
             hasOut = true;
             break;
+        case "wait_browser":
+            hasOut = true;
+            break;
+        case "url_browser":
+            hasOut = true;
+            break;
+        case "grab_alert_browser":
+            hasOut = true;
+            break;
+        case "attribute_browser":
+            hasOut = true;
+            break;
         default:
             hasOut = false;
             break;

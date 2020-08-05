@@ -1883,7 +1883,7 @@
         "menuTitle": "判断元素是否存在(selenium)"
     },
     "refresh_browser": {
-        "menuTitle": "网页前进(selenium)"
+        "menuTitle": "网页刷新(selenium)"
     },
     "forward_browser": {
         "menuTitle": "网页前进(selenium)"
@@ -1902,5 +1902,23 @@
     },
     "click_browser": {
         "menuTitle": "点击网页元素(selenium)"
+    },
+    "max_browser":{
+        "menuTitle": "网页窗口最大化(selenium)"
+    },
+    "wait_browser":{
+        "menuTitle": "等待网页元素出现继续(selenium)"
+    },
+    "url_browser":{
+        "menuTitle": "获取url变量(selenium)"
+    },
+    "grab_alert_browser":{
+        "menuTitle": "获取浏览器弹出框内容(selenium)"
+    },
+    "attribute_browser":{
+        "menuTitle": "获取网页元素属性(selenium)"
+    },
+    "select_browser":{
+        "menuTitle": "选择网页下拉框选项(selenium)"
     }
 }

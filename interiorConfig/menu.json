@@ -255,7 +255,44 @@
                 "url": "selenium_browser/click_browser.html",
                 "className": "diy-icon-menu1-6",
                 "nodeType": "click_browser"
+            },
+            {
+                "name": "网页窗口最大化(selenium)",
+                "url": "selenium_browser/max_browser.html",
+                "className": "diy-icon-menu1-6",
+                "nodeType": "max_browser"
+            },
+            {
+                "name": "等待网页元素出现继续(selenium)",
+                "url": "selenium_browser/wait_browser.html",
+                "className": "diy-icon-menu1-1",
+                "nodeType": "wait_browser"
+            },
+            {
+                "name": "获取url变量(selenium)",
+                "url": "selenium_browser/url_browser.html",
+                "className": "diy-icon-menu1-1",
+                "nodeType": "url_browser"
+            },
+            {
+                "name": "获取浏览器弹出框内容(selenium)",
+                "url": "selenium_browser/grab_alert_browser.html",
+                "className": "diy-icon-menu1-1",
+                "nodeType": "grab_alert_browser"
+            },
+            {
+                "name": "获取网页元素属性(selenium)",
+                "url": "selenium_browser/attribute_browser.html",
+                "className": "diy-icon-menu1-1",
+                "nodeType": "attribute_browser"
+            },
+            {
+                "name": "选择网页下拉框选项(selenium)",
+                "url": "selenium_browser/select_browser.html",
+                "className": "diy-icon-menu1-1",
+                "nodeType": "select_browser"
             }
+            
         ]
     },
     {

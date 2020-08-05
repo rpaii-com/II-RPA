@@ -491,6 +491,18 @@ let parameterUtils = {
             case "grab_browser": 
                 node.dataType = "string";
                 break;     
+            case "wait_browser": 
+                node.dataType = "string";
+                break;   
+            case "url_browser": 
+                node.dataType = "string";
+                break;   
+            case "grab_alert_browser": 
+                node.dataType = "string";
+                break;   
+            case "attribute_browser":
+                node.dataType = "string";
+                break;   
 
             case "getSystemParameter": //获取系统变量
                 node.dataType = "string";

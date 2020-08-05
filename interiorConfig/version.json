@@ -270,5 +270,14 @@
         "python-selenium国际化，"
     ],
     "date": "2020-08-03"
+},
+{
+    "version": "1.0.14",
+    "data": [
+        "python-selenium组件更新100%，",
+        "python-selenium测试demo，",
+        "python-selenium国际化，"
+    ],
+    "date": "2020-08-05"
 }
 ]
