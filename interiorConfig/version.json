@@ -279,5 +279,14 @@
         "python-selenium国际化，"
     ],
     "date": "2020-08-05"
+},
+{
+    "version": "1.0.15",
+    "data": [
+        "python-outlook组件更新50%，",
+        "python-outlook测试demo，",
+        "python-outlook国际化，"
+    ],
+    "date": "2020-08-10"
 }
 ]

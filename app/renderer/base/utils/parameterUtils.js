@@ -503,6 +503,9 @@ let parameterUtils = {
             case "attribute_browser":
                 node.dataType = "string";
                 break;   
+            case "outlook_get":
+                node.dataType = "array";
+                break; 
 
             case "getSystemParameter": //获取系统变量
                 node.dataType = "string";

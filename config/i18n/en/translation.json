@@ -1920,5 +1920,17 @@
         },
         "select_browser":{
             "menuTitle": "Select the page drop-down box option(selenium)"
+        },
+        "outlook_send":{
+            "menuTitle": "Outlook send mail"
+        },
+        "outlook_get":{
+            "menuTitle": "Outlook get mail message object"
+        },
+        "outlook_reply":{
+            "menuTitle": "Outlook reply email"
+        }, 
+        "outlook_use": {
+            "menuTitle": "Outlook Mail operation"
         }
     }

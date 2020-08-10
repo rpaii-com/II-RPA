@@ -1,0 +1,112 @@
+<div class="main-con-item">
+    <p>
+        <b>接收人邮箱</b>(必填，请输入接收人邮箱，如果有多个以英文符号;隔开，)
+        <b>：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="accept_name">
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="toggleType"></i>
+        <i class="xiala-icon parameters"></i>
+    </div>
+    <p>
+        <b>主题</b>(必填，请输入邮箱主题，)
+        <b>：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="accept_title">
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="toggleType"></i>
+        <i class="xiala-icon parameters"></i>
+    </div>
+    <p>
+        <b>正文</b>(必填，请输入邮箱正文，)
+        <b>：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="accept_content">
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="toggleType"></i>
+        <i class="xiala-icon parameters"></i>
+    </div>
+    <p>
+        <b>发送人邮箱</b>(选填，请输入发送人邮箱，需要在outlook里配置对应账号，)
+        <b>：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="send_name">
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="toggleType"></i>
+        <i class="xiala-icon parameters"></i>
+    </div>
+    <p>
+        <b>添加附件：</b>（选填，选择附件文件的路径，如果有多个以英文符号;隔开即可，）
+    </p>
+    <button type="button" onclick="accept_file_path.click();">点击选择文件</button>
+        <div class="input-box">
+            <input type="text" class="form-control" id="accept_file" name="accept_file" placeholder="选择要读取的文件" />
+            <ul class="common-list parameters-can-select"></ul>
+            <i class="xiala-icon parameters"></i>
+            <i class="toggleType"></i>
+            <input type="file" id="accept_file_path" class="hideFile" 
+                   onchange="this.value==''?accept_file.value=accept_file.value:accept_file.value=gePathVal(this,true)" />
+        </div>
+    <p>
+        <b>密送</b>(选填，隐藏的电子邮件消息收件人，如果有多个以英文符号;隔开，)
+        <b>：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="secret_accept">
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="toggleType"></i>
+        <i class="xiala-icon parameters"></i>
+    </div>
+    <p>
+        <b>抄送</b>(选填，次要的电子邮件消息收件人，如果有多个以英文符号;隔开，)
+        <b>：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="minor_accept">
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="toggleType"></i>
+        <i class="xiala-icon parameters"></i>
+    </div>
+    <p>
+        <b>代送人名称</b>(选填，指明邮件消息预期显示的发件人，需要在outlook里配置代送人名称对应的通讯录，，)
+        <b>：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="agent_send_name">
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="toggleType"></i>
+        <i class="xiala-icon parameters"></i>
+    </div>
+    <p>
+        <b>是否草稿</b>（选填，）
+    </p>
+    <div class="input-box">
+        <p class="radio-item">
+            <label>
+                <input type="radio" name="draft_flag" value="no" checked>否
+            </label>
+            <label>
+                <input type="radio" name="draft_flag" value="yes">是
+            </label>
+        </p>
+    </div>
+    <p>
+        <b>正文是否Html</b>（选填，）
+    </p>
+    <div class="input-box">
+        <p class="radio-item">
+            <label>
+                <input type="radio" name="html_flag" value="no" checked>否
+            </label>
+            <label>
+                <input type="radio" name="html_flag" value="yes">是
+            </label>
+        </p>
+    </div>
+</div>
+
+<input type="hidden" class="item-type" name="outlook_send">

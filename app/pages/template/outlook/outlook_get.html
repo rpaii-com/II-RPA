@@ -1,0 +1,76 @@
+<div class="main-con-item">
+    <p>
+        <b>邮箱账号</b>(必填，请输入待检索的邮箱账号，如XXX@qq.com，)
+        <b>：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="outlook_name">
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="toggleType"></i>
+        <i class="xiala-icon parameters"></i>
+    </div>
+    <p>
+        <b>邮件文件夹名称</b>(必填，请输入待检索的邮箱文件夹，如收件箱，)
+        <b>：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="file_name">
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="toggleType"></i>
+        <i class="xiala-icon parameters"></i>
+    </div>
+    <p>
+        <b>筛选</b>(选填，过滤条件，)
+        <b>：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="find_where">
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="toggleType"></i>
+        <i class="xiala-icon parameters"></i>
+    </div>
+    <p>
+        <b>数量</b>(选填，从顶部开始检索的消息数量，)
+        <b>：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="find_num">
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="toggleType"></i>
+        <i class="xiala-icon parameters"></i>
+    </div>
+    <p>
+        <b>是否仅限未读消息</b>（选填，）
+    </p>
+    <div class="input-box">
+        <p class="radio-item">
+            <label>
+                <input type="radio" name="find_unread" value="yes" checked>是
+            </label>
+            <label>
+                <input type="radio" name="find_unread" value="no">否
+            </label>
+        </p>
+    </div>
+    <p>
+        <b>是否标记为已读</b>（选填，）
+    </p>
+    <div class="input-box">
+        <p class="radio-item">
+            <label>
+                <input type="radio" name="read_flag" value="no" checked>否
+            </label>
+            <label>
+                <input type="radio" name="read_flag" value="yes">是
+            </label>
+        </p>
+    </div>
+    <p>
+        <b>输出参数命名：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="rename">
+    </div>
+</div>
+
+<input type="hidden" class="item-type" name="outlook_get">

@@ -1920,5 +1920,17 @@
     },
     "select_browser":{
         "menuTitle": "选择网页下拉框选项(selenium)"
+    },
+    "outlook_send":{
+        "menuTitle": "outlook发送邮件"
+    },
+    "outlook_get":{
+        "menuTitle": "outlook获取邮件消息对象"
+    },
+    "outlook_reply":{
+        "menuTitle": "outlook回复邮件"
+    }, 
+    "outlook_use": {
+        "menuTitle": "outlook邮件操作"
     }
 }

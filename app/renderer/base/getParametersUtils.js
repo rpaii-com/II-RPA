@@ -136,6 +136,9 @@ function isTargetOutParameter(ele) {
         case "attribute_browser":
             hasOut = true;
             break;
+        case "outlook_get":
+            hasOut = true;
+            break;
         default:
             hasOut = false;
             break;

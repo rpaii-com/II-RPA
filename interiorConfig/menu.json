@@ -296,6 +296,30 @@
         ]
     },
     {
+        "name": "outlook邮件操作",
+        "className": "main-menu-icon menu-icon-4 menu-icon",
+        "children": [
+            {
+                "name": "outlook发送邮件",
+                "url": "outlook/outlook_send.html",
+                "className": "diy-icon-menu4-1",
+                "nodeType": "outlook_send"
+            },
+            {
+                "name": "outlook获取邮件消息对象",
+                "url": "outlook/outlook_get.html",
+                "className": "diy-icon-menu4-1",
+                "nodeType": "outlook_get"
+            },
+            {
+                "name": "outlook回复邮件",
+                "url": "outlook/outlook_reply.html",
+                "className": "diy-icon-menu4-1",
+                "nodeType": "outlook_reply"
+            }
+        ]
+    },
+    {
         "name": "应用功能",
         "className": "main-menu-icon menu-icon-3 menu-icon",
         "children": [

@@ -2320,3 +2320,64 @@ incident.addEVent("select_browser", async function (step, callback, ctx) { //ִ
 })
 
 /******************python_selenium*********************/
+
+/******************python_outlook*********************/
+//outlook发送邮件，
+incident.addEVent("outlook_send", async function (step, callback, ctx) { //ִ
+    pythonStart();
+	try{
+		const path = require("path");
+		ctx.set(await python_exec(path.join(process.cwd(),"./extend/python/app_outlook.py"),"outlook_send",{
+			send_name:step.parameters.send_name,
+			accept_name:step.parameters.accept_name,
+			accept_title:step.parameters.accept_title,
+			accept_content:step.parameters.accept_content,
+			accept_file:step.parameters.accept_file,
+			secret_accept:step.parameters.secret_accept,
+			minor_accept:step.parameters.minor_accept,
+			agent_send_name:step.parameters.agent_send_name,
+			draft_flag:step.parameters.draft_flag,
+			html_flag:step.parameters.html_flag
+		}))
+	}catch(e){
+		return callback(e);
+	}
+	callback();
+})
+
+//outlook获取邮件消息对象，
+incident.addEVent("outlook_get", async function (step, callback, ctx) { //ִ
+    pythonStart();
+	try{
+		const path = require("path");
+		ctx.set(step.parameters.rename,await python_exec(path.join(process.cwd(),"./extend/python/app_outlook.py"),"outlook_get",{
+			outlook_name:step.parameters.outlook_name,
+			file_name:step.parameters.file_name,
+			find_where:step.parameters.find_where,
+			find_num:step.parameters.find_num,
+			find_unread:step.parameters.find_unread,
+			read_flag:step.parameters.read_flag
+		}))
+	}catch(e){
+		return callback(e);
+	}
+	callback();
+})
+
+//outlook回复邮件，
+incident.addEVent("outlook_reply", async function (step, callback, ctx) { //ִ
+    pythonStart();
+	try{
+		const path = require("path");
+		ctx.set(await python_exec(path.join(process.cwd(),"./extend/python/app_outlook.py"),"outlook_reply",{
+			reply_content:step.parameters.reply_content,
+			reply_account:step.parameters.reply_account,
+			accept_file:step.parameters.accept_file,
+			reply_all_flag:step.parameters.reply_all_flag
+		}))
+	}catch(e){
+		return callback(e);
+	}
+	callback();
+})
+/******************python_outlook*********************/
