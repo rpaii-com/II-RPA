@@ -1932,5 +1932,11 @@
         }, 
         "outlook_use": {
             "menuTitle": "Outlook Mail operation"
+        }, 
+        "outlook_move": {
+            "menuTitle": "Outlook mobile mail"
+        }, 
+        "outlook_relay": {
+            "menuTitle": "Outlook forward mail"
         }
     }

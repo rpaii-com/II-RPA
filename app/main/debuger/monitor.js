@@ -2380,4 +2380,35 @@ incident.addEVent("outlook_reply", async function (step, callback, ctx) { //ִ
 	}
 	callback();
 })
+
+//outlook转发邮件，
+incident.addEVent("outlook_relay", async function (step, callback, ctx) { //ִ
+    pythonStart();
+	try{
+		const path = require("path");
+		ctx.set(await python_exec(path.join(process.cwd(),"./extend/python/app_outlook.py"),"outlook_relay",{
+			relay_mail:step.parameters.relay_mail,
+			relay_account:step.parameters.relay_account
+		}))
+	}catch(e){
+		return callback(e);
+	}
+	callback();
+})
+
+//outlook移动邮件，
+incident.addEVent("outlook_move", async function (step, callback, ctx) { //ִ
+    pythonStart();
+	try{
+		const path = require("path");
+		ctx.set(await python_exec(path.join(process.cwd(),"./extend/python/app_outlook.py"),"outlook_move",{
+			outlook_name:step.parameters.outlook_name,
+			file_name:step.parameters.file_name,
+			move_mail:step.parameters.move_mail
+		}))
+	}catch(e){
+		return callback(e);
+	}
+	callback();
+})
 /******************python_outlook*********************/

@@ -1932,5 +1932,11 @@
     }, 
     "outlook_use": {
         "menuTitle": "outlook邮件操作"
+    }, 
+    "outlook_move": {
+        "menuTitle": "outlook移动邮件"
+    }, 
+    "outlook_relay": {
+        "menuTitle": "outlook转发邮件"
     }
 }

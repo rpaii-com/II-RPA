@@ -288,5 +288,14 @@
         "python-outlook国际化，"
     ],
     "date": "2020-08-10"
+},
+{
+    "version": "1.0.16",
+    "data": [
+        "python-outlook组件完成，",
+        "python-outlook测试demo，",
+        "python-outlook国际化，"
+    ],
+    "date": "2020-08-11"
 }
 ]
