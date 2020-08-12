@@ -139,6 +139,10 @@ function isTargetOutParameter(ele) {
         case "outlook_get":
             hasOut = true;
             break;
+
+        case "encrypt_aes":
+            hasOut = true;
+            break;
         default:
             hasOut = false;
             break;

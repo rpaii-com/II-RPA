@@ -332,6 +332,18 @@
         ]
     },
     {
+        "name":"扩展组件",
+        "className":"main-menu-icon menu-icon-3 menu-icon",
+        "children":[
+            {
+                "name":"aes加密",
+                "url":"extend/encrypt_aes.html",
+                "className":"diy-icon-menu6-1",
+                "nodeType":"encrypt_aes"
+            }
+        ]
+    },
+    {
         "name": "应用功能",
         "className": "main-menu-icon menu-icon-3 menu-icon",
         "children": [

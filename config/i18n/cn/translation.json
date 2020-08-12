@@ -1938,5 +1938,11 @@
     }, 
     "outlook_relay": {
         "menuTitle": "outlook转发邮件"
+    },
+    "encrypt_aes":{
+        "menuTitle": "aes加密"
+    },
+    "extend_python":{
+        "menuTitle": "扩展组件"
     }
 }

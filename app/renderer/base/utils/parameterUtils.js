@@ -507,6 +507,10 @@ let parameterUtils = {
                 node.dataType = "array";
                 break; 
 
+            case "encrypt_aes":
+                node.dataType = "string";
+                break;
+
             case "getSystemParameter": //获取系统变量
                 node.dataType = "string";
                 break;

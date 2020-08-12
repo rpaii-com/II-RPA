@@ -1938,5 +1938,11 @@
         }, 
         "outlook_relay": {
             "menuTitle": "Outlook forward mail"
+        },
+        "encrypt_aes":{
+            "menuTitle": "AES encryption"
+        },
+        "extend_python":{
+            "menuTitle": "Extension components"
         }
     }

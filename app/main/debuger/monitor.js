@@ -2412,3 +2412,21 @@ incident.addEVent("outlook_move", async function (step, callback, ctx) { //ִ
 	callback();
 })
 /******************python_outlook*********************/
+
+/******************python_extend*********************/
+//aes加密，
+incident.addEVent("encrypt_aes", async function (step, callback, ctx) { //ִ
+    pythonStart();
+	try{
+		const path = require("path");          
+		ctx.set(step.parameters.rename,await python_exec(path.join(process.cwd(),"./extend/python/encrypt.py"),"encrypt",{
+			key:step.parameters.key,
+			text:step.parameters.text
+		}))
+	}catch(e){
+		return callback(e);
+	}
+	callback();
+})
+
+/******************python_extend*********************/
