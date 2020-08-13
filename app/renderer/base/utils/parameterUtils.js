@@ -513,6 +513,9 @@ let parameterUtils = {
             case "decrypt_aes":
                 node.dataType = "string";
                 break;
+            case "script_call":
+                node.dataType = "string";
+                break;
                 
 
             case "getSystemParameter": //获取系统变量

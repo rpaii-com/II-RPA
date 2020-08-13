@@ -2444,4 +2444,18 @@ incident.addEVent("decrypt_aes", async function (step, callback, ctx) { //ִ
 	callback();
 })
 
+//执行脚本，
+incident.addEVent("script_call", async function (step, callback, ctx) { //ִ
+    pythonStart();
+	try{
+		const path = require("path");
+		ctx.set(step.parameters.rename,await python_exec(path.join(process.cwd(),"./extend/python/script_call.py"),"script_call",{
+			script_command:step.parameters.script_command,
+			script_parameter:step.parameters.script_parameter
+		}))
+	}catch(e){
+		return callback(e);
+	}
+	callback();
+})
 /******************python_extend*********************/

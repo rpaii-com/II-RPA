@@ -347,6 +347,13 @@
                 "className":"diy-icon-menu6-1",
                 "nodeType":"decrypt_aes"
                 
+            },
+            {
+                "name":"执行脚本",
+                "url":"extend/script_call.html",
+                "className":"diy-icon-menu6-1",
+                "nodeType":"script_call"
+                
             }
         ]
     },

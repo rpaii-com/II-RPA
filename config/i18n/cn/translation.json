@@ -1947,5 +1947,8 @@
     },
     "decrypt_aes":{
         "menuTitle": "aes解密"
+    },
+    "script_call":{
+        "menuTitle": "执行脚本"
     }
 }

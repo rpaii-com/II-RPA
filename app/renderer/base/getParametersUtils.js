@@ -146,6 +146,10 @@ function isTargetOutParameter(ele) {
         case "decrypt_aes":
             hasOut = true;
             break;
+        case "script_call":
+            hasOut = true;
+            break;
+            
         default:
             hasOut = false;
             break;
