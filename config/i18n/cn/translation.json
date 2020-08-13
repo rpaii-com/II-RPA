@@ -1944,5 +1944,8 @@
     },
     "extend_python":{
         "menuTitle": "扩展组件"
+    },
+    "decrypt_aes":{
+        "menuTitle": "aes解密"
     }
 }

@@ -1944,5 +1944,8 @@
         },
         "extend_python":{
             "menuTitle": "Extension components"
+        },
+        "decrypt_aes":{
+            "menuTitle": "AES decryption"
         }
     }

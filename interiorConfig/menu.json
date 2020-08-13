@@ -340,6 +340,13 @@
                 "url":"extend/encrypt_aes.html",
                 "className":"diy-icon-menu6-1",
                 "nodeType":"encrypt_aes"
+            },
+            {
+                "name":"aes解密",
+                "url":"extend/decrypt_aes.html",
+                "className":"diy-icon-menu6-1",
+                "nodeType":"decrypt_aes"
+                
             }
         ]
     },

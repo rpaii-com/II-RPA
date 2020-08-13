@@ -2419,7 +2419,22 @@ incident.addEVent("encrypt_aes", async function (step, callback, ctx) { //ִ
     pythonStart();
 	try{
 		const path = require("path");          
-		ctx.set(step.parameters.rename,await python_exec(path.join(process.cwd(),"./extend/python/encrypt.py"),"encrypt",{
+		ctx.set(step.parameters.rename,await python_exec(path.join(process.cwd(),"./extend/python/app_aes.py"),"encrypt",{
+			key:step.parameters.key,
+			text:step.parameters.text
+		}))
+	}catch(e){
+		return callback(e);
+	}
+	callback();
+})
+
+//aes解密，
+incident.addEVent("decrypt_aes", async function (step, callback, ctx) { //ִ
+    pythonStart();
+	try{
+		const path = require("path");
+		ctx.set(step.parameters.rename,await python_exec(path.join(process.cwd(),"./extend/python/app_aes.py"),"decrypt",{
 			key:step.parameters.key,
 			text:step.parameters.text
 		}))
