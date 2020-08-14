@@ -2458,4 +2458,18 @@ incident.addEVent("script_call", async function (step, callback, ctx) { //ִ
 	}
 	callback();
 })
+
+//xmltojosn
+incident.addEVent("xml2json", async function (step, callback, ctx) { //ִ
+    pythonStart();
+	try{
+		const path = require("path");
+		ctx.set(step.parameters.rename,await await python_exec(path.join(process.cwd(),"./extend/python/appx2j.py"),"xml_to_json",{
+			text:step.parameters.text
+		}))
+	}catch(e){
+		return callback(e);
+	}
+	callback();
+})
 /******************python_extend*********************/

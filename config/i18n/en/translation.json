@@ -1950,5 +1950,8 @@
         },
         "script_call":{
             "menuTitle": "Execute script"
+        },
+        "xml2json":{
+            "menuTitle": "XML format to JSON"
         }
     }

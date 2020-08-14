@@ -149,6 +149,9 @@ function isTargetOutParameter(ele) {
         case "script_call":
             hasOut = true;
             break;
+        case "xml2json":
+            hasOut = true;
+            break;
             
         default:
             hasOut = false;

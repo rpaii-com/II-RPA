@@ -353,7 +353,12 @@
                 "url":"extend/script_call.html",
                 "className":"diy-icon-menu6-1",
                 "nodeType":"script_call"
-                
+            },
+            {
+                "name":"xml格式转为json",
+                "url":"extend/xml2json.html",
+                "className":"diy-icon-menu6-1",
+                "nodeType":"xml2json"
             }
         ]
     },

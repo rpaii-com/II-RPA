@@ -1950,5 +1950,8 @@
     },
     "script_call":{
         "menuTitle": "执行脚本"
+    },
+    "xml2json":{
+        "menuTitle": "xml格式转为json"
     }
 }

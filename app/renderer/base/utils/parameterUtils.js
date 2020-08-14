@@ -516,7 +516,9 @@ let parameterUtils = {
             case "script_call":
                 node.dataType = "string";
                 break;
-                
+            case "xml2json":
+                node.dataType = "string";
+                break;
 
             case "getSystemParameter": //获取系统变量
                 node.dataType = "string";
