@@ -1953,5 +1953,8 @@
     },
     "xml2json":{
         "menuTitle": "xml格式转为json"
+    },
+    "json2xml":{
+        "menuTitle": "json格式转为xml"
     }
 }

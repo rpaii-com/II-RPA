@@ -152,7 +152,10 @@ function isTargetOutParameter(ele) {
         case "xml2json":
             hasOut = true;
             break;
-            
+        case "json2xml":
+            hasOut = true;
+            break;
+             
         default:
             hasOut = false;
             break;

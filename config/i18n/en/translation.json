@@ -1953,5 +1953,8 @@
         },
         "xml2json":{
             "menuTitle": "XML format to JSON"
+        },
+        "json2xml":{
+            "menuTitle": "JSON format to XML"
         }
     }

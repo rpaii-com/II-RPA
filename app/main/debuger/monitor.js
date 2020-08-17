@@ -2464,8 +2464,23 @@ incident.addEVent("xml2json", async function (step, callback, ctx) { //ִ
     pythonStart();
 	try{
 		const path = require("path");
-		ctx.set(step.parameters.rename,await await python_exec(path.join(process.cwd(),"./extend/python/appx2j.py"),"xml_to_json",{
+		ctx.set(step.parameters.rename,await python_exec(path.join(process.cwd(),"./extend/python/appx2j.py"),"xml_to_json",{
 			text:step.parameters.text
+		}))
+	}catch(e){
+		return callback(e);
+	}
+	callback();
+})
+
+//jsontoxml
+incident.addEVent("json2xml", async function (step, callback, ctx) { //ִ
+    pythonStart();
+	try{
+		const path = require("path");
+		ctx.set(step.parameters.rename,await python_exec(path.join(process.cwd(),"./extend/python/appx2j.py"),"json_to_xml",{
+			text:step.parameters.text,
+			isSelfClosing:step.parameters.isSelfClosing
 		}))
 	}catch(e){
 		return callback(e);

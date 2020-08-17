@@ -519,6 +519,10 @@ let parameterUtils = {
             case "xml2json":
                 node.dataType = "string";
                 break;
+            case "json2xml":
+                node.dataType = "string";
+                break;
+                
 
             case "getSystemParameter": //获取系统变量
                 node.dataType = "string";

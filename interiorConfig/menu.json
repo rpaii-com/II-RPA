@@ -359,6 +359,12 @@
                 "url":"extend/xml2json.html",
                 "className":"diy-icon-menu6-1",
                 "nodeType":"xml2json"
+            },
+            {
+                "name":"json格式转为xml",
+                "url":"extend/json2xml.html",
+                "className":"diy-icon-menu6-1",
+                "nodeType":"json2xml"
             }
         ]
     },
