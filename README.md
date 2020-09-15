@@ -61,7 +61,16 @@
 		   18、执行npm install
 
 #### 启动教程
-		cnpm start
+		1、跳转当前项目目录下，
+		2、执行启动命令，cnpm start，
+		3、点击回车，
+		
+		启动方式1，在Visual Studio Code终端启动，
+![启动方式1](./readme_iamge/start1.jpg)
+		
+		启动方式2，在cmd下启动，
+![启动方式2](./readme_iamge/start2.jpg)
+		
 		启动后的样子，
 ![启动图](./readme_iamge/start.png)
 		看到它，基本就ok了，
@@ -75,6 +84,7 @@
 #### 测试文件（可直接读取使用）
 		新增测试流程文件，直接读取通过rpa程序可读取测试，
 		路径为：./rpa测试流程文件/*.rpa
+		新增录像文件，路径为./rpa测试流程文件/*.mp4
 		
 #### 开发者相关
 
