@@ -183,6 +183,10 @@ function initPresWindow() {
     presWindow = new BrowserWindow({
         width: 1200,
         height: 800,
+        webPreferences: {
+                 nodeIntegration: true,
+                 webviewTag: true
+            },
         show: false,
         frame: false,
     })
@@ -225,6 +229,10 @@ function createWindow() {
         minWidth: 1370,
         minHeight: 750,
         height: 750,
+        webPreferences: {
+                 nodeIntegration: true,
+                 webviewTag: true
+            },
         frame: false,
         show: true
     })
@@ -386,6 +394,10 @@ app.on('ready', function () {
         width: 1200,
         height: 800,
         show: false,
+        webPreferences: {
+                 nodeIntegration: true,
+                 webviewTag: true
+            },
         frame: false
     })
     calcWindow.setMenu(null)
@@ -440,6 +452,10 @@ app.on('ready', function () {
         presWindow = new BrowserWindow({
             width: 1200,
             height: 800,
+            webPreferences: {
+                     nodeIntegration: true,
+                     webviewTag: true
+                },
             show: true,
             frame: false,
         })
