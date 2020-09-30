@@ -1,0 +1,47 @@
+<div class="main-con-item">
+    <p>
+        <b>录屏文件保存路径</b>(必填，)
+        <b>：</b>
+    </p>
+    <div class="input-box">
+        <button type="button" onclick="saveOriginPath.click();">点击获取保存路径</button>
+        <input type="text" class="form-control" id="directory" name="directory" />
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="xiala-icon parameters"></i>
+        <i class="toggleType"></i>
+        <input type="file" id="saveOriginPath" class="hideFile" onchange="this.value==''?directory.value=directory.value:directory.value=gePathVal(this,true)"
+               webkitdirectory />
+    </div>
+    <p>
+        <b>录屏文件名</b>(必填，)
+        <b>：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="filename">
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="toggleType"></i>
+        <i class="xiala-icon parameters"></i>
+    </div>
+    <p>
+        <b>录屏时长</b>(必填，单位是毫秒，)
+        <b>：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="duration">
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="toggleType"></i>
+        <i class="xiala-icon parameters"></i>
+    </div>
+    <p>
+        <b>录屏清晰度(0.5~1)</b>(必填，)
+        <b>：</b>
+    </p>
+    <div class="input-box">
+        <input type="text" name="definition">
+        <ul class="common-list parameters-can-select"></ul>
+        <i class="toggleType"></i>
+        <i class="xiala-icon parameters"></i>
+    </div>
+</div>
+
+<input type="hidden" class="item-type" name="screencap">

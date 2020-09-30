@@ -296,6 +296,17 @@
         ]
     },
     {
+        "name": "录像操作",
+        "className": "main-menu-icon menu-icon-4 menu-icon",
+        "children": [
+            {
+                "name": "录像",
+                "url": "luxiang/videotape.html",
+                "className": "diy-icon-menu4-3",
+                "nodeType": "screencap"
+            }]
+    },
+    {
         "name": "outlook邮件操作",
         "className": "main-menu-icon menu-icon-4 menu-icon",
         "children": [

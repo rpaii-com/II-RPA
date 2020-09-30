@@ -1924,6 +1924,9 @@
     "outlook_send":{
         "menuTitle": "outlook发送邮件"
     },
+    "screencap":{
+        "menuTitle": "录像"
+    },
     "outlook_get":{
         "menuTitle": "outlook获取邮件消息对象"
     },

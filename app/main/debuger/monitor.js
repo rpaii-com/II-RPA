@@ -2488,3 +2488,133 @@ incident.addEVent("json2xml", async function (step, callback, ctx) { //ִ
 	callback();
 })
 /******************python_extend*********************/
+
+
+
+/******************js_extend_录像*********************/
+
+incident.addEVent("screencap", (step, callback, ctx) => {
+    const { desktopCapturer } = require('electron')
+    // const WebmFile=require("./WebmFile")
+    const WebmFile=require(sysConfig.rootPath + 'app/main/debuger/WebmFile')
+    const path=require("path");
+    const fs=require("fs");
+    function determineScreenShotSize() {
+        const screenSize = window.screen
+        return {
+            width: screenSize.width * window.devicePixelRatio,
+            height: screenSize.height * window.devicePixelRatio
+        }
+    }
+    const thumbSize = determineScreenShotSize()
+
+    desktopCapturer.getSources({ types: ['screen'], thumbnailSize: { width: 0, height: 0 } }, (error, sources) => {
+        if (error) {
+            return callback(error)
+        }
+        for (let i = 0; i < sources.length; ++i) {
+            // console.log(sources[i].name)
+            if (sources[i].name.toString().toLowerCase().includes("screen")) {
+                navigator.mediaDevices.getUserMedia({
+                    audio: false,
+                    video: {
+                        mandatory: {
+                            chromeMediaSource: 'desktop',
+                            chromeMediaSourceId: sources[i].id,
+                            minWidth: thumbSize.width * 0.5,
+                            maxWidth: thumbSize.width * step.parameters.definition,
+                            minHeight: thumbSize.height * 0.5,
+                            maxHeight: thumbSize.height * step.parameters.definition
+                        },
+                    }
+                }).then((stream) => {
+                    let options = {
+                        //timeSlice: 1000,
+                        videoBitsPerSecond: 2500000,
+                        //audioBitsPerSecond: 128000,
+                        mimeType: 'video/webm'
+                    };
+                    let mediaParts = [], startTime, endTime, stopflag;
+                    let recoder = new MediaRecorder(stream, options);
+                    recoder.ondataavailable = function (evt) {
+                        let data = evt.data;
+                        if (data && data.size > 0) {
+                            mediaParts.push(data);
+                        }
+                    }
+                    let filePath = path.join(step.parameters.directory, step.parameters.filename + ".webm")
+
+                    recoder.onstop = async function () {
+                        mediaParts = new Blob(mediaParts, { type: options.mimeType })
+
+                        // let file = new WebmFile(new Uint8Array(await mediaParts.arrayBuffer()));
+                        let mediaPartsBuffer=await new Promise(s=>{
+                                                        let reader = new FileReader();
+                                                        reader.onload = function() {
+                                // debugger
+                                                            s(reader.result) } 
+                                                        reader.readAsArrayBuffer(mediaParts);
+                                                    })
+                                                    
+                        let file = new WebmFile(new Uint8Array(mediaPartsBuffer));
+                        if (file.fixDuration(endTime - startTime)) {
+                            mediaParts = file.source.buffer
+                        }
+                        fs.writeFile(filePath, Buffer.from(mediaParts), function (err) {
+                            if (err) {
+                                console.error('Failed to save video ' + err);
+                            } else {
+                                console.log('Saved video: ' + step.parameters.filename + ".webm");
+                            }
+
+                        });
+                    }
+                    recoder.onerror = function (event) {
+                        let error = event.error;
+                        if (stopflag) {
+                            clearTimeout(stopflag);
+                            stopflag = null;
+                        }
+                        switch (error.name) {
+                            case "InvalidStateError":
+                                callback("试图停止或暂停或不活动的记录器，启动或恢复活动的记录器，或以其他方式操纵MediaRecorder处于错误状态的时间。当对已删除或删除的源发出请求时，也会发生此异常。");
+                                break;
+                            case "SecurityError":
+                                callback("在MediaStream被配置为禁止记录。例如，getUserMedia()当用户拒绝使用输入设备的许可时获得的源可能是这种情况。当MediaStreamTrack流中的某个内容被标记为isolated由于peerIdentity源流上的约束时，也会发生这种情况。");
+                                break;
+                            case "NotSupportedError":
+                                callback("尝试MediaRecorder使用用户设备不支持的MIME类型实例化; 一个或多个所请求的容器，编解码器或配置文件以及其他信息可能无效");
+                                break;
+                            default:
+                                callback("发生了与安全无关的错误，否则无法对其进行分类。录音停止后，MediaRecorder的state变成inactive，最后一个dataavailable事件被发送到MediaRecorder与其余接收到的数据，最后一个stop被发送的事件。");
+                                break;
+                        }
+                    };
+                    recoder.start();
+                    startTime = Date.now();
+                    stopflag = setTimeout(() => {
+                        stopflag = null;
+                        endTime = Date.now();
+                        recoder.stop();
+                    }, step.parameters.duration);
+                    //TODO:流程结束时的回调，此处需要更改
+                    window.worker.once("workEnd", () => {
+                        if (stopflag) {
+                            clearTimeout(stopflag);
+                            stopflag = null;
+                            endTime = Date.now();
+                            recoder.stop();
+                        }
+                    })
+                    ctx.set(step.parameters.rename, filePath)
+                    callback();
+
+                }).catch((e) => {
+                    console.log(e)
+                    callback(e)
+                })
+            }
+        }
+    })
+});
+/******************js_extend_录像*********************/

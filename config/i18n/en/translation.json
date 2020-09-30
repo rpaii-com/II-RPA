@@ -1924,6 +1924,9 @@
         "outlook_send":{
             "menuTitle": "Outlook send mail"
         },
+        "screencap":{
+            "menuTitle": "Videotape"
+        },
         "outlook_get":{
             "menuTitle": "Outlook get mail message object"
         },

@@ -506,6 +506,9 @@ let parameterUtils = {
             case "outlook_get":
                 node.dataType = "array";
                 break; 
+            case "screencap":
+                node.dataType = "string";
+                break; 
 
             case "encrypt_aes":
                 node.dataType = "string";

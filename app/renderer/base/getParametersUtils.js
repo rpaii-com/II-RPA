@@ -139,6 +139,9 @@ function isTargetOutParameter(ele) {
         case "outlook_get":
             hasOut = true;
             break;
+        case "screencap":
+            hasOut = true;
+            break;
 
         case "encrypt_aes":
             hasOut = true;
